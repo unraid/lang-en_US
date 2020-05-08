@@ -2,7 +2,7 @@
 
 ### READ THIS WHEN YOU WANT TO MAKE TRANSLATIONS TO ANOTHER LANGUAGE
 
-There are fourteen text files included in this archive, each with their own section of translations:
+There are fourteen text files included in this repository, each with their own section of translations:
 
 - translations.txt -- these are general translations and loaded each time
 - dashboard.txt    -- these are translations for the dashboard section
@@ -19,7 +19,7 @@ There are fourteen text files included in this archive, each with their own sect
 - apps-1.txt       -- these are more translations for the CA section
 - ca_settings      -- these are translations for the CA settings
 
-All file names are in lowercase and should be included in the archive to make the translations complete.
+All file names are in lowercase and should be included in the repository to make the translations complete.
 
 Removing a particular file, means no translations will be available for that section and the GUI will display text in original English.
 
