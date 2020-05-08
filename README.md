@@ -73,7 +73,7 @@ Help text is written in Markdown style, translations must follow the same coding
 Once the translations are complete and you want to test locally the (intermediate) results, the text files need to be zipped into a single ZIP file.
 Give the ZIP file the name of your language, e.g. French.zip.
 
-In the GUI go to: Tools -> webGUI -> Language.
+In the GUI go to: Tools -> webGUI -> Language (switch to Developer view)
 
 - By default only the English language is installed (built-in)
 - Choose the ZIP file you have created earlier as the source file
