@@ -82,7 +82,7 @@ In the GUI go to: Tools -> webGUI -> Language.
 
 NOTE: If your language is not available from the dropdown menu, please make a request on the [Unraid forum](https://forums.unraid.net)
 
-Now your language is available to for local testing!
+Now your language is available for local testing!
 
 In the GUI go to: Settings -> Display Settings -> Language
 
@@ -98,9 +98,9 @@ Limetech will review this and merge your work when approved.
 
 ### UPDATES
 
-When updated source text files in English become available in the future with revised translations, these updates will be made available through Github.
+When updated source text files in English become available in the future, these updates will be made available through Github.
 
-Translators can you the Github system to see which changes are made and update their translations accordingly.
+Translators can use the Github system to see which changes are made and update their translations accordingly.
 
 ### CREDITS
 
