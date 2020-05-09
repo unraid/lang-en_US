@@ -123,7 +123,7 @@ Your hardware profile was last submitted on=
 Your Trial key has expired=Your *Trial* key has expired
 Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
 
-:plug1
+:diagnostics_1_plug:
 This utility is used for troubleshooting purposes. It will collect all of the system information and configuration files, and package these files in a single ZIP file which can be saved locally.
 Subsequently, this file can be included in your correspondence with Limetech or the Unraid forum.
 
@@ -131,7 +131,7 @@ This will help others to quickly get the inside information of your system and p
 and configuration files are collected:
 :end
 
-:plug2
+:diagnostics_2_plug:
 + */config*
   <br>copy all *\*.cfg files*, *go* file and the *super.dat* file. These are configuration files.
 + */config/shares*
@@ -150,7 +150,7 @@ and configuration files are collected:
   <br>save files *docker.log*, *libvirtd.log* and *libvirt/qemu/\*.log*.
 :end
 
-:plug3
+:diagnostics_3_plug:
 Clicking **Download** will start the collection process and then instruct your browser to save the zip file locally.
 
 *No personal information such as user names, passwords, or any other file contents not specified above is included
@@ -162,7 +162,7 @@ to the system log.*
 *Use* **Anonymize diagnostics** *when publishing the diagnostics file in the public forum. In private communication with Limetech it is recommended to uncheck this setting and capture all information unaltered.*
 :end
 
-:plug4
+:newconfig_plug:
 This is a utility to reset the array disk configuration so that all disks appear as "New" disks, as
 if it were a fresh new server.
 
@@ -175,7 +175,7 @@ Use the *'Preserve current assignments'* selection to populate the desired disk 
 effect of making it ***impossible*** to rebuild an existing failed drive - you have been warned!
 :end
 
-:plug5
+:newperms_1_plug:
 This is a mandatory one-time action to be taken after upgrading from a pre-5.0 Unraid server release to Unraid v5 or a later release.
 Select **ALL DISKS** when performing this one-time action.
 
@@ -187,7 +187,7 @@ and changes file and directory ownership to *nobody/users* (i.e., uid/gid to 99/
 as follows:
 :end
 
-:plug6
+:newperms_2_plug:
 For directories:
   drwxrwxrwx
 
@@ -198,7 +198,7 @@ For readonly files:
   -r--r--r--
 :end
 
-:plug7
+:newperms_3_plug:
 Clicking **Start** will open another window and start the background process.
 
 Closing the window before completion will terminate the background process - so don't do that. This process can take a long time if you have many files.
@@ -206,7 +206,7 @@ Closing the window before completion will terminate the background process - so 
 Note that this tool may negatively affect any docker containers if you allow your appdata share to be included.
 :end
 
-:plug8
+:registration_1_plug:
 Your server will not be usable until you purchase a Registration key or install a free 30-day *Trial* key. A *Trial*
 key provides all the functionality of a *Pro* Registration key.
 
@@ -216,12 +216,12 @@ at least 1GB in size.
 Note: USB memory card readers are generally **not** supported because most do not present unique serial numbers.
 :end
 
-:plug9
+:registration_2_plug:
 + Please make sure your [server time](DateTime) is accurate to within 5 minutes.
 + Please make sure there is a [DNS server](NetworkSettings) specified.
 :end
 
-:plug10
+:registration_3_plug:
 Your *Trial* key includes all the functionality and device support of a *Pro* Registration key.
 
 After your *Trial* key has reached expiration, your server **still functions normally** until the next time you **Stop** the array.
@@ -229,13 +229,13 @@ After your *Trial* key has reached expiration, your server **still functions nor
 At that point, you may either purchase a Registration key, or request a *Trial* extension.
 :end
 
-:plug11
+:registration_4_plug:
 To continue using Unraid OS you may purchase a Registration key. Alternately, you may request a *Trial* extension key.
 
 Most *Trial* extension requests are processed immediately but please allow up to one business day to receive your *Trial* extension key.
 :end
 
-:plug12
+:registration_5_plug:
 It is not possible to use a *Trial* key with an existing Unraid OS installation.
 
 You may purchase a Registration key corresponding to this USB Flash device to continue using this installation.
@@ -243,7 +243,7 @@ You may purchase a Registration key corresponding to this USB Flash device to co
 For more information, please [Contact Support](https://lime-technology.com/contact).
 :end
 
-:plug13
+:registration_6_plug:
 It appears that your Registration key file is corrupted or missing.  The key file should be located in the
 [config](/Registration/Browse?dir&#61;/boot/config) directory on your USB Flash boot device.
 
@@ -252,13 +252,13 @@ If you do not have a backup copy of your Registration key file, [Contact Support
 If this was a *Trial* installation, you may purchase a Registration key.
 :end
 
-:plug14
+:registration_7_plug:
 *Trial* installations are only valid with the originally registered USB Flash device.
 
 To continue using this installation with this USB Flash device, you may purchase a Registration key.
 :end
 
-:plug15
+:registration_8_plug:
 The Registration key file does not correspond to the USB Flash boot device.
 Please copy the correct key file to the [config](/Registration/Browse?dir&#61;/boot/config) directory
 on your USB Flash boot device. If you do not have a backup copy of your key file, [Contact Support](https://lime-technology.com/contact).
@@ -270,7 +270,7 @@ another replacement key sooner, [Contact Support](https://lime-technology.com/co
 **Note:** Replacing a Registration key results in permanently *blacklisting* the previous USB Flash GUID.
 :end
 
-:plug16
+:registration_9_plug:
 This USB Flash boot device has been *blacklisted*. This can occur as a result of transfering your Registration key to
 a replacement USB Flash device, and you are currently booted from your old USB Flash device.
 
