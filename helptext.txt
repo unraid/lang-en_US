@@ -495,7 +495,7 @@
 > Select the desired share name and press **Read** to copy the settings from the selected source.
 :end
 
-:share_edit_global1_help:
+:share_edit_global2_help:
 >
 > *Write settings to* is used to copy the settings of the current share to one or more other existing shares.
 >
