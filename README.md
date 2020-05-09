@@ -58,15 +58,23 @@ Keep in mind the length of the translations and try to make them similar length 
 These are multi line entries used to translate multiple lines at once.
 Multi line translations have a unique opening and closing tag:
 
-**:helpXX** - unique opening tag used for the built-in help text
-
-**:plugXX** - unique opening tag used for any multi line text section
+**:unique_tag_name_plug:** - unique opening tag used for any multi line text section
 
 **:end**    - closing tag
 
 Do not remove or alter these tags and only translate the text between the opening and closing tags!
 
-Help text is written in Markdown style, translations must follow the same coding style, e.g. lines starting with a '>' must be obeyed.
+### HELP TEXT
+
+All help text of the GUI is stored in a single file *helptext.txt*.
+
+This file has multiple help text sections. Each section is enclosed by a unique opening tag and corresponding closing tag.
+
+**:unique_tag_name_help:** - unique opening tag used for a help text section
+
+**:end**    - corresponding closing tag
+
+Do not remove or alter these tags and only translate the text between the opening and closing tags!
 
 ### LOCAL TESTING
 
