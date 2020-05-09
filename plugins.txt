@@ -26,18 +26,3 @@ Uninstall=
 Update All Plugins=
 Upgrade=
 View Release Notes=
-
-:help1
-> To download and install a plugin, enter the plg file URL and click **Install**. A window will open
-> that displays install progress. Do not close this window until install has completed. You may also specify
-> the local file name of an extension.
-:end
-
-:help2
-> These plugins were not installed because of some kind of installation error.  You should delete these
-> plugins and then **reboot** your server.*
-:end
-
-:help3
-> These plugins were not installed because newer code already exists.  It is safe to simply delete these.
-:end

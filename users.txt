@@ -14,32 +14,3 @@ Use a password up to 128 characters=
 Use only lowercase letters, digits, underscores and dashes=
 User %s has been deleted=
 User name=
-
-:help1
-> Usernames may be up to 32 characters long and must start with a **lower case letter** or an underscore,
-> followed by **lower case letters**, digits, underscores, or dashes. They can end with a dollar sign.
-:end
-
-:help2
-> Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
-:end
-
-:help3
-> The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 95 kB (97,280 bytes).
-:end
-
-:help4
-> Up to 128 characters.
-:end
-
-:help5
-> Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
-:end
-
-:help6
-> The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 512 kB (524,288 bytes).
-:end
-
-:help7
-> Up to 128 characters.
-:end
