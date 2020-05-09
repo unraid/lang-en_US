@@ -1053,7 +1053,7 @@
 > By default a single unlimited LOG file is created. Otherwise LOG file size and number of files are limited when LOG rotation is enabled.
 :end
 
-:docker_user_defined_network_active_help:
+:docker_custom_network_active_help:
 > Allows direct communication between the host and containers using a custom (macvlan) network.<br>
 > By default this is prohibited.
 :end
