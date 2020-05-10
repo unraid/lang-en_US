@@ -2,7 +2,7 @@
 
 ### READ THIS WHEN YOU WANT TO MAKE TRANSLATIONS TO ANOTHER LANGUAGE
 
-There are fifteen text files included in this repository, each with their own section of translations:
+There are fourteen text files included in this repository, each with their own section of translations:
 
 - translations.txt -- these are general translations and loaded each time
 - helptext.txt     -- these are all help text sections and loaded each time
@@ -17,7 +17,6 @@ There are fifteen text files included in this repository, each with their own se
 - tools.txt        -- these are translations for the tools section
 - javascript.txt   -- these are translations for javascript scripts
 - apps.txt         -- these are translations for the CA section
-- apps-1.txt       -- these are more translations for the CA section
 - ca_settings      -- these are translations for the CA settings
 
 All file names are in lowercase and should be included in the repository to make the translations complete.
