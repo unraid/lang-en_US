@@ -217,33 +217,33 @@ Uncategorized=
 GameServers=
 HomeAutomation=
 MediaApp=
-MediaAppBooks="MediaApp:Books"
-MediaAppMusic="MediaApp:Music whatever"
-MediaAppPhotos="MediaApp:Photos"
-MediaAppVideo="MediaApp:Video"
-MediaAppOther="MediaApp:Other"
+MediaAppBooks=MediaApp:Books
+MediaAppMusic=MediaApp:Music whatever
+MediaAppPhotos=MediaApp:Photos
+MediaAppVideo=MediaApp:Video
+MediaAppOther=MediaApp:Other
 MediaServer=
-MediaServerBooks="MediaServer:Books"
-MediaServerMusic="MediaServer:Music"
-MediaServerPhotos="MediaServer:Photos"
-MediaServerVideo="MediaServer:Video"
-MediaServerOther="MediaServer:Other"
+MediaServerBooks=MediaServer:Books
+MediaServerMusic=MediaServer:Music
+MediaServerPhotos=MediaServer:Photos
+MediaServerVideo=MediaServer:Video
+MediaServerOther=MediaServer:Other
 Network=
-NetworkDNS="Network:DNS"
-NetworkFTP="Network:FTP"
-NetworkManagement="Network:Management"
-NetworkProxy="Network:Proxy"
-NetworkVOIP="Network:VOIP"
-NetworkVPN="Network:VPN"
-NetworkWeb="Network:Web"
-NetworkOther="Network:Other"
+NetworkDNS=Network:DNS
+NetworkFTP=Network:FTP
+NetworkManagement=Network:Management
+NetworkProxy=Network:Proxy
+NetworkVOIP=Network:VOIP
+NetworkVPN=Network:VPN
+NetworkWeb=Network:Web
+NetworkOther=Network:Other
 Tools=
-ToolsSystem="Tools:System"
-ToolsThemes="Tools:Themes"
-ToolsUtilities="Tools:Utilities"
+ToolsSystem=Tools:System
+ToolsThemes=Tools:Themes
+ToolsUtilities=Tools:Utilities
 Plugins=
 Other=
-OtherUncategorized="Other:Uncategorized"
+OtherUncategorized=Other:Uncategorized
 and %s more=
 
 # App Popup Related
@@ -267,23 +267,23 @@ Ranked #%s=
 # as in Trending up or down arrow
 Trending %s=
 # as in As of some date
-As of %s="(As of %s)"
-This application template has been blacklisted="This application / template has been blacklisted"
-This application template has been deprecated="This application / template has been deprecated"
+As of %s=(As of %s)
+This application template has been blacklisted=This application / template has been blacklisted
+This application template has been deprecated=This application / template has been deprecated
 This application is not compatible with your version of unRaid=
-Another browser tab or device has updated the displayed templates Some actions are not available="Another browser tab or device has updated the displayed templates.  Some actions are not available"
-Reinstall default="Reinstall (default)"
+Another browser tab or device has updated the displayed templates Some actions are not available=Another browser tab or device has updated the displayed templates.  Some actions are not available
+Reinstall default=Reinstall (default)
 WebUI=
 Reinstall=
 Install=
 Project=
-Install Using The Templates Default Tag='Install Using The Template&#39;s Default Tag'
-Moderator Comments="Moderator Comments:"
+Install Using The Templates Default Tag=Install Using The Template&#39;s Default Tag
+Moderator Comments=Moderator Comments:
 Note not all authors keep up to date on change logs=
 Note not all maintainers keep up to date on change logs=
 #the following if using a space you MUST use nbsp  but keep it down to one word if at all possible
 Donate=
-Currently Installed Version="Currently Installed Version:"
+Currently Installed Version=
 Install The Update=
 # as in you have the latest version already installed
 Latest Version=
@@ -330,7 +330,7 @@ Search For Containers From %s=
 Search for similar containers=
 
 #Page Navigation
-Displaying %s - %s of %s="Displaying %1$s - %2$s (of %3$s)"
+Displaying %s - %s of %s=Displaying %1$s - %2$s (of %3$s)
 
 Updating Content=
 Language=
