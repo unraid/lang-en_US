@@ -76,6 +76,8 @@ This file has multiple help text sections. Each section is enclosed by a unique 
 
 Do not remove or alter these tags and only translate the text between the opening and closing tags!
 
+Be aware that Markdown styling syntax is used, this must be preserved.
+
 ### LOCAL TESTING
 
 Once the translations are complete and you want to test locally the (intermediate) results, the text files need to be zipped into a single ZIP file.
