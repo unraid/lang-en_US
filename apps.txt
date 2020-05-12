@@ -1,5 +1,5 @@
 # Translation Credit.  Will appear in CA's credits    
-translationCredit=Bergware (Dutch)
+translationCredit=<Author> (<Language>)
 Cancel=
 
 # My PSAs / banners
