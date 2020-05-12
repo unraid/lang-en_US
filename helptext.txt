@@ -496,7 +496,6 @@
 :end
 
 :share_edit_global2_help:
->
 > *Write settings to* is used to copy the settings of the current share to one or more other existing shares.
 >
 > Select the desired destinations and press **Write** to copy the settings to the selected shares.
