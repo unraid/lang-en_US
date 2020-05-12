@@ -1,3 +1,6 @@
+; ===============
+; MAIN
+; ===============
 :main_array_devices_help:
 > **Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Array Devices* is as follows:
 >
@@ -443,6 +446,9 @@
 > If no suffix, a count of 1024-byte blocks is assumed.
 :end
 
+; ===============
+; SHARES
+; ===============
 :share_list_help:
 > **Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *User Shares* is as follows:
 >
@@ -701,6 +707,9 @@
 > Select the desired destinations and press **Write** to copy the NFS security settings to the selected shares.
 :end
 
+; ===============
+; USERS
+; ===============
 :user_add_username_help:
 > Usernames may be up to 40 characters long and must start with a **lower case letter** or an underscore,
 > followed by **lower case letters**, digits, underscores, or dashes. They can end with a dollar sign.
@@ -726,6 +735,9 @@
 > The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 512 kB (524,288 bytes).
 :end
 
+; ===============
+; SETTINGS
+; ===============
 :cpu_vms_help:
 > This page gives a total view of the current CPU pinning assignments for VMs.<br>
 > It also allows to modify these assignments.
@@ -1940,6 +1952,9 @@
 > Enter the username and password to login to your email account. Be aware that the password is stored unencrypted in the email configuration file.
 :end
 
+; ===============
+; PLUGINS
+; ===============
 :plugin_install_help:
 > To download and install a plugin, enter the plg file URL and click **Install**. A window will open
 > that displays install progress. Do not close this window until install has completed. You may also specify
@@ -1955,6 +1970,9 @@
 > These plugins were not installed because newer code already exists.  It is safe to simply delete these.
 :end
 
+; ===============
+; DOCKER
+; ===============
 :docker_client_general_help:
 > Templates are a quicker way to setting up Docker Containers on your Unraid server.  There are two types of templates:
 >
