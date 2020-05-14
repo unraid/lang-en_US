@@ -27,6 +27,7 @@ Download Folder=
 Download, Click and Select virtio drivers image=
 Downloading=
 eg=e.g.
+Emulated=
 Extracting=
 Folder to save the LibreELEC image to=
 Folder to save the OpenELEC image to=
