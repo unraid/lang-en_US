@@ -43,3 +43,12 @@ WebUI=
 Yes, delete it=Yes, delete it!
 Yes, update it=Yes, update it!
 Yes=
+
+; footer messages
+Array Starting=
+Array Stopping=
+Mounting disks=
+Spinning up all drives=
+Starting services=
+Stopping services=
+Unmounting disks=
