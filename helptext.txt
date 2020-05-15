@@ -945,7 +945,7 @@ it may cause an avalance of notifcations if inappropriate SMART attributes are c
 This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
 :end
 
-:docker_repostiroties_help:
+:docker_repositories_help:
 Use this field to add template repositories.
 Docker templates are used to facilitate the creation and re-creation of Docker containers.  Please setup one per line.
 
