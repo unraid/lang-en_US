@@ -125,6 +125,7 @@ Your Trial key requires an internet connection=Your *Trial* key requires an inte
 
 ; Sysdevs
 A reboot is required to apply changes=
+ALERT=
 Bind selected to VFIO at Boot=
 Changes saved=
 Function Level Reset FLR supported=Function Level Reset (FLR) supported
