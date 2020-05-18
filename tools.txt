@@ -123,7 +123,7 @@ Your hardware profile was last submitted on=
 Your Trial key has expired=Your *Trial* key has expired
 Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
 
-; Sysdevs
+; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=
 ALERT=
 Bind selected to VFIO at Boot=
