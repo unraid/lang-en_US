@@ -136,7 +136,7 @@ Reboot to take effect=
 The below list doesnt not reflect the way IOMMU would naturally group devices=The below list doesn't not reflect the way IOMMU would naturally group devices
 This controller is bound to vfio, connected USB devices are not visible=
 This controller is bound to vfio, connected drives are not visible=
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the %sVM Manager%s page and set the **PCIe ACS override** setting to **Disabled**
+To see natural IOMMU groups for your hardware, go to the %sVM Manager%s page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the %sVM Manager%s page and set the **PCIe ACS override** setting to **Disabled**
 Your system has booted with the PCIe ACS Override setting enabled=
 
 :diagnostics_1_plug:
