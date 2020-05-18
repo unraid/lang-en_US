@@ -123,6 +123,14 @@ Your hardware profile was last submitted on=
 Your Trial key has expired=Your *Trial* key has expired
 Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
 
+; Sysdevs
+Bind selected to VFIO at Boot=
+Function Level Reset FLR supported=Function Level Reset (FLR) supported
+In use by Unraid=
+Kernel driver in use vfio-pci=Kernel driver in use: vfio-pci
+This controller is bound to vfio, connected USB devices are not visible=
+This controller is bound to vfio, connected drives are not visible=
+
 :diagnostics_1_plug:
 This utility is used for troubleshooting purposes. It will collect all of the system information and configuration files, and package these files in a single ZIP file which can be saved locally.
 Subsequently, this file can be included in your correspondence with Limetech or the Unraid forum.
