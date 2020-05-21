@@ -867,7 +867,7 @@ Note: You must reboot after selecting Auto for setting to take effect.
 :end
 
 :disk_tunable_md_num_stripes_help:
-This is the size of the *stripe pool* in number of *stripes*.  A *stripe* refers to a data structure that faclitiates parallel 4K read/write
+This is the size of the *stripe pool* in number of *stripes*.  A *stripe* refers to a data structure that facilitates parallel 4K read/write
 operations necessary for a parity-protected array.
 
 Note: if you set to blank and click Apply, the setting is restored to its default, and will take effect after reboot.
@@ -967,7 +967,7 @@ To resize an existing image file, specify the new size here. Next time the Docke
 :docker_vdisk_location_help:
 You must specify an image file for Docker. The system will automatically create this file when the Docker service is first started.
 
-The image file name must have the extension .img, e.g. If not the input is not accepted and marked red.
+The image file name must have the extension .img, If not the input is not accepted and marked red.
 
 It is recommended to create this image file outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
 :end
@@ -1079,7 +1079,7 @@ and, the first and last characters must be alphanumeric.
 :end
 
 :id_description_help:
-This is a text field that is seen next to a server when listed within Network or Network Neighborhood
+This is a text field that is seen next to a server when listed within Network or File Explorer
 (Windows), or Finder (macOS).
 :end
 
@@ -1263,7 +1263,7 @@ old LAN setup based on SMBv1.
 :end
 
 :smb_wsd_options_help:
-This is a command line otions string passed to the WSD daemon upon startup. Leave this field blank unless
+This is a command line options string passed to the WSD daemon upon startup. Leave this field blank unless
 instructed by support to put something here.
 :end
 
@@ -1310,7 +1310,7 @@ A value of 0 would be appropriate if you are enabling NFS but only plan to use i
 not user shares.
 
 A value of -1 would be appropriate if no other timeout seems to solve the "stale file handle" on
-your client.  Be aware that setting a value of -1 will cause the memory footprint to grow by approximatel
+your client.  Be aware that setting a value of -1 will cause the memory footprint to grow by approximately
 108 bytes per file/directory name cached.  Depending how much RAM is installed in your server and how many
 files/directories you access via NFS this may or may not lead to out-of-memory conditions.
 :end
@@ -1754,7 +1754,7 @@ If during a power failure, the remaining battery percentage (as reported by the 
 :end
 
 :apc_runtime_left_help:
-If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to *minutes*, apcupsd, will initiate a system shutdown.
+If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to this field, apcupsd, will initiate a system shutdown.
 :end
 
 :apc_battery_time_help:
