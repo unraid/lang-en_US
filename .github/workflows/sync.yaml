@@ -23,5 +23,9 @@ jobs:
 
     - name: Sync with other languages
       uses: unraid/translation-sync-action@master
+      env:
+        DRY_RUN: true
       with:
         languages: 'nl_NL,es_ES'
+        ssh-key-public: ${{ secrets.SSH_PUBLIC_KEY }}
+        ssh-key-private: ${{ secrets.SSH_PRIVATE_KEY }}
