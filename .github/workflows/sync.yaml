@@ -23,5 +23,3 @@ jobs:
 
     - name: Sync with other languages
       uses: unraid/translation-sync-action
-      with:
-        languages: 'nl_NL,es_ES'
