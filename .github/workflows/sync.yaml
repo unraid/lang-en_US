@@ -23,9 +23,6 @@ jobs:
 
     - name: Sync with other languages
       uses: unraid/translation-sync-action@master
-      # Once the secrets have been added remove the env
-      env:
-        DRY_RUN: true
       with:
         languages: 'nl_NL,es_ES'
         ssh-key-public: ${{ secrets.SSH_PUBLIC_KEY }}
