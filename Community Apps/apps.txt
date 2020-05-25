@@ -61,7 +61,7 @@ Uninstalling %s=
 
 ; Remove Private Application
 Remove Private Application=
-Are you sure you want to remove the private application %s by %s="Are you sure you want to remove the private application %1$s by %2$s?"
+Are you sure you want to remove the private application %s by %s=Are you sure you want to remove the private application %1$s by %2$s?
 Yes, remove it=
 Removing %s=
 
@@ -86,7 +86,7 @@ Install %s Selected Applications=
 ; Multi-install popup
 Yes, install them=
 Cookies not enabled  Plugins must be separately installed from docker applications=
-Are you sure you want to install %s docker and %s plugin applications="Are you sure you want to install %1$s docker and %2$s plugin application(s)?"
+Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)?
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=
 Install Application=
 Install Applications=
@@ -277,7 +277,7 @@ WebUI=
 Reinstall=
 Install=
 Project=
-Install Using The Templates Default Tag=Install Using The Template&#39;s Default Tag
+Install Using The Templates Default Tag=Install Using The Template's Default Tag
 Moderator Comments=Moderator Comments:
 Note not all authors keep up to date on change logs=
 Note not all maintainers keep up to date on change logs=
