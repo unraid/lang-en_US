@@ -73,7 +73,7 @@ Yes, install it=
 
 ; Multi-install popup
 Yes, install them=
-Cookies not enabled  Plugins must be separately installed from docker applications=
+Cookies not enabled Plugins must be separately installed from docker applications=
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=
 Updating Support Links=
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=
