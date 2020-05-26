@@ -39,8 +39,6 @@ Install Plugin Applications=
 ; Searches
 Search=
 Please enter search term=
-Search for %s=
-DockerHub Search for %s=
 Click Here To Get More Results From DockerHub=
 No Matching Applications Found On Docker Hub=
 No Matching Applications Found=
@@ -50,20 +48,15 @@ Install Plugin=
 
 ; Remove App from previously installed
 Delete Template=
-Are you sure you want to delete %s from the list of previously installed applications=
 Yes, delete it=
 
 ; Uninstall  popup
 Uninstall Application=
-Are you sure you want to uninstall %s=
 Yes uninstall it=
-Uninstalling %s=
 
 ; Remove Private Application
 Remove Private Application=
-Are you sure you want to remove the private application %s by %s=Are you sure you want to remove the private application %1$s by %2$s?
 Yes, remove it=
-Removing %s=
 
 ; App Pinning
 Click to pin this application=
@@ -76,29 +69,20 @@ Choose A Branch To Install=
 ; no apps selected
 Install Selected Applications=
 
-; one app selected
-Install %s Selected Application=
 Yes, install it=
-
-; more than 1 app selected
-Install %s Selected Applications=
 
 ; Multi-install popup
 Yes, install them=
-Cookies not enabled  Plugins must be separately installed from docker applications=
-Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)?
+Cookies not enabled Plugins must be separately installed from docker applications=
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=
-Install Application=
-Install Applications=
 Updating Support Links=
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=
 
 ; error messages
 No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=
-An error occurred.  Could not find any %s Apps=
+An error occurred Could not find any %s Apps=
 Download of appfeed failed=
 ; the %s here refers to a function being called
-Something really wrong went on during %s=
 Something really went wrong here=
 Post the ENTIRE contents of this message in the Community Applications Support Thread=
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=
@@ -218,7 +202,7 @@ GameServers=
 HomeAutomation=
 MediaApp=
 MediaAppBooks=MediaApp:Books
-MediaAppMusic=MediaApp:Music whatever
+MediaAppMusic=MediaApp:Music
 MediaAppPhotos=MediaApp:Photos
 MediaAppVideo=MediaApp:Video
 MediaAppOther=MediaApp:Other
