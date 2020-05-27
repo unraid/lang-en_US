@@ -1,4 +1,4 @@
-; Translation Credit.  Will appear in CA's credits    
+; Translation Credit.  Will appear in CA's credits
 translationCredit=<Author> (<Language>)
 Cancel=
 
@@ -335,7 +335,7 @@ This will immediately switch to the language=
 This will take you to the project page for an application=
 Clicking this icon will uninstall the application or delete it from the lists depending upon your current section=
 Clicking these icons will pin or unpin an application for later viewer from the Pinned Apps section=
-Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information= 
+Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information=
 Clicking this will display any warnings or extra comments about the application=
 On the previous apps section you can select multiple applications to install simultaneously=
 This is the recommended version to install by the application author themselves=
