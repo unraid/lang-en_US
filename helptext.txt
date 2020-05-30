@@ -505,7 +505,7 @@ Select the desired destinations and press **Write** to copy the settings to the 
 The share name can be up to 40 characters, and is case-sensitive with these restrictions:
 
 * cannot contain a double-quote character (") or the following characters: / \ * < > |
-* cannot be one of the reserved share names: flash, cache, cach2, .., disk1, disk2, ..
+* cannot be one of the reserved share names: flash, cache, cache2, .., disk1, disk2, ..
 
 We highly recommend to make your life easier and avoid special characters.
 :end
