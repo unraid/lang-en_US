@@ -233,7 +233,7 @@ and %s more=
 ; App Popup Related
 Donate To Author=
 Donate To Maintainer=
-Author=Author
+Author=
 Maintainer=
 DockerHub=
 Application Template=
