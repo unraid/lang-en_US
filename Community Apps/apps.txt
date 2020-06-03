@@ -101,7 +101,6 @@ Top New Installs=
 Trending Apps=
 All Apps=
 OTHER=
-Settings=
 Statistics=
 Credits=
 Support=
