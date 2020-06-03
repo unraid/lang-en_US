@@ -218,7 +218,6 @@ NetworkVOIP=Network:VOIP
 NetworkVPN=Network:VPN
 NetworkWeb=Network:Web
 NetworkOther=Network:Other
-Tools=
 ToolsSystem=Tools:System
 ToolsThemes=Tools:Themes
 ToolsUtilities=Tools:Utilities
