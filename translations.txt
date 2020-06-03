@@ -227,6 +227,7 @@ Please select one file only=
 Please summarize your suggestion here=
 Please try again later=
 Please wait=
+Plugins=
 Plus=
 Private=
 Pro=
