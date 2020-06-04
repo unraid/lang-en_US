@@ -323,7 +323,7 @@ Installed Version=
 ; Help Text
 This chooses how to sort the results=
 These icons respectively will Install or Edit an application=
-Clicking these icons will take you to an application's GUI or settings=
+Clicking these icons will take you to an applications GUI or settings=Clicking these icons will take you to an application's GUI or settings
 This will update an application=
 This will take you to the appropriate support thread for an application=
 This will immediately switch to the language=
