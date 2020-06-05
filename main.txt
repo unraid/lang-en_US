@@ -255,8 +255,8 @@ will bring the array on-line=
 will copy the parity information to the new parity disk=
 will create a file system in all Unmountable disks=
 will delete the encryption keyfile=
-will disable the missing disk and then bring the array on-line. Install a replacement disk as soon as possible=
-will expand the file system of the data disk if possible; then bring the array on-line and start Data-Rebuild=
+will disable the missing disk and then bring the array on-line Install a replacement disk as soon as possible=will disable the missing disk and then bring the array on-line. Install a replacement disk as soon as possible=
+will expand the file system of the data disk if possible then bring the array on-line and start Data-Rebuild=will expand the file system of the data disk; if possible then bring the array on-line and start Data-Rebuild
 will immediately clear all disk statistics=
 will immediately invoke the Mover=
 will immediately spin down all disks=
