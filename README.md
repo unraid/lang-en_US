@@ -115,6 +115,6 @@ Translators can use the Github system to see which changes are made and update t
 ### CREDITS
 
 Your efforts are much welcomed and to show our appreciation, your name and language are credited on the Credits page under Tools in the GUI.
-Do not forget to change "NAME" and "LANGUAGE" in the 'credits' file.
+Please let us know which credentials to use.
 
 Thank you very much!
