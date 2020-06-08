@@ -29,5 +29,3 @@ jobs:
         languages: 'nl_NL,es_ES'
         ssh_key_public: ${{ secrets.SSH_PUBLIC_KEY }}
         ssh_key_private: ${{ secrets.SSH_PRIVATE_KEY }}
-    - name: Run debugging ssh session
-      uses: mxschmitt/action-tmate@v2
