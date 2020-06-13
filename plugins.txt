@@ -7,6 +7,7 @@ DOWNGRADE TO VERSION=
 Enter URL of remote plugin file or local plugin file=
 ERROR=
 Install Plugin=
+Install=
 install=
 Installed Plugins=
 Installing Update=
