@@ -220,6 +220,7 @@ Too many attached devices Please consider upgrading your=
 Too many wrong andor missing disks=Too many wrong and/or missing disks
 Total size=
 Unassign ALL devices to delete this pool=Unassign **ALL** devices to delete this pool
+Unassigned Devices=
 unavailable no parity-check entries logged=unavailable (no parity-check entries logged)
 Unavailable - disk must be spun up=
 Unavailable=
