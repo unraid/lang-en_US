@@ -301,7 +301,7 @@ Next=
 Format=
 Back=
 ; Add '...' to the end of the translation
-Mounting=Montering...
+Mounting=
 ; Add '...' to the end of the translation
 Unmounting=
 Switch Display Mode=
