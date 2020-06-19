@@ -292,7 +292,9 @@ xfs_repair status=
 You may not add new disks and also remove existing disks=
 your server=
 
-; Unassigned Devices Plugin
+;
+; Unassigned Devices Plugin Begin
+;
 Success=
 Fail=
 Next=
@@ -344,3 +346,6 @@ Choose Share=
 Load Shares=
 Search for Shares or enter the Share name manually=
 This will remove the ISO file share for=
+;
+; Unassigned Devices Plugin End
+;
