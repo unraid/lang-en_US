@@ -320,6 +320,7 @@ Remove Language Pack=
 Update Language Pack=
 Installed Version=
 A note about translations=
+Click here to view the language changelog=
 
 ; Help Text
 This chooses how to sort the results=
