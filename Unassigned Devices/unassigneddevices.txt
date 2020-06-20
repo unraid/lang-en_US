@@ -33,7 +33,6 @@ Fail=
 file share for=
 File System Check=
 Format=
-; Add '...' to the end of the translation
 Formatting=
 Free=
 from disk=
@@ -46,7 +45,6 @@ Load Shares=
 Log=
 missing=
 Mount=
-; Add '...' to the end of the translation
 Mounting=
 NFS Shares=
 Next=
@@ -93,7 +91,6 @@ Turn on to Share Remote Mount with SMB andor NFS=
 Turn on to mark this Device as passed through to a VM or Docker=
 Unassigned Devices Settings=
 Unmount=
-; Add '...' to the end of the translation
 Unmounting=
 Used=
 Username=
