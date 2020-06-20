@@ -1,15 +1,15 @@
+Default Script=
 Edit Script=
-Remove Script File=
 Enter Script File Name=
-Turn on to run Script File in the background=
-Script content=
 Enter and Edit the Script that runs when a udev or operator event occurs=
 Load the default script=
-Default Script=
+Remove Script File=
 Run in background=
-Undo your changes since last Save=
 Save your changes and save to Script File=
 Save=
+Script content=
+Turn on to run Script File in the background=
+Undo your changes since last Save=
 ;
 ; Help
 ;
