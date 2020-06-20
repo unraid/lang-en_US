@@ -507,10 +507,3 @@ Your Lets Encrypt SSL Certificate has been renewed=
 Your local IP address=
 Your router or DNS server has DNS rebinding protection enabled, preventing=
 YYYY-MM-DD=
-;
-; Plugins begin
-;
-Unassigned Devices=
-;
-; Plugins end
-;
