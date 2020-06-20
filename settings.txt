@@ -451,6 +451,8 @@ Tunable poll_attributes=Tunable (poll_attributes)
 Tunable scheduler=Tunable (scheduler)
 Tunable support Hard Links=Tunable (support Hard Links)
 Turn off UPS after shutdown=
+; Keep the original plugin name in settings
+Unassigned Devices=Unassigned Devices
 Unraid OS update notification=
 Unraid OS update=
 Update DNS=
@@ -507,10 +509,3 @@ Your Lets Encrypt SSL Certificate has been renewed=
 Your local IP address=
 Your router or DNS server has DNS rebinding protection enabled, preventing=
 YYYY-MM-DD=
-;
-; Plugins begin
-;
-Unassigned Devices=
-;
-; Plugins end
-;
