@@ -33,7 +33,6 @@ Fail=
 file share for=
 File System Check=
 Format=
-; Add '...' to the end of the translation
 Formatting=
 Free=
 from disk=
@@ -46,7 +45,6 @@ Load Shares=
 Log=
 missing=
 Mount=
-; Add '...' to the end of the translation
 Mounting=
 NFS Shares=
 Next=
@@ -65,14 +63,12 @@ Remove Remote SMBNFS Share=
 Remove partition=
 Rescan Disks=
 Run with CORRECT flag=
-; Add '...' to the end of the translation
 Running=
 SMART Attributes on=
 SMB Shares=
 Search For Servers=
 Search for Servers, or enter the Server nameIP address manually=
 Search for Shares or enter the Share name manually=
-; Add '...' to the end of the translation
 Searching=
 Serial Number Mountpoint=
 share for=
@@ -95,7 +91,6 @@ Turn on to Share Remote Mount with SMB andor NFS=
 Turn on to mark this Device as passed through to a VM or Docker=
 Unassigned Devices Settings=
 Unmount=
-; Add '...' to the end of the translation
 Unmounting=
 Used=
 Username=
