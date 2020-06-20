@@ -109,6 +109,7 @@ You will need to enter credentials for Windows 10 shares just to list them=
 >
 > Hover your mouse over an any active area on the UD page and a tool tip will show you what clicking that area does.
 > You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD.
+>
 > Any devices with the auto mount switch on will be mounted when the array is started.
 > All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
 >
