@@ -192,7 +192,7 @@ Utilities=
 Private Apps=
 Uncategorized=
 
-; Categories displayed within a popup or on the card.  Where an extry exists after the "=" it is not translated, but rather how it should look
+; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
 GameServers=
 HomeAutomation=
 MediaApp=
