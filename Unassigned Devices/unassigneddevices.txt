@@ -66,6 +66,7 @@ Run with CORRECT flag=
 Running=
 SMART Attributes on=
 SMB Shares=
+Script=
 Search For Servers=
 Search for Servers, or enter the Server nameIP address manually=
 Search for Shares or enter the Share name manually=
