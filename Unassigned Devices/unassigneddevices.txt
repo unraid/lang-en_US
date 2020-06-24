@@ -51,6 +51,7 @@ Next=
 No Remote SMBNFS or ISO File Shares configured=
 No Unassigned Disks available=
 Note=
+Open=
 Partition and Format Disk=
 Pass Thru=
 Password=
