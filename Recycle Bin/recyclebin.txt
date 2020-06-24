@@ -1,0 +1,104 @@
+Recycle Bin=
+Deleted Files=
+Stop the Recycle Bin=
+Restart the Recycle Bin=
+Start the Recycle Bin=
+Recycle Bin Total Size=
+Remove Aged Files=
+Remove aged files from the Recycle Bin=
+Empty All Trash=
+Remove all files from the Recycle Bin=
+Refresh the Recycle Bin page=
+Enable Recycle Bin for Deleted Files=
+Update Recycle Bin Size in Background=
+Enable on Unassigned Devices for Deleted Files=
+Recycle Bin parameters=
+Excluded Files=
+Excluded Shares=
+Age Days=
+Remove Aged Files on Schedule=
+Remove Aged Files Notification=
+Log Deleted Files=
+Empty=
+Array is stopped=
+SMB Share=
+Share Type=
+Trash Size=
+Empty Trash=
+Array=
+Browse the Share Recycle Bin=
+Empty the=
+Recycle Bin=
+Deleted Files Log=
+Recycle Bin Log=
+The deleted files will show in the log as unlinked files=
+Click on the Clear button to clear the log=
+Clear the log=
+;
+; Help
+;
+Note=
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
+These actions apply to all shares=
+Click on=
+Remove Aged Files=
+to remove deleted files older than the Age Days setting=
+Empty All Trash=
+to remove all deleted files=
+
+:recycle_bin_enable_plug:
+> Set to 'Yes' to enable the Recycle Bin functionality for deleted files when the server is started.
+:end
+
+:recycle_bin_background_plug:
+> Set to 'Yes' to enable the Recycle Bin Size to be updated in the background every minute.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to a minute to refresh when this is enabled.
+:end
+
+:recycle_bin_ud_plug:
+> Set to 'Yes' to enable the Recycle Bin deleted file functionality on Unassigned Devices drive shares when the Unassigned Devices plugin is installed.  SMB/NFS mounts and iso mounts are excluded from the Recycle Bin functionality on this server.  Enable the Recycle Bin on the remote server where the remote share originates if it is an Unraid server.
+:end
+
+:recycle_bin_parameters_plug:
+> Additional parameters for Recycle Bin.  The following are some options you can set to control the file structure of the deleted files.
+> Enter the parameters in a list with no spaces or commas between them.
+> The order of the parameters will affect the file structure in the Recycle Bin.
+> Leaving this field blank will put all deleted files in the Recycle Bin without any path information.
+>
+> Hint: Use the '/' for more control of the directory structure in the Recycle Bin.
+> For example '%m/%S' will organize the deleted files by the machine name that deleted the file and then the share name structure.
+>
+> + '%S' Samba share name (which in Unraid equals the share name), eg. Storage
+> + '%P' User share full path, eg /mnt/user/Storage, /mnt/disk1, /mnt/disks/unassigned_device, /flash
+> + '%u' Username of the current service, if any
+> + '%m' Machine name of the user who deleted the file
+:end
+
+:recycle_bin_excluded_files_plug:
+> List of files to exclude from the Recycle Bin separated by commas.  Wild cards '*' and '?' are allowed.
+:end
+
+:recycle_bin_excluded_shares_plug:
+> List of shares to exclude from the Recycle Bin separated by commas.  This list can include Unassigned Devices shares.  The share name is case sensitive.
+>
+> The excluded share can include part of a share name and will exclude all shares with the excluded share text in the actual share name.  If you want an exact match, use the full share name.
+>
+> For example: 'Squidbait' (without quotes) will exclude all shares created by the Ransom Ware plugin.
+>
+> Note: Excluding a share only excludes it from deleted files going to the .Recycle.Bin folder on the share.  Files in the existing .Recycle.Bin folder will still show in the total size and on the 'Shares' tab.
+:end
+
+:recycle_bin_age_day_plug:
+> Any files older than the set number of days are removed on the schedule or when the 'Remove Aged Files' button is clicked.
+:end
+
+:recycle_bin_remove_age_files_plug:
+> Set the desired schedule to remove aged files.  Hourly will be on the hour every hour.  Daily will be every day at 3 AM.  Weekly will be every week at 3 AM on Sunday.
+:end
+
+:recycle_bin_age_files_notification_plug:
+> When set to "Yes" a notification will be sent when the scheduled remove files task runs.
+:end
+
+:recycle_bin_log_deleted_files_plug:
+> When set to "Yes" deleted files will be logged.
+:end

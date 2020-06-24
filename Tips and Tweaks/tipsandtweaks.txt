@@ -1,0 +1,175 @@
+Tips=
+Tweaks=
+The Tips below are suggestions, workarounds for known problems, and potential fixes=
+It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=
+Support for older versions of Unraid is being phased out=
+Many plugins are no longer compatible with older Unraid versons=
+All versions=
+Install the Fix Common Problems plugin and resolve any Unraid configuration problems=
+Use the Update Assistant that is part of the Fix Common Problems plugin=
+This will identify potential problems to be solved before you upgrade the Unraid OS=
+Check the=
+Tips and Tweaks wiki=
+for additional ideas on improving your Unraid performance and solving problems=
+Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=
+post=
+Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=
+If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
+Read this=
+for information on the issue=
+It is recommended to use the pstate driver on Intel processors if you want the most performance=
+Note=
+You can check CPU frequencies on the command line with=
+The dashboard shows CPU loading and not CPU frequency=
+If you configure VLANs on Unraid, you should make Unraid the Master Browser=
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=
+Some people are reporting OOM out of memory errors=
+This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=
+If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=
+There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=
+Go to Settings->Syslog Server and enable the Syslog Server=
+Put the IP address of your server in the Remote syslog server field=
+This will log all your server log enries to the Syslog Server and save the log to an array share=
+After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=
+The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=
+Correct any problems that are identified before doing any tweaking=
+You may actually cause more problems than you solve if there are problems with your Unraid configuration=
+Make one change at a time and verify if it improves your situation=
+Make changes slowly=
+Making changes here can briefly interrupt your network operation=
+Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=
+Click on Help for more information=
+Disable NIC Flow Control=
+Disable NIC Offload=
+Ethernet NIC Rx Buffer=
+Ethernet NIC Tx Buffer=
+Ethernet NICS=
+Dont change the Disk Cache settings until you read and understand this=
+Guide=
+Disk Cache=
+Max Watches=
+CPU Scaling Governor=
+Enable Intel TurboAMD Performance Boost=
+Time to set=
+Disable FTP Server=
+Enable syslog Archiving=
+Number of syslogs to Archive=
+Processes to kill before Array is Stopped=
+Current NIC settings=
+Current Disk Cache Settings=
+Current Inotify Settings=
+CPU Frequency Scaling=
+Flow Control=
+NIC Offload=
+NIC Rx Buffer=
+NIC Tx Buffer=
+The feature is not available on any of your NICs=
+Current Disk Cache Settings=
+Current Inotify Settings=
+Driver=
+Governor=
+;
+; Help
+;
+:tips_tweaks_general_plug:
+> Some General Recommendations:
+>
+> + Use of a static IP address can help in certain cases.  NFS shares are referenced by IP address.  Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
+> + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
+> + Don't set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
+> + A value of vm.dirty_background_ratio over 1/2 of vm.dirty_ratio is not recommended unless using single digits for both values.
+:end
+
+:tips_tweaks_nic_flow_control_plug:
+> Set to 'Yes' to disable NIC Flow Control.  NIC Flow Control was originally implemented to help in
+> networks with mixed speed devices.  It doesn't seem to be as necessary on today's networks.  If you
+> have a managed switch, flow control can generally be turned on and off on the switch.  If you have
+> a consumer grade switch, you won't have that level of control.  Flow Control has been known to create
+> network issues in certain circumstances.  It is recommended to disable Flow Control if you experience network issues.
+:end
+
+:tips_tweaks_nic_offload_plug:
+> Set to 'Yes' to disable NIC offloads.  Offloads were developed to offload some network processing
+> to the NIC and off the main CPU and deal with large packets.  This was intended to save some CPU processing
+> load and increase network throughput.  TSO offload has been known to cause network issues in certain circumstances.
+> It is recommended to disable NIC Offloads if you experience network issues.
+:end
+
+:tips_tweaks_rx_buffer_plug:
+> Select the size of the NIC Rx ring buffer.  Some NICs have a limit on the size of the Rx ring buffer.  The default value of 256 is recommended.
+:end
+
+:tips_tweaks_tx_buffer_plug:
+> Select the size of the NIC Tx ring buffer.  Some NICs have a limit on the size of the Tx ring buffer.  The default value of 256 is recommended.
+:end
+
+:tips_tweaks_nics_plug:
+> List the NICs to apply the above settings separated by commas.  If you have multiple NICs that are bonded, be sure to include all of them.  Flow Control, TSO, and NIC buffer settings will
+> be applied to these NICs.
+:end
+
+:tips_tweaks_dirty_background_plug:
+> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
+> If you have large amounts of RAM, smaller is better.
+> Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
+>
+> Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
+> The default setting of 10% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 2%.  If you experience OOM errors, it is recommended you set this to 1%.
+:end
+
+:tips_tweaks_dirty_ratio_plug:
+> Set the 'vm.dirty_ratio' as a percentage of total RAM memory.
+> Setting this too high may cause Linux to terminate some processes to gain more memory.  The default setting of 20% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 3%.  If you experience OOM errors, it is recommended you set this to 2%.
+:end
+
+:tips_tweaks_max_watches_plug:
+> If inotify fails to start because there are not enough user watches, increase the max_user_watches.
+>
+> The default is 524288.
+:end
+
+:tips_tweaks_cpu_governor_plug:
+> Select the CPU Scaling Governor you want to use.
+>
+> + "Power Save" - default for the Intel Pstate driver.  Scales CPU frequency based on load.
+> + "On Demand" - default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
+> + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
+> + "Performance" - set all CPUs at full frequency regardless of load.  This can have a positive influence on performance and latency.
+> + "Scheduled" - At start time set governor to "Performance".  At stop time set governor to "Powersave" or "On Demand" depending on driver used.
+>
+> You can now set the CPU governor with the rc.tweaks script.  Use the command:
+> /usr/local/sbin/rc.tweaks set_governor 'governor'
+> The 'governor' choices are: 'ondemand', 'performance', 'powersave', and 'conservative'.
+:end
+
+:tips_tweak_turbo_plug:
+> Set to 'Yes' to enable the Intel Turbo or AMD Performance Boost Mode.
+:end
+
+:tips_tweaks_performance_plug:
+> Enter the time you want to set the governor to "Performance" in 24 hour format hh:mm.
+:end
+
+:tips_tweaks_cpu_state_plug:
+> Enter the time you want to set the governor to "Power Save" for Intel Pstate or "On Demand" in 24 hour format hh:mm.
+:end
+
+:tips_tweaks_ftp_plug:
+> Set to 'Yes' to disable the FTP Server.  You will have to reboot to enable it again once you select 'No'.
+:end
+
+:tips_tweaks_syslog_archive_plug:
+> Set to 'Yes' to enable the capture and archive of syslogs and run a diagnostics on shutdown.  Logs and diagnostics are saved to /boot/logs/.
+:end
+
+:tips_tweaks_number_syslogs_plug:
+> Set the number of syslogs to save in the archive.
+> Set zero to save only last syslog.  Set to -1 to save all logs.  Default setting is 10.
+:end
+
+:tips_tweaks_kill_processes_plug:
+> Enter the names of processes to kill before stopping the array, separated by commas.  For example, 'ssh' and 'bash'.  These processes can keep the array disks from unmounting causing Unraid to hang when the array is being stopped.
+>
+> Note: Be careful with the processes you kill here.  You could lose data!
+:end
+
