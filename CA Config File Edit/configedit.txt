@@ -1,0 +1,12 @@
+Select File=
+Error reading file=
+No Backup File Found=
+Select a file to edit=
+note editing a binary file could have unintended consequences=
+No file selected=
+Backup File=
+Editing=
+Generally, it is not recommended to change the format=
+Credits=
+No Backup File Found=
+File Format=
