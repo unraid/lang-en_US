@@ -31,20 +31,20 @@ Empty the=
 Recycle Bin=
 Deleted Files Log=
 Recycle Bin Log=
-The deleted files will show in the log as unlinked files=
-Click on the Clear button to clear the log=
-Clear the log=
 ;
 ; Help
 ;
-Note=
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
-These actions apply to all shares=
-Click on=
-Remove Aged Files=
-to remove deleted files older than the Age Days setting=
-Empty All Trash=
-to remove all deleted files=
+:recycle_bin_shares_plug:
+> Recycle Bin Shares:
+>
+> The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
+> Click on the <strong>Browse</strong> icon to browse the deleted files in that share.
+> Click on the <strong>Empty</strong> button to remove the deleted files.
+>
+> Unassigned Devices shares will only show if the Recycle Bin is enabled for Unassigned Devices and there are Unassigned Devices that are mounted and shared and have Recycle Bin contents.
+>
+> Click on the 'SMB Share', 'Share Type', or 'Trash Size' columns of the table header and the contents will be sorted.  The 'Trash Size' is an alpha numeric and not a numeric sort.
+:end
 
 :recycle_bin_enable_plug:
 > Set to 'Yes' to enable the Recycle Bin functionality for deleted files when the server is started.
@@ -101,4 +101,11 @@ to remove all deleted files=
 
 :recycle_bin_log_deleted_files_plug:
 > When set to "Yes" deleted files will be logged.
+:end
+
+:recycle_bin_show_log_plug:
+> Recycle Bin Log:
+>
+> The deleted files will show in the log as unlinked files.
+> Click on the 'Clear' button to clear the log.
 :end

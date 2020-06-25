@@ -1,0 +1,35 @@
+File Activity=
+File Activity Logging=
+Start File Activity=
+Stop File Activity Logging=
+Clear the File Activity log=
+Refresh log=
+Enable File Activity Logging=
+Enable for Unassigned Devices=
+Enable for Cache=
+;
+; Help
+;
+:file_activity_loggging_plug:
+> File Activity Logging:
+>
+> File read/write/modify activity is monitored and logged on the array using inotify and is displayed by disk, UD disks, and cache.
+> You need to start the File Activity in order to log the disk activity.
+> File Activity is intended to be running for short periods so you can check disk activity.
+> A server with a lot of file activity can fill the log space.
+> The 'appdata' directory is excluded.
+>
+> Note: File Activity logging is stopped if the array is stopped.
+:end
+
+:file_activity_enable_logging_plug:
+> Set to 'Yes' to enable File Activity logging when the server is started.
+:end
+
+:file_activity_enable_ud_plug:
+> Set to 'Yes' to enable File Activity logging for Unassigned Devices if the Unassigned Devices plugin is installed.
+:end
+
+:file_activity_eenable_cache_plug:
+> Set to 'Yes' to enable File Activity logging for the Cache Disk(s).
+:end
