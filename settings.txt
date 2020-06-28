@@ -11,6 +11,7 @@ AD initial group=
 AD initial owner=
 AD join status=
 AD short domain name=
+Add Route=
 Add VLAN=
 Agent function=
 Agents=
