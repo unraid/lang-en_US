@@ -332,6 +332,7 @@ Online=
 Only alphanumeric characters=
 Only PNG images are allowed=
 Oops=
+optional metric lowest is preferred=optional metric (lowest is preferred)
 optional metric lowest is preferred, 0 is no default gateway=optional metric (lowest is preferred, 0 is no default gateway)
 Page view=
 Parity Check=
