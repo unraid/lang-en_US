@@ -107,7 +107,7 @@ You will need to enter credentials for Windows 10 shares just to list them=
 :unassgned_devices_switches_plug:
 > Turn off the **Complete** switch to change the web page to just show hardware devices. Trun on the **Simple** switch to switch back to the full web display.
 >
-> Turn off the **All** switch to show all device partitions. Turn on **None** switch to switch back to not show partitions.
+> Turn on the **None** switch to show all device partitions. Turn off **All** switch to switch back to not show partitions.
 >
 > Click on the <i class="fa fa-refresh"></i> icon to rescan disks.
 >
