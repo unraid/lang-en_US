@@ -90,7 +90,7 @@ In the GUI go to: Tools -> webGUI -> Language (switch to Developer view)
 - If the language name is recognized, it will be automatically selected, otherwise chose the name of the language from the dropdown menu to install.
 - Click on "Upload" will add your translations to the GUI under the selected language name
 
-NOTE: If your language is not available from the dropdown menu, please make a request on the [Unraid forum](https://forums.unraid.net)
+NOTE: If your language is not available from the dropdown menu, please make a request on the [Unraid forum](https://forums.unraid.net/forum/75-multi-language-section/)
 
 Now your language is available for local testing!
 
@@ -100,7 +100,7 @@ In the GUI go to: Settings -> Display Settings -> Language
 
 ### GITHUB
 
-A language repository will be made available at [Github](https://github.com/limetech), where translators can create Pull Requests (PR) and submit their work.
+A language repository will be made available at [Github](https://github.com/unraid), where translators can create Pull Requests (PR) and submit their work.
 
 Once you are satisfied with your results, use Github (an account is required) to fork the respective language repository and create a PR with your modifications.
 
