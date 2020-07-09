@@ -1,0 +1,4 @@
+Language=
+Notice %s - Version update %s=
+A new version of %s is available=
+Plugin=
