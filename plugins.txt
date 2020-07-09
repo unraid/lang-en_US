@@ -27,3 +27,6 @@ Uninstall=
 Update All Plugins=
 Upgrade=
 View Release Notes=
+Language=
+Notice %s - Version update %s=
+A new version of %s is available=
