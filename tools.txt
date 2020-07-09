@@ -55,6 +55,7 @@ Missing Language=
 Network Settings=
 New Config=
 New Permissions=
+No notifications present=
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=No personal information such as user names, passwords, or any other file contents is included in the hardware profile
 normal=
 Only ZIP files are allowed=
