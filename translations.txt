@@ -107,6 +107,7 @@ Flash GUID=
 Flash Product=
 Flash Vendor=
 FOLDER=
+folder=
 Force lower=
 Format=
 Formatting devices=
