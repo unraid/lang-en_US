@@ -958,6 +958,12 @@ Before you can start the Docker service for the first time, please specify an im
 Once started, Docker will always automatically start after the array has been started.
 :end
 
+:docker_vdisk_type_help:
+Select where to keep the Docker persistent state.
+
+This can be an image file with a specific size or a dedicated folder.
+:end
+
 :docker_vdisk_size_help:
 If the system needs to create a new docker image file, this is the default size to use specified in GB.
 
@@ -970,6 +976,12 @@ You must specify an image file for Docker. The system will automatically create 
 The image file name must have the extension .img, If not the input is not accepted and marked red.
 
 It is recommended to create this image file outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+:end
+
+:docker_vdisk_directory_help:
+You must specify a folder for Docker. The system will automatically create this folder when the Docker service is first started.
+
+It is recommended to create this folder under a share which resides on the Cache pool (setting: cache=Only). For best performance SSD devices are preferred.
 :end
 
 :docker_appdata_location_help:
