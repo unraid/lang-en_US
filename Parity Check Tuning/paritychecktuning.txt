@@ -1,0 +1,152 @@
+; Translation text for the Parity Check Tuning plugin
+
+; Page file prompts
+Run scheduled Parity Checks in increments=Run scheduled Parity Checks in increments TR
+You require a parity disk present to be able to use these options=
+Restart Parity Checks when array starts=
+NOT IMPLEMENTED=
+Increment frequency=
+Run scheduled Parity Checks in increments=
+Increment resume time=
+Increment pause time=
+Use increments for unscheduled Parity Checks=
+Use increments for Parity-SyncData Rebuild operations=Use increments for Parity-Sync/Data Rebuild operations
+Use increments for disk Clear operations=
+Send notifications for Pause or Resume of increments=
+Pause and Resume array operations if disks overheat=
+Pause an array operation at=
+below warning disk temperature=
+Resume an array operation at=
+Send notifications for temperature related Pause or Resume=
+Parity Check Tuning debug logging=
+Requires Unraid 67 or later=Requires Unraid 6.7 or late
+ParityRead-Check History=Parity/Read-Check History=
+Click to show parity-check history=
+unknown action %s=unknown action: %s
+Elapsed Time=
+Increments=
+
+; Notifications
+completed=
+Pause=
+Paused=
+Resume=
+Resumed=
+Drives cooled down=
+Scheduled pause=
+array stopping so progress will be lost=
+Correcting Parity Check=
+NonCorrecting Parity Check=Non-Correcting Parity Check
+
+; Syslog messages (with debug logging disabled)
+ERROR=
+Array not started so no action taken=
+as drives now cooled down=
+Following drives overheated=
+Only able to start a Read-Check due to number of disabled drives=
+%s Cancelled=
+Unrecognised option %s=ERROR: Unrecognised option %s
+
+; Syslog messages (with debug logging enabled)
+; (probably not worth translating these as they are mainly of use to the plugin developer)
+
+No action specified=
+No cron events for this plugin are needed=
+created cron entries for running increments=
+created cron entry for monitoring disk temperatures=
+Array operation paused but not for temperature related reason=
+detected that mdcmd had been called from %s with command %s=
+%s appears to be a regular scheduled check=
+to resume %s=
+to pause %s=
+option not currently recognised=
+No array operation currently in progress=
+Parity check appears to be paused=
+Unscheduled array operation in progress=
+Temperature monitoring switched off=
+drives=
+hot=
+warm=
+cool=
+with all drives below temperature threshold for a Pause=
+already running=
+Resume request=
+Pause request=
+Pause of=
+Detected that array has not yet been started=
+Detected that array has just been started=
+but no parity check was in progress when array stopped=
+so no further action to take=
+Loading progress file %s=
+Parity Check was in progress when array stopped at %s=
+but no action currently taken on started event=
+until Limetech provide a way of starting a parity check at a defined offset=
+Array stopping=
+no check in progress so no state saved=
+Removed existing state file %s=
+Array stopping while %s was in progress %s=
+using scheduled mode of %s=
+Not allowed as %s already running=
+Cancel request=
+%s cancel request sent %s=
+
+; Help text on settings page
+; These could perhaps be left in English to keep tranrlati/n task easier)
+
+:parity_tune_explain_plug:
+> This main reason for this plugin is to allow you to limit parity checks to running at times that will not inconvenience you.<br>Setting this option to **Yes** specifies that parity checks should be run in increments spread over several days.<br><br>If you have set this to **No** then you get the default system behavior of parity checks running without a break to completion unless you manually stop/pause/cancel them them.<br><br>As an example of what this plugin can do assume:<br>- You have a parity check you have scheduled to start on the first of every month at midnight<br>- Your past experience has shown that if the parity check runs uninterrupted it takes 30 hours to complete.<br>- You set this plugin to use 3 hour increments starting at midnight and finishing at 3.00 A.M.<br>- The parity check will now actually take 10 days elapsed time (10 x 3 = 30) so the parity check will complete on 10th of the month.<br>- You have scheduled these increments to run starting at midnight and finishing at 3:00 A.M. when you know the system is not being used.<br>- You are not worried about this increased elapsed time and will welcome the increased system responsiveness during normal use.<br>- The rest of the month this plugin will do nothing as there is no active parity check in progress when the start time for an incremenet comes around.<br><br>**CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning
+:end
+
+:parity_tune_frequency_plug:
+> The frequency at which parity check increments should be run.<br><br>In normal operation it is expected that the <strong>Daily</strong> option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up <strong>Custom</strong> schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility
+:end
+
+:parity_tune_restart_plug:
+> This is a place holder for a feature that cannot be implemented due to the lack of an ability to start a parity check at a defined offset, but the feature would be highly desirable.   The plugin has been designed so that if/when Limetech provides a capability that allows this plugin to start a parity check at a defined offset then the feature can easily be implemented.<br><br>The idea behind the feature is that if a parity check was active (either running or paused) when the array is stopped then it would be restarted from the point it had reached when the array is restarted.<br><br>There would be some limitations around this<br>- The array must have been closed down tidily.<br>The user must not have made any changes to the array configuration
+:end
+
+:parity_tune_resume_plug:
+> The time at which a paused parity check should be resumed.<br>If no parity check is currently paused when this time comes around then no action will be taken.<br><br>Typically this time would be set to be the start of an idle period overnight.   An appropriate value might be to use the same time that you have specified for a scheduled parity check to start.<br><br>If the increment period has been set to <strong>Custom</strong> then the hours/minites fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format
+:end
+
+:parity_tune_pause_plug:
+> The time at which a running parity check should be paused. Typically this would be set to be a time when you want other activity to not be affected by a running parity check.<br>If no parity check is actively running when this time comes around then no action will be.<br><br>Normally you want to make sure that this time is set to be after the time that you schedule regular parity checks to run.  The first increment will then be from when the regular parity check is scheduled to start up to the time you have specified for the increment to end.<br><br>If the increment period has been set to <strong>Custom</strong> then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.<br><br>You also want to make sure that the time allocated to running increments is sufficient to expect the parity check to run to completion before the next check is scheduled to start.   Since most people only schedule parity checks to run infrequently (e.g. Monthly or Quarterly) then this is unlikely to be an issue but it is something to take into consideration
+:end
+
+:parity_tune_unscheduled_plug:
+> Should parity checks that are unscheduled also be run in increments?<br><br>The most likely scenario for this to occur is the case where an unclean shutdown has occurred and the system has therefore started an automatic parity check when the array is started.  Another possibility is that you decided to manually start the parity check for some reason.<br><br>In both these case it is quite likely that you will want such a check to run to completion without interruption and if so leave this option set to <strong>No</strong>.  If you instead set it to <strong>Yes</strong> then the increment schedule will be applied.  After an unclean shutdown any parity errors are most likely to occur near the beginning of the disks so setting this option to <strong>Yes</strong> is normally reasonably safe as long as you do not mind that the check is likely to take much longer to complete.<br><br><strong>TIP:</strong> With this option set to <strong>Yes</strong> then if you manually start a Parity Check from the Main page and then manually Pause the check, this will result in the check being run in increments between the scheduled times until the Parity Check complete
+:end
+
+:parity_tune_allops_plug:
+> Should operations that involve building new parity or rebuilding a failed disk be run using increments?<br><br>This type of check will only be run if there is potentially some issue with your array and action is being taken to get it back into a protected state.<br><br><strong>IMPORTANT</strong>: Until this operation completes your array is not fully protected so it is assumed that most people will want this option left at <strong>No</strong>.   Do not select <strong>Yes</strong> unless you are absolutely certain that is what you want
+:end
+
+:parity_tune_clear_plug:
+> Should disk Clear operations be run using increments.<br><br>A disk Clear operation occurs when you add a new drive (that has not been pre-cleared (using the Pre-Clear plugin) to an array that is parity protected.  The Clear process writes zeroes to every sector on the new disk so that it can be added to the array without affecting the existing parity. Until the Clear operation has completed you are not able to format the disk in Unraid and start using it for storing data. <br></br>Since until the Clear operation completes the disk will not be available for use it is likely that most people will want this option left at <strong>No</strong>.   In addition a Clear operation tends not to put much of a load on the system so is less likely to impact performance in normal daily use
+:end
+
+:parity_tune_notify_plug:
+> Setting this option to <strong>Yes</strong> means that you will be sent a notification every time the plugin Pauses or Resumes an array operation.<br>If you would rather not get such notifications then leave this option set to <strong>No</strong>.<br>The notification is sent as a <strong>Notice</strong> category message to the targets specified under <a href="Settings/Notifications">Settings->Notification Settings
+:end
+
+:parity_tune_hot_plug:
+> Pause an array operation(Parity Check, Parity-Sync/Disk Rebuild, disk Clear) if the disk temperatures exceeds the limits you have set.<br><br>The temperatures are checked against the thresholds set for the Warning disk threshold levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (set via Settings->Display Settings) will be used.<br><br>A much better solution is to improve the cooling in your case so that the disks never overheat.   In practise this may not always prove practical.<br><br>If the array operation was part of running an increment then it will not be resumed outside the time allotted for the increment.   If the array operation was initiated for any other reason then the Pause/Resume behavior on temperature is always active
+:end
+
+:parity_tune_warn_plug:
+> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered.<br>You normally want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature warning threshold has been reached for a disk.<br><br>If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.<br><br>If there is no active array operation then no action will be taken even if disk temperatures exceed the specified threshold.<br><br> If there is no running array operation then no action will be taken
+:end
+
+:parity_tune_low_plug:
+> This value indicates how much below the warning the temperature threshold of a drive must reach before a **resume** of an array operation is issued.<br>You need to get a good balance between array operations being resumed too soon (and thus quickly reaching the level to initiate another pause) and wasting a lot of time.<br><br>If a disk ever gets spun down the temperature is not readily available so it will be assumed that this criteria has been met<br><br>If there is no paused array operation then no action will be taken
+:end
+
+:parity_tune_temp_notify_plug:
+> Setting this option to <strong>Yes</strong> means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to <strong>No</strong>.    The notifcation is sent as a <strong>Notice</strong> category message to the targets specified under <a href="Settings/Notifications">Settings->Notification Settings
+:end
+
+:parity_tune_debug_plug:
+> Write more verbose entries to the syslog file to help with debugging any problems using this plugin might encounter.<br><br>Messages written to the syslog by this plugin are identified by the fact that they are shown as coming from <strong>Parity Check Tuning</strong>.   With the <strong>Disabled</strong> option set these will only be a small number of messages indicating that this plugin has taken some action.<br><br>Setting this option to <strong>Enabled</strong> will result in additional entries being written to the syslog that give more information on what is happening when this plugin is running. They show how some of the internal operation of the plugin is functioning. These additional entries are identified by the fact that  they will have the word <strong>DEBUG</strong> added to the start of messages.  Some users (particularly those who have not used this plugin before) may like to use it to see more detail on how this plugin operates, but it is not expected that this option will be left enabled in normal running<br><br>Feedback is welcome as to whether it is worth introducing an intermediate option that outputs information type messages on the plugins activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running
+:end
+
+
