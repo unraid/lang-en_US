@@ -425,6 +425,10 @@ Click the **Apply** button to commit the current edits.  Click **Reset** to
 undo any changes you make (before Saving). Click **Done** to exit this page.
 :end
 
+:info_share_assignment_help:
+The selected pool is available for user shares.
+:end
+
 :info_free_space_help:
 This defines a "floor" for the amount of free space remaining in the volume.
 If the free space becomes less than this value, then new files written via user shares will fail with "not enough space" error.
