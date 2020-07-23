@@ -67,6 +67,7 @@ Do not use user share names=
 Download SMART report=
 Dual parity valid requires ALL disks in their original slots=*Dual parity* valid requires **ALL** disks in their original slots
 Elapsed time=
+Enable user share assignment=
 encrypted=
 Encryption input=
 Encryption status=
