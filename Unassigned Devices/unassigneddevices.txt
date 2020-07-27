@@ -37,7 +37,6 @@ Format=
 Formatting=
 Free=
 from disk=
-Hidden=
 Historical Devices=
 ISO File Shares=
 Identification=
