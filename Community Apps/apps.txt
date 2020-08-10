@@ -321,6 +321,7 @@ Update Language Pack=
 Installed Version=
 A note about translations=
 Click here to view the language changelog=
+View Missing Translations=
 
 ; Help Text
 This chooses how to sort the results=
