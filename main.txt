@@ -214,6 +214,7 @@ The replacement disk must be as big or bigger than the original=
 This is typically done when a new disk is added to the array to get it ready for files to be written to it=
 This unRAID Server OS release has been withdrawn and may no longer be used. Please %s update your server=
 This will ERASE ALL device content=
+This will ERASE content of ALL devices in the pool=
 This will reboot the system=
 This will shutdown the system=
 This will stop the array=
