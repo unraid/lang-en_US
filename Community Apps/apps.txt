@@ -226,6 +226,8 @@ OtherUncategorized=Other:Uncategorized
 and %s more=
 
 ; App Popup Related
+Categories=
+Repository=
 Donate To Author=
 Donate To Maintainer=
 Author=
