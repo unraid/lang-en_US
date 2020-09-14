@@ -87,6 +87,9 @@ Unknown error happened Please post a screenshot in the support thread of the Sta
 Something really wrong happened Reloading the Apps tab will probably fix the problem=
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=
 You have been logged out=
+Fatal Flash Drive Error=
+This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=
+
 
 ; CA Sections Keep the length reasonable
 MENU=
