@@ -11,4 +11,6 @@ This setting allows CA to periodically scan your system and alert you to the pre
 1 Known malware and security vulnerabilities within applications=
 2 Critical security vulnerabilities within Unraid OS=
 3 Any installed applications which may seriously hinder the operation of your server=
+Save CA debugging information=
+Only enable this when advised to from the author of Community Applications=
 Support Thread=
