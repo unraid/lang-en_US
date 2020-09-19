@@ -109,6 +109,7 @@ Credits=
 Support=
 VERSION=
 Change Log=
+Debugging=
 
 ; Credits
 Development=
