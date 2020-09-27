@@ -962,6 +962,10 @@ Before you can start the Docker service for the first time, please specify an im
 Once started, Docker will always automatically start after the array has been started.
 :end
 
+:docker_timeout_help:
+The time in seconds to allow a container to gracefully stop before forcing it to stop
+:end
+
 :docker_vdisk_type_help:
 Select where to keep the Docker persistent state.
 
