@@ -1992,7 +1992,7 @@ To delete a User-defined template, select it from the list above and click the r
 :end
 
 :docker_client_name_help:
-Give the container a name or leave it as default.
+Give the container a name or leave it as default.  Two characters minimum.  First character must be a-z A-Z 0-9  Remaining characters a-z A-Z 0-9 . - _
 :end
 
 :docker_client_overview_help:
