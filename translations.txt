@@ -420,7 +420,6 @@ Trial has expired, see options below=
 Opens %s in new tab=
 My Servers Dashboard=
 Unraid Forums=
-Settings=PooPoo
 SettingsManagementAccessUnraidnet=Settings > Management Access • Unraid.net
 Trial key expires at %s=
 Trial expires in %s=
