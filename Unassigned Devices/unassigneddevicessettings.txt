@@ -53,10 +53,6 @@ Unassigned Devices=
 > Set to **Yes** to set a 15 minute disk spin down timer.  Set to **No** to keep disks spun up.
 :end
 
-:ud_settings_force_smb_plug:
-> Normally a SMB remote share will be mounted with the highest version of SMB that the remote server will support.  When set to **Yes**, all SMB remote shares will be forced to mount with SMB v1.  Some remote shares will give errors when mounted with SMB v2.  SMB v1 has security issues and should not be used unless absolutely necessary.  This cannot be enabled if NetBIOS is disabled.
-:end
-
 :ud_settings_smb_security_plug:
 > Set the user level of SMB Security.
 >
