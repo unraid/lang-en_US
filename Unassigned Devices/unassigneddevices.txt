@@ -59,6 +59,7 @@ Pass Thru=
 Password=
 Read only=
 Remember your password It cannot be recovered=
+Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=
 Remove Device configuration=
 Remove ISO File Share=
 Remove Partition=
@@ -79,8 +80,8 @@ share for=
 Simple=
 Source=
 Success=
-Switch Display Mode=
-Switch On to Show All Partitions=
+Switch On to Show SMB/NFS/ISO Shares=
+Switch On to Show All Disk Partitions=
 This will remove the ISO file share for=
 This will remove the remote=
 This will remove the saved configuration of=
@@ -102,14 +103,16 @@ Username=
 View Device Script Log=
 View ISO File Script Log=
 View Remote SMBNFS Script Log=
+WARNING: Do NOT use a remote share local mount in a Docker or VM for critical data=
+You WILL have problems if you do=
 You will need to enter credentials for Windows 10 shares just to list them=
 
 ; Help
 ;
 :unassgned_devices_switches_plug:
-> Turn off the **Complete** switch to change the web page to just show hardware devices. Turn on the **Simple** switch to switch back to the full web display.
+> Turn off the **Shares** switch to change the web page to just show hardware devices.  Turn on the **Shares** switch to switch back to the full web display.
 >
-> Turn on the **None** switch to show all device partitions. Turn off **All** switch to switch back to not show partitions.
+> Turn on the **Partitions** switch to show all device partitions.  Turn off **Partitions** switch to switch back to not show partitions.
 >
 > Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to rescan disks.
 >
