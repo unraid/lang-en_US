@@ -54,6 +54,15 @@ Unassigned Devices=
 > Set to **Yes** to set a 15 minute disk spin down timer.  Set to **No** to keep disks spun up.  Unraid version 6.9 and higher manages disk spin down.
 :end
 
+:ud_settings_symlinks_plug:
+> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+>
+> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
+> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+>
+> If you do not need the backwards compatibility, leave it set to **No**.
+:end
+
 :ud_settings_smb_security_plug:
 > Set the user level of SMB Security.
 >
