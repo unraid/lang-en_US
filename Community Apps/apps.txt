@@ -288,6 +288,7 @@ Docker Application Installation finished=
 
 ; Application Cards
 Private dockerHub Conversion=Private (dockerHub Conversion)
+Private Application=
 Go to the project page=
 Go to the support thread=
 Uninstall Application=
