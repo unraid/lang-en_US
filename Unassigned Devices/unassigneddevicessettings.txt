@@ -63,6 +63,10 @@ Unassigned Devices=
 > If you do not need the backwards compatibility, leave it set to **No**.
 :end
 
+:ud_settings_show_all_partitions_plug:
+> Set to **Yes** to show all disk partitions in the Unassigned Devices page as the default.  Set to **No** to hide the disk partitions as the default.
+:end
+
 :ud_settings_smb_security_plug:
 > Set the user level of SMB Security.
 >
