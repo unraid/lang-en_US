@@ -17,6 +17,8 @@ Some have reported faster and more consistent network performance by making chan
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
 Read this=
 for information on the issue=
+If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
+It is recommended you use the 'Performance' Governor for best performance and power savings=
 It is recommended to use the pstate driver on Intel processors if you want the most performance=
 Note=
 You can check CPU frequencies on the command line with=
