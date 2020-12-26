@@ -206,6 +206,7 @@ Community Applications Changelog=
 Backup=
 Cloud=
 Downloaders=
+Drivers=
 Game Servers=
 Home Automation=
 Media Applications=
