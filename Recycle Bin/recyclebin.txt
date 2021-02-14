@@ -31,6 +31,7 @@ Empty the=
 Recycle Bin=
 Deleted Files Log=
 Recycle Bin Log=
+Yes I want to do this=
 ;
 ; Help
 ;
@@ -71,6 +72,10 @@ Recycle Bin Log=
 > + '%P' User share full path, eg /mnt/user/Storage, /mnt/disk1, /mnt/disks/unassigned_device, /flash
 > + '%u' Username of the current service, if any
 > + '%m' Machine name of the user who deleted the file
+:end
+
+:recycle_bin_permissions_plug:
+> Set the directory and sub-directory permissions of the Recycle Bin.  Set permissions to 07xx for the Recycle Bin to operate properly.  Don't change this from the default if you don't know how to use permissions.
 :end
 
 :recycle_bin_excluded_files_plug:
