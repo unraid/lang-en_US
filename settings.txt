@@ -157,6 +157,7 @@ Docker LOG number of files=
 Docker LOG rotation=
 Docker only=
 Docker service=
+Docker Stop Timeout=
 Docker update notification=
 Docker update=
 Docker vDisk location=
