@@ -39,6 +39,7 @@ Docker Service failed to start=
 Donation Link=
 Donation Text=
 Downloaders=
+Drivers=
 Edit Configuration=
 Exited=
 Extra Parameters=
