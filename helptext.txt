@@ -2012,14 +2012,6 @@ Link to a support thread on Lime-Technology's forum.
 Link to the project page (eg: www.plex.tv)
 :end
 
-:docker_client_donation_text_help:
-Text to appear on Donation Links Within The Apps Tab
-:end
-
-:docker_client_donation_link_help:
-Link to the donation page.  If using donation's, both the image and link must be set
-:end
-
 :docker_client_hub_url_help:
 The path to the container's repository location on the Docker Hub.
 :end
