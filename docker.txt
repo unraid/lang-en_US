@@ -103,6 +103,7 @@ Show docker allocations=
 Show more settings=
 Stable=
 Start All=
+Start Container After Install=
 starting up containers=
 Stop All=
 Stopping container=
