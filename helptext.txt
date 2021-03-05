@@ -668,11 +668,9 @@ Summary of security modes:
 
 **Public** All users including guests have full read/write access.
 
-**Secure** All users including guests have read access, you select which of your users
-have write access.
+**Secure** All users including guests have read access, you select which of your users have write access.
 
-**Private** No guest access at all, you select which of your users have read/write or
-read-only access.
+**Private** No guest access at all, you select which of your users have read/write, read-only access or no access.
 :end
 
 :smb_secure_access_help:
