@@ -158,7 +158,7 @@ Governor=
 :end
 
 :tips_tweaks_cpu_state_plug:
-> Enter the time you want to set the governor to "Power Save" for Intel Pstate or "On Demand" in 24 hour format hh:mm.
+> Enter the time you want to set the governor to "Power Save" for Intel Pstate and Intel CPU Freq or "On Demand" in 24 hour format hh:mm.
 :end
 
 :tips_tweaks_ftp_plug:
