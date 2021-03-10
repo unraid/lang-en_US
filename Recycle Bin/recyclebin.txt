@@ -9,9 +9,9 @@ Remove aged files from the Recycle Bin=
 Empty All Trash=
 Remove all files from the Recycle Bin=
 Refresh the Recycle Bin page=
-Enable Recycle Bin=
+Enable Recycle Bin for deleted files=
 Update Recycle Bin Size in Background=
-Enable on Unassigned Devices=
+Enable on Unassigned Devices for Deleted Files=
 Recycle Bin parameters=
 Excluded Files=
 Excluded Shares=
@@ -32,16 +32,15 @@ Recycle Bin=
 Deleted Files Log=
 Recycle Bin Log=
 Yes I want to do this=
+to remove deleted files older than the 'Age Days' setting=
+Empty All Trash=
+to remove all deleted files=
 ;
 ; Help
 ;
 :recycle_bin_shares_plug:
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
-These actions apply to all shares=
-Remove Aged Files=
-to remove deleted files older than the 'Age Days' setting=
-Empty All Trash=
-to remove all deleted files=
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period.
+These actions apply to all shares:
 > Recycle Bin Shares:
 >
 > The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
