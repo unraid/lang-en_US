@@ -1,5 +1,0 @@
-A new version of %s is available=
-Docker=
-Language=
-Notice %s - Version update %s=
-Plugin=
