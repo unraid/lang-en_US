@@ -8,14 +8,31 @@ Run in background=
 Save your changes and save to Script File=
 Save=
 Script content=
+Turn on to Mount Device Read only=
+Turn on to Mount Device when Array is Started=
+Turn on to Mount ISO File when Array is Started=
+Turn on to Mount Remote SMBNFS Share when Array is Started=
 Turn on to run Script File in the background=
+Turn on to Share Device with SMB andor NFS=
+Turn on to Share Remote Mount with SMB andor NFS=
+Turn on to mark this Device as passed through to a VM or Docker=
+Unassigned Devices Settings=
 Undo your changes since last Save=
 ;
 ; Help
 ;
+:ud_edit_script_device_settings_plug:
+> Select the options for this device/mount point.  These changes are made immediately.  You don't need to click 'Save' to save them.
+:end
+
 :ud_edit_script_choose_name_plug:
 > Choose your script name from the file selection dropdown, or enter your desired script name.
 :end
+
+:ud_edit_user_script_choose_name_plug:
+> If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device.
+:end
+<?endif;?>
 
 :ud_edit_script_run_background_plug:
 > Turn on the 'Run in Background' to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.

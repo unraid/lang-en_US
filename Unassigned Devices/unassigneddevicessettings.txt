@@ -6,6 +6,7 @@ Change the disk UUID=
 Common Script=
 Common Settings=
 Destructive Mode=
+Disk spin down is managed by Unraid=
 Enable NFS export=
 Enable SMB Security=
 Enter Disk Password=
@@ -50,11 +51,20 @@ Unassigned Devices=
 :end
 
 :ud_settings_spin_down_plug:
-> Set to **Yes** to set a 15 minute disk spin down timer.  Set to **No** to keep disks spun up.
+> Set to **Yes** to set a 15 minute disk spin down timer.  Set to **No** to keep disks spun up.  Unraid version 6.9 and higher manages disk spin down.
 :end
 
-:ud_settings_force_smb_plug:
-> Normally a SMB remote share will be mounted with the highest version of SMB that the remote server will support.  When set to **Yes**, all SMB remote shares will be forced to mount with SMB v1.  Some remote shares will give errors when mounted with SMB v2.  SMB v1 has security issues and should not be used unless absolutely necessary.  This cannot be enabled if NetBIOS is disabled.
+:ud_settings_symlinks_plug:
+> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+>
+> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
+> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+>
+> If you do not need the backwards compatibility, leave it set to **No**.
+:end
+
+:ud_settings_show_all_partitions_plug:
+> Set to **Yes** to show all disk partitions in the Unassigned Devices page as the default.  Set to **No** to hide the disk partitions as the default.
 :end
 
 :ud_settings_smb_security_plug:
@@ -80,5 +90,5 @@ Unassigned Devices=
 :end
 
 :ud_settings_change_uuid_plug:
-> Select the disk that you want to change the UUID.  This is useful when a disk has been removed from the array and has the same UUID as an array disk.  Drive must be unmounted to change the UUID.
+> Select the disk that you want to change the UUID.  This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk.  Drive must be unmounted to change the UUID.
 :end

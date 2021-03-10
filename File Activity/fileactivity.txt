@@ -6,7 +6,7 @@ Clear the File Activity log=
 Refresh log=
 Enable File Activity Logging=
 Enable for Unassigned Devices=
-Enable for Cache=
+Enable for Cache and Pool=
 ;
 ; Help
 ;
@@ -30,6 +30,6 @@ Enable for Cache=
 > Set to 'Yes' to enable File Activity logging for Unassigned Devices if the Unassigned Devices plugin is installed.
 :end
 
-:file_activity_eenable_cache_plug:
-> Set to 'Yes' to enable File Activity logging for the Cache Disk(s).
+:file_activity_enable_cache_plug:
+	> Set to 'Yes' to enable File Activity logging for the Cache and Pool Disks.  Pool disks only apply in Unraid 6.9.
 :end
