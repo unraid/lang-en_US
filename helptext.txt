@@ -127,7 +127,7 @@ it may only be exported using SMB protocol.
 
 An unRAID disk array consists of a single parity disk and a number of data disks. The data
 disks are exclusively used to store user data, and the parity disk provides the redundancy necessary
-to recover from any singe disk failure.
+to recover from any single disk failure.
 
 Note that we are careful to use the term *disk* when referring to an array storage device.  We
 use the term *hard drive* (or sometimes just *drive*) when referring to an actual hard disk drive (HDD)
@@ -164,7 +164,7 @@ drive and jot it down somewhere; you will need this information later.
 build, then the Main page will show no disks installed. This doesn't mean the system can't detect your
 hard drives; it just means that none have been assigned yet.
 
-3. Remember the serial numbers you recored back in step 1? For parity and each data disk, select the
+3. Remember the serial numbers you recorded back in step 1? For parity and each data disk, select the
 proper hard drive based on its serial number from the drop down list.
 
 #### Hot Plug
@@ -246,7 +246,7 @@ A value of zero will disable the critical threshold (including notifications).
 **Balance** will run the *btrfs balance* program to restripe the extents across all pool devices, for example,
 to convert the pool from raid1 to raid0 or vice-versa.
 
-When a *full balance* is perfomred, it basically rewrites everything in the current filesystem.
+When a *full balance* is performed, it basically rewrites everything in the current filesystem.
 
 A *mode conversion* affects the btrfs data extents; metadata always uses raid1 and is converted to raid1 if necessary by any balance operation.
 
@@ -551,7 +551,7 @@ Determines whether a directory is allowed to expand onto multiple disks.
 **Automatically split any directory as required**
 When a new file or subdirectory needs to be created in a share, Unraid OS first chooses which disk
 it should be created on, according to the configured *Allocation method*.  If the parent directory containing
-the new file or or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
+the new file or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
 parent directories, and then create the new file or subdirectory.
 
 **Automatically split only the top level directory as required**
@@ -592,7 +592,7 @@ enough free space exists on the Cache disk/pool.
 If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
 When the *mover* is invoked, files and subdirectories are transferred off the Cache disk/pool and onto the array.
 
-**Only** indicates that all new files and subdirectories must be writen to the Cache disk/pool.
+**Only** indicates that all new files and subdirectories must be written to the Cache disk/pool.
 If there is insufficient free space on the Cache disk/pool, *create* operations will fail with *out of space* status.
 *Mover* will take no action so any existing files for this share that are on the array are left there.
 
@@ -651,7 +651,7 @@ The default setting of **auto** allows clients that support case sensitive filen
 to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX
 case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to **auto** is the same as
 setting it to No for them; however, the case of filenames passed by a Windows client will be preserved.  This setting can result
-in reduced peformance with very large directories because Samba must do a filename search and match on passed names.
+in reduced performance with very large directories because Samba must do a filename search and match on passed names.
 
 A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case.
 This will speed very large directory access, but some Windows applications may not function properly with this setting.  For
@@ -815,7 +815,7 @@ If set to 'Yes' then the [Spinup Groups](/Help) feature is enabled.
 
 :disk_default_partition_format_help:
 Defines the type of partition layout to create when formatting hard drives 2TB in size and
-smaller **only**. (All devices larger then 2TB are always set up with GPT partition tables.)
+smaller **only**. (All devices larger than 2TB are always set up with GPT partition tables.)
 
 **MBR: unaligned** setting will create MBR-style partition table, where the single
 partition 1 will start in the **63rd sector** from the start of the disk.  This is the *traditional*
@@ -823,7 +823,7 @@ setting for virtually all MBR-style partition tables.
 
 **MBR: 4K-aligned** setting will create an MBR-style partition table, where the single
 partition 1 will start in the **64th sector** from the start of the disk. Since the sector size is 512 bytes,
-this will *align* the start of partition 1 on a 4K-byte boundry.  This is required for proper
+this will *align* the start of partition 1 on a 4K-byte boundary.  This is required for proper
 support of so-called *Advanced Format* drives.
 
 Unless you have a specific requirement do not change this setting from the default **MBR: 4K-aligned**.
@@ -973,7 +973,7 @@ This can be an image file with a specific size or a dedicated folder.
 :docker_vdisk_size_help:
 If the system needs to create a new docker image file, this is the default size to use specified in GB.
 
-To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will increased to the new size (but never decreased).
+To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will be increased to the new size (but never decreased).
 :end
 
 :docker_vdisk_location_help:
@@ -1300,7 +1300,7 @@ Enter your local network Workgroup name. Usually this is "WORKGROUP".
 :end
 
 :smb_local_master_help:
-If set to 'Yes' then the server will fully participate in browser elections, and in the absense
+If set to 'Yes' then the server will fully participate in browser elections, and in the absence
 of other servers, will usually become the local Master Browser.
 :end
 
@@ -1469,7 +1469,7 @@ This is the libvirt volume.
 
 :vms_libvirt_vdisk_size_help:
 If the system needs to create a new libvirt image file, this is the default size to use specified in GB.
-To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will increased to the new size (but never decreased).
+To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will be increased to the new size (but never decreased).
 :end
 
 :vms_libvirt_location_help:
@@ -1545,7 +1545,7 @@ If repair is needed you should check the *Correct file system errors* and run a 
 :end
 
 :eth_interface_description_help:
-Use this optional field to provide addditional information about the purpose of the connection.
+Use this optional field to provide additional information about the purpose of the connection.
 :end
 
 :eth_mac_address_help:
@@ -1581,7 +1581,7 @@ This mode transmits everything on all slave interfaces. This mode is least used 
 This mode is known as *Dynamic Link Aggregation*. It creates aggregation groups that share the same speed and duplex settings.
 It requires a switch that supports IEEE 802.3ad dynamic link.
 Slave selection for outgoing traffic is done according to the transmit hash policy, which may be changed from the default simple XOR policy via the xmit_hash_policy option.
-Note that not all transmit policies may be 802.3ad compliant, particularly inregards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
+Note that not all transmit policies may be 802.3ad compliant, particularly in regards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
 Different peer implementations will have varying tolerances for noncompliance.
 
 **Mode 5 (balance-tlb)**<br>
@@ -1722,7 +1722,7 @@ or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80
 
 Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
 
-The metric value is optional, it defaults to 1. Use it to select the prefered gateway when more than one entry of the same route exist.
+The metric value is optional, it defaults to 1. Use it to select the preferred gateway when more than one entry of the same route exists.
 :end
 
 :apc_ups_daemon_help:
@@ -1757,10 +1757,10 @@ Define a *UPS type*, which corresponds to the type of UPS you have (see the Desc
 :end
 
 :apc_ups_device_help:
-Enter the *device* which correspondes to your situation, only applicable when *UPS type* is not set to USB.
+Enter the *device* which corresponds to your situation, only applicable when *UPS type* is not set to USB.
 
 + **apcsmart** - /dev/tty**
-+ **net** - hostname:port. Hostname is the IP address of the NIS server. The deafult port is 3551
++ **net** - hostname:port. Hostname is the IP address of the NIS server. The default port is 3551
 + **snmp** - hostname:port:vendor:community. Hostname is the ip address or hostname of the UPS on the network. Vendor can be can be "APC" or "APC_NOTRAP". "APC_NOTRAP" will disable SNMP trap catching; you usually want "APC". Port is usually 161. Community is usually "private"
 + **dumb** - /dev/tty**
 + **pcnet** - ipaddr:username:passphrase:port. ipaddr is the IP address of the UPS management card. username and passphrase are the credentials for which the card has been configured. port is the port number on which to listen for messages from the UPS, normally 3052. If this parameter is empty or missing, the default of 3052 will be used
