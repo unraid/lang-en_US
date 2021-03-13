@@ -87,6 +87,7 @@ sn=s/n
 Start the array=
 Started only=
 Stop the array=
+Temp=
 This will put the system to sleep=
 This will reboot the system=
 This will shutdown the system=
