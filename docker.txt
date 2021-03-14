@@ -118,6 +118,7 @@ Template=
 The command failed=
 The command finished successfully=
 TOTAL DATA PULLED=
+Total size=
 Unknown action=
 Update All=
 update ready=
