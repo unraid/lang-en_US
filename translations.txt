@@ -552,7 +552,8 @@ Thank you for choosing Unraid OS=
 Thank you for choosing Unraid OS=Thank you for choosing Unraid OS!
 Thank you for contacting Unraid=
 Thanks for supporting Unraid=Thanks for supporting Unraid!
-The license key file does not correspond to the USB Flash boot device Please copy the correct key file to the bootconfig directory on your USB Flash boot device=The license key file does not correspond to the USB Flash boot device. Please copy the correct key file to the **/boot/config** directory on your USB Flash boot device
+The license key file does not correspond to the USB Flash boot device Please copy the correct key file to the bootconfig directory on your USB Flash boot device or choose Purchase Key or Replace Key=The license key file does not correspond to the USB Flash boot device. Please copy the correct key file to the **/boot/config** directory on your USB Flash boot device or choose Purchase Key or Replace Key.
+The license key file does not correspond to the USB Flash boot device Please copy the correct key file to the bootconfig directory on your USB Flash boot device or choose Purchase Key=The license key file does not correspond to the USB Flash boot device. Please copy the correct key file to the **/boot/config** directory on your USB Flash boot device or choose Purchase Key.
 There are multiple license key files present on your USB flash device and none of them correspond to the USB Flash boot device Please remove all key files, except the one you want to replace, from the bootconfig directory on your USB Flash boot device Alternately you may purchase a license key for this USB flash device If you want to replace one of your license keys with a new key bound to this USB Flash device, please first remove all other key files first=There are multiple license key files present on your USB flash device and none of them correspond to the USB Flash boot device. Please remove all key files, except the one you want to replace, from the **/boot/config** directory on your USB Flash boot device. Alternately you may purchase a license key for this USB flash device. If you want to replace one of your license keys with a new key bound to this USB Flash device, please first remove all other key files first.
 There is a physical problem accessing your USB Flash boot device=
 There is a problem with your USB Flash device=
@@ -605,6 +606,7 @@ Your Trial key includes all the functionality and device support of a Pro key=Yo
 Your Trial key requires an internet connection Please check Settings > Network=Your Trial key requires an internet connection. Please check Settings > Network.
 Your trial will expire in 15 days=
 Your trial will expire in 30 days=
+Your Unraid registration key is ineligible for replacement as it has been replaced within the last 12 months=Your Unraid registration key is ineligible for replacement as it has been replaced within the last 12 months.
 Your USB Flash GUID and other relevant server data will also be sent=
 
 ; DateTime
