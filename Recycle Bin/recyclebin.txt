@@ -13,6 +13,7 @@ Enable Recycle Bin=
 Update Recycle Bin Size in Background=
 Enable on Unassigned Devices=
 Recycle Bin parameters=
+Excluded Directories=
 Excluded Files=
 Excluded Shares=
 Age Days=
@@ -86,6 +87,10 @@ to remove all deleted files=
 
 :recycle_bin_excluded_files_plug:
 > List of files to exclude from the Recycle Bin separated by commas.  Wild cards '*' and '?' are allowed.
+:end
+
+:recycle_bin_excluded_dirs_plug:
+> List of directories to exclude from the Recycle Bin separated by commas.  Wild cards '*' and '?' are allowed.
 :end
 
 :recycle_bin_excluded_shares_plug:

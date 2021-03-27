@@ -30,7 +30,7 @@ Undo your changes since last Save=
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device.
+> If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device.  This field will only be enabled when a Script File exists.
 :end
 <?endif;?>
 
