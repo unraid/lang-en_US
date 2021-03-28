@@ -90,7 +90,7 @@ to remove all deleted files=
 :end
 
 :recycle_bin_excluded_dirs_plug:
-> List of directories to exclude from the Recycle Bin separated by commas.  Wild cards '*' and '?' are allowed.
+> List of directories to exclude from the Recycle Bin separated by commas.  To specify a particular share directory, use 'share/directory'.  Unassigned Devices are specified the same way using 'mountpoint/directory'.  Wild cards '*' and '?' are allowed in the directory name.
 :end
 
 :recycle_bin_excluded_shares_plug:
