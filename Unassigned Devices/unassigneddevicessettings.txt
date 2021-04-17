@@ -24,6 +24,7 @@ Select Disk=
 Set Encrypted Disk Password=
 Set Password=
 Set the disk Password=
+Specify SMB Version when Mounting Remote Shares=
 Spin down disks=
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
 to SMB share config=
@@ -62,6 +63,14 @@ Unassigned Devices=
 > You are encouraged to change your mappings to the /mnt/remotes/ mount point.
 >
 > If you do not need the backwards compatibility, leave it set to **No**.
+:end
+
+:ud_settings_specify_smb_vers_plug:
+> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+>
+> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+>
+> Some remote servers need to have the version specified.
 :end
 
 :ud_settings_show_all_partitions_plug:
