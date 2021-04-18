@@ -55,10 +55,3 @@ Unmounting disks=
 Autostart disabled=
 Missing encryption key=
 Opening encrypted volumes=
-
-; docker variables
-Container Path=
-Container Port=
-Container Variable=
-Container Label=
-Container Device=
