@@ -38,7 +38,6 @@ Select all on page=
 
 ; Searches
 Search=
-Please enter search term=
 Click Here To Get More Results From DockerHub=
 No Matching Applications Found On Docker Hub=
 No Matching Applications Found=
@@ -132,8 +131,6 @@ Installed Apps=
 Previous Apps=
 Pinned Apps=
 Favourite Repo=
-CATEGORIES=
-FILTERS=
 New Apps=
 Updated Apps=
 Random Apps=
