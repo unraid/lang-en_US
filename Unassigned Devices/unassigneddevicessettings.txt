@@ -73,8 +73,12 @@ Unassigned Devices=
 > Some remote servers need to have the version specified.
 :end
 
-:ud_settings_show_all_partitions_plug:
-> Set to **Yes** to show all disk partitions in the Unassigned Devices page as the default.  Set to **No** to hide the disk partitions as the default.
+:ud_settings_favor_reliability_plug:
+> Set to **Yes** for Unassigned Devices to mount Remote Shares without caching for more reliabile connections.
+>
+> Set to **No** for Unassigned Devices to mount Remote Shares with caching to potentially improve speed.
+>
+> Setting this to **No** can improve speed in connections potentially at the expense of reliability.
 :end
 
 :ud_settings_smb_security_plug:
@@ -96,7 +100,7 @@ Unassigned Devices=
 :end
 
 :ud_settings_disk_pass_plug:
-> Select the disk that you want to set a Password.  This is the password for this disk only and does not affect the array password/passphrase.  Leave password blank to use the array password/passphrase.
+> Select the disk that you want to set a Password.  This is the password for this disk only and does not affect the array password/passphrase.  Leave password blank to use the array password/passphrase for luks encrypted disks.
 :end
 
 :ud_settings_change_uuid_plug:
