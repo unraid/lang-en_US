@@ -1,3 +1,4 @@
+%s ago=
 %s used of %s %s %%=%s used of %s (%s %%)
 ---=
 Active tunnels=
@@ -63,6 +64,7 @@ No shares present=
 No virtual machines defined=
 Nominal power=
 not received=
+Only PNG images are allowed=Only PNG images are allowed!
 Outbound=
 Overall Load=
 Parity disk not present=
