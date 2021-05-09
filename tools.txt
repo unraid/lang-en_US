@@ -45,8 +45,8 @@ Hide Details=
 If you do not receive an email, please check your spam or junk-email folder=
 Importance=
 Important=
-Install=
 Install Language=
+Install=
 Installed languages=
 Invalid Trial Installation=Invalid *Trial* Installation
 It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=
@@ -127,7 +127,6 @@ View VFIO-PCI Log=
 warning=
 webGUI=
 When received, please paste the URL into the Key file URL box and=When received, please paste the URL into the *Key file URL* box and
-
 Wrong File Extension=
 You havent sent Limetech your hardware profile yet=You haven't sent Limetech your hardware profile yet
 Your hardware profile was last submitted on=
