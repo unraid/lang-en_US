@@ -2,6 +2,7 @@
 anonymous=
 Author=
 Check For Updates=
+Checking connectivty=
 Click here to install version %s=
 DOWNGRADE TO VERSION=
 Enter URL of remote plugin file or local plugin file=
@@ -15,6 +16,7 @@ need check=
 Next=
 No plugins installed=
 No release notes available=
+No response, aborting=
 Plugin File=
 Plugin Update Check=
 Plugin=
