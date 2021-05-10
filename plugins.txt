@@ -3,6 +3,7 @@ anonymous=
 Author=
 Check For Updates=
 Checking connectivty=
+checking=
 Click here to install version %s=
 DOWNGRADE TO VERSION=
 Enter URL of remote plugin file or local plugin file=
