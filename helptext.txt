@@ -464,7 +464,6 @@ If no suffix, a count of 1024-byte blocks is assumed.
 **Special modes:**
 
 + SMB security mode displayed in *italics* indicates exported hidden user shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine user shares.
 + NFS does not have special modes for user shares.
 :end
 
@@ -485,7 +484,6 @@ If no suffix, a count of 1024-byte blocks is assumed.
 **Special modes:**
 
 + SMB security mode displayed in *italics* indicates exported hidden disk shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine disk shares.
 + NFS does not have special modes for disk shares.
 :end
 
