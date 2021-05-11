@@ -73,14 +73,6 @@ Unassigned Devices=
 > Some remote servers need to have the version specified.
 :end
 
-:ud_settings_favor_reliability_plug:
-> Set to **Yes** for Unassigned Devices to mount Remote Shares without caching for more reliabile connections.
->
-> Set to **No** for Unassigned Devices to mount Remote Shares with caching to potentially improve speed.
->
-> Setting this to **No** can improve speed in connections potentially at the expense of reliability.
-:end
-
 :ud_settings_smb_security_plug:
 > Set the user level of SMB Security.
 >
