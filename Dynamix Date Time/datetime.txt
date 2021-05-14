@@ -1,0 +1,7 @@
+Current date and time=
+Hide map=
+New date and time=
+NTP server=
+Show map=
+Time zone=
+Use NTP=

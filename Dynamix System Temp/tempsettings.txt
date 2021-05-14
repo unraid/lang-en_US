@@ -1,0 +1,14 @@
+Array fan speed=
+Available drivers=
+Click DETECT=
+Detect=
+Load drivers=
+Mainboard temperature=
+No drivers detected=
+Not used=
+Perl must be installed to do automated driver detection=**Perl** must be installed to do automated driver detection
+Processor temperature=
+Rescan=
+Save=
+Sensors=
+Unload drivers=

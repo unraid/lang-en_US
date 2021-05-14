@@ -1,0 +1,6 @@
+Current elected master=
+is current local master browser=
+Local master=
+Monitor local master election=
+please wait, obtaining=
+Workgroup=

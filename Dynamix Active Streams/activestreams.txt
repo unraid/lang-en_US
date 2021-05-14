@@ -1,0 +1,9 @@
+Halt=
+Host Address=
+Host=
+No active streams=
+Playtime=
+Stop stream=
+Stream=
+User Name=
+User=
