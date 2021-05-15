@@ -84,6 +84,7 @@ Show details=
 Show Information=
 Shutdown the system=
 SMART error=
+SMART health-check failed=
 SMART=
 sn=s/n
 Start the array=
