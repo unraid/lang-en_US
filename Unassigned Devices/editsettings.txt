@@ -5,7 +5,7 @@ Enter and Edit the Script that runs when a udev or operator event occurs=
 Load the default script=
 Remove Script File=
 Run in background=
-Save your changes and save to Script File=
+Save your changes=
 Save=
 Script content=
 Turn on to Mount Device Read only=
@@ -18,11 +18,16 @@ Turn on to Share Remote Mount with SMB andor NFS=
 Turn on to mark this Device as passed through to a VM or Docker=
 Unassigned Devices Settings=
 Undo your changes since last Save=
+Volume=
 ;
 ; Help
 ;
 :ud_edit_script_device_settings_plug:
 > Select the options for this device/mount point.  These changes are made immediately.  You don't need to click 'Save' to save them.
+:end
+
+:ud_apfs_volume_plug:
+> Enter the volume to mount on this apfs partition. Click **Save** to commit this setting.
 :end
 
 :ud_edit_script_choose_name_plug:
