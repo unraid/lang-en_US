@@ -29,6 +29,7 @@ Container=
 CPU Memory load=CPU & Memory load
 CPU Pinning=
 Created=
+Crypto Currency=
 Default Value=
 Device=
 Display=
