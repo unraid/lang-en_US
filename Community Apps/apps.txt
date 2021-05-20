@@ -204,6 +204,7 @@ Community Applications Changelog=
 
 Backup=
 Cloud=
+Crypto Currency=
 Downloaders=
 Drivers=
 Game Servers=
