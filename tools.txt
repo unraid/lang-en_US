@@ -13,6 +13,7 @@ Array must be Stopped to change=Array must be **Stopped** to change
 Array slots=
 Array=
 Author=
+Beta=
 Blacklisted USB Flash GUID=
 Branch=
 By using this software, you agree with our=
