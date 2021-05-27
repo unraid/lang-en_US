@@ -1,7 +1,9 @@
+Click the 'Default' button to select the default Script File=
 Default Script=
 Edit Script=
 Enter Script File Name=
 Enter and Edit the Script that runs when a udev or operator event occurs=
+Enter the User Script that will be using this device=
 Load the default script=
 Remove Script File=
 Run in background=
@@ -23,7 +25,7 @@ Volume=
 ; Help
 ;
 :ud_edit_script_device_settings_plug:
-> Select the options for this device/mount point.  These changes are made immediately.  You don't need to click 'Save' to save them.
+> Select the options for this device/mount point.  These changes are made immediately.  You don't need to click **Save** to save them.
 :end
 
 :ud_apfs_volume_plug:
