@@ -55,15 +55,15 @@ to remove all deleted files=
 :end
 
 :recycle_bin_enable_plug:
-> Set to 'Yes' to enable the Recycle Bin functionality for deleted files when the server is started.
+> Set to **Yes** to enable the Recycle Bin functionality for deleted files when the server is started.
 :end
 
 :recycle_bin_background_plug:
-> Set to 'Yes' to enable the Recycle Bin Size to be updated in the background every minute.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to a minute to refresh when this is enabled.
+> Set to **Yes** to enable the Recycle Bin Size to be updated in the background every minute.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to a minute to refresh when this is enabled.
 :end
 
 :recycle_bin_ud_plug:
-> Set to 'Yes' to enable the Recycle Bin deleted file functionality on Unassigned Devices drive shares when the Unassigned Devices plugin is installed.  SMB/NFS mounts and iso mounts are excluded from the Recycle Bin functionality on this server.  Enable the Recycle Bin on the remote server where the remote share originates if it is an Unraid server.
+> Set to **Yes** to enable the Recycle Bin deleted file functionality on Unassigned Devices drive shares when the Unassigned Devices plugin is installed.  SMB/NFS mounts and iso mounts are excluded from the Recycle Bin functionality on this server.  Enable the Recycle Bin on the remote server where the remote share originates if it is an Unraid server.
 :end
 
 :recycle_bin_parameters_plug:
@@ -112,11 +112,11 @@ to remove all deleted files=
 :end
 
 :recycle_bin_age_files_notification_plug:
-> When set to "Yes" a notification will be sent when the scheduled remove files task runs.
+> When set to **Yes** a notification will be sent when the scheduled remove files task runs.
 :end
 
 :recycle_bin_log_deleted_files_plug:
-> When set to "Yes" deleted files will be logged.
+> When set to **Yes** deleted files will be logged.
 :end
 
 :recycle_bin_show_log_plug:
