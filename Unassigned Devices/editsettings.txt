@@ -11,7 +11,7 @@ Save your changes=
 Save=
 Script content=
 Turn on to Mount Device Read only=
-Turn on to Mount Device when Array is Started=
+Turn on to Mount Device when Plugged in or Array is Started=
 Turn on to Mount ISO File when Array is Started=
 Turn on to Mount Remote SMBNFS Share when Array is Started=
 Turn on to run Script File in the background=
@@ -33,7 +33,7 @@ Volume=
 :end
 
 :ud_edit_script_choose_name_plug:
-> Choose your script name from the file selection dropdown, or enter your desired script name.
+> This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script name.
 :end
 
 :ud_edit_user_script_choose_name_plug:
@@ -42,7 +42,7 @@ Volume=
 <?endif;?>
 
 :ud_edit_script_run_background_plug:
-> Turn on the 'Run in Background' to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+> Turn on the **Run in Background** to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
 :end
 
 :ud_edit_script_buttons_plug:
