@@ -13,13 +13,13 @@ Enable for Cache and Pool=
 :file_activity_loggging_plug:
 > File Activity Monitoring:
 >
-> File read/write/modify activity is monitored and logged on the array using inotify and is displayed by disk, UD disks, and cache.
+> File open, read, write, and modify activity is monitored and logged on the array using inotify and is displayed by disk or share, UD disks, and cache.
 > You need to start the File Activity in order to log the disk activity.
 > File Activity is intended to be running for short periods so you can check disk activity.
 > A server with a lot of file activity can fill the log space.
-> The 'appdata' directory is excluded.
+> The 'appdata' and 'Syslogs' directories are excluded.
 >
-> Note: File Activity monitoring is stopped if the array is stopped, and will restart when the array is started.
+> Note: File Activity monitoring is stopped if the array is stopped, and will restart when the array is started if it is enabled.
 :end
 
 :file_activity_enable_logging_plug:
@@ -32,4 +32,8 @@ Enable for Cache and Pool=
 
 :file_activity_enable_cache_plug:
 > Set to **Yes** to enable File Activity monitoring for the Cache and Pool Disks.  Pool disks only apply in Unraid 6.9.
+:end
+
+:file_activity_log_by_plug:
+	> Set to **Disk** to log disk activity.  Set to **Share** to log share activity.
 :end
