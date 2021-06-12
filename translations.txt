@@ -378,7 +378,7 @@ Upload=
 Uptime=
 up-to-date=
 User Access=
-Username
+Username=
 Username not changeable=
 Users=
 Utilization=
