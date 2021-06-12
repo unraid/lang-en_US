@@ -93,6 +93,7 @@ Disk=
 disk=
 Do you want to update to the new version=
 Docker=
+Docs=
 Done=
 Download=
 Duration=
