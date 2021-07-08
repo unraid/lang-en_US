@@ -100,6 +100,7 @@ Username=
 View Device Script Log=
 View ISO File Script Log=
 View Remote SMBNFS Script Log=
+You must enable the Destructive Mode in UD Settings before you can Format this disk=
 WARNING: Do NOT use a remote share local mount in a Docker container or VM for critical data=
 You WILL have problems if you do=
 You will need to enter credentials for Windows 10 shares just to list them=
