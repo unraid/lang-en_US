@@ -632,6 +632,7 @@ Unable to register this Unraid Server=
 Unassigned Devices=Unassigned Devices
 Unraid OS update notification=
 Unraid OS update=
+Unraidnet account status=Unraid.net account status
 Unraidnet Status=Unraid.net Status
 Update DNS=
 updating=
