@@ -7,7 +7,7 @@ This option enables another button on the cards and popups which will allow you 
 Enable additional search results from dockerHub=
 This setting enables CA to retrieve additional search results from dockerHub Note that docker must be enabled for this to be operational=
 Allow CA to check for updates to applications=
-This setting enables CA to check for updates to applications=
+This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=
 Allow CA to send any emergency notifications=
 This setting allows CA to periodically scan your system and alert you to the presence of=
 1 Known malware and security vulnerabilities within applications=
