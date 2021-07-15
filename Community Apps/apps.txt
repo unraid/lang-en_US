@@ -304,6 +304,7 @@ Note not all maintainers keep up to date on change logs=
 Donate=
 Currently Installed Version=
 Install The Update=
+Install Update=
 ; as in you have the latest version already installed
 Latest Version=
 Multi Language Support=
