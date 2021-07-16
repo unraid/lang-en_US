@@ -266,6 +266,8 @@ OtherUncategorized=Other:Uncategorized
 and %s more=
 
 ; App Popup Related
+This application has additional requirements=
+Additional Requirements=
 Donate To Author=
 Donate To Maintainer=
 Author=
