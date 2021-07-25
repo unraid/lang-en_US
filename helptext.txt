@@ -1995,6 +1995,10 @@ Give the container a name or leave it as default.  Two characters minimum.  Firs
 A description for the application container.  Supports basic HTML mark-up.
 :end
 
+:docker_client_additional_requirements_help:
+Any additional requirements the container has.  Supports basic HTML mark-up.
+:end
+
 :docker_client_repository_help:
 The repository for the application on the Docker Registry.  Format of authorname/appname.
 Optionally you can add a : after appname and request a specific version for the container image.
