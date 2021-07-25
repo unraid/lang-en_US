@@ -949,7 +949,8 @@ This section is used to set the global settings for all disks. It is possible to
 Use this field to add template repositories.
 Docker templates are used to facilitate the creation and re-creation of Docker containers.  Please setup one per line.
 
-For a list of popular community-supported repositories, visit here: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
+Using repositories is deprecated.  For instructions on how to have Community Applications utilize private repositories, visit <a href='https://forums.unraid.net/topic/57181-docker-faq/page/2/?tab=comments#comment-1018225' target='_blank'>here</a>
+
 :end
 
 :docker_enable_help:
