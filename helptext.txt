@@ -1131,80 +1131,29 @@ Enable (default) or disable the UPnP function on the server. This function allow
 :end
 
 :mgmt_use_ssl_tls_help:
-Determines how the webGUI responds to HTTP and/or HTTPS protocol.
+Determines how the webGUI responds to HTTP and/or HTTPS protocol on your LAN.
 
-Select **No** to disable HTTPS
+Select **No** to disable HTTPS.
 
-Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. If a Let's Encrypt SSL certificate has not
-been provisioned, then an automatically generated self-signed SSL certificate will be used.
+Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. A
+self-signed SSL certificate will be generated automatically.
 
-Select **Auto** if you are using or plan to use a Let's Encrypt SSL certificate provisioned
-by Lime Technology. Before the certificate is provisioned, the webGUI remains
-in http-mode. After provisioning, the webGUI automatically switches to https-mode. In addition
-two background processes are enabled:
+Select **Auto** if you have *Provisioned* a Let's Encrypt SSL
+certificate.  In this case webGUI access will use HTTPS with the Let's Encrypt
+certificate exclusively.  Note that a DNS sever must also be reachable.
 
-- *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
-DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
-the local IP address has changed again.
-
-- *renewcert* - This starts 60 seconds after server reboot has completed and contacts the Lime Technology
-certificate renewal service to determine if your Let's Encrypt SSL certificate needs to be renewed.
-Thereafter it wakes up every 24 hours. If within 30 days of expiration, a new certificate is automatically
-provisioned and downloaded to your server.
-
-Note: After provisioning a Let's Encrypt SSL certificate you may turn off the *updatedns* and *newcert*
-background processes by changing this field to **Yes**.
-
-**nginx certificate handling details**
-
-The nginx startup script looks for a SSL certificate on the USB boot flash in this order:<br>
-`config/ssl/certs/certificate_bundle.pem`<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem`
-
-If neither file exists, a self-signed SSL certificate is automatically created and stored in<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem`<br>
-
-Provisioning a Let's Encrypt certificate writes the certificate to<br>
-`config/ssl/certs/certificate_bundle.pem`<br>
-
-**nginx stapling support**
-
-Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
-`config/ssl/certs/certificate_bundle.pem` => Yes<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem` => No
-:end
-
-:mgmt_http_port_help:
-Enter the HTTP port, default port is 80.
-:end
-
-:mgmt_https_port_help:
-Enter the HTTPS port, default port is 443.
-:end
-
-:mgmt_local_tld_help:
-Enter your local Top Level Domain. May be blank.
-:end
-
-:mgmt_certificate_expiration_help:
-**Provision** may be used to allocate a *free* SSL Certficiate from [Let's Encrypt](https://letsencrypt.org/) and
-then upload to your server. Note: We **highly** recommend using a static IP address in this case.
-
-**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
-that DNS propagation change could take anywhere from 1 minute to several hours (we set TTL to 60 seconds).
-
-Note: **Provision** may fail if your router or upstream DNS server has
+Important: **Auto** may not be selectable if your router or upstream DNS server has
 [DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
 protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
-a security feature on a local LAN which includes legacy devices with buggy/insecure "web" interfaces.
+a security feature on a LAN that may include legacy devices with buggy/insecure "web" interfaces.
 
 One source of DNS rebinding protection could be your ISP DNS server. In this case the problem may be solved by
-switching to a different DNS server such as Google's public DNS.
+switching to a different DNS server such as OpenDNS where DNS rebinding proection can be turned off.
 
 More commonly, DNS rebinding protection could be enabled in your router. Most consumer routers do not implement DNS
 rebinding protection; but, if they do, a configuration setting should be available to turn it off.
 
-Higher end routers usually do enable DNS rebinding protection however. Typically there are ways of turning it off
+Higher end routers usually do enable DNS rebinding protection. Typically there are ways of turning it off
 entirely or selectively based on domain. Examples:
 
 **DD-WRT:** If you are using "dnsmasq" with DNS rebinding protection enabled, you can add this line to your router
@@ -1224,8 +1173,60 @@ configuration file:
 **OpenDNS:** Go to Settings -> Security and *remove* the checkbox next to
  "Suspicious Responses - Block internal IP addresses". It is an all-or-nothing setting.
 
-When all else fails, you can create an entry in your PC's *hosts* file to override external DNS and
+When all else fails, you may be able create an entry in your PC's *hosts* file to override external DNS and
 directly resolve your servers unraid.net FQDN to its local IP address.
+:end
+
+:mgmt_http_port_help:
+Enter the HTTP port, default port is 80.
+:end
+
+:mgmt_https_port_help:
+Enter the HTTPS port, default port is 443.
+:end
+
+:mgmt_local_tld_help:
+Enter your local Top Level Domain. May be blank.
+:end
+
+:mgmt_certificate_expiration_help:
+**Provision** may be used to install a *free* SSL Certficiate from
+[Let's Encrypt](https://letsencrypt.org/).
+
+After a Let's Encrypt SSL Certificate has been installed, two
+background services are activated:
+
+- *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
+DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
+the local IP address has changed.
+
+- *renewcert* - This starts 60 seconds after server reboot has completed and contacts the Lime Technology
+certificate renewal service to determine if your Let's Encrypt SSL certificate needs to be renewed.
+Thereafter it wakes up every 24 hours. If within 30 days of expiration, a new certificate is automatically
+provisioned and downloaded to your server.
+
+**Delete** may be used to delete the Let's Encrypt certificate file.
+
+**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
+that world-wide DNS propagation could take anywhere from 1 minute to several hours (we set TTL to 60 seconds). For
+this reason, we also recommend assigning a static IP address to the server on your LAN.
+
+**nginx certificate handling details**
+
+nginx makes use of two certificate files stored on the USB flash boot device:<br>
+
+- a self-signed certificate: `config/ssl/certs/<server-name>_unraid_bundle.pem`
+
+- a Let's Encrypt certificate: `config/ssl/certs/certificate_bundle.pem`
+
+The self-signed SSL certificate file is automatically created when nginx
+starts; and re-created if the server hostname or local TLD is changed.
+
+**nginx stapling support**
+
+Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
+`config/ssl/certs/certificate_bundle.pem` => Yes<br>
+`config/ssl/certs/<server-name>_unraid_bundle.pem` => No
 :end
 
 :ftp_server_help:
