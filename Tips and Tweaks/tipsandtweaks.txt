@@ -52,7 +52,6 @@ Max Watches=
 CPU Scaling Governor=
 Enable Intel TurboAMD Performance Boost=
 Time to set=
-Disable FTP Server=
 Enable syslog Archiving=
 Number of syslogs to Archive=
 Processes to kill before Array is Stopped=
@@ -162,10 +161,6 @@ Governor=
 
 :tips_tweaks_cpu_state_plug:
 > Enter the time you want to set the governor to "Power Save" for Intel Pstate and Intel CPU Freq or "On Demand" in 24 hour format hh:mm.
-:end
-
-:tips_tweaks_ftp_plug:
-> Set to 'Yes' to disable the FTP Server.  You will have to reboot to enable it again once you select 'No'.
 :end
 
 :tips_tweaks_syslog_archive_plug:
