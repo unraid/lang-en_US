@@ -24,6 +24,9 @@ Empty=
 Array is stopped=
 SMB Share=
 Share Type=
+To hide the Recycle Bin folder, set 'Hide Dot Files'
+to 'Yes' in the SMB settings=
+here=
 Trash Size=
 Empty Trash=
 Array=
