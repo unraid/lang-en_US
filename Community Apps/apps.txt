@@ -1,5 +1,3 @@
-; Translation Credit.  Will appear in CA's credits
-translationCredit=<Author> (<Language>)
 Cancel=
 
 ; My PSAs / banners
@@ -19,6 +17,8 @@ Sort By Name Descending=
 Sort By Downloads=
 Sort By Trend=
 Sort By Date Added=
+Sort By Number Of Apps=
+Sort By Average Trend=
 ; Initial disclaimer translations
 Disclaimer=
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=
@@ -34,13 +34,46 @@ Plugin Note=
 
 ; Multi Install
 Install Plugin Applications=
+Select all on page=
 
 ; Searches
 Search=
-Please enter search term=
 Click Here To Get More Results From DockerHub=
 No Matching Applications Found On Docker Hub=
 No Matching Applications Found=
+
+; Repository Related
+Removed favourite repository=
+%s set as favourite repository=
+Click to remove favourite repository=
+Click to set %s as favourite repository=
+Search for apps in repository=
+No description present=
+Go to the forum page=
+Go to the webpage=
+Go to reddit=
+Go to facebook=
+Go to discord=
+Go to forum profile=
+Show Profile=
+Read more=
+Favourite Repository=
+Set as favourite repository=
+Total Applications=
+Total Known Downloads=
+Total Docker Applications=
+Total Plugin Applications=
+Total Languages=
+Average Downloads Per App=
+Web Page=
+Forum=
+Forum Profile=
+Facebook=
+Reddit=
+Twitter=
+Discord=
+Search Apps=
+Profile=
 
 ; Install Plugin title of openbox
 Install Plugin=
@@ -87,13 +120,17 @@ Post the ENTIRE contents of this message in the Community Applications Support T
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=
 Something really wrong happened Reloading the Apps tab will probably fix the problem=
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=
+You have been logged out=
+Fatal Flash Drive Error=
+This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=
+
 
 ; CA Sections Keep the length reasonable
 MENU=
 Installed Apps=
 Previous Apps=
 Pinned Apps=
-CATEGORIES=
+Favourite Repo=
 New Apps=
 Updated Apps=
 Random Apps=
@@ -106,6 +143,7 @@ Credits=
 Support=
 VERSION=
 Change Log=
+Debugging=
 
 ; Credits
 Development=
@@ -166,7 +204,9 @@ Community Applications Changelog=
 
 Backup=
 Cloud=
+Crypto Currency=
 Downloaders=
+Drivers=
 Game Servers=
 Home Automation=
 Media Applications=
@@ -194,7 +234,7 @@ Utilities=
 Private Apps=
 Uncategorized=
 
-; Categories displayed within a popup or on the card
+; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
 GameServers=
 HomeAutomation=
 MediaApp=
@@ -226,6 +266,8 @@ OtherUncategorized=Other:Uncategorized
 and %s more=
 
 ; App Popup Related
+This application has additional requirements=
+Additional Requirements=
 Donate To Author=
 Donate To Maintainer=
 Author=
@@ -284,6 +326,7 @@ Docker Application Installation finished=
 
 ; Application Cards
 Private dockerHub Conversion=Private (dockerHub Conversion)
+Private Application=
 Go to the project page=
 Go to the support thread=
 Uninstall Application=
@@ -321,6 +364,7 @@ Update Language Pack=
 Installed Version=
 A note about translations=
 Click here to view the language changelog=
+View Missing Translations=
 
 ; Help Text
 This chooses how to sort the results=
@@ -338,3 +382,4 @@ On the previous apps section you can select multiple applications to install sim
 This is the recommended version to install by the application author themselves=
 For support for this plugin visit=
 To view the policies Community Applications has=
+This sets a favourite repository which will appear first in any search result=

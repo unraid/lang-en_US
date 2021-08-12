@@ -60,6 +60,7 @@ name of mount tag inside vm=
 Name of virtual machine=
 Network Bridge=
 Network MAC=
+Network Model=
 No Virtual Machines installed=
 None available=
 Not enough free space, need at least=
