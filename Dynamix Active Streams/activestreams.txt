@@ -1,0 +1,17 @@
+Halt=
+Host Address=
+Host=
+No active streams=
+Playtime=
+Stop stream=
+Stream=
+User Name=
+User=
+
+:streams_plug:
+> Give symbolic names to IP addresses, which are displayed on the active streams page.
+>
+> New IP addresses are automatically added to the list when detected.
+>
+> To remove a name association, clear the respective user name box and press apply.
+:end

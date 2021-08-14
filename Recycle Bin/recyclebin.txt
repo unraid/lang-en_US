@@ -40,12 +40,8 @@ Yes I want to do this=
 ; Help
 ;
 :recycle_bin_shares_plug:
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
-These actions apply to all shares=
-Remove Aged Files=
-to remove deleted files older than the 'Age Days' setting=
-Empty All Trash=
-to remove all deleted files=
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period.
+These actions apply to all shares:
 > Recycle Bin Shares:
 >
 > The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
