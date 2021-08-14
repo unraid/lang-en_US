@@ -37,6 +37,7 @@ Install Plugin Applications=
 Select all on page=
 
 ; Searches
+Clear Search=
 Search=
 Click Here To Get More Results From DockerHub=
 No Matching Applications Found On Docker Hub=
@@ -144,6 +145,7 @@ Support=
 VERSION=
 Change Log=
 Debugging=
+Repositories=
 
 ; Credits
 Development=
