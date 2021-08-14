@@ -30,7 +30,9 @@ Restart the Recycle Bin=
 Share Type=
 SMB Share=
 Start the Recycle Bin=
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
 Stop the Recycle Bin=
+These actions apply to all shares=
 To hide the Recycle Bin folder, set 'Hide Dot Files'=
 to 'Yes' in the SMB settings=
 Trash Size=
@@ -40,8 +42,6 @@ Yes I want to do this=
 ; Help
 ;
 :recycle_bin_shares_plug:
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period.
-These actions apply to all shares:
 > Recycle Bin Shares:
 >
 > The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
