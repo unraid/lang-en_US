@@ -18,6 +18,7 @@ Log Deleted Files=
 Recycle Bin=
 Recycle Bin Log=
 Recycle Bin parameters=
+Recycle Bin permissions=
 Recycle Bin Total Size=
 Refresh the Recycle Bin page=
 Remove Aged Files=
@@ -30,7 +31,7 @@ Share Type=
 SMB Share=
 Start the Recycle Bin=
 Stop the Recycle Bin=
-To hide the Recycle Bin folder, set 'Hide Dot Files'
+To hide the Recycle Bin folder, set 'Hide Dot Files'=
 to 'Yes' in the SMB settings=
 Trash Size=
 Update Recycle Bin Size in Background=
