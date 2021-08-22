@@ -2239,3 +2239,15 @@ A keepalive timer will hold the connection open, for most situations a timer val
 
 Note that for mobile devices this will use more data and drain your battery faster.
 :end
+
+:check_method_help:
+The system can perform background checking of the Flash device and warn the user when an error occurs due to file system corruption.
+
++ **None** --  No check is performed
+
++ **File System check** -- A file system verification is done on the first partition of the flash device
+
++ **SHA256 hash check** -- A sha256 checksum verification is done on a selected number of bz* images
+
++ **Configuration check** -- A parse verification is done on a selected number of configuration files, this is the default setting
+:end
