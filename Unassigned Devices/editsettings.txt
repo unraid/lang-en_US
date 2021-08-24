@@ -1,0 +1,54 @@
+Click the 'Default Script' button to select the default Script File=
+Default Script=
+Delete Script File=
+Edit Script=
+Enter Script File Name=
+Enter and Edit the Script that runs when a udev or operator event occurs=
+Enter the User Script that will be using this device=
+Load the default script=
+Remove Script File=
+Run in background=
+Mount Device Read only=
+Mount Device when Plugged in or Array is Started=
+Mount ISO File when Array is Started=
+Mount Remote SMB or NFS Share when Array is Started=
+Run Script File in the background=
+Save your Script File changes=
+Save=
+Script content=
+Share Device with SMB and NFS=
+Share Remote Mount with SMB and NFS=
+Mark this Device as passed through to a VM or Docker=
+Unassigned Devices Settings=
+Undo your changes since last Save=
+Volume=
+;
+; Help
+;
+:ud_edit_script_device_settings_plug:
+> Select the options for this device/mount point.  These changes are made immediately.  You don't need to click **Save** to save them.
+:end
+
+:ud_apfs_volume_plug:
+> Enter the volume to mount on this apfs partition. Click **Save** to commit this setting.
+:end
+
+:ud_edit_script_choose_name_plug:
+> This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script name.
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device.  This field will only be enabled when a Script File exists.
+:end
+<?endif;?>
+
+:ud_edit_script_run_background_plug:
+> Turn on the **Run in Background** to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+:end
+
+:ud_edit_script_buttons_plug:
+> Click the **Save** button to commit the current edits.  Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
+>
+> Click the **Default Script** button to initialize the edit box with a default script.
+> You still need to click **Save** in order to commit the change.
+:end

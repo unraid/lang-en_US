@@ -35,7 +35,7 @@ Other Highlight Color=
 ; Help
 ;
 :enhanced_syslog_show_all_lines_plug:
-> Set to 'Yes' to show all lines in the enhanced log.  Set to 'No' to show only highlighted lines.
+> Set to **Yes** to show all lines in the enhanced log.  Set to **No** to show only highlighted lines.
 :end
 
 :enhanced_log_number_of_lines_plug:
@@ -43,95 +43,95 @@ Other Highlight Color=
 :end
 
 :enhanced_log_enable_error_plug:
-> Set to 'Yes' to enable 'Errors' highlighting in the enhanced log.
+> Set to **Yes** to enable **Errors** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_minor_plug:
-> Set to 'Yes' to enable 'Minor Issues' highlighting in the enhanced log.
+> Set to **Yes** to enable **Minor Issues** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Set to 'Yes' to enable 'Lime Tech' highlighting in the enhanced log.
+> Set to **Yes** to enable **Lime Tech** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_array_plug:
-> Set to 'Yes' to enable 'Array' highlighting in the enhanced log.
+> Set to **Yes** to enable **Array** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_system_plug:
-> Set to 'Yes' to enable 'System' highlighting in the enhanced log.
+> Set to **Yes** to enable **System** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Set to 'Yes' to enable 'File System' highlighting in the enhanced log.
+> Set to **Yes** to enable **File System** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_drive_plug:
-> Set to 'Yes' to enable 'Drive Related' highlighting in the enhanced log.
+> Set to **Yes** to enable **Drive Related** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_network_plug:
-> Set to 'Yes' to enable 'Network' highlighting in the enhanced log.
+> Set to **Yes** to enable **Network** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_login_plug:
-> Set to 'Yes' to enable 'Login' highlighting in the enhanced log.
+> Set to **Yes** to enable **Login** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Set to 'Yes' to enable 'emhttp' highlighting in the enhanced log.
+> Set to **Yes** to enable **emhttp** highlighting in the enhanced log.
 :end
 
 :enhanced_log_enable_other_plug:
-> Set to 'Yes' to enable 'Other' highlighting in the enhanced log.
+> Set to **Yes** to enable **Other** highlighting in the enhanced log.
 :end
 
 :enhancd_log_default_plug:
-> 'Default' resets the Configuration and Colors.  Click 'Apply' to save your changes.  Click 'Done' when you are finished with your changes.
+> **Default** resets the Configuration and Colors.  Click **Apply** to save your changes.  Click **Done** when you are finished with your changes.
 :end
 
 :enhanced_log_color_error_plug:
-> Color to use for 'Error' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Error** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_minor_plug:
-> Color to use for 'Minor Issues' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Minor Issues** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_limetech_plug:
-> Color to use for 'Lime Tech' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Lime Tech** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_array_plug:
-> Color to use for 'Array' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Array** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_system_plug:
-> Color to use for 'System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **System** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_file_system_plug:
-> Color to use for 'File System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **File System** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_drive_plug:
-> Color to use for 'Drive Related' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Drive Related** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_network_plug:
-> Color to use for 'Network' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Network** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_login_plug:
-> Color to use for 'Login' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Login** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Color to use for 'emhttp' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **emhttp** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_color_other_plug:
-> Color to use for 'Other' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color to use for **Other** highlighting.  You can use the color name or number.  The color number begins with a '#'.
 :end
 
 :enhanced_log_custom_plug:

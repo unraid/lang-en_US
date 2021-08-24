@@ -1,0 +1,10 @@
+Click DETECT=
+Detect=
+Exclude drives=
+Fan control function=
+High temperature threshold=
+Low temperature threshold=
+Minimum PWM value=
+PWM controller=
+PWM fan=
+Refresh interval=
