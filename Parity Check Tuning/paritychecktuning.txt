@@ -1,8 +1,13 @@
 ; Translation text for the Parity Check Tuning plugin
 
+; PART 1 - text strings
+
 ; Parity Check Settings Page
+
+Parity Check Tuning=
 automatic=
 Basic=
+below critical disk temperature threshold=
 below warning disk temperature threshold=
 CAUTION=
 Click to show parity-check history=
@@ -15,7 +20,7 @@ High disk temperatures can shutdown server=
 Increment frequency=
 Increment pause time=
 Increment resume time=
-manual=
+No parity check entries found in syslog=
 ParityRead-Check History=Parity/Read-Check History=
 Parity Check=
 Parity Check Tuning logging=
@@ -32,6 +37,9 @@ scheduled=
 Send notifications for Pause or Resume of increments=
 Send notifications for temperature related Pause or Resume=
 Shutdown server at=
+Syslog only=
+Syslog and Flash=
+Flash only=
 Testing=
 Unscheduled=
 Use increments for %s %s=
@@ -40,26 +48,37 @@ Use increments for Parity-SyncData Rebuild operations=Use increments for Parity-
 You require a parity disk present for this option to be relevant=
 
 ; Parity Problems Assistant page
-
-The Parity Problems Assistant is part of the Parity Check Tuning plugin=The **Parity Problems Assistant** is part of the **Parity Check Tuning** plugin= 
-The current status is EXPERIMENTAL and it is always possible that this assistant may be removed in the future=The current status is **EXPERIMENTAL** and it is always possible that this assistant may be removed in the future  
-feedback is welcomed on the basic concept and ideas for improvement=
-This assistant is intended to help pin down and resolve problems after a parity check has been run and errors have been reported=
-The idea is that this assistant can be used after a parity check or read check has reported problems and logged the details of any problem sectors to the syslog=
-In many cases such errors can be due to external factors such as cabling or the power supply rather than the actual disks=   
-If you think you have rectified whatever caused the problems to occur then you can use this assistant to run a partial check over a narrow range to see if the problem still occurs=
-This can be much faster than having to run a full parity check or read check to see if you have resolved the issue or to run a disk extended SMART test to test the actual disk= 
-This assistant should never be used as an alternative to running a full parity check once you think the problem has been resolved=
+Parity Problems Assistant=
+; page intro text
+:parityProblems_intro_plug:
+The **Parity Problems Assistant** is part of the **Parity Check Tuning** plugin.<p/>
+The current status is **EXPERIMENTAL** and it is always possible that this assistant may be removed in the future).  
+**(feedback is welcomed on the basic concept and ideas for improvement)**.<p/>
+The idea is that this assistant can be used after a parity check or read check has reported problems and logged the details of any problem sectors to the syslog.  
+In many cases such errors can be due to external factors such as cabling or the power supply rather than the actual disks.<p/>
+It is also not uncommon, particularly on **Ryzen/ThreadRipper** based systems, to get random parity errors if the RAM is overclocked
+(an XMP profile **is** an overclock),  
+and the motherboard/CPU combination may also impose limits that are lower than the RAM is capable of supporting.<p/>
+If you think you have rectified whatever caused the problems to occur then you can use this assistant to run a partial check over a narrow range to see if the problem still occurs.  
+This can be much faster than having to run a full parity check or read check to see if you have resolved the issue or to run a disk extended SMART test to test the actual disk.<p/>
+**IMPORTANT**:  This assistant should never be used as an alternative to running a full parity check once you think the problem has been resolved.
+:end
+; fields
+Click to show Error Sectors from syslog=
 End point for check=
 Method used to specify start and stop points=
+Only read checks can be performed=
+percent=
 Percentage=
+sector=
 Sector Numbers=
+Show Sector Numbers=
 Start Check=
 Start point for check=
 Write Corrections to Parity=
 
-
 ; PHP file messages
+
 Analyze results from an array operation=
 Array being shutdown due to drive overheating=
 Array operation will not be restarted=
@@ -91,8 +110,10 @@ Usage=
 where action is one of=
 
 ; Notifications
+
 aborted due to Unclean shutdown=
 array stopping so progress will be lost=
+; The type of array operation (parity check, clear, rebuild) will be appended to the following text
 Automatic unRaid=
 Average Speed=
 completed=
@@ -110,7 +131,6 @@ Runtime=
 Scheduled pause=
 Unclean shutdown detected=
 will be started=
-
 
 ; Swal warnings
 
@@ -140,9 +160,9 @@ Testing mode is normally only used by the plugin author or when gathering eviden
 Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless this is really necessary=
 The Pause and Resume times would give an increment length of more than 12 hours which is unusual=
 The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the unRaid level=
 This might affect array integrity=
-
-Temperature Pause and Resume=
+Unusually large value=
 
 ; Syslog messages (with debug logging disabled)
 
@@ -192,11 +212,11 @@ Temperature monitoring switched off=
 Unscheduled array operation in progress=
 using scheduled mode of %s=
 warm=
-with all drives below temperature threshold for a Pause=
-
+with all array drives below temperature threshold for a Pause=
 
 ; Syslog messages (with testing logging enabled)
 ; (almost certainly not worth translating these as they are mainly of use to the plugin developer)
+
 analyze previous progress before starting new one=
 Array not started so no action taken=
 Drive %s%s appears to be critical=
@@ -204,6 +224,11 @@ Plugin temperature settings=
 shutdown %s=
 Shutdown not actioned as running in TESTING mode=
 updated cron settings are in %s=
+
+; PART 2 - TEXT Blocks ant HELP text
+
+End point for check=
+Method used to specify start and stop points=
 
 ; Help text on settings page
 ; These could perhaps be left in English to keep translation task easier)
@@ -313,9 +338,9 @@ updated cron settings are in %s=
 :end
 
 :parity_tune_hot_plug:
-> Pause an array operation(Parity Check, Parity-Sync/Disk Rebuild, disk Clear) if the disk temperatures exceeds the limits you have set.
+> Pause an array operation(Parity Check, Parity-Sync/Disk Rebuild, disk Clear)if the disk temperatures exceeds the limits you have set. 
 >
->The temperatures are checked against the thresholds set for the Warning disk temperature levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (set via *Settings->Display Settings*) will be used.
+>The temperatures are checked against the thresholds set for the Warning disk temperature levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (set via *Settings->Display Settings*) will be used.  It is assumed that normally you would want the array operation to be paused before the value set at the unRaid level as the Warning Threshold.
 >
 >A much better solution is to improve the cooling in your case so that the disks never overheat.   In practice this may not always prove practical.
 >
@@ -323,10 +348,11 @@ updated cron settings are in %s=
 :end
 
 :parity_tune_warn_plug:
-> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered.
+> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered. If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+>
 > You normally want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature warning threshold has been reached for a disk.
 >
-> If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+> As an example if the Warning threshold for a drive is 50C then setting a pause value of 5 would cause the plugin to pause the operation if that drive reached 45C (50-5).
 >
 >If there is no active array operation then no action will be taken even if disk temperatures exceed the specified threshold.
 >
@@ -335,6 +361,7 @@ updated cron settings are in %s=
 
 :parity_tune_low_plug:
 > This value indicates how much below the Warning temperature threshold of a drive must reach before a **resume** of an array operation is issued.
+>
 >You need to get a good balance between array operations being resumed too soon (and thus quickly reaching the level to initiate another pause) and wasting a lot of time.
 >
 >If a disk ever gets spun down the temperature is not readily available so it will be assumed that this criteria has been met
@@ -407,4 +434,24 @@ updated cron settings are in %s=
 > In practice for technical reasons the check may end later than the point you specify as a check is only made once a minute to see if the end point has been reached.
 :end
 
+:parityProblems_correct_plug:
+> Specify whether you want to attempt to update parity to correct any error found,
+> or just do a read test to see if any parity errors are reported.
+:end
 
+:parityProblems_correct_plug:
+> Specify whether you want to attempt to update parity to correct any error found,
+> or just do a read test to see if any parity errors are reported.
+:end
+
+:parityProblems_check_plug:
+> When you click on the option to **Start Check** then a partial check is initiated that
+> will cover the start and end points that you have specified.  It will be a correcting check 
+> if the option to **Write Corrections** is set to **Yes**, and a read-check otherwise.
+:end
+
+:parityProblems_sectors_plug:
+> When you click on the option to **Show Sector Numbers** then the a dialog will be shown
+> that extracts entries from the syslog that have shown any sectors for which any parity
+> sector is displayed and whether the it was being corrected or is a parity error.
+:end
