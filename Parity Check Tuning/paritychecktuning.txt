@@ -85,6 +85,7 @@ Array operation will not be restarted=
 Array operation restarted=
 Array shutdown=
 Cancel a running parity check=
+Command Line was=
 Correcting=
 Detected a change to the disk configuration=
 Drives cooled down=
@@ -173,7 +174,7 @@ Following drives overheated=
 Only able to start a Read-Check due to number of disabled drives=
 
 ; Syslog messages (with debug logging enabled)
-; (probably not worth translating these as they are mainly of use to the plugin developer)
+; (May not be worth translating these as they are mainly of use to the plugin developer)
 
 appears to be a regular scheduled check=
 %s cancel request sent %s=
@@ -189,6 +190,8 @@ Cancel request=
 cool=
 created cron entries for running increments=
 created cron entry for monitoring disk temperatures=
+created cron entry for scheduled pause and resume=
+created cron entry for default monitoring=
 Detected that array has not yet been started=
 Detected that array has just been started=
 detected that mdcmd had been called from %s with command %s=
@@ -209,6 +212,7 @@ Removed existing state file %s=
 Resume request=
 so no further action to take=
 Temperature monitoring switched off=
+Unraid version %s is too old to support restart
 Unscheduled array operation in progress=
 using scheduled mode of %s=
 warm=
