@@ -57,6 +57,7 @@ Go to discord=
 Go to forum profile=
 Show Profile=
 Read more=
+Read less=
 Favourite Repository=
 Set as favourite repository=
 Total Applications=
