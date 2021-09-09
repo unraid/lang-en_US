@@ -17,6 +17,8 @@ Sort By Name Descending=
 Sort By Downloads=
 Sort By Trend=
 Sort By Date Added=
+Sort By Number Of Apps=
+Sort By Average Trend=
 ; Initial disclaimer translations
 Disclaimer=
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=
@@ -35,8 +37,8 @@ Install Plugin Applications=
 Select all on page=
 
 ; Searches
+Clear Search=
 Search=
-Please enter search term=
 Click Here To Get More Results From DockerHub=
 No Matching Applications Found On Docker Hub=
 No Matching Applications Found=
@@ -130,8 +132,6 @@ Installed Apps=
 Previous Apps=
 Pinned Apps=
 Favourite Repo=
-CATEGORIES=
-FILTERS=
 New Apps=
 Updated Apps=
 Random Apps=
@@ -145,6 +145,7 @@ Support=
 VERSION=
 Change Log=
 Debugging=
+Repositories=
 
 ; Credits
 Development=
@@ -205,7 +206,9 @@ Community Applications Changelog=
 
 Backup=
 Cloud=
+Crypto Currency=
 Downloaders=
+Drivers=
 Game Servers=
 Home Automation=
 Media Applications=
@@ -265,6 +268,9 @@ OtherUncategorized=Other:Uncategorized
 and %s more=
 
 ; App Popup Related
+CLOSE=
+This application has additional requirements=
+Additional Requirements=
 Donate To Author=
 Donate To Maintainer=
 Author=
@@ -295,6 +301,7 @@ WebUI=
 Reinstall=
 Install=
 Project=
+Update=
 Install Using The Templates Default Tag=Install Using The Template's Default Tag
 Moderator Comments=Moderator Comments:
 Note not all authors keep up to date on change logs=
