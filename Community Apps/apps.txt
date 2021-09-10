@@ -271,6 +271,7 @@ This application has additional requirements=
 Additional Requirements=
 Donate To Author=
 Donate To Maintainer=
+CLOSE=
 Author=
 Maintainer=
 DockerHub=
