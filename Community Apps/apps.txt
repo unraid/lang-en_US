@@ -316,6 +316,7 @@ Latest Version=
 Multi Language Support=
 ; as in more than 100000
 More than %s=
+Remove from Previous Apps=
 
 ; Graphs
 Trend Per Month=
