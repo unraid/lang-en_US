@@ -302,6 +302,7 @@ WebUI=
 Reinstall=
 Install=
 Project=
+Install second instance=
 Install Using The Templates Default Tag=Install Using The Template's Default Tag
 Moderator Comments=Moderator Comments:
 Note not all authors keep up to date on change logs=
