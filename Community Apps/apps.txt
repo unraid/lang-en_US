@@ -291,6 +291,8 @@ Ranked #%s=
 Trending %s=
 ; as in As of some date
 As of %s=(As of %s)
+Show Charts=
+Hide Charts=
 This application template has been blacklisted=This application / template has been blacklisted
 This application template has been deprecated=This application / template has been deprecated
 This application is not compatible with your version of Unraid=
