@@ -354,6 +354,7 @@ Click for more information=
 ; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
 BETA=
 Info=
+Attention=
 
 ; Dockerhub searches
 Search For Containers From %s=
