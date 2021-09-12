@@ -37,7 +37,6 @@ To hide the Recycle Bin folder, set 'Hide Dot Files'=
 to 'Yes' in the SMB settings=
 Trash Size=
 Update Recycle Bin Size in Background=
-Yes I want to do this=
 ;
 ; Help
 ;

@@ -21,6 +21,7 @@ Click to select ISO file=
 Click to view/hide partitions and mount points=
 Complete=
 Disks=
+Disk Label=
 Disk Log Information=
 Domain=
 Edit Device Script=
@@ -118,24 +119,24 @@ You will need to enter credentials for Windows 10 shares just to list them=
 >
 > Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
 :end
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices is called UD for short.**
 >
 > Hover your mouse over an any active area on the UD page and a tool tip will show you what clicking that area does.
-> You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD.  Any devices with the auto mount switch on will be mounted when the array is started.  All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
-> If you want to share your drive, you can turn on the Share switch.  The default for Remote SMB shares is Public read/write access.  Enable SMB Security by user in the Unassigned Devices Settings.  NFS shares are exported and access is read/write.  The export of NFS devices is enabled in the Unassigned Devices settings. You can also enable a common script that will be executed on every disk mount.  In order to share any UD device, sharing needs to be enabled in the UD Settings and the switch turned on to share the particular device.  SMB/NFS remove shares and ISO mounts are always shared.
+> You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD. Any devices with the auto mount switch on will be mounted when the array is started. All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
+> If you want to share your drive, you can turn on the Share switch. The default for Remote SMB shares is Public read/write access. Enable SMB Security by user in the Unassigned Devices Settings. NFS shares are exported and access is read/write. The export of NFS devices is enabled in the Unassigned Devices settings. You can also enable a common script that will be executed on every disk mount. In order to share any UD device, sharing needs to be enabled in the UD Settings and the switch turned on to share the particular device. SMB/NFS remove shares and ISO mounts are always shared.
 > After entering a mount point, press &lt;Enter&gt; to save the change.
 >
-> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification.  When the disk is unmounted, the mount point of the device can be changed.  The disk label will also be changed.  A disk can be formatted and an fsck run to check the disk.
+> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
 >
 > The 'Settings->Unassigned Devices' security settings for SMB and NFS must be set correctly for SMB and NFS sharing to work properly.
 >
-> If the mount button is grayed out for a SMB/NFS remote share, the remote server is not responding to a ping.  The remote share server must respond to a ping or UD will consider it off-line.
+> If the mount button is grayed out for a SMB/NFS remote share, the remote server is not responding to a ping. The remote share server must respond to a ping or UD will consider it off-line.
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks.	If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.  Go the the 'Settings->Unassigned Devices' to set the destructive mode.
+> UD has a destructive mode that allows deleting disk partitions and formatting disks. If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions. Go the the 'Settings->Unassigned Devices' to set the destructive mode.
 >
 > **To format a disk:**
 >
@@ -143,11 +144,11 @@ You will need to enter credentials for Windows 10 shares just to list them=
 > + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
 > + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
 >
-> **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array.  Supported file formats are XFS, XFS encrypted, BTRFS and BTRFS encrypted.**
+> **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array. Supported file formats are XFS, XFS encrypted, BTRFS and BTRFS encrypted.**
 >
 > **Encrypted Disks:**
 >
-> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassigned Devices->Settings for that disk.
+> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array. Or you can set a unique password when it is formatted. If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassigned Devices->Settings for that disk.
 > + Any disk that was not encrypted with the Array password/passphrase can be mounted by setting a per disk password set in Unassigned Devices->Settings.
 >
 > **Unassigned devices script:**
@@ -158,9 +159,9 @@ You will need to enter credentials for Windows 10 shares just to list them=
 > + '/usr/local/sbin/rc.unassigned mount autoshares' - all SMB/NFS mounts set to auto mount will be mounted.
 > + '/usr/local/sbin/rc.unassigned umount auto' - all devices and SMB/NFS mounts set to auto mount will be unmounted.
 > + '/usr/local/sbin/rc.unassigned umount all' - all devices and SMB/NFS mounts are unmounted in preparation for shutting down the array.
-> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - mount device sdX where 'X' is the device designator.  The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to mount.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - unmount device sdX where 'X' is the device designator. The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to unmount. You can use this command in a UD script to unmount the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned spindown devX' - spin down a disk.  The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to spin down.  SSDs will not spin down.
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - mount device sdX where 'X' is the device designator. The devX is the device name in the UD page. If the device name is 'Dev 1', then use dev1 as the device to mount.
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - unmount device sdX where 'X' is the device designator. The devX is the device name in the UD page. If the device name is 'Dev 1', then use dev1 as the device to unmount. You can use this command in a UD script to unmount the device when the script has completed.
+> + '/usr/local/sbin/rc.unassigned spindown devX' - spin down a disk. The devX is the device name in the UD page. If the device name is 'Dev 1', then use dev1 as the device to spin down. SSDs will not spin down.
 > + '/usr/local/sbin/rc.unassigned mount SOURCE' - where SOURCE is the SMB/NFS source.
 > + '/usr/local/sbin/rc.unassigned umount SOURCE' - where SOURCE is the SMB/NFS source.
 >

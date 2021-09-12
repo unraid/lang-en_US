@@ -26,7 +26,7 @@ Volume=
 ; Help
 ;
 :ud_edit_script_device_settings_plug:
-> Select the options for this device/mount point.  These changes are made immediately.  You don't need to click **Save** to save them.
+> Select the options for this device/mount point. These changes are made immediately. You don't need to click **Save** to save them.
 :end
 
 :ud_apfs_volume_plug:
@@ -38,16 +38,16 @@ Volume=
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device.  This field will only be enabled when a Script File exists.
+> If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device. This field will only be enabled when a Script File exists.
 :end
 <?endif;?>
 
 :ud_edit_script_run_background_plug:
-> Turn on the **Run in Background** to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+> Turn on the **Run in Background** to have the script run as a background task. This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
 :end
 
 :ud_edit_script_buttons_plug:
-> Click the **Save** button to commit the current edits.  Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
+> Click the **Save** button to commit the current edits. Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
 >
 > Click the **Default Script** button to initialize the edit box with a default script.
 > You still need to click **Save** in order to commit the change.
