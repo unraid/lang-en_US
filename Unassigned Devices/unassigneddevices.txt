@@ -21,6 +21,7 @@ Click to select ISO file=
 Click to view/hide partitions and mount points=
 Complete=
 Disks=
+Disk Label=
 Disk Log Information=
 Domain=
 Edit Device Script=

@@ -17,6 +17,7 @@ must be enabled in SMB Settings to enable SMB v1=
 NFS Security=
 NFS Settings=
 NFS must be enabled to enable NFS Export=
+NFS Version to use when Mounting Remote Shares=
 Rule=
 SMB Security=
 Select Disk to change UUID=
@@ -71,6 +72,14 @@ Unassigned Devices=
 > Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
 >
 > Some remote servers need to have the version specified.
+:end
+
+:ud_settings_specify_nfs_vers_plug:
+> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+>
+> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+>
+> All NFS remote shares will be mounted with the specified version.
 :end
 
 :ud_settings_smb_security_plug:
