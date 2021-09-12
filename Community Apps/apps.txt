@@ -352,6 +352,8 @@ This application is not compatible with your version of Unraid=
 This application template has been blacklisted=
 Search for more applications from %s=
 Click for more information=
+; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
+BETA=
 
 ; Dockerhub searches
 Search For Containers From %s=
