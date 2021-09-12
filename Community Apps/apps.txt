@@ -346,7 +346,6 @@ Click to reinstall=
 Click to install=
 Install plugin=
 Click to go to the WebUI=
-This application has been marked as being Beta=
 This application template has been deprecated=
 This application is not compatible with your version of Unraid=
 This application template has been blacklisted=
