@@ -363,6 +363,8 @@ Details=
 Added=
 Downloads=
 Repository=
+Why we picked it=
+Application Spotlight=
 
 ; Dockerhub searches
 Search For Containers From %s=
