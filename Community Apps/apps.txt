@@ -362,6 +362,7 @@ Registry=
 Details=
 Added=
 Downloads=
+Repository=
 
 ; Dockerhub searches
 Search For Containers From %s=
