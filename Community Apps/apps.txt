@@ -355,7 +355,7 @@ Click for more information=
 BETA=
 Info=
 Attention=
-
+Registry=
 ; Dockerhub searches
 Search For Containers From %s=
 Search for similar containers=
