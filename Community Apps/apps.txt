@@ -56,8 +56,8 @@ Go to facebook=
 Go to discord=
 Go to forum profile=
 Show Profile=
-READ MORE=
-READ LESS=
+SHOW MORE=
+SHOW LESS=
 Favourite Repository=
 Set as favourite repository=
 Total Applications=
@@ -75,7 +75,10 @@ Twitter=
 Discord=
 Search Apps=
 Profile=
-
+Registry=
+Details=
+Added=
+Downloads=
 ; Install Plugin title of openbox
 Install Plugin=
 
@@ -357,6 +360,9 @@ Info=
 Attention=
 Registry=
 Details=
+Added=
+Downloads=
+
 ; Dockerhub searches
 Search For Containers From %s=
 Search for similar containers=
