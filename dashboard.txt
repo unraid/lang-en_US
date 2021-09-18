@@ -1,6 +1,5 @@
 %s ago=
 %s used of %s %s %%=%s used of %s (%s %%)
----=
 10 s=
 30 s=
 1 m=
@@ -32,7 +31,6 @@ FAN=
 Finding %s error=Finding: **%s** error
 Finding %s errors=Finding: **%s** errors
 General info=
-Go to cache settings=
 Go to CPU pinning settings=
 Go to disk settings=
 Go to Docker settings=
