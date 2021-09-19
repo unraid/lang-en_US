@@ -81,6 +81,7 @@ Added=
 Downloads=
 ; Install Plugin title of openbox
 Install Plugin=
+BACK=
 
 ; Remove App from previously installed
 Delete Template=
