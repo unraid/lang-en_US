@@ -69,6 +69,7 @@ Average Downloads Per App=
 Web Page=
 Forum=
 Forum Profile=
+Profile=
 Facebook=
 Reddit=
 Twitter=
