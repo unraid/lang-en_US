@@ -365,7 +365,7 @@ Added=
 Downloads=
 Repository=
 Why we picked it=
-Application Spotlight=
+Application Spotlight %s=
 Unraid Staff=
 
 ; Dockerhub searches
