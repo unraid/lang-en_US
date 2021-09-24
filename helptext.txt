@@ -1136,7 +1136,7 @@ Determines how the webGUI responds to HTTP and/or HTTPS protocol on your LAN.
 Select **No** to disable HTTPS.
 
 Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. A
-self-signed SSL certificate will be generated automatically.
+self-signed SSL certificate will be generated automatically if a Let's Encrypt SSL certificate has not been provisioned.
 
 Select **Auto** if you have *Provisioned* a Let's Encrypt SSL
 certificate.  In this case webGUI access will use HTTPS with the Let's Encrypt
@@ -1191,10 +1191,10 @@ Enter your local Top Level Domain. May be blank.
 
 :mgmt_certificate_expiration_help:
 **Provision** may be used to install a *free* SSL Certficiate from
-[Let's Encrypt](https://letsencrypt.org/).
+[Let's Encrypt](https://letsencrypt.org/), if the server is signed in to unraid.net.
 
 After a Let's Encrypt SSL Certificate has been installed, two
-background services are activated:
+background services are activated while the server is signed in to unraid.net:
 
 - *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
 DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
@@ -1207,7 +1207,7 @@ provisioned and downloaded to your server.
 
 **Delete** may be used to delete the Let's Encrypt certificate file.
 
-**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
+**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net, assuming the server is signed in. Note
 that world-wide DNS propagation could take anywhere from 1 minute to several hours (we set TTL to 60 seconds). For
 this reason, we also recommend assigning a static IP address to the server on your LAN.
 
