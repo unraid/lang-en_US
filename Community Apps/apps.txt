@@ -10,15 +10,14 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=
 
 ; Sorting Options
-Sorting options=
-Sorting options unavailable=
-Sort By Name Ascending=
-Sort By Name Descending=
-Sort By Downloads=
-Sort By Trend=
-Sort By Date Added=
-Sort By Number Of Apps=
-Sort By Average Trend=
+Sort By=
+Name Ascending=
+Name Descending=
+Downloads=
+Trend=
+Date Added=
+Number Of Apps=
+Average Trend=
 ; Initial disclaimer translations
 Disclaimer=
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=
