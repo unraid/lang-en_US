@@ -141,6 +141,7 @@ Updated Apps=
 Random Apps=
 Top New Installs=
 Top Trending Apps=
+Spotlight Apps=
 All Apps=
 OTHER=
 Statistics=
