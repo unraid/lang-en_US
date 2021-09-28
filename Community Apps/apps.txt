@@ -326,6 +326,7 @@ Install The Update=
 ; as in you have the latest version already installed
 Latest Version=
 Multi Language Support=
+Support Forum=
 ; as in more than 100000
 More than %s=
 Remove from Previous Apps=
