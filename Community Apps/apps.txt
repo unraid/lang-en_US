@@ -209,7 +209,7 @@ Community Applications Changelog=
 Each month we highlight some of the amazing work from our community=
 Check out these newly added applications from our awesome community=
 Check out these up and coming apps=
-These apps are what are currently being installed by new users first=
+These apps have the highest number of new installs=
 An assortment of randomly chosen apps=
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
