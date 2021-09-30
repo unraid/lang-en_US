@@ -163,10 +163,7 @@ Copyright=
 Translation=
 
 ; Statistics page
-Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=
-The following applications are blacklisted CA will never allow you to install or reinstall these applications=
-While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=
-This display is informational ONLY=
+
 unknown=
 Last Change To Application Feed=
 Number Of Docker Applications=
