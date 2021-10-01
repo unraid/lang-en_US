@@ -392,21 +392,3 @@ Installed Version=
 A note about translations=
 Click here to view the language changelog=
 View Missing Translations=
-
-; Help Text
-This chooses how to sort the results=
-These icons respectively will Install or Edit an application=
-Clicking these icons will take you to an applications GUI or settings=Clicking these icons will take you to an application's GUI or settings
-This will update an application=
-This will take you to the appropriate support thread for an application=
-This will immediately switch to the language=
-This will take you to the project page for an application=
-Clicking this icon will uninstall the application or delete it from the lists depending upon your current section=
-Clicking these icons will pin or unpin an application for later viewer from the Pinned Apps section=
-Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information=
-Clicking this will display any warnings or extra comments about the application=
-On the previous apps section you can select multiple applications to install simultaneously=
-This is the recommended version to install by the application author themselves=
-For support for this plugin visit=
-To view the policies Community Applications has=
-This sets a favourite repository which will appear first in any search result=
