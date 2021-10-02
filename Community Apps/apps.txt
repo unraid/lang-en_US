@@ -42,7 +42,7 @@ No Matching Applications Found On Docker Hub=
 No Matching Applications Found=
 
 ; Repository Related
-Removed favourite repository=
+%s removed as favourite repository=
 %s set as favourite repository=
 Click to remove favourite repository=
 Click to set %s as favourite repository=
@@ -327,6 +327,8 @@ Support Forum=
 ; as in more than 100000
 More than %s=
 Remove from Previous Apps=
+See All Apps=
+Favourite=
 
 ; Graphs
 Trend Per Month=
