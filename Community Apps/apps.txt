@@ -311,6 +311,7 @@ WebUI=
 Reinstall=
 Install=
 Project=
+Read Me First=
 Install second instance=
 Install Using The Templates Default Tag=Install Using The Template's Default Tag
 Moderator Comments=Moderator Comments:
