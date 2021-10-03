@@ -179,6 +179,7 @@ Number Of Deprecated Applications=
 Number Of Moderation Entries=
 Primary Server=
 Backup Server=
+Installs not allowed from this page=
 
 ; Statistics Popup Titles
 Repository List=
