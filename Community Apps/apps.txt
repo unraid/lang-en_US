@@ -57,6 +57,7 @@ Go to forum profile=
 Show Profile=
 SHOW MORE=
 SHOW LESS=
+Read more=
 Favourite Repository=
 Set as favourite repository=
 Total Applications=
