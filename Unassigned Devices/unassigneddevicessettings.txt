@@ -30,6 +30,7 @@ Spin down disks=
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
 to SMB share config=
 Unassigned Devices=
+Unraid 6.10 is required for NFSv4 support=
 
 ; Help
 ;
