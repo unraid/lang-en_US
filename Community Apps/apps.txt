@@ -8,6 +8,7 @@ Popup Blocked CA requires popups to be enabled under certain circumstances You m
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=
 Backup Server Active Some icons may not appear, and plugin installations may be affected=
+Debugging enabled This significantly increases the memory used by your browser=
 
 ; Sorting Options
 Sort By=
