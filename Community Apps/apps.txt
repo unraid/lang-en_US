@@ -15,10 +15,8 @@ Sort By=
 Name Ascending=
 Name Descending=
 Downloads=
-Trend=
 Date Added=
 Number Of Apps=
-Average Trend=
 ; Initial disclaimer translations
 Disclaimer=
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=
@@ -59,8 +57,6 @@ Show Profile=
 SHOW MORE=
 SHOW LESS=
 Read more=
-Favourite Repository=
-Set as favourite repository=
 Total Applications=
 Total Known Downloads=
 Total Docker Applications=
@@ -288,7 +284,6 @@ Author=
 Maintainer=
 DockerHub=
 Application Template=
-Base OS=
 DockerHub Stars=
 Added to CA=
 Date Updated=
@@ -333,6 +328,7 @@ More than %s=
 Remove from Previous Apps=
 See All Apps=
 Favourite=
+Application Type=
 
 ; Graphs
 Trend Per Month=
@@ -347,7 +343,6 @@ Setting installed applications to autostart=
 Docker Application Installation finished=
 
 ; Application Cards
-Private dockerHub Conversion=Private (dockerHub Conversion)
 Private Application=
 Go to the project page=
 Go to the support thread=
@@ -365,7 +360,6 @@ Click to go to the WebUI=
 This application template has been deprecated=
 This application is not compatible with your version of Unraid=
 This application template has been blacklisted=
-Search for more applications from %s=
 Click for more information=
 ; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
 BETA=
@@ -379,10 +373,6 @@ Repository=
 Why we picked it=
 Application Spotlight %s=
 Unraid Staff=
-
-; Dockerhub searches
-Search For Containers From %s=
-Search for similar containers=
 
 ; Page Navigation
 Displaying %s - %s of %s=Displaying %1$s - %2$s (of %3$s)
