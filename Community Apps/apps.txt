@@ -344,8 +344,6 @@ Docker Application Installation finished=
 
 ; Application Cards
 Private Application=
-Go to the project page=
-Go to the support thread=
 Uninstall Application=
 Remove Private Application=
 Remove Application From List=
@@ -360,9 +358,11 @@ Click to go to the WebUI=
 This application template has been deprecated=
 This application is not compatible with your version of Unraid=
 This application template has been blacklisted=
-Click for more information=
 ; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
-BETA=
+BETA= 
+; INSTALLED translation  HIGHLY recommeneded to do keep the same length (Use html escaped spaces if necessary to pad)
+INSTALLED=
+
 Info=
 Attention=
 Registry=
