@@ -126,7 +126,8 @@ This plugin has a duplicated name from another plugin %s This will impact your a
 You have been logged out=
 Fatal Flash Drive Error=
 This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=
-
+Fatal Docker Image Error=
+Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
 
 ; CA Sections Keep the length reasonable
 MENU=
