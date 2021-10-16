@@ -130,7 +130,6 @@ Fatal Docker Image Error=
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
 
 ; CA Sections Keep the length reasonable
-MENU=
 Installed Apps=
 Previous Apps=
 Pinned Apps=
@@ -142,7 +141,6 @@ Top New Installs=
 Top Trending Apps=
 Spotlight Apps=
 All Apps=
-OTHER=
 Statistics=
 Credits=
 Support=
@@ -165,26 +163,20 @@ Translation=
 
 unknown=
 Last Change To Application Feed=
-Number Of Docker Applications=
-Number Of Plugin Applications=
-Number Of Templates=
-Number Of Repositories=
-Number Of Private Docker Applications=
-Number Of Invalid Templates=
-Number Of Template Errors=
-Number Of Blacklisted Apps=
-Number Of Incompatible Applications=
-Number Of Deprecated Applications=
-Number Of Moderation Entries=
+Docker Applications=
+Plugin Applications=
+Templates=
+Repositories=
+Private Docker Applications=
+Invalid Templates=
+Template Errors=
+Blacklisted Apps=
+Incompatible Applications=
+Deprecated Applications=
+Moderation Entries=
 Primary Server=
 Backup Server=
 Installs not allowed from this page=
-
-; Statistics Popup Titles
-Repository List=
-All Invalid Templates Found=
-Template Errors=
-All Moderation Entries=
 
 ; Statistics Popup
 No invalid templates found=
