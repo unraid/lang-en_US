@@ -37,7 +37,6 @@ Select all on page=
 ; Searches
 Search=
 Click Here To Get More Results From DockerHub=
-No Matching Applications Found On Docker Hub=
 No Matching Applications Found=
 
 ; Repository Related
@@ -72,11 +71,9 @@ Reddit=
 Twitter=
 Discord=
 Search Apps=
-Profile=
 Registry=
 Details=
 Added=
-Downloads=
 ; Install Plugin title of openbox
 Install Plugin=
 BACK=
@@ -263,7 +260,6 @@ NetworkOther=Network:Other
 ToolsSystem=Tools:System
 ToolsThemes=Tools:Themes
 ToolsUtilities=Tools:Utilities
-Other=
 OtherUncategorized=Other:Uncategorized
 and %s more=
 
@@ -293,8 +289,6 @@ Trending %s=
 As of %s=(As of %s)
 Show Charts=
 Hide Charts=
-This application template has been blacklisted=This application / template has been blacklisted
-This application template has been deprecated=This application / template has been deprecated
 This application is not compatible with your version of Unraid=
 Another browser tab or device has updated the displayed templates Some actions are not available=Another browser tab or device has updated the displayed templates. Some actions are not available
 Reinstall default=Reinstall (default)
@@ -326,7 +320,6 @@ Application Type=
 ; Graphs
 Trend Per Month=
 Downloads Per Month=
-Total Downloads=
 
 ; Multi install script
 Installing docker applications %s=
@@ -337,8 +330,6 @@ Docker Application Installation finished=
 
 ; Application Cards
 Private Application=
-Uninstall Application=
-Remove Private Application=
 Remove Application From List=
 Check off to select multiple reinstalls=
 Go to the plugin settings=
@@ -346,10 +337,8 @@ Click to reinstall the application using default values=
 Click to edit the application values=
 Click to reinstall=
 Click to install=
-Install plugin=
 Click to go to the WebUI=
 This application template has been deprecated=
-This application is not compatible with your version of Unraid=
 This application template has been blacklisted=
 ; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
 BETA= 
@@ -358,10 +347,6 @@ INSTALLED=
 
 Info=
 Attention=
-Registry=
-Details=
-Added=
-Downloads=
 Repository=
 Why we picked it=
 Application Spotlight %s=
