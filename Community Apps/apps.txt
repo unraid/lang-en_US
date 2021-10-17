@@ -264,6 +264,8 @@ OtherUncategorized=Other:Uncategorized
 and %s more=
 
 ; App Popup Related
+This application template has been blacklisted=This application / template has been blacklisted
+This application template has been deprecated=This application / template has been deprecated
 This application has additional requirements=
 Additional Requirements=
 Donate To Author=
