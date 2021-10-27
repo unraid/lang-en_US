@@ -13,7 +13,6 @@ Enable Recycle Bin=
 Excluded Directories=
 Excluded Files=
 Excluded Shares=
-here=
 Log Deleted Files=
 Recycle Bin=
 Recycle Bin Log=
@@ -33,8 +32,6 @@ Start the Recycle Bin=
 Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
 Stop the Recycle Bin=
 These actions apply to all shares=
-To hide the Recycle Bin folder, set 'Hide Dot Files'=
-to 'Yes' in the SMB settings=
 Trash Size=
 Update Recycle Bin Size in Background=
 ;
@@ -54,7 +51,10 @@ Update Recycle Bin Size in Background=
 
 :recycle_bin_enable_plug:
 > Set to **Yes** to enable the Recycle Bin functionality for deleted files when the server is started.
+>
+> To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
+
 
 :recycle_bin_background_plug:
 > Set to **Yes** to enable the Recycle Bin Size to be updated in the background every minute.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to a minute to refresh when this is enabled.
