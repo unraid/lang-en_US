@@ -331,6 +331,13 @@ Setting installed applications to autostart=
 Docker Application Installation finished=
 
 ; Application Cards
+This application is a driver (plugin)=
+This is a language pack=
+This application is a docker container=
+This application is a plugin=
+This is a spotlight application=
+This is your favourite repository=
+This application is from your favourite repository=
 Private Application=
 Remove Application From List=
 Check off to select multiple reinstalls=
