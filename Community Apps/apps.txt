@@ -338,6 +338,7 @@ This application is a plugin=
 This is a spotlight application=
 This is your favourite repository=
 This application is from your favourite repository=
+This application is pinned for later viewing=
 Private Application=
 Remove Application From List=
 Check off to select multiple reinstalls=
