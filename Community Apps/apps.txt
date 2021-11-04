@@ -356,6 +356,8 @@ OFFICIAL=
 This is an official container=
 Digitally Signed=
 This container is digitally signed=
+Docker Hub=
+NOTE You must visit the dockerHub page to gather the information required to install correctly=
 
 Info=
 Attention=
