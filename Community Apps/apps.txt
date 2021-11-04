@@ -350,10 +350,10 @@ Click to install=
 Click to go to the WebUI=
 This application template has been deprecated=
 This application template has been blacklisted=
-; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
 BETA= 
-; INSTALLED translation  HIGHLY recommeneded to do keep the same length (Use html escaped spaces if necessary to pad)
 INSTALLED=
+OFFICIAL=
+TRUSTED=
 
 Info=
 Attention=
