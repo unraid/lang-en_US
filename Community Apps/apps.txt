@@ -358,6 +358,7 @@ Digitally Signed=
 This container is digitally signed=
 Docker Hub=
 NOTE You must visit the dockerHub page to gather the information required to install correctly=
+Show CA templates=
 
 Info=
 Attention=
