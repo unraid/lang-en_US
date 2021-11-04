@@ -350,10 +350,16 @@ Click to install=
 Click to go to the WebUI=
 This application template has been deprecated=
 This application template has been blacklisted=
-; BETA translation.  HIGHLY recommended to not do any translation longer than 4 characters
+Click info to see the notes regarding this application=
 BETA= 
-; INSTALLED translation  HIGHLY recommeneded to do keep the same length (Use html escaped spaces if necessary to pad)
 INSTALLED=
+OFFICIAL=
+This is an official container=
+Digitally Signed=
+This container is digitally signed=
+Docker Hub=
+NOTE You must visit the dockerHub page to gather the information required to install correctly=
+Show CA templates=
 
 Info=
 Attention=
