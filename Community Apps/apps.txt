@@ -353,7 +353,9 @@ This application template has been blacklisted=
 BETA= 
 INSTALLED=
 OFFICIAL=
+This is an official container=
 TRUSTED=
+This container is digitally signed=
 
 Info=
 Attention=
