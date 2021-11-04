@@ -354,7 +354,7 @@ BETA=
 INSTALLED=
 OFFICIAL=
 This is an official container=
-TRUSTED=
+Digially Signed=
 This container is digitally signed=
 
 Info=
