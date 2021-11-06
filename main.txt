@@ -104,6 +104,7 @@ Hide=
 Identification=
 Identity=
 if checked, Start array but do not mount disks=
+If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot
 If you are adding a new disk or replacing a disabled disk, try Parity-Swap=
 Information=
 Insufficient free disk space available=
