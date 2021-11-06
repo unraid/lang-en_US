@@ -163,6 +163,7 @@ Last Change To Application Feed=
 Docker Applications=
 Plugin Applications=
 Templates=
+Official Containers=
 Repositories=
 Private Docker Applications=
 Invalid Templates=
