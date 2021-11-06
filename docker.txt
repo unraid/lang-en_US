@@ -83,6 +83,7 @@ Productivity=
 Project Page=
 Proxy=
 Pulling image=
+Read Me First=
 Read Only - Shared=
 Read Only - Slave=
 Read Only=
