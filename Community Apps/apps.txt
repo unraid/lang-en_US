@@ -382,3 +382,6 @@ Installed Version=
 A note about translations=
 Click here to view the language changelog=
 View Missing Translations=
+
+; WebGui
+Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
