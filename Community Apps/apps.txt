@@ -351,6 +351,7 @@ Click to go to the WebUI=
 This application template has been deprecated=
 This application template has been blacklisted=
 Click info to see the notes regarding this application=
+This application has additional requirements=
 BETA= 
 INSTALLED=
 OFFICIAL=
