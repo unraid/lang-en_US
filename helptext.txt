@@ -2014,6 +2014,10 @@ Link to a support thread on Lime-Technology's forum.
 Link to the project page (eg: www.plex.tv)
 :end
 
+:docker_client_readme_help:
+Link to a readme file or page
+:end
+
 :docker_client_hub_url_help:
 The path to the container's repository location on the Docker Hub.
 :end
