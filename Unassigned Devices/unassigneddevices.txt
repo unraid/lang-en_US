@@ -35,6 +35,7 @@ Execute Script as udev simulating a device being installed=
 Fail=
 file share for=
 File System Check=
+File System Scrub=
 Format=
 Formatting=
 Free=
