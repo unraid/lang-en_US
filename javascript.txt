@@ -24,6 +24,7 @@ Ok=
 Pause=
 Proceed=
 Project Page=
+Read Me First=
 Remove container=
 Remove definition=
 Remove image=
