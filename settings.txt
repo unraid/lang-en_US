@@ -583,6 +583,7 @@ TCP=
 TELNET port=
 Temperature unit=
 Template Authoring Mode=
+Terminal font size=
 Test running=
 Test=
 Text - Bar color=Text - Bar (color)
