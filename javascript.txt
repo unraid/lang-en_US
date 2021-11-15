@@ -9,6 +9,7 @@ day=
 days=
 disk image and definition=
 Disks=
+Donate=
 Done=
 Edit=
 Execution error=
