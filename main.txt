@@ -306,3 +306,13 @@ Wrong key=
 xfs_repair status=
 You may not add new disks and also remove existing disks=You may not add new disk(s) and also remove existing disk(s)
 your server=
+
+; Sleep plugin translations
+Check this=
+for more information=
+Make sure your server supports S3 sleep=
+Sleep will immediately put the server in sleep mode=**Sleep** will immediately put the server in sleep mode
+Sleeping=
+System in sleep mode=
+This will put the system in sleep mode=
+wiki entry=
