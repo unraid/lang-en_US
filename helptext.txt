@@ -808,7 +808,7 @@ page for that disk.
 :end
 
 :disk_spinup_groups_help:
-If set to 'Yes' then the [Spinup Groups](/Help) feature is enabled.
+If set to 'Yes' then the spinup groups feature is enabled.
 :end
 
 :disk_default_partition_format_help:
