@@ -6,7 +6,7 @@ Clear the File Activity log=
 Refresh log=
 Enable File Activity Monitoring=
 Enable for Unassigned Devices=
-Enable for Cache and Pool=
+Enable for Cache and Pool Disks=
 ;
 ; Help
 ;
