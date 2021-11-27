@@ -175,7 +175,6 @@ registration key=
 Registration Key Manager=
 reiserfsck status=
 Rename Pool=
-Rename=
 Repair corrupted blocks=
 Replacement disk installed=
 Replacement disk is too small=

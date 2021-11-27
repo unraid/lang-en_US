@@ -290,6 +290,7 @@ Registration=
 reiserfs=
 Release Notes=
 Remove=
+Rename=
 Renew=
 Reset=
 Restart=
