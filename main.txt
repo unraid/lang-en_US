@@ -74,7 +74,6 @@ Dual parity valid requires ALL disks in their original slots=*Dual parity* valid
 Elapsed time=
 Enable user share assignment=
 enter disk index and device name as applicable to your controller=
-Erase=
 Erase Device Content=
 encrypted=
 Encryption input=
