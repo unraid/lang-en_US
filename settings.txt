@@ -3,6 +3,8 @@
 12 hours=
 24 hours=
 8023ad=802.3ad
+Accumulation duration=
+Accumulation frequency=
 Activate=
 Activated=
 Activating=
@@ -110,6 +112,7 @@ CPU Pinning Docker=
 CPU Pinning VM=
 CPU Pinning=
 CRAM-MD5=
+Cumulative parity check=
 Current date and time=
 Custom attributes use comma to separate numbers=Custom attributes (use comma to separate numbers)
 Custom banner=
