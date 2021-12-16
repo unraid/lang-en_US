@@ -1818,6 +1818,22 @@ When a **yearly** or **custom** schedule is selected then choose here the prefer
 Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
 :end
 
+:parity_cumulative_check_help:
+Change this setting to **Yes** to divide long duration parity checks over multiple periods. This is useful the system needs to be available and a parity check runs only during off hours.
+:end
+
+:parity_accumulation_frequency_help:
+Specifies how accumulation periods are executed.
+
+**Daily** means every subsequent day the parity check continuous until finished
+
+**Weekly** means every subsequent week the parity check continuous until finished
+:end
+
+:parity_accumulation_duration_help:
+Specifies how long each accumulated period runs, expressed in hours. The **Time of the day** speficies the start time of the period.
+:end
+
 :mover_schedule_help:
 Choose a mover schedule ranging from hourly, daily, weekly and monthly.
 
