@@ -128,11 +128,6 @@ Use only when directed for support=
 
 :ud_settings_change_uuid_plug:
 > Select the disk that you want to change the UUID. This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk. Drive must be unmounted to change the UUID.
-:end
-
-:ud_settings_change_uuid_plug:
-> Pooled disks must all have the same mount point to be mounted properly by UD.  Select the disk that is part of the pool and enter the mount point.
 >
-> **Note:** The best way to deal with pooled disks is to delete any pooled disk mount point (set to blank).  The pooled disk mount point will default to the disk label.
+> **Note:** Don't change the UUID of a pooled disk.
 :end
-
