@@ -334,6 +334,7 @@ Setting installed applications to autostart=
 Docker Application Installation finished=
 
 ; Application Cards
+Actions=
 This application is a driver plugin=This application is a driver (plugin)
 This is a language pack=
 This application is a docker container=
