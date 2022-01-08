@@ -77,6 +77,7 @@ Viewable system graphs=
 >
 > Internally information is kept with a monthly rotating mechanism. Each day is stored in a separate file.
 :end
+
 :stats_realtime_plug:
 > Real-time graphing is done in a sliding window fashion. E.g. 5 minutes are first filled and next start to slide with each new sample added at the end.
 >
