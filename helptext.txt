@@ -973,6 +973,8 @@ This can be an image file with a specific size or a dedicated folder.
 If the system needs to create a new docker image file, this is the default size to use specified in GB.
 
 To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will be increased to the new size (but never decreased).
+
+WARNING: resizing the docker image file will empty its content. Docker containers need to be re-installed afterwards.
 :end
 
 :docker_vdisk_location_help:
@@ -1430,7 +1432,27 @@ You can experiment with these settings as desired, they only affect visual prope
 :end
 
 :display_font_size_help:
-This is a per device setting
+Changes the font size in the GUI. This is a per device setting.
+:end
+
+:display_tty_size_help:
+Changes the font size of terminal windows.
+:end
+
+:display_page_view_help:
+Changes how certain pages are displayed. In **Tabbed** mode different sections will be displayed in different tabs,
+while in **Non-tabbed** mode sections are displayed under each other.
+:end
+
+:display_users_menu_help:
+The Users Menu can be part of the header or part of the Settings menu.
+You can move the Users Menu if insufficient space in the header is available to display all menus.
+:end
+
+:display_listing_height_help:
+**Automatic** : long listings are displayed as is, and the user needs to scroll the whole page to see the bottom
+
+**Fixed** : long listings are displayed in a window with a fixed size, user can scroll this window to see the bottom
 :end
 
 :display_wwn_device_id_help:
