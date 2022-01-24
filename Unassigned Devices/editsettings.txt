@@ -1,12 +1,13 @@
 Click the 'Default' button to select the default Device Script File=
 Default=
 Delete Device Script File=
+Device Script content=
+Disk Name=
 Edit Device Script=
 Enter Device Script File Name=
 Enter and Edit the Device Script that runs when a udev or operator event occurs=
 Enter the User Script that will be using this device=
 Load the default Device Script=
-Delete Device Script File=
 Run in background=
 Mount Device Read only=
 Mount Device when Plugged in or Array is Started=
@@ -15,7 +16,6 @@ Mount Remote SMB or NFS Share when Array is Started=
 Run Device Script File in the background=
 Save your Device Script File changes=
 Save=
-Script content=
 Share Device with SMB and NFS=
 Share Remote Mount with SMB and NFS=
 Mark this Device as passed through to a VM or Docker=
@@ -27,6 +27,14 @@ Volume=
 ;
 :ud_edit_script_device_settings_plug:
 > Select the options for this device/mount point. These changes are made immediately. You don't need to click **Save** to save them.
+:end
+
+:ud_disk_name_plug:
+> Enter the alias name for this device.  This is the name you want to use to refer to this drive.  Leave the name blank and the 'devX' will be assigned.
+>
+> **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
+>
+> **Note:** Cannot contain "dev" as the first characters.  This is reserved for the 'devX' devices.
 :end
 
 :ud_apfs_volume_plug:
@@ -44,8 +52,7 @@ will be using this device. This field will only be enabled when a Device Script 
 :end
 
 :ud_edit_script_run_background_plug:
-> Turn on the **Run in Background** to have the Device Script run as a
-background task. This can keep the Unassigned Devices UI from hanging when the Device Script is run from the UI.
+> Set to **Yes** to have the Device Script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
 :end
 
 :ud_edit_script_buttons_plug:
