@@ -46,6 +46,7 @@ ISO File is=
 ISO File Shares=
 Identification=
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=
+Device=
 Leave blank to use the array passwordpassphrase=
 Load Shares=
 Loading=
