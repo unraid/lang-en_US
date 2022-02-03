@@ -2157,6 +2157,10 @@ Click Deactivate to pause communication with your remote on unraid.net.
 Click Reinitialize to erase all change history in both local and unraid.net remote.
 :end
 
+:unraidnet_extraorigins_help:
+Provide a comma separated list of urls that are allowed to access the unraid-api (https://abc.myreverseproxy.com,https://xyz.rvrsprx.com,…)
+:end
+
 ; WireGuard help text
 
 :wg_local_name_help:
