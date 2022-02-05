@@ -286,7 +286,6 @@ Min OS=
 Max OS=
 Total Downloads=
 Licence=
-30 Day Trend=
 Ranked #%s=
 ; as in Trending up or down arrow
 Trending %s=
@@ -308,7 +307,7 @@ Moderator Comments=Moderator Comments:
 Note not all authors keep up to date on change logs=
 Note not all maintainers keep up to date on change logs=
 Last Update=
-Note All statistics are only accurate to within 30 days=
+Note All statistics are only gathered every 30 days=
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
 Donate=
 Currently Installed Version=
