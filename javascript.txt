@@ -47,6 +47,8 @@ Yes, update it=Yes, update it!
 Yes=
 
 ; footer messages
+Array Copying=
+Array Clearing=
 Array Starting=
 Array Stopping=
 Mounting disks=
