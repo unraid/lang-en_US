@@ -687,6 +687,7 @@ change owner=
 Change Owner=
 change permission=
 Change Permission=
+Completed=
 Copy Device=
 Copy File=
 Copy Folder=
