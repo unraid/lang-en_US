@@ -733,6 +733,7 @@ Objects to change=
 Objects to copy=
 Objects to delete=
 Objects to move=
+Other=
 Overwrite existing file=
 Overwrite existing files=
 Owner=
