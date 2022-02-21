@@ -692,6 +692,7 @@ Copy File=
 Copy Folder=
 Copy Share=
 copy to=
+Create=
 Create Folder=
 Creating=
 Current file name=
