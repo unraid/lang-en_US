@@ -67,6 +67,7 @@ Device is part of a pool=
 Device locked unknown error=Device locked: unknown error
 Device locked wrong encryption key=Device locked: wrong encryption key
 Device to be encrypted=
+Disable Spin down delay to run a SMART extended self-test=Disable **Spin down delay** to run a SMART extended self-test
 Disk in parity slot is not biggest=
 Disk Log Information=
 Disk-Clear in progress=
