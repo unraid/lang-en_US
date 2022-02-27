@@ -369,6 +369,8 @@ Show CA templates=
 Deprecated=
 Incompatible=
 Blacklisted=
+Template Exists=
+Template already exists in Apps=
 
 Info=
 Attention=
