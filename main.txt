@@ -258,6 +258,7 @@ Unmountable Missing encryption key=Unmountable: Missing encryption key
 Unmountable No file system=Unmountable: No file system
 Unmountable No pool uuid=Unmountable: No pool uuid
 Unmountable not btrfs pool=Unmountable: not btrfs pool
+Unmountable Unsupported or no file system=Unmountable: Unsupported or no file system
 Unmountable Volume not encrypted=Unmountable: Volume not encrypted
 Unmounted=
 Upgrading diskswapping parity=Upgrading disk/swapping parity
