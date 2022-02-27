@@ -2,6 +2,7 @@ Click the 'Default' button to select the default Device Script File=
 Default=
 Delete Device Script File=
 Device Script content=
+Disable Mount=
 Disk Name=
 Edit Device Script=
 Enter Device Script File Name=

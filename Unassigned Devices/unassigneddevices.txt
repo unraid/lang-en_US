@@ -116,7 +116,7 @@ You must enable SMB in Settings->SMB to mount SMB shares=
 You must enable the Destructive Mode in UD Settings before you can Format this disk=
 WARNING=
 You WILL have problems if you do=
-You will need to enter credentials for Windows shares just to list them=
+You will need to enter credentials to list the shares=
 
 ; Help
 ;
