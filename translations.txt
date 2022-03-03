@@ -274,6 +274,7 @@ Plugins=
 Plus=
 prefix_IEC=Ki Mi Gi Ti Pi Ei Zi Yi
 prefix_SI=K M G T P E Z Y
+Press ANY KEY to close this window=
 Private=
 Pro=
 Proceed=
