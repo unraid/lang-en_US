@@ -93,6 +93,8 @@ Yes, remove it=
 ; App Pinning
 Click to pin this application=
 Click to unpin this application=
+Pin App=
+Unpin App=
 
 ; Branch installations
 Choose A Branch To Install=
