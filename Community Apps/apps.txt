@@ -9,6 +9,7 @@ Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=
 Backup Server Active Some icons may not appear, and plugin installations may be affected=
 Debugging enabled This significantly increases the memory used by your browser=
+Browser translation detected Display issues may result=
 
 ; Sorting Options
 Sort By=
@@ -228,6 +229,7 @@ Proxy=
 VOIP=
 VPN=
 Web=
+Privacy=
 Productivity=
 Security=
 Spotlight=
@@ -260,6 +262,7 @@ NetworkManagement=Network:Management
 NetworkProxy=Network:Proxy
 NetworkVOIP=Network:VOIP
 NetworkVPN=Network:VPN
+NetworkPrivacy=Network:Privacy
 NetworkWeb=Network:Web
 NetworkOther=Network:Other
 ToolsSystem=Tools:System
