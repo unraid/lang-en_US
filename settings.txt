@@ -505,6 +505,7 @@ Protocol=
 Provision=
 QEMU version=
 readmodifywrite=read/modify/write
+recommended=
 reconstruct write=
 Refreshing=
 Registration key required=
