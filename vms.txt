@@ -43,6 +43,7 @@ Hyper-V=
 i440fx will work for most=
 Icon=
 Initial=
+Invalid storage path=
 Invalid VM to edit=
 ISO storage path doesnt exist=ISO storage path doesn't exist
 ISO storage path doesnt exist, please create the user share or empty folder first=ISO storage path doesn't exist, please create the user share (or empty folder) first
