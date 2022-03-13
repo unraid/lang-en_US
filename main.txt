@@ -150,8 +150,6 @@ Once copy completes, the array may be Started, to initiate Data-Rebuild of the d
 operation=
 Options see Help=Options (see Help)
 Otherwise use the keyfile method for UTF8 input=Otherwise use the **keyfile** method for UTF8 input
-Parity disk=
-Parity disks=
 Parity disks content will be overwritten=*Parity* disk(s) content will be overwritten
 Parity is already valid=
 Parity operation is running=
