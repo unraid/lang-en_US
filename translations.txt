@@ -765,6 +765,7 @@ Rename Folder=
 rename to=
 Renaming=
 Restricted access=
+Save=
 Share name=
 SHARE=
 Source device=
