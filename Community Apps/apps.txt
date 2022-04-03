@@ -298,8 +298,8 @@ Ranked #%s=
 Trending %s=
 ; as in As of some date
 As of %s=(As of %s)
-Show Charts=
-Hide Charts=
+Play Video=
+Play Video %s=
 This application is not compatible with your version of Unraid=
 Another browser tab or device has updated the displayed templates Some actions are not available=Another browser tab or device has updated the displayed templates. Some actions are not available
 WebUI=
