@@ -135,12 +135,13 @@ This template is set up to use a custom network You may have to adjust the netwo
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
 
 ; CA Sections Keep the length reasonable
+Home=
 Installed Apps=
 Previous Apps=
 Pinned Apps=
 Favourite Repo=
+Action Centre=
 Recently Added=
-Updated Apps=
 Random Apps=
 Top New Installs=
 Top Trending Apps=
@@ -327,6 +328,7 @@ Support Forum=
 ; as in more than 100000
 More than %s=
 Remove from Previous Apps=
+Remove=
 See All Apps=
 Favourite=
 Application Type=
