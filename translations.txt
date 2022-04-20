@@ -840,3 +840,5 @@ Key management is done via the dropdown in the top right of the webGUI on every 
 Open Dropdown=
 Restarting…=
 Checkout the My Servers docs=
+Not ready to purchase=Not ready to purchase?
+Receive an additional 15 days for your trial=
