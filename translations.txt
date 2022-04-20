@@ -839,3 +839,4 @@ To support more storage devices as your server grows click the Open Dropdown but
 Key management is done via the dropdown in the top right of the webGUI on every page=
 Open Dropdown=
 Restarting…=
+Checkout the My Servers docs=
