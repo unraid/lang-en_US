@@ -805,3 +805,33 @@ Unrestricted access=
 Updating=
 year=
 years=
+
+; My Servers refactor - 2022-04-19
+Install Plugin=
+No thanks=
+Close My Servers details and continue to webGUI=
+Enhance your Unraid experience with these<br> My Servers BETA features=Enhance your Unraid experience with these<br class=\"hidden sm:block\"/> My Servers (BETA) features
+Thank you for choosing Unraid OS and My Servers=
+Connect to My Servers by signing in to Unraid.net=
+To support more storage devices as your server grows click Upgrade Key=
+Start Trial=
+Restart unraid-api=
+Executes `unraid-api start`; no terminal needed=
+Stop unraid-api=
+Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=
+A Trial key provides all the functionality of a Pro Registration key=
+Registration keys are bound to your USB Flash boot device serial number GUID=Registration keys are bound to your USB Flash boot device serial number (GUID)
+Please use a high quality name brand device at least 1GB in size=
+Note USB memory card readers are generally not supported because most do not present unique serial numbers=Note: USB memory card readers are generally not supported because most do not present unique serial numbers
+Important=
+Please make sure your server time is accurate to within 5 minutes=
+Please make sure there is a DNS server specified=
+This will connect your server to My Servers <sup>BETA</sup>=
+Password confirmation must match=
+Plus more on the way=
+All you need is an active internet connection, an Unraidnet account, and the <span>My Servers<span> plugin=All you need is an active internet connection, an Unraid.net account, and the <span class="inline-block">My Servers</span> plugin
+Get started by installing the plugin=
+DNS issue, unable to resolve wanip4unraidnet=DNS issue, unable to resolve wanip4.unraid.net
+Your Unraid registration key is ineligible for replacement as it is blacklisted=
+Thank you installing My Servers=
+Connect your Unraidnet account to get started=Connect your Unraid.net account to get started
