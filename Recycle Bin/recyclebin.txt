@@ -55,9 +55,8 @@ Update Recycle Bin Size in Background=
 > To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
 
-
 :recycle_bin_background_plug:
-> Set to **Yes** to enable the Recycle Bin Size to be updated in the background every minute.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to a minute to refresh when this is enabled.
+> Set to **Yes** to enable the Recycle Bin Size to be updated in the background every five minutes.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to five minutes to refresh when this is enabled.
 :end
 
 :recycle_bin_ud_plug:
@@ -88,7 +87,7 @@ Update Recycle Bin Size in Background=
 :end
 
 :recycle_bin_excluded_dirs_plug:
-> List of directories to exclude from the Recycle Bin separated by commas.  To specify a particular share directory, use 'share/directory'.  Unassigned Devices are specified the same way using 'mountpoint/directory'.  Wild cards '*' and '?' are allowed in the directory name.
+> List of directories to exclude from the Recycle Bin separated by commas.  To specify a particular share directory, use 'share/directory'.  You can specify up to one sub-directory.  Unassigned Devices are specified the same way using 'mountpoint/directory'.  Wild cards '*' and '?' are allowed in the directory name.
 :end
 
 :recycle_bin_excluded_shares_plug:
