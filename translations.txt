@@ -859,4 +859,4 @@ To support more storage devices as your server grows click Upgrade Key=
 Transparent 2FA Token timed out=
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=
 Your Unraid registration key is ineligible for replacement as it is blacklisted=
-Oh no Are you pirating Unraid OS Are you ready to buy a real license=Oh no! Are you pirating Unraid OS? Are you ready to buy a real license?
+Oh no Are you pirating Unraid OS Are you ready to buy a real license=Oh no! Are you pirating Unraid OS? <br>Are you ready to buy a real license?
