@@ -587,6 +587,7 @@ remaining=
 Remote access=
 Replace Key=
 Reset Password Now=
+Searching=
 Secure remote access=
 See also here=
 Server Offline=
@@ -692,7 +693,7 @@ Resend Email Verification Code=
 We have sent a verifcation email to %s=
 You will no longer have access to this server using this url=You will no longer have access to this server using <abbr title="%s" class="italic">this url</abbr>
 
-; Dynamix File Manager - 2022-05-07
+; Dynamix File Manager - 2022-05-20
 %s year ago=
 %s years ago=
 Action=
@@ -748,6 +749,7 @@ New file name=
 New folder name=
 New owner=
 New permission=
+No results found=
 Not allowed to mix disk and user shares=
 Objects to change=
 Objects to copy=
@@ -766,6 +768,8 @@ Rename Folder=
 rename to=
 Renaming=
 Save=
+Search=
+Search string=
 Share name=
 SHARE=
 Source device=
@@ -805,7 +809,7 @@ Updating=
 year=
 years=
 
-; My Servers refactor - 2022-05-07
+; My Servers refactor - 2022-05-20
 
 A Trial key provides all the functionality of a Pro Registration key=
 All you need is an active internet connection, an Unraidnet account, and the <span>My Servers<span> plugin=All you need is an active internet connection, an Unraid.net account, and the <span class="inline-block">My Servers</span> plugin
@@ -845,6 +849,7 @@ Redeem Activation Code=
 Registration keys are bound to your USB Flash boot device serial number GUID=Registration keys are bound to your USB Flash boot device serial number (GUID)
 Remove My Servers plugin=
 Removing My Servers plugin=
+Replace Key Ineligible=
 Restart unraid-api=
 Restarting=
 Sign In Up=Sign In / Up
