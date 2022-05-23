@@ -1149,11 +1149,11 @@ SSL certificate.  Use this URL to access your server:
 Note that use of a self-signed SSL certificate will generate a browser
 warning.
 
-Select **Strict/Auto** to enable *exclusive* use of an Unraid.net SSL
+Select **Strict** to enable *exclusive* use of an Unraid.net SSL
 certificate for https access (see **Provision** below).  Note that a DNS
 server must be reachable.
 
-Important: **Strict/Auto** may not be selectable if your router or upstream DNS server has
+Important: **Strict** may not be selectable if your router or upstream DNS server has
 [DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
 protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
 a security feature on a LAN that may include legacy devices with buggy/insecure "web" interfaces.
@@ -1216,7 +1216,7 @@ in response to a DNS request on this URL. The certificate Subject is
 set to `*.<hash>.myunraid.net` thus validating the https connection.
 
 You may enable this URL exclusively on your LAN by setting **Use
-SSL/TLS** to **Strict/Auto**.
+SSL/TLS** to **Strict**.
 
 The second use for an Unraid.net certificate is to enable secure
 remote access available through the My Servers plugin feature.  Note
