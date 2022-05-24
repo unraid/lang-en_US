@@ -732,7 +732,7 @@ YYYY-MM-DD=
 ; My Servers plugin
 Are you sure you want pause communication with your remote flash backup on unraidnet=Are you sure you want pause communication with your remote flash backup on unraid.net?
 Are you sure you want to erase all change history in both local and unraidnet remote=Are you sure you want to erase all change history in both local and unraid.net remote?
-Disabled until you Provision an unraidnet SSL Cert and set SSL-TLS to %s=Disabled until you Provision an unraid.net SSL Cert and set SSL-TLS to %s
+Disabled until you Provision an unraidnet SSL Cert and set SSL-TLS to Auto=Disabled until you Provision an unraid.net SSL Cert and set SSL-TLS to Auto
 Disabled until you Provision an unraidnet SSL Cert=Disabled until you Provision an unraid.net SSL Cert
 Disabled until your root user account is password-protected=
 Enable Transparent 2FA for Local Access=
