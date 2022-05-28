@@ -382,6 +382,10 @@ Incompatible=
 Blacklisted=
 Template Exists=
 Template already exists in Apps=
+; eg: LinuxServer Repository
+%s Repository=
+; eg: Squid's Repository
+%s's Repository=
 
 Info=
 Attention=
