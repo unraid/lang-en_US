@@ -308,6 +308,7 @@ WebUI=
 Reinstall=
 Reinstall From Previous Apps=
 Install=
+Uninstall=
 Project=
 Read Me First=
 Install second instance=
