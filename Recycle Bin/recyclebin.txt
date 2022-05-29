@@ -15,6 +15,7 @@ Excluded Files=
 Excluded Shares=
 Log Deleted Files=
 Recycle Bin=
+Recycle Bin is empty=
 Recycle Bin Log=
 Recycle Bin parameters=
 Recycle Bin permissions=
