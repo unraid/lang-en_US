@@ -28,6 +28,8 @@ Application Policy=
 I Understand=
 Installations of apps disabled You must accept the warning to be able to install applications=
 Click here=
+%s Results Per Page=
+Results Per Page: %s=
 
 ; Plugin Disclaimer
 Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=
