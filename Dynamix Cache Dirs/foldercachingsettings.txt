@@ -134,7 +134,7 @@ User defined options=
 > Refer to the online documentation to use these as needed,
 > or see the cache_dirs script itself located under /usr/local/emhttp/plugins/dynamix.cache.dirs/scripts/cache_dirs
 >
-> Its possible to tell cache_dirs to avoid traversing all directories with a certain name. The following example avoids '.Recycle.Bin' and 'temp' and 'log' folders: 
+> Its possible to tell cache_dirs to avoid traversing all directories with a certain name. The following example avoids '.Recycle.Bin' and 'temp' and 'log' folders:
 >
 > <span class="strong orange-text">-a '-noleaf -name .Recycle.Bin -prune -o -name log -prune -o -name temp -prune -o -print'</span>
 >
