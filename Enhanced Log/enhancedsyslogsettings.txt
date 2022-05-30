@@ -140,7 +140,7 @@ Other Highlight Color=
 > Case is ignored in the search string and wild cards are allowed.
 > Examples:
 > "found.*chip" will match any string with 'found' and 'chip' with any text in between,
-> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'. 
+> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'.
 > The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
 > Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
 :end

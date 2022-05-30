@@ -47,7 +47,7 @@ of your devices.
 
 The Array must be Stopped in order to change Array device assignments.
 
-An Unraid array consists of one or two Parity disks and a number of Data disks. The Data
+An unRAID array consists of one or two Parity disks and a number of Data disks. The Data
 disks are exclusively used to store user data, and the Parity disk(s) provides the redundancy necessary
 to recover from disk failures.
 
@@ -76,8 +76,8 @@ The minimum number of Array slots is 2, and you must have at least one device as
 
 <i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
 
-**Pool Devices** is a single device, or pool of multiple devices, *outside* the Unraid array.  It may be exported for network access just
-like an Array device.  Being outside the Unraid array results in significantly faster write access.
+**Pool Devices** is a single device, or pool of multiple devices, *outside* the unRAID array.  It may be exported for network access just
+like an Array device.  Being outside the unRAID array results in significantly faster write access.
 
 There are two ways to configure the Pool devices:
 
@@ -125,15 +125,15 @@ it may only be exported using SMB protocol.
 :array_devices_help:
 #### Assigning Devices
 
-An unRAID disk array consists of a single parity disk and a number of data disks. The data
-disks are exclusively used to store user data, and the parity disk provides the redundancy necessary
-to recover from any single disk failure.
+An unRAID disk array consists of a number of Data disks and up to two Parity disks. The data
+disks are exclusively used to store user data, and the Parity disk(s) provides the redundancy necessary
+to recover from any single or double disk failure.
 
 Note that we are careful to use the term *disk* when referring to an array storage device.  We
 use the term *hard drive* (or sometimes just *drive*) when referring to an actual hard disk drive (HDD)
 device. This is because in a RAID system it is possible to read/write an array disk whose corresponding
 hard drive is disabled or even missing! In addition, it is useful to be able to ask, "which device is
-assigned to be the parity disk?"; or, "which device corresponds to disk2?".
+assigned to be the Parity disk?"; or, "which device corresponds to disk2?".
 
 We therefore need a way to assign hard drives to array disks. This is accomplished here on the
 Main page when the array is stopped. There is a drop-down box for each array disk which lists all the
@@ -142,29 +142,29 @@ assignment is made, the system updates a configuration file to record the assign
 
 #### Requirements
 
-Unlike traditional RAID systems which stripe data across all the array devices, an unRAID server
+Unlike traditional RAID systems which stripe data across all the array devices, an Unraid server
 stores files on individual hard drives. Consequently, all file write operations will involve both the
-data disk the file is being written to, and the parity disk. For these reasons,
+Data disk the file is being written to, and the Parity disk(s).  For these reasons,
 
-* the parity disk size must be as large or larger than any of the data disks,
+* a Parity disk size must be as large or larger than any of the Data disks,
 
 and
 
-* given a choice, the parity disk should be the fastest disk in your collection.
+* given a choice, Parity disk(s) should be the fastest disk(s) in your collection.
 
 #### Guidelines
 
 Here are the steps you should follow when designing your unRAID disk array:
 
 1. Decide which hard drive you will use for parity, and which hard drives you will use for
-data disk1, disk2, etc., and label them in some fashion. Also, find the serial number of each hard
+Data disk1, disk2, etc., and label them in some fashion. Also, find the serial number of each hard
 drive and jot it down somewhere; you will need this information later.
 
-2. Install your hard drive devices, boot unRAID Server and bring up the webGui. If this is a fresh system
+2. Install your hard drive devices, boot your server and bring up the webGUI. If this is a fresh system
 build, then the Main page will show no disks installed. This doesn't mean the system can't detect your
 hard drives; it just means that none have been assigned yet.
 
-3. Remember the serial numbers you recorded back in step 1? For parity and each data disk, select the
+3. Remember the serial numbers you recorded back in step 1? For parity and each Data disk, select the
 proper hard drive based on its serial number from the drop down list.
 
 #### Hot Plug
@@ -252,7 +252,7 @@ A *mode conversion* affects the btrfs data extents; metadata always uses raid1 a
 
 The run time is potentially very long, depending on the filesystem size and speed of the device.
 
-Unraid uses these default options when creating a multiple-device pool:
+Unraid OS uses these default options when creating a multiple-device pool:
 
 `-dconvert=raid1 -mconvert=raid1`
 
@@ -521,7 +521,7 @@ This setting determines how Unraid OS will choose which disk to use when creatin
 
 **High-water**
 Choose the lowest numbered disk with free space still above the current *high water mark*.  The
-*high water mark* is initialized with the size of the largest data disk divided by 2.  If no disk
+*high water mark* is initialized with the size of the largest Data disk divided by 2.  If no disk
 has free space above the current *high water mark*, divide the *high water mark* by 2 and choose again.
 
 The goal of **High-water** is to write as much data as possible to each disk (in order to minimize
@@ -761,7 +761,7 @@ Usually this is not what a user wants when selecting multiple cores.
 CPU isolation allows the user to specify CPU cores that are to be explicitly reserved for assignment (to VMs or Docker containers).
 
 This is incredibly important for gaming VMs to run smoothly because even if you manually pin your Docker containers to not overlap with your gaming VM,
-the host OS can still utilize those same cores as the guest VM needs for things like returning responses for the webGui, running a parity check, btrfs operations, etc.
+the host OS can still utilize those same cores as the guest VM needs for things like returning responses for the webGUI, running a parity check, btrfs operations, etc.
 :end
 
 :timezone_help:
@@ -808,7 +808,7 @@ page for that disk.
 :end
 
 :disk_spinup_groups_help:
-If set to 'Yes' then the [Spinup Groups](/Help) feature is enabled.
+If set to 'Yes' then the spinup groups feature is enabled.
 :end
 
 :disk_default_partition_format_help:
@@ -1133,16 +1133,27 @@ Enable (default) or disable the UPnP function on the server. This function allow
 :mgmt_use_ssl_tls_help:
 Determines how the webGUI responds to HTTP and/or HTTPS protocol on your LAN.
 
-Select **No** to disable HTTPS.
+Select **No** to use HTTP. To access your server use this URL:
 
-Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. A
-self-signed SSL certificate will be generated automatically.
+`http://<server-name>.<localTLD>`
 
-Select **Auto** if you have *Provisioned* a Let's Encrypt SSL
-certificate.  In this case webGUI access will use HTTPS with the Let's Encrypt
-certificate exclusively.  Note that a DNS sever must also be reachable.
+or this URL:
 
-Important: **Auto** may not be selectable if your router or upstream DNS server has
+`http://<server-ip-address>`
+
+Select **Yes** to enable use of an automatically-generated self-signed
+SSL certificate.  Use this URL to access your server:
+
+`https://<server-name>.<localTLD>`
+
+Note that use of a self-signed SSL certificate will generate a browser
+warning.
+
+Select **Strict** to enable *exclusive* use of an Unraid.net SSL
+certificate for https access (see **Provision** below).  Note that a DNS
+server must be reachable.
+
+Important: **Strict** may not be selectable if your router or upstream DNS server has
 [DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
 protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
 a security feature on a LAN that may include legacy devices with buggy/insecure "web" interfaces.
@@ -1159,22 +1170,22 @@ entirely or selectively based on domain. Examples:
 **DD-WRT:** If you are using "dnsmasq" with DNS rebinding protection enabled, you can add this line to your router
 configuration file:
 
-`rebind-domain-ok=/unraid.net/`
+`rebind-domain-ok=/myunraid.net/`
 
 **pfSense:** If you are using pfSense internal DNS resolver service, you can add these Custom Option lines:
 
 `server:`<br>
-`private-domain: "unraid.net"`
+`private-domain: "myunraid.net"`
 
 **Ubiquiti USG router:** you can add this configuration line:
 
-`set service dns forwarding options rebind-domain-ok=/unraid.net/`
+`set service dns forwarding options rebind-domain-ok=/myunraid.net/`
 
 **OpenDNS:** Go to Settings -> Security and *remove* the checkbox next to
  "Suspicious Responses - Block internal IP addresses". It is an all-or-nothing setting.
 
 When all else fails, you may be able create an entry in your PC's *hosts* file to override external DNS and
-directly resolve your servers unraid.net FQDN to its local IP address.
+directly resolve your servers myunraid.net FQDN to its local IP address.
 :end
 
 :mgmt_http_port_help:
@@ -1190,26 +1201,41 @@ Enter your local Top Level Domain. May be blank.
 :end
 
 :mgmt_certificate_expiration_help:
-**Provision** may be used to install a *free* SSL Certficiate from
+**Provision** may be used to install a *free* Unraid.net SSL Certificate from
 [Let's Encrypt](https://letsencrypt.org/).
 
-After a Let's Encrypt SSL Certificate has been installed, two
-background services are activated:
+The Unraid.net SSL certificate can be used in two ways.  First,
+having the certificate present enables your server to respond to an
+alternate URL of the form:
+
+`https://<lan-ip>.<hash>.myunraid.net`
+
+The `<hash>` value is a 40-character hex string (160 bits) unique to
+your server.  A Lime Technology DDNS server will return your `<lan-ip>`
+in response to a DNS request on this URL. The certificate Subject is
+set to `*.<hash>.myunraid.net` thus validating the https connection.
+
+You may enable this URL exclusively on your LAN by setting **Use
+SSL/TLS** to **Strict**.
+
+The second use for an Unraid.net certificate is to enable secure
+remote access available through the My Servers plugin feature.  Note
+that it is possible to use secure remote access in conjunction with
+insecure local access.
+
+After an Unraid.net SSL Certificate has been installed, two
+background services are activated while the server is signed in to unraid.net:
 
 - *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
 DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
 the local IP address has changed.
 
 - *renewcert* - This starts 60 seconds after server reboot has completed and contacts the Lime Technology
-certificate renewal service to determine if your Let's Encrypt SSL certificate needs to be renewed.
+certificate renewal service to determine if your Unraid.net SSL certificate needs to be renewed.
 Thereafter it wakes up every 24 hours. If within 30 days of expiration, a new certificate is automatically
 provisioned and downloaded to your server.
 
-**Delete** may be used to delete the Let's Encrypt certificate file.
-
-**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
-that world-wide DNS propagation could take anywhere from 1 minute to several hours (we set TTL to 60 seconds). For
-this reason, we also recommend assigning a static IP address to the server on your LAN.
+**Delete** may be used to delete the Unraid.net certificate file.
 
 **nginx certificate handling details**
 
@@ -1217,7 +1243,7 @@ nginx makes use of two certificate files stored on the USB flash boot device:<br
 
 - a self-signed certificate: `config/ssl/certs/<server-name>_unraid_bundle.pem`
 
-- a Let's Encrypt certificate: `config/ssl/certs/certificate_bundle.pem`
+- an Unraid.net certificate: `config/ssl/certs/certificate_bundle.pem`
 
 The self-signed SSL certificate file is automatically created when nginx
 starts; and re-created if the server hostname or local TLD is changed.
@@ -1244,7 +1270,7 @@ To disallow any user access, clear this setting.
 :ftp_overview_help:
 ### Overview
 
-Unraid includes the popular `vsftpd` FTP server.  The configuration of `vsftp` is currently very
+Unraid OS includes the popular `vsftpd` FTP server.  The configuration of `vsftp` is currently very
 simple: **All** user names entered above are permitted to access the server via FTP and will have
 *full read/write/delete access* to the entire server, so use with caution.
 :end
@@ -1262,6 +1288,12 @@ will not appear in Windows folder lists unless you have "Show hidden files, fold
 in Windows Folder Options.
 
 If set to 'No' then dot files will appear in folder lists the same as any other file.
+:end
+
+:smb_multi_channel_help:
+When set to 'Yes' enables SMB Multi Channel support in the server. From
+[microsoft](https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel):
+"SMB Multichannel enables file servers to use multiple network connections simultaneously."
 :end
 
 :smb_enhanced_macos_help:
@@ -1430,7 +1462,27 @@ You can experiment with these settings as desired, they only affect visual prope
 :end
 
 :display_font_size_help:
-This is a per device setting
+Changes the font size in the GUI. This is a per device setting.
+:end
+
+:display_tty_size_help:
+Changes the font size of terminal windows.
+:end
+
+:display_page_view_help:
+Changes how certain pages are displayed. In **Tabbed** mode different sections will be displayed in different tabs,
+while in **Non-tabbed** mode sections are displayed under each other.
+:end
+
+:display_users_menu_help:
+The Users Menu can be part of the header or part of the Settings menu.
+You can move the Users Menu if insufficient space in the header is available to display all menus.
+:end
+
+:display_listing_height_help:
+**Automatic** : long listings are displayed as is, and the user needs to scroll the whole page to see the bottom
+
+**Fixed** : long listings are displayed in a window with a fixed size, user can scroll this window to see the bottom
 :end
 
 :display_wwn_device_id_help:
@@ -1494,13 +1546,21 @@ Open the folder for the version of Windows you are installing and then select th
 Three drivers will be found. Select them all, click next, and the vDisks you have assigned will appear.
 :end
 
-:vms_network_bridge_help:
-Select the name of the network bridge you wish to use as default for your VMs,
-the setting 'virbr0' will let libvirt create a virtual bridge that utilizes NAT (network address translation)
-and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present when virtual bridges are created under network settings.
+:vms_network_source_help:
+Select the name of the network you wish to use as default for your VMs.
+You can choose between **'bridges'** created under network settings or
+**'libvirt'** created with virsh command in the terminal.
+The bridge **'virbr0'** and the associated virtual network **'default'** are
+created by libvirt.  
+Both utilizes NAT (network address translation) and act as a DHCP server to hand out IP addresses to virtual machines directly.
+More optional selections are present for bridges under network settings or for libvirt networks with the virsh command in the terminal.
 
-NOTE: You can also specify a network bridge on a per-VM basis.
+**If your are unsure, choose 'virbr0' as the recommended Unraid default.**
+
+NOTE: You can also specify a network source on a per-VM basis.
+
+**IMPORTANT: Neither Libvirt nor Unraid automatically brings up an interface that is assigned to a Libvirt network.
+Before you use a Libvirt network, please go to Settings -> Network Settings and, if necessary, manually set the associated interface to up.**
 :end
 
 :vms_host_shutdown_help:
@@ -1532,7 +1592,7 @@ Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-
 :end
 
 :vms_libvirt_log_help:
-View the log for libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+View the log for libvirt: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
 :end
 
 :vms_scrub_help:
@@ -1815,7 +1875,23 @@ When a **yearly** or **custom** schedule is selected then choose here the prefer
 :end
 
 :parity_write_corrections_help:
-Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
+Choose here whether any parity errors found during the check, need to be corrected on the Parity disk or not.
+:end
+
+:parity_cumulative_check_help:
+Change this setting to **Yes** to divide long duration parity checks over multiple periods. This is useful when the system needs to be available and a parity check runs only during off hours.
+:end
+
+:parity_accumulation_frequency_help:
+Specifies how accumulation periods are executed.
+
+**Daily** means every subsequent day the parity check continues until finished
+
+**Weekly** means every subsequent week the parity check continues until finished
+:end
+
+:parity_accumulation_duration_help:
+Specifies how long each accumulated period runs, expressed in hours. The **Time of the day** speficies the start time of the period.
 :end
 
 :mover_schedule_help:
@@ -1919,11 +1995,11 @@ Recipients of status and error notifications. Specify one or more email addresse
 :end
 
 :smtp_priority_help:
-Set email header with high importance, when there is a problem with unRaid.
+Set email header with high importance, when there is a problem detected by Unraid OS.
 :end
 
 :smtp_subject_prefix_help:
-Set a prefix for easy recognition of Unraid messages.
+Set a prefix for easy recognition of Unraid OS messages.
 :end
 
 :smtp_mail_server_help:
@@ -2014,6 +2090,10 @@ Link to a support thread on Lime-Technology's forum.
 Link to the project page (eg: www.plex.tv)
 :end
 
+:docker_client_readme_help:
+Link to a readme file or page
+:end
+
 :docker_client_hub_url_help:
 The path to the container's repository location on the Docker Hub.
 :end
@@ -2070,7 +2150,7 @@ Devices you select will be bound to the vfio-pci driver at boot, which makes the
 
 &nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
 
-<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid OS and can not be passed through.
 :end
 
 :sysdevs_thread_pairings_help:
@@ -2115,6 +2195,20 @@ Click Deactivate to pause communication with your remote on unraid.net.
 Click Reinitialize to erase all change history in both local and unraid.net remote.
 :end
 
+:unraidnet_extraorigins_help:
+Provide a comma separated list of urls that are allowed to access the unraid-api (https://abc.myreverseproxy.com,https://xyz.rvrsprx.com,…)
+:end
+
+:myservers_remote_t2fa_help:
+When Transparent 2FA for Remote Access is enabled, you will access your server by clicking the "Remote Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Remote Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+:end
+
+:myservers_local_t2fa_help:
+When Transparent 2FA for Local Access is enabled, you will access your server by clicking the "Local Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Local Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+
+This is fairly extreme for Local Access, and in most cases is not needed. It requires a solid Internet connection. If you need to access the webGUI while the Internet is down, SSH to the server and run 'use_ssl no', this will give you access via http://<?=$nginx['NGINX_LANIP']?><?=$nginx['NGINX_PORT'] !== '80' ? ':'.$nginx['NGINX_PORT'] : '' ?>
+:end
+
 ; WireGuard help text
 
 :wg_local_name_help:
@@ -2149,7 +2243,7 @@ This field is auto filled-in when a local tunnel network pool is created. It is 
 :end
 
 :wg_local_endpoint_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.unraid.net* or the public address of the server.<br>
+This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
 This allows VPN tunnels to be established from external peers to the server.<br>
 Configure the correct port forwarding on your router (default port is <?=$netport['wg0']?> but this may be changed) to allow any incoming connections to reach the server.
 
@@ -2160,7 +2254,7 @@ Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it 
 :end
 
 :wg_local_endpoint_X_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.unraid.net* or the public address of the server.<br>
+This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
 This allows VPN tunnels to be established from external peers to the server.<br>
 Configure the correct port forwarding on your router (default port is <?=$netport['wgX']?> but this may be changed) to allow any incoming connections to reach the server.
 
@@ -2205,7 +2299,7 @@ The <i class='fa fa-fw fa-key'></i> icon is used to show or hide the private, pu
 Use this field to set a name for this peer connection and make it easily recognizable. The same name will appear in the configuration of the peer at the opposite side.
 :end
 
-: wg_peer_preshared_key_help:
+:wg_peer_preshared_key_help:
 For added security a preshared key can be used. Use the **Generate Key** button to automatically create a unique preshared key.<br>
 This key is the same at both server and peer side and is added to the peer configuration as well.
 :end

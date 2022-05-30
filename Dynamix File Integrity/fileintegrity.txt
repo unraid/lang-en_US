@@ -62,6 +62,7 @@ When parity operation is running=
 > The area selection can be filtered by excluding folders (shares) and/or excluding disks all together (see table below).
 >
 > When the automatic hashing is disabled then manual control is required to keep information up-to-date.
+:end
 
 :integrity_hashing_plug:
 > Select the preferred hashing method. SHA2 generates a 256 bits checksum value, MD5 generates a 128 bits checksum value, while BLAKE2 generates a 512 bits checksum value per file.

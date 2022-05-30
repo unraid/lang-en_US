@@ -112,7 +112,6 @@ This will update folder file permissions=This will update folder & file permissi
 Time=
 To install a registration key, paste the key file URL in the box below and click Install Key=To install a registration key, paste the key file URL in the box below and click **Install Key**
 to select your language=
-To support more storage devices as your server grows, click Upgrade Key below=To support more storage devices as your server grows, click *Upgrade Key* below
 Trial key expires on=***Trial*** key expires on
 Trial=
 Update OS=

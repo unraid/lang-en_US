@@ -2,7 +2,7 @@
 anonymous=
 Author=
 Check For Updates=
-Checking connectivty=
+Checking connectivity=
 checking=
 Click here to install version %s=
 Delete Plugin=
