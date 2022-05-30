@@ -9,6 +9,7 @@ day=
 days=
 disk image and definition=
 Disks=
+Donate=
 Done=
 Edit=
 Execution error=
@@ -24,6 +25,7 @@ Ok=
 Pause=
 Proceed=
 Project Page=
+Read Me First=
 Remove container=
 Remove definition=
 Remove image=
@@ -45,6 +47,8 @@ Yes, update it=Yes, update it!
 Yes=
 
 ; footer messages
+Array Copying=
+Array Clearing=
 Array Starting=
 Array Stopping=
 Mounting disks=

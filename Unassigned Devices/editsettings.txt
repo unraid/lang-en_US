@@ -51,7 +51,6 @@ Volume=
 Unassigned Devices show the running status of the User Script that
 will be using this device. This field will only be enabled when a Device Script File exists.
 :end
-<?endif;?>
 
 :ud_edit_script_run_background_plug:
 > Set to **Yes** to have the Device Script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
