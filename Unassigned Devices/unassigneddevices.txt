@@ -50,7 +50,7 @@ Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=
 Historical=
 Historical Devices=
 Identification=
-If this disk was pre-cleared, you will remove the pre-clear signature. 
+If this disk was pre-cleared, you will remove the pre-clear signature=
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=
 ISO File is=
 ISO File Shares=
