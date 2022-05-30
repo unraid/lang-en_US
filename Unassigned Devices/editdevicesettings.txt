@@ -1,8 +1,10 @@
+Automount=
 Click the 'Default' button to select the default Device Script File=
 Default=
 Delete Device Script File=
+Device Script=
 Device Script content=
-Disable Mount=
+Disable Mount Button=
 Disk Name=
 Edit Device Script=
 Enter Device Script File Name=
@@ -10,18 +12,21 @@ Enter and Edit the Device Script that runs when a udev or operator event occurs=
 Enter the User Script that will be using this device=
 Load the default Device Script=
 Run in background=
+Mark this Device as passed through to a VM or Docker=
 Mount Device Read only=
 Mount Device when Plugged in or Array is Started=
 Mount ISO File when Array is Started=
 Mount Remote SMB or NFS Share when Array is Started=
+Passed Through=
+Read Only=
 Run Device Script File in the background=
 Save your Device Script File changes=
 Save=
 Share Device with SMB and NFS=
 Share Remote Mount with SMB and NFS=
-Mark this Device as passed through to a VM or Docker=
 Unassigned Devices Settings=
 Undo your changes since last Save=
+User Script=
 Volume=
 ;
 ; Help
