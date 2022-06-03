@@ -81,6 +81,11 @@ Details=
 Added=
 ; Install Plugin title of openbox
 Install Plugin=
+Update Plugin=
+
+Requirements not met=
+The requirements for this upgrade have not been met on your system=
+
 BACK=
 
 ; Remove App from previously installed
