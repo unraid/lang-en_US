@@ -38,6 +38,11 @@ Plugin Note=
 ; Multi Install
 Install Plugin Applications=
 Select all on page=
+Install Application=
+Install Applications=
+Update Applications=
+Are you sure you want to update %s applications=
+Are you sure you want to install %s docker and %s plugin application(s)=Are you sure you want to install %1$s docker and %2$s plugin application(s)
 
 ; Searches
 Search=
