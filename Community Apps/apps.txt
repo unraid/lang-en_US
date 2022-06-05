@@ -422,9 +422,18 @@ A note about translations=
 Click here to view the language changelog=
 View Missing Translations=
 
+; Update Checks
+Check For Updates=
+Check for updates already running=
+Checking for docker container updates=
+Checking for plugin updates=
+Checking for language updates=
+Checking %s=
+
 ; dockerHub conversions
 Determine configuration=
 Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
 An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
+
