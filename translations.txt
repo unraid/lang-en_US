@@ -335,6 +335,7 @@ Sorry, an error occurred=
 Sorry, this feature is not supported by MSIEEdge=Sorry, this feature is not supported by MSIE/Edge
 Standby=
 standby=
+Stale configuration=
 Start=
 Started=
 started=
