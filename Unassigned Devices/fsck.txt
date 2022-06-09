@@ -1,0 +1,8 @@
+Dirty log detected=
+File system corruption detected=
+File system corruption fixed=
+Force Log Zeroing=
+No file system corruption detected=
+Note: All metadata updates in progress at the time of the crash will be lost, which may cause significant filesystem damage=
+Run with Correct flag=
+This should only be used as a last resort if the filesystem cannot be mounted to replay the log=
