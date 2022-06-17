@@ -93,9 +93,10 @@ Use only when directed for support=
 :ud_settings_smb_security_plug:
 > Set the user level of SMB Security.
 >
+> + Set to **No** to disable SMB sharing.
+> + Set to **Public** will share devices, Remote SMB/NFS shares, and iso Mounts Public with read and write access.
 > + Set to **Yes** to enable SMB Security on SMB shares. Set access by user to allow access and whether or not the user can write to the share.
 > + Set to **Hidden** to enable SMB Security on SMB shares that will not be visible. Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **No** will share devices, SMB/NFS, and iso Mounts Public with read and write access.
 :end
 
 :ud_settings_case_sensitive_plug:
