@@ -12,7 +12,6 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=
 Debugging enabled This significantly increases the memory used by your browser=
 Browser translation detected Display issues may result=
-Running Background Application Tests=
 Action Centre Enabled=
 
 ; Sorting Options
@@ -361,6 +360,7 @@ Docker Application Installation finished=
 
 ; Application Cards
 Actions=
+Pending=
 This application is a driver plugin=This application is a driver (plugin)
 This is a language pack=
 This application is a docker container=
