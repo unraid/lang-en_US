@@ -1,7 +1,9 @@
 Automount=
+Attach=
 Click the 'Default' button to select the default Device Script File=
 Default=
 Delete Device Script File=
+Detach=
 Device Script=
 Device Script content=
 Disable Mount Button=
@@ -35,6 +37,14 @@ Volume=
 > Select the options for this device/mount point. These changes are made immediately. You don't need to click **Save** to save them.
 :end
 
+:ud_edit_script_attach_detach_plug:
+> Click **Detach** to detach the device.  The device will then show in Historical Devices and can be Attached from the device settings there.
+>
+> Click **Attach** to attach a device that has been detached.  This will act like the device was just installed and will auto mount if 'Auto Mount' is on.  It will take a while for the device to show up in UD.
+>
+> Click **Done** to exit this page.
+:end
+
 :ud_disk_name_plug:
 > Enter the alias name for this device.  This is the name you want to use to refer to this drive.  Leave the name blank and the 'devX' will be assigned.
 >
@@ -62,8 +72,9 @@ will be using this device. This field will only be enabled when a Device Script 
 :end
 
 :ud_edit_script_buttons_plug:
-> Click the **Save** button to commit the current edits. Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
->
-> Click the **Default** button to initialize the edit box with a Default Device Script.
-> You still need to click **Save** in order to commit the change.
+> Click **Default** to initialize the edit box with a default Device Script. You still need to click **Save** in order to commit the change.
+> Click **Delete** to delete the Device Script file.
+> Click **Reset** to undo any changes you make (before Saving).
+> Click **Save** to commit the current edits.
+> Click **Done** to exit this page.
 :end
