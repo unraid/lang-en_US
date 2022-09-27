@@ -146,6 +146,7 @@ This usually means your flash drive is corrupted or has dropped offline The rest
 Fatal Docker Image Error=
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
 
 ; CA Sections Keep the length reasonable
