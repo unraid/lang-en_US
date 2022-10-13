@@ -309,6 +309,7 @@ Current Version=
 Min OS=
 Max OS=
 Total Downloads=
+Popularity=
 Licence=
 Ranked #%s=
 ; as in Trending up or down arrow
