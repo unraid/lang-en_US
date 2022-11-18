@@ -34,6 +34,7 @@ Make changes slowly=
 Make one change at a time and verify if it improves your situation=
 Making changes here can briefly interrupt your network operation=
 Many plugins are no longer compatible with older Unraid versons=
+Max SMB Open Files=
 Max Watches=
 NIC Offload=
 NIC Rx Buffer=
@@ -66,6 +67,7 @@ Tips=
 Tips and Tweaks wiki=
 Tweaks=
 Use the Update Assistant that is part of the Fix Common Problems plugin=
+Version 6.11.4 and later=
 You can check CPU frequencies on the command line with=
 You may actually cause more problems than you solve if there are problems with your Unraid configuration=
 
@@ -135,6 +137,12 @@ You may actually cause more problems than you solve if there are problems with y
 > If inotify fails to start because there are not enough user watches, increase the max_user_watches.
 >
 > The default is 524288.
+:end
+
+:tips_tweaks_max_files_plug:
+> This value is used by samba to set the maximum number of open files allowed in SMB shares.
+>
+> The default is 40960 and the allowed range is 40960 to 65535.
 :end
 
 :tips_tweaks_cpu_governor_plug:
