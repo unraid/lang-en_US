@@ -879,3 +879,5 @@ My Servers plugin install failed=
 The My Servers plugin install is incomplete=
 Please uninstall and reinstall the My Servers plugin=
 Be sure to let the install complete before you close the window=
+Your current url %s is not in the list of allowed origins for this server=Your current url **%s** is not in the list of allowed origins for this server
+For best results, use one of these urls=
