@@ -296,7 +296,7 @@ The Registration key file does not correspond to the USB Flash boot device.
 Please copy the correct key file to the [config](/Registration/Browse?dir&#61;/boot/config) directory
 on your USB Flash boot device. If you do not have a backup copy of your key file, [Contact Support](https://lime-technology.com/contact).
 
-If you want to replace your Registration key with a new key bound to this USB Flash device, click Replace Key below. An original key may be
+If you want to replace your Registration key with a new key bound to this USB Flash device, click Fix Error below. An original key may be
 replaced anytime. Thereafter, a replacement key may be replaced again after one year has passed.  If you require
 another replacement key sooner, [Contact Support](https://lime-technology.com/contact).
 
