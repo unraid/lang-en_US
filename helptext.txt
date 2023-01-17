@@ -2243,7 +2243,7 @@ This field is auto filled-in when a local tunnel network pool is created. It is 
 :end
 
 :wg_local_endpoint_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
+This field is automatically filled in with the public management domain name *&lt;wan-ip&gt;.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
 This allows VPN tunnels to be established from external peers to the server.<br>
 Configure the correct port forwarding on your router to allow any incoming connections to reach the server.
 
@@ -2254,7 +2254,7 @@ Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it 
 :end
 
 :wg_local_endpoint_X_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
+This field is automatically filled in with the public management domain name *&lt;wan-ip&gt;.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
 This allows VPN tunnels to be established from external peers to the server.<br>
 Configure the correct port forwarding on your router to allow any incoming connections to reach the server.
 
