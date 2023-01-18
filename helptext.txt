@@ -1017,14 +1017,23 @@ Specifies the number of LOG files when LOG rotation is done.
 If set to **Yes**, when creating/editing containers the interface will be present with some extra fields related to template authoring.
 :end
 
+:docker_custom_network_type_help:
+The **ipvlan** type is best when connection to the physical network is not needed.
+Please read <u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>this</a></u> on implementing an ipvlan network.<br>
+
+The **macvlan** type of network allows direct connection to the physical network.
+Please read <u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>this</a></u> on implementing a macvlan network.<br>
+
+**Note:** Docker uses its own dhcp service, which is the **DHCP Pool** setting.
+When you use multiple Unraid servers, then each server must have a different Docker **DHCP Pool** range configured.
+:end
+
 :docker_custom_network_access_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+Allows direct communication between the host and containers using a custom **macvlan** network.  By default this is disabled.
 :end
 
 :docker_user_defined_network_help:
-User created networks are networks created by the user outside of the GUI.<br>
-By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
+User created networks are networks created by the user outside of the GUI.  By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
 
 Change this setting to preserve user defined networks, but it is the responsibility of the user to ensure these entries work correctly and are conflict free.
 :end
@@ -1153,6 +1162,13 @@ Select **Strict** to enable *exclusive* use of an Unraid.net SSL
 certificate for https access (see **Provision** below).  Note that a DNS
 server must be reachable.
 
+**Redirects:** When accessing `http://<server-ip-address>` or `http://<server-name>.<localTLD>`, the 
+behavior will change depending on the value of the Use SSL/TLS setting:
+
+* If Use SSL/TLS is set to **Strict**, you will be redirected to `https://<lan-ip>.<hash>.myunraid.net`
+* If Use SSL/TLS is set to **Yes**, you will be redirected to `https://<server-ip-address> or https://<server-name>.<localTLD>`
+* If Use SSL/TLS is set to **No**, then the http url will load directly.
+
 Important: **Strict** may not be selectable if your router or upstream DNS server has
 [DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
 protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
@@ -1198,6 +1214,11 @@ Enter the HTTPS port, default port is 443.
 
 :mgmt_local_tld_help:
 Enter your local Top Level Domain. May be blank.
+:end
+
+:mgmt_local_access_urls_help:
+The Local Access URLs shown above are based on your current settings. 
+To adjust URLs or redirects, see the help text for "Use SSL/TLS".
 :end
 
 :mgmt_certificate_expiration_help:
@@ -1250,9 +1271,10 @@ starts; and re-created if the server hostname or local TLD is changed.
 
 **nginx stapling support**
 
-Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
-`config/ssl/certs/certificate_bundle.pem` => Yes<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem` => No
+OCSP Stapling is automatically enabled if the certificate contains an OCSP responder URL.
+
+Hence, for self-signed certificates stapling is not enabled; for CA-signed certificates
+stabling is enabled.
 :end
 
 :ftp_server_help:
