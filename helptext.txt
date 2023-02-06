@@ -959,6 +959,13 @@ Before you can start the Docker service for the first time, please specify an im
 Once started, Docker will always automatically start after the array has been started.
 :end
 
+:docker_readmore_help:
+Some systems with a lot of docker containers may experience lag using the main Docker page.
+
+Setting this to "No" may help speed up general page usage by disabling the use of readmore-js.
+Instead of chevrons indicating more data for Port and Volume mapping, all data is displayed.
+:end
+
 :docker_timeout_help:
 The time in seconds to allow a container to gracefully stop before forcing it to stop
 :end
