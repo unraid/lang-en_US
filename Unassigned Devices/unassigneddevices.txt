@@ -49,9 +49,11 @@ from disk=
 Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=
 Historical=
 Historical Devices=
+Historical Device is=
 Identification=
 If this disk was pre-cleared, you will remove the pre-clear signature=
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=
+is offline=
 ISO File is=
 ISO File Shares=
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=
@@ -74,6 +76,7 @@ No Remote SMB=
 No Unassigned Disks available=
 not installed=
 Note=
+offilne=
 You must enable NFS in Settings->NFS to mount NFS shares=
 You must enable SMB in Settings->SMB to mount SMB shares=
 Open=
@@ -183,7 +186,7 @@ You will need to enter credentials to list the shares=
 > + '/usr/local/sbin/rc.unassigned spindown /dev/sdX or devX' - spin down disk device.
 > + '/usr/local/sbin/rc.unassigned spindown name=diskname' - spin down a disk by disk name.
 > + '/usr/local/sbin/rc.unassigned detach /dev/sdX or devX' - detach a USB disk device. You can use this command in a UD script to detach the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned attach serial - attach a disk device. You can use this command in a UD script to attach the device.
+> + '/usr/local/sbin/rc.unassigned attach serial - attach a disk device. You can use this command in a script to attach the device.
 > + '/usr/local/sbin/rc.unassigned mount source' - where source is the SMB/NFS source.
 > + '/usr/local/sbin/rc.unassigned umount source' - where source is the SMB/NFS source.
 >
