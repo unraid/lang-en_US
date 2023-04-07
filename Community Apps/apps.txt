@@ -150,6 +150,8 @@ This template is set up to run as Privileged This is a possible security risk an
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
 Not Enough Memory=
 Community Applications (and Unraid OS) have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
+Installation already in progress=
+Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
 
 ; CA Sections Keep the length reasonable
 Home=
@@ -224,6 +226,7 @@ Check out these newly added applications from our awesome community=
 Check out these up and coming apps=
 These apps have the highest percentage of new installs=
 An assortment of randomly chosen apps=
+Featured Applications=
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
