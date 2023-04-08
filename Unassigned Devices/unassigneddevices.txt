@@ -19,6 +19,7 @@ Change ISO File Mount Point=
 Change Remote Share Mount Point=
 Change SMB=
 Changing the Mount Point will also change the disk label=
+Clear=
 Click to select ISO file=
 Click to view/hide partitions and mount points=
 Complete=
@@ -139,6 +140,7 @@ You must enable SMB in Settings->SMB to mount SMB shares=
 You must enable the Destructive Mode in UD Settings before you can Format this disk=
 You WILL have problems if you do=
 You will need to enter credentials to list the shares=
+ZFS Pool Name=
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices is called UD for short.**

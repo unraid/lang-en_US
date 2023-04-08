@@ -3,6 +3,7 @@ Auto Mount USB Devices=
 Change Disk UUID=
 Change UUID=
 Change the disk UUID=
+Command times=
 Common Script=
 Common Settings=
 Destructive Mode=
@@ -17,6 +18,7 @@ NFS Security=
 NFS Settings=
 NFS must be enabled in Settings->NFS to enable NFS Export=
 NFS Version to use when Mounting Remote Shares=
+Refresh and Update=
 Rule=
 SMB Security=
 Select Disk=
@@ -29,6 +31,7 @@ Specify SMB Version when Mounting Remote Shares=
 Spin down disks=
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
 to SMB share config=
+Udev and Hotplug=
 Unassigned Devices=
 Unraid 6.10 or later is required for NFSv4 support=
 Use only when directed for support=
@@ -73,11 +76,15 @@ Use only when directed for support=
 :end
 
 :ud_settings_debug_level_plug:
-> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.
+> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.  Set the Debug Log Level to debug a specific area of UD.
 >
 > Set to **None** to turn off debug logging.
 >
-> Set the Debug Log Level to a numeric value to debug a specific area of UD.
+> **Udev and Hotplug** udev, disk discovery and hotplug debug.
+>
+> **Refresh and Update** to find issues where UD hangs.
+>
+> **Command times** command execution times. **Warning:** very chatty.
 >
 > **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
 :end

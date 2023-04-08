@@ -1,9 +1,11 @@
-Automount=
 Attach=
+Attaching=
+Automount=
 Click the 'Default' button to select the default Device Script File=
 Default=
 Delete Device Script File=
 Detach=
+Detaching=
 Device Script=
 Device Script content=
 Disable Mount Button=
