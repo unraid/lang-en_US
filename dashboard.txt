@@ -94,6 +94,7 @@ Parity disks not present=
 Parity has not been checked yet=
 Parity Information=
 Parity is degraded=
+Pool=
 Power Status=
 Power=
 Processor Information=
