@@ -55,6 +55,7 @@ Bug Description=
 Bug Report=
 bytes=
 Cache=
+Calculated free space value=
 Cancel=
 Capabilities=
 Case-sensitive names=
