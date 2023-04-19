@@ -152,6 +152,7 @@ Not Enough Memory=
 Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
 Installation already in progress=
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
+%s is incompatible with your OS version Please update the OS to proceed=
 
 ; CA Sections Keep the length reasonable
 Home=
