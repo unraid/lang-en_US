@@ -622,6 +622,35 @@ Share does *not* contain any data and may be deleted if not needed any longer.
 Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
 :end
 
+:share_edit_exclusive_access_help:
+When set to "yes" indicates a bind-mount directly to a pool has been set up for the share in the /mnt/user tree, provided the following
+conditions are met:
+
+- Primary storage is a pool.
+- Secondary storage is set to **none**.
+- The share does not exist on any other volumes.
+:end
+
+:share_edit_primary_storage_help:
+**Primary storage** is where *new files and folders* are created.  If
+Primary storage is below the minimum free space setting then new files
+and folders will be created in **Secondary storage**, if configured.
+
+**Important:** For *Exclusive accss* shares, the Min free space
+settings are ignored.
+:end
+
+:share_edit_secondary_storage_help:
+**Secondary storage** is where new files and directories are created if no
+room on Primary storage.  When both Primary and Secondary storage are
+configured the 'mover' will transfer files between them.
+:end
+
+:share_edit_mover_action_help:
+This defines the direction of file transfer between Primary and
+Secondary storage when both are configured.
+:end
+
 :smb_security_help:
 *Read settings from* is used to preset the SMB security settings of the current selected share with the settings of an existing share.
 
@@ -1600,6 +1629,11 @@ the VM will be instructed to hibernate (if supported) otherwise it will attempt 
 :vms_shutdown_timeout_help:
 When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
 NOTE: It's recommended to shut down guest VMs from within the VM.
+:end
+
+:vms_console_help:
+For setting the console options to show on context menus. Web will show only inbuild web clients(VNC and SPICE), 
+Virtual Manager Remote Viewer will only show the Remote Viewer option. Both will show both Web and Remote Viewer.
 :end
 
 :vms_acs_override_help:
