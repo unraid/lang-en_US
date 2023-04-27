@@ -928,3 +928,5 @@ Manage your license keys at any time via the My Keys section=
 Plus more on the way=
 All you need is an active internet connection, an Unraidnet account, and the Connect plugin=All you need is an active internet connection, an Unraid.net account, and the Connect plugin
 Get started by installing the plugin=
+Please wait…=
+Download unraid-api Logs=
