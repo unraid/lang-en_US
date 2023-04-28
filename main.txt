@@ -324,14 +324,14 @@ will pause Read-Check=
 will pause the Clearing=
 will pause the Parity-Check=
 will pause the Parity-SyncData-Rebuild=will pause the Parity-Sync/Data-Rebuild
-will pause the Read-Check=
+will pause the Read-Check=s
 will record all disk information and bring the array on-line=
 will record all disk information, bring the array on-line, and start Parity-Sync=
 will remove the missing cache disk and then bring the array on-line=
-will resume Data-Rebuild
+will resume Data-Rebuild=
 will resume Disk-Clear=
 will resume Parity-Check=
-will resume Parity-Sync
+will resume Parity-Sync=
 will resume Read-Check=
 will resume the paused Clearing=
 will resume the paused Parity-Check=
