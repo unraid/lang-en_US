@@ -681,7 +681,6 @@ Download unraid-api Logs=
 Dynamic Remote Access=
 Email Address=
 Enhance your experience with Connect=
-Executes `unraid-api start`; no terminal needed=
 Expand your servers capabilities=
 Extend Trial=
 Extending Trial=
