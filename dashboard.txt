@@ -62,7 +62,7 @@ in progress=
 Inactive tunnels=
 inactive=
 Inbound=
-Information
+Information=
 Interface Information=
 invalid device=
 invalid devices=
