@@ -48,6 +48,7 @@ Not used=
 Only=
 Prefer=
 previous user share=
+Primary storage %s=
 Primary storage for new files and folders=Primary storage (for new files and folders)
 Primary storage to Secondary storage=
 Read=
