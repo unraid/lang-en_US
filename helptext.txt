@@ -489,7 +489,7 @@ If no suffix, a count of 1024-byte blocks is assumed.
 
 :share_edit_global1_help:
 A *Share*, also called a *User Share*, is simply the name of a top-level directory that exists on one or more of your
-storage devices (array and cache).  Each share can be exported for network access.  When browsing a share, we return the
+storage volumes (array disks and pools).  Each share can be exported for network access.  When browsing a share, we return the
 composite view of all files and subdirectories for which that top-level directory exists on each storage device.
 
 *Read settings from* is used to preset the settings of the new share with the settings of an existing share.
@@ -607,9 +607,7 @@ disable these services while mover is running.
 :share_edit_copy_on_write_help:
 Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
 when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute.  We recommend this setting for shares
-used to store vdisk images, including the Docker loopback image file.  This setting has no effect
-on non-btrfs file systems.
+subdirectories on the device will inherit the NOCOW attribute. This setting has no effect on non-btrfs file systems.
 
 Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
 :end
