@@ -75,8 +75,10 @@ NFS Share=
 NFS Shares=
 No Remote SMB=
 No Unassigned Disks available=
+Not Enabled=
 not installed=
 Note=
+Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=
 offilne=
 You must enable NFS in Settings->NFS to mount NFS shares=
 You must enable SMB in Settings->SMB to mount SMB shares=
@@ -127,6 +129,8 @@ Use caution when gathering shares into one Root Share=
 Used=
 User and Pool Shares=
 User Shares=
+User and Pool Shares will include all files in User Shares, Cache and Pool Devices=
+User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=
 Username=
 View Device Script Log=
 View ISO File Script Log=
@@ -141,6 +145,7 @@ You must enable the Destructive Mode in UD Settings before you can Format this d
 You WILL have problems if you do=
 You will need to enter credentials to list the shares=
 ZFS Pool Name=
+ZFS Volume=
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices is called UD for short.**

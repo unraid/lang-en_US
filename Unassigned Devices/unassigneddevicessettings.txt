@@ -7,6 +7,7 @@ Command times=
 Common Script=
 Common Settings=
 Destructive Mode=
+Disabled=
 Disk spin down is managed by Unraid=
 Enable NFS export=
 Enable SMB Security=
@@ -18,6 +19,9 @@ NFS Security=
 NFS Settings=
 NFS must be enabled in Settings->NFS to enable NFS Export=
 NFS Version to use when Mounting Remote Shares=
+Public=
+Private=
+Private Hidden=
 Refresh and Update=
 Rule=
 SMB Security=
@@ -98,12 +102,12 @@ Use only when directed for support=
 :end
 
 :ud_settings_smb_security_plug:
-> Set the user level of SMB Security.
+> Set the user level of SMB Sharing.
 >
-> + Set to **No** to disable SMB sharing.
+> + Set to **Disabled** to disable SMB sharing.
 > + Set to **Public** will share devices, Remote SMB/NFS shares, and iso Mounts Public with read and write access.
-> + Set to **Yes** to enable SMB Security on SMB shares. Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **Hidden** to enable SMB Security on SMB shares that will not be visible. Set access by user to allow access and whether or not the user can write to the share.
+> + Set to **Private** to enable SMB Security on SMB shares. Set access by user to allow access and whether or not the user can write to the share.
+> + Set to **Private Hidden** to enable SMB Security on SMB shares that will not be visible. Set access by user to allow access and whether or not the user can write to the share.
 :end
 
 :ud_settings_case_sensitive_plug:
