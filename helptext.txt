@@ -621,12 +621,9 @@ Share can *not* be deleted as long as it contains data. Be aware that some data 
 :end
 
 :share_edit_exclusive_access_help:
-When set to "yes" indicates a bind-mount directly to a pool has been set up for the share in the /mnt/user tree, provided the following
-conditions are met:
+When set to "Yes" indicates a synmlink directly to a pool has been set up for the share in the /mnt/user tree.
 
-- Primary storage is a pool.
-- Secondary storage is set to **none**.
-- The share does not exist on any other volumes.
+Refer to [Global Share Settings](Settings/ShareSettings) -> Permit exclusive shares.
 :end
 
 :share_edit_primary_storage_help:
@@ -1447,6 +1444,19 @@ Uncheck all disks in order to not exclude any disks
 disks which represent a subset of the Included/Excluded disks defined here.
 :end
 
+:shares_exclusive_shares_help:
+If set to Yes, share directories under /mnt/user are actually symlinks to the share directory on a storage volume
+provided the following conditions are met:
+
+* The Primary storage for a share is set to a pool.
+* The Secondary storage for a share is set to **none**.
+* The share exists on a single volume.
+* The share is **not** exported over NFS.
+
+The advantage of *exclusive* shares is that transfers bypass the FUSE layer which may significantly
+increase I/O performance.
+:end
+
 :shares_tunable_hard_links_help:
 If set to Yes then support the link() operation.
 
@@ -1844,6 +1854,18 @@ or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80
 Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
 
 The metric value is optional, it defaults to 1. Use it to select the preferred gateway when more than one entry of the same route exists.
+:end
+
+:eth_network_extra_include_help:
+Enter one or more interface names or IP addresses which will be included in the list of listening interfaces for local system services.
+
+This is particularly useful when you have created custom interfaces (e.g. tailscale VPN tunnel) which are used to access local system services.
+:end
+
+:eth_network_extra_exclude_help:
+Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
+
+This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
 :end
 
 :apc_ups_daemon_help:
