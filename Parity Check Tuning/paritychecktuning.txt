@@ -3,51 +3,76 @@
 ; PART 1 - text strings
 
 ; Parity Check Settings Page
+; ~~~~~~~~~~~~~~~~~~~~~~~~~~
+; (should be translated)
 
 Parity Check Tuning=
 automatic=
 Basic=
 below critical disk temperature threshold=
 below warning disk temperature threshold=
+CA Backup or Restore running=
+CA Backup or Restore no longer running=
 CAUTION=
-Click to show parity-check history=
+Click to show Array Operations history=
 Data Rebuild=
 Debug=
 Disk Clear=
 Donate to plugin author=DONATE
+Drives been above resume temperature threshold for %s minutes=
 entry in %s format=
+; %s is always substituted with link to how 'crontab' entries are formatted
 High disk temperatures can shutdown server=
+Incompatible options=
 Increment frequency=
 Increment pause time=
 Increment resume time=
+Mover no longer running=
+Mover running=
+Need to check temperatures of spundown drives=
+No array operation in progress=
 No parity check entries found in syslog=
-ParityRead-Check History=Parity/Read-Check History=
+Outside times for increments so not resuming=
 Parity Check=
 Parity Check Tuning logging=
 Parity Sync=
 Pause an array operation at=
 Pause and Resume array operations if disks overheat=
+Pause array operations while appdata backup or restore running=
+Pause array operations while mover running=
 Read Check=
-Requires unRaid 67 or later=Requires unRaid 6.7 or later=
+Requires Unraid 6103 or later=Requires Unraid 6.10.3 or later
 Resume an array operation at=
-Resume parity checks on next array start=
+Resume array operations on next array start=
 Resume running Array operations on next array start=
 Run %s %s in increments=
+; First %s is type (e.g. manual, automatic)
+; Second %s is operation type (e.g Parity-Check, Parity-Sync)
 scheduled=
 Send notifications for Pause or Resume of increments=
 Send notifications for temperature related Pause or Resume=
 Shutdown server at=
+Shutdown server when array operation completes=
+spundown=
+Stop array issued via Command Line=
+Start array issued via Command Line=
 Syslog only=
 Syslog and Flash=
 Flash only=
-Testing=
+This option is only available if Appdata BackupRestore v2 plugin installed=This option is only available if Appdata Backup/Restore v2 plugin installed
+unknown=
 Unscheduled=
 Use increments for %s %s=
 Use increments for disk Clear operations=
 Use increments for Parity-SyncData Rebuild operations=Use increments for Parity-Sync/Data Rebuild operations
+Version=
+Waiting=
 You require a parity disk present for this option to be relevant=
 
 ; Parity Problems Assistant page
+; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; (should be translated)
+
 Parity Problems Assistant=
 ; page intro text
 :parityProblems_intro_plug:
@@ -64,7 +89,7 @@ This can be much faster than having to run a full parity check or read check to 
 **IMPORTANT**:  This assistant should never be used as an alternative to running a full parity check once you think the problem has been resolved.
 :end
 ; fields
-Click to show Error Sectors from syslog=
+Click to show Parity check entries from syslog=
 End point for check=
 Method used to specify start and stop points=
 Only read checks can be performed=
@@ -77,7 +102,36 @@ Start Check=
 Start point for check=
 Write Corrections to Parity=
 
+; Notifications
+; ~~~~~~~~~~~~~
+; (should be translated)
+
+aborted due to Unclean shutdown=
+array stopping so progress will be lost=
+; The type of array operation (parity check, clear, rebuild) will be appended to the following text
+Automatic unRaid=
+Average Speed=
+completed=
+Correcting Parity Check=
+detected=
+Drives cooled down=
+errors=
+finished=
+Increments=
+NonCorrecting Parity Check=Non-Correcting Parity Check
+normal=
+Pause=
+Paused=
+Resume=
+Resumed=
+Runtime=
+Scheduled pause=
+Unclean shutdown detected=
+warning=
+will be started=
+
 ; PHP file messages
+; ~~~~~~~~~~~~~~~~~
 
 Analyze results from an array operation=
 Array being shutdown due to drive overheating=
@@ -94,6 +148,8 @@ ERROR=
 Following drives overheated=
 IMPORTANT=
 Increments=
+Manually Paused=
+Manually Resumed=
 Non-Correcting=
 Pause a running array operation=
 Resume a paused array operation=
@@ -110,30 +166,10 @@ Unrecognized option=
 Usage=
 where action is one of=
 
-; Notifications
-
-aborted due to Unclean shutdown=
-array stopping so progress will be lost=
-; The type of array operation (parity check, clear, rebuild) will be appended to the following text
-Automatic unRaid=
-Average Speed=
-completed=
-Correcting Parity Check=
-Drives cooled down=
-errors=
-finished=
-Increments=
-NonCorrecting Parity Check=Non-Correcting Parity Check
-Pause=
-Paused=
-Resume=
-Resumed=
-Runtime=
-Scheduled pause=
-Unclean shutdown detected=
-will be started=
-
 ; Swal warnings
+; ~~~~~~~~~~~~~
+; (these are popups from web page as a result of field validation)
+; (translation optional)
 
 A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week=
 At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=
@@ -150,6 +186,7 @@ Do you really want this=
 Error in custom entry=
 extra time that will elapse before the system is once again in a protected state=
 Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime=
+No check is made to see if there is any other activity running on the server at the time the array operation completes=
 Notifications not enabled=
 On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=
 Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=
@@ -159,21 +196,28 @@ Pausing an operation that is building parity or rebuilding a failed disk has a l
 Temperature Pause and Resume=
 Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin=
 Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless this is really necessary=
+The Pause and Resume times cannot be identical=
 The Pause and Resume times would give an increment length of more than 12 hours which is unusual=
 The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=
+The Unraid Cumulative Parity Check option must not be used if you want to use this plugin to handle pause and resume of scheduled Parity Checks=
 The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the unRaid level=
 This might affect array integrity=
 Unusually large value=
 
 ; Syslog messages (with debug logging disabled)
+; ~~~~~~~~~~~~~~~
+; (translation optional)
 
 %s Cancelled=
 Array not started so no action taken=
 as drives now cooled down=
+Cancel automatically started array operation=
 Following drives overheated=
 Only able to start a Read-Check due to number of disabled drives=
+to get ready for restart=
 
 ; Syslog messages (with debug logging enabled)
+; ~~~~~~~~~~~~~~~
 ; (May not be worth translating these as they are mainly of use to the plugin developer)
 
 appears to be a regular scheduled check=
@@ -187,16 +231,20 @@ Array stopping while %s was in progress %s=
 but no action currently taken on started event=
 but no parity check was in progress when array stopped=
 Cancel request=
+Configuration=
 cool=
-created cron entries for running increments=
-created cron entry for monitoring disk temperatures=
-created cron entry for scheduled pause and resume=
-created cron entry for default monitoring=
+Created cron entries for %s=
+; where %s will be one of the following 4 values
+default monitoring=
+monitoring disk temperatures=
+monitoring partial parity checks=
+scheduled pause and resume=
 Detected that array has not yet been started=
 Detected that array has just been started=
 detected that mdcmd had been called from %s with command %s=
 ERROR=
 hot=
+idle=
 Loading progress file %s=
 No action specified=
 No array operation currently in progress=
@@ -207,18 +255,23 @@ Option not currently recognized=
 Parity check appears to be paused=
 Parity Check was in progress when array stopped at %s=
 Pause of=
+PAUSED=
 Pause request=
 Removed existing state file %s=
 Resume request=
 so no further action to take=
 Temperature monitoring switched off=
-Unraid version %s is too old to support restart
+Unraid version %s is too old to support restart=
 Unscheduled array operation in progress=
+Updated cron settings are in %s=
 using scheduled mode of %s=
+Versions Unraid %s, Plugin %s=Versions: Unraid %s, Plugin %s
 warm=
+will not be restarted=
 with all array drives below temperature threshold for a Pause=
 
 ; Syslog messages (with testing logging enabled)
+; ~~~~~~~~~~~~~~~
 ; (almost certainly not worth translating these as they are mainly of use to the plugin developer)
 
 analyze previous progress before starting new one=
@@ -229,12 +282,13 @@ shutdown %s=
 Shutdown not actioned as running in TESTING mode=
 updated cron settings are in %s=
 
-; PART 2 - TEXT Blocks ant HELP text
+; PART 2 - TEXT Blocks and HELP text
 
 End point for check=
 Method used to specify start and stop points=
 
 ; Help text on settings page
+; ~~~~~~~~~~~~~~~~~~~~~~~~~~
 ; These could perhaps be left in English to keep translation task easier)
 
 :parity_tune_explain_plug:
@@ -252,15 +306,13 @@ Method used to specify start and stop points=
 >* You are not worried about this increased elapsed time and will welcome the increased system responsiveness during normal use.  
 >* The rest of the month this plugin will do nothing as there is no active parity check in progress when the start time for an increment comes around.
 >
->**CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning
+>**CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.  You can avoid this if you set the plugin option to resume array operations on next array start.
 :end
 
 :parity_tune_increments_plug:
 >Setting this option to **Yes** specifies that parity checks should be run in increments spread over several days.
 >
 >If you have set this to **No** then you get the default system behavior of parity checks running without a break to completion unless you manually stop/pause/cancel them.
->
->**CAUTION:**  The default unRaid behavior is that if the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.  
 :end
 
 :parity_tune_frequency_plug:
@@ -329,7 +381,9 @@ Method used to specify start and stop points=
 
 :parity_tune_restart_plug:
 > Unraid will normally abandon a parity check if the system is shutdown, rebooted  or the array is stopped (with the only option being to restart the parity check from the beginning).  
-> Setting this option allows parity checks to be restarted by this plugin from the point they had reached as long as the following criteria are met:  
+> Other array operations will be restarted from the beginning.
+> Setting this option allows parity checks to be restarted by this plugin from the point they had reached
+> as long as the following criteria are met:  
 >* The array was shutdown tidily  
 >* The user must not have made any changes to the array configuration.
 >
@@ -338,7 +392,22 @@ Method used to specify start and stop points=
 >**NOTES:**  
 >* If the array operation was within the time set for a scheduled increment to be running then on restarting the array operation it will be set to be paused if now outside the time set for running increments.  
 >* If the array operation was manually paused then the restarted array operation will also be paused  
->* If you want to use this feature by simply stopping the array without immediately using the **Reboot** or **Shutdown** buttons then you first need to manually **Pause** the array operation before using the **Stop** button.  If you to this and successfully stop the array then the array operation will now be resumed if you simply **Start** the array again, and also on the next array start after **Reboot** or **Shutdown**.
+:end
+
+:parity_tune_mover_plug:
+>Pause an array operation (Parity Check, Parity-Sync/Disk Rebuild, disk Clear) if mover is running.  >Pause an array operation (Parity Check, Read-Check, Parity-Sync,. Disk Rebuild, Disk Clear) if mover is running.  An array operation being run in parallel to mover adversely affects the performance due to contention on the disk drives so it is more efficient to not have them running at the same time.
+> 
+> This setting takes affect even if you are not using any of the options to run an array operation in increments.
+> 
+> If you are running the array operation type in increments then the resume will only happen after mover finishes if you are still within the time windows for the increment.
+:end
+
+:parity_tune_backup_plug:
+>Pause an array operation (Parity Check, Read-Check, Parity-Sync,. Disk Rebuild, Disk Clear) if the CA Appdata or Appdat Backup plugins are running a backup or restore of docker container data.  An array operation being run in parallel to the backup or restore adversely affects the performance due to contention on the disk drives so it is more efficient to not have them running at the same time.
+> 
+> This setting takes affect even if you are not using any of the options to run an array operation in increments.
+> 
+>I f you are running the array operation type in increments then the resume will only happen after the backup or restore finishes if you are still within the time windows for the increment.
 :end
 
 :parity_tune_hot_plug:
@@ -364,7 +433,7 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_low_plug:
-> This value indicates how much below the Warning temperature threshold of a drive must reach before a **resume** of an array operation is issued.
+> This value indicates how much below the Warning temperature threshold of a drive must reach before a **resume** of an array operation is considered.  If using increments has been set for the type of operation being performed then the time mest be within the increments window or the resume wil be deferred until that window is rezched.
 >
 >You need to get a good balance between array operations being resumed too soon (and thus quickly reaching the level to initiate another pause) and wasting a lot of time.
 >
@@ -395,6 +464,14 @@ Method used to specify start and stop points=
 >If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
 :end
 
+:parity_tune_complete_plug:
+> If set to **Yes** then automatically start a tidy shutdown of the server when the current array operation completes.
+>
+>This option is only likely to be of use on a server that is powered off most of the time as it is used for something like backup purposes.   The idea is that you can initiate the array operation (either manually or via a schedule) and then leave the server to power itself down without having to know how long the array operation will take to complete.
+>
+>**CAUTION:**  No check is made to see if there is any other activity running on the server at the time the array operation completes.
+:end
+
 :parity_tune_logging_plug:
 > Control the level of detail in entries.  The level of detail can be increased to help with debugging any problems using this plugin might encounter.
 >
@@ -411,8 +488,16 @@ Method used to specify start and stop points=
 >
 >Feedback is welcome as to whether it is worth introducing any intermediate option that outputs information type messages on the plugin's activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running. 
 >
->If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the inly option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive. 
+>If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the only option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive. 
 >To facilitate with debugging problems then in Testing mode you can log the messages to the flash drive either instead of the syslog or in addition to the syslog. The resulting parityTuning.log file will be stored in the plugin's folder on the flash drive and providing this file to the developer will help with diagnosing any unexpected behaviour you encounter.
+:end
+
+:parity_tune_defaults_plug:
+> The **Apply** button will save the currently displayed settings values.
+>
+> The **Done** button exits the settings page.
+>
+> The **Defaults** button will reset the plugin settings to the default values that are used when the plugin is first installed.
 :end
 
 :parityProblems_type_plug:
@@ -449,9 +534,10 @@ Method used to specify start and stop points=
 :end
 
 :parityProblems_check_plug:
-> When you click on the option to **Start Check** then a partial check is initiated that
-> will cover the start and end points that you have specified.  It will be a correcting check 
+> When you click on  **Check** then a partial check is initiated that
+> will cover at least the start and end points that you have specified.  It will be a correcting check
 > if the option to **Write Corrections** is set to **Yes**, and a read-check otherwise.
+> Note that this check will run for a minimum of 1 minute even if you specify a very small number of sectors to be checked.
 :end
 
 :parityProblems_sectors_plug:
