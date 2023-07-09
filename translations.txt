@@ -699,7 +699,6 @@ Get started by signing in to Unraidnet=Get started by signing in to Unraid.net
 Get Started=
 Go Back=
 Go to Connect=
-Go to Go to Connect=
 GUID Error=
 GUID=
 Have a USB flash device that already has an account associated with it=

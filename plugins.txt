@@ -10,6 +10,7 @@ Delete Plugin=
 DOWNGRADE TO VERSION=
 Enter URL of remote plugin file or local plugin file=
 ERROR=
+I have read the release notes=
 Install Plugin=
 Install=
 install=

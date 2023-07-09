@@ -61,6 +61,7 @@ Secondary storage=
 Select cache pool=
 Set when adding new share only=
 Share contains data=
+Share name contains invalid characters for ZFS use=
 Share is empty=
 Share is outside the list of designated disks=
 Share Settings=
