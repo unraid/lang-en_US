@@ -370,7 +370,7 @@ Thank You=
 The error is=
 The Unraid OS webgui requires JavaScript=
 There is a physical problem accessing your USB Flash boot device=
-This will start your free 30-day Trial=
+This will start your free 30 day Trial=
 to change notification settings=
 to downgrade Unraid OS=
 to upgrade Unraid OS=
@@ -908,7 +908,7 @@ You may purchase a license key corresponding to this USB Flash device to continu
 You will no longer have access to this server using this url=You will no longer have access to this server using <abbr title="%s" class="italic">this url</abbr>
 Your current url %s is not in the list of allowed origins for this server=Your current url **%s** is not in the list of allowed origins for this server
 Your flash drive is corrupted or offline=
-Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=
+Your server will not be usable until you purchase a Registration key or install a free 30 day Trial key=
 Your Trial has expired=
 Your Trial key includes all the functionality and device support of a Pro key=
 Your Trial key requires an internet connection=
@@ -1098,7 +1098,7 @@ You may purchase a license key corresponding to this USB Flash device to continu
 You MUST provision a new SSL certificate to use our new myunraidnet domain=You MUST provision a new SSL certificate to use our new myunraid.net domain.
 Your %s Key has been replaced=Your %s Key has been replaced!
 Your free Trial key provides all the functionality of a Pro Registration key=
-Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=Your server will not be usable until you purchase a Registration key or install a free 30-day *Trial* key.
+Your server will not be usable until you purchase a Registration key or install a free 30 day Trial key=Your server will not be usable until you purchase a Registration key or install a free 30 day *Trial* key.
 Your Trial key has been extended=Your Trial key has been extended!
 Your Trial key includes all the functionality and device support of a Pro key=Your **Trial** key includes all the functionality and device support of a **Pro** key
 Your Trial key requires an internet connection=Your Trial key requires an internet connection.
