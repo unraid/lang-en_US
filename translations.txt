@@ -1052,6 +1052,7 @@ Success=Success!
 Thank you for choosing Unraid OS=Thank you for choosing Unraid OS!
 Thank you for installing Connect=Thank you for installing Connect!
 Thank you for purchasing an Unraid %s Key=Thank you for purchasing an Unraid %s Key!
+Thank you for upgrading to an Unraid %s Key=Thank you for upgrading to an Unraid %s Key!
 The Connect dashboard links to relevant sections of the webgui, allowing quick access to those settings and server sections=The Connect dashboard links to relevant sections of the webgui, allowing quick access to those settings and server sections.
 The key file should be located in the config directory on your USB Flash boot device=The key file should be located in the /config directory on your USB Flash boot device
 The license key file does not correspond to the USB Flash boot device=The license key file does not correspond to the USB Flash boot device.
