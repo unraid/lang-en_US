@@ -100,11 +100,9 @@ Use only when directed for support because the messages can flood the log=
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+> Set to **Auto** to mount all NFS Remote Shares auto negotiating the NFS version to use.
 >
-> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
->
-> All NFS remote shares will be mounted with the specified version.
+> If the **Auto** setting doesn't work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto negotiate NFSv4.
 :end
 
 :ud_settings_smb_security_plug:
