@@ -41,6 +41,7 @@ Enter the password to use for this disk=
 Exclusive Share files will not be accessible in a Root Share=
 Execute Script as udev simulating a device being installed=
 Fail=
+failed to=
 file share for=
 File System Check=
 File System Scrub=
