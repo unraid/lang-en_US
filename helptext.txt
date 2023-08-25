@@ -621,7 +621,7 @@ Share can *not* be deleted as long as it contains data. Be aware that some data 
 :end
 
 :share_edit_exclusive_access_help:
-When set to "Yes" indicates a synmlink directly to a pool has been set up for the share in the /mnt/user tree.
+When set to "Yes" indicates a symlink directly to a pool has been set up for the share in the /mnt/user tree.
 
 Refer to [Global Share Settings](Settings/ShareSettings) -> Permit exclusive shares.
 :end
@@ -2415,4 +2415,12 @@ Normally this isn't a problem since a WireGuard tunnel is automatically re-estab
 A keepalive timer will hold the connection open, for most situations a timer value of 20 seconds is suitable.
 
 Note that for mobile devices this will use more data and drain your battery faster.
+:end
+
+:sysdrivers_intro_help:
+This page displays all the drivers available on this system. Filter the list according to whether the driver is Inuse or not, or search for a specific driver if desired.
+
+Any 3rd party driver installed by a plugin will have a support symbol next to it, click this to get support for the plugin.
+
+Click the edit button to add/modify/delete any modprobe.d config file in the config/modprobe.d directory on the flash drive.
 :end
