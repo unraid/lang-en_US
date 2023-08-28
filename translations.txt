@@ -1106,3 +1106,4 @@ Your Trial key requires an internet connection=Your Trial key requires an intern
 Your Unraid registration key is ineligible for replacement as it has been replaced within the last 12 months=Your Unraid registration key is ineligible for replacement as it has been replaced within the last 12 months.
 Your Unraid registration key is ineligible for replacement as it is blacklisted=Your Unraid registration key is ineligible for replacement as it is blacklisted.
 Youre one step closer to enhancing your Unraid experience=You're one step closer to enhancing your Unraid experience
+Calculating trial expiration…=
