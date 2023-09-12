@@ -976,6 +976,7 @@ If you need to change flash drives, generate a backup from Connect and be up and
 If you want to replace one of your license keys with a new key bound to this USB Flash device, please first remove all other key files first=If you want to replace one of your license keys with a new key bound to this USB Flash device, please first remove all other key files first.
 Ignore this message if you are currently connected via Remote Access or VPN=Ignore this message if you are currently connected via Remote Access or VPN.
 Install Connect=
+Installing Connect=
 Install Extended=
 Install Recovered=
 Install Replaced=
