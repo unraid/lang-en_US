@@ -664,6 +664,8 @@ will *hide* the share from *browsing* but is still accessible if you know the sh
 :smb_time_machine_volume_help:
 This limits the reported volume size, preventing Time Machine from using the entire real disk space
 for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
+Note that Ventura 13.6 and later require a value to be present.  No entry will prevent Time Machine
+from working correctly.
 :end
 
 :smb_case_sensitive_names_help:
