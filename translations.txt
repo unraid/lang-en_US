@@ -1245,3 +1245,11 @@ Unknown error=
 Installing Extended=
 Please finish the initiated downgrade to enable updates=Please finish the initiated downgrade to enable updates.
 Please finish the initiated update to enable a downgrade=Please finish the initiated update to enable a downgrade.
+
+; Downgrade component additions 2023-11-09
+Downloading=
+Open a bug report=
+Create a bug report on our forums with a description of the issue along with your diagsnotics=
+Create Bug Report=
+Confirm Downgrade=
+A reboot will be required=
