@@ -117,7 +117,7 @@ Use only when directed for support because the messages can flood the log=
 :ud_settings_case_sensitive_plug:
 > Controls whether filenames are case-sensitive.
 >
-> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFS and NFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
 >
 > A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
 >
@@ -146,4 +146,8 @@ Use only when directed for support because the messages can flood the log=
 > Select the disk that you want to change the UUID. This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk. Drive must be unmounted to change the UUID.
 >
 > **Note:** Don't change the UUID of a pooled disk.
+:end
+
+:ud_settings_zfs_upgrade_plug:
+> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
 :end
