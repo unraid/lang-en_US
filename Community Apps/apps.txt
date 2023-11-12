@@ -150,6 +150,8 @@ This template is set up to run as Privileged This is a possible security risk an
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
 Not Enough Memory=
 Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
+Run Anyways=
+Memory Requirements not met Problems may result=
 Installation already in progress=
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
 %s is incompatible with your OS version Please update the OS to proceed=
