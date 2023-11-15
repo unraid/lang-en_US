@@ -1253,3 +1253,16 @@ Create a bug report on our forums with a description of the issue along with you
 Create Bug Report=
 Confirm Downgrade=
 A reboot will be required=
+
+%s year=
+%s years=
+%s month=
+%s months=
+%s day=
+%s days=
+%s hour=
+%s hours=
+%s minute=
+%s minutes=
+%s second=
+%s seconds=
