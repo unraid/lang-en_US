@@ -13,6 +13,7 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 Debugging enabled This significantly increases the memory used by your browser=
 Browser translation detected Display issues may result=
 Action Centre Enabled=
+Deprecated OS version No further updates to Community Applications will be issued for this OS version=
 
 ; Sorting Options
 Sort By=
