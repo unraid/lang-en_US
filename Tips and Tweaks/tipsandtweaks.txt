@@ -12,7 +12,7 @@ Disable NIC Offload=
 Disk Cache=
 Dont change the Disk Cache settings until you read and understand this=
 Driver=
-Enable Intel TurboAMD Performance Boost=
+Enable Intel Turbo/AMD Performance Boost=
 Enable syslog Archiving=
 Ethernet NIC Rx Buffer=
 Ethernet NIC Tx Buffer=
@@ -29,6 +29,7 @@ If you dont Unraid may not detect the Master Browser for all network interfaces 
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
 If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=
+Intel Turbo/AMD Performance Boost=
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=
 It is recommended to use the pstate driver on Intel processors if you want the most performance=
 It is recommended you use the 'Performance' Governor for best performance and power savings=
@@ -65,6 +66,8 @@ This will log all your server log enries to the Syslog Server and save the log t
 This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=
 Time to set Normal CPU Scaling=
 Time to set Power Saving CPU Scaling=
+Time to set Turbo/Performance Boost Off=
+Time to set Turbo/Performance Boost On=
 Tips=
 Tips and Tweaks wiki=
 Tweaks=
@@ -145,6 +148,18 @@ You may actually cause more problems than you solve if there are problems with y
 > This value is used by samba to set the maximum number of open files allowed in SMB shares.
 >
 > The default is 40960 and the allowed range is 40960 to 65535.
+:end
+
+:tips_tweak_turbo_plug:
+> Set to 'Yes' to enable the Intel Turbo or AMD Performance Boost Mode.  Set 'No' to disable.  Set to 'Schedule' to enable Turbo/AMD Performance Boost mode on/off based on the times set below.
+:end
+
+:tips_tweaks_turbo_state_off_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost Off in 24 hour format hh:mm.
+:end
+
+:tips_tweaks_turbo_state_on plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost On in 24 hour format hh:mm.
 :end
 
 :tips_tweaks_cpu_governor_plug:
