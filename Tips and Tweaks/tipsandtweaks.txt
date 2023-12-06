@@ -158,7 +158,7 @@ You may actually cause more problems than you solve if there are problems with y
 > Enter the time you want to set Intel Turbo/AMD Performance Boost Off in 24 hour format hh:mm.
 :end
 
-:tips_tweaks_turbo_state_on plug:
+:tips_tweaks_turbo_state_on_plug:
 > Enter the time you want to set Intel Turbo/AMD Performance Boost On in 24 hour format hh:mm.
 :end
 
