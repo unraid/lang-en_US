@@ -73,7 +73,7 @@ Device contents invalid=
 Device encrypted and unlocked=
 Device encrypted=
 Device is disabled=
-Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
+Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=
 Device locked unknown error=Device locked: unknown error
 Device locked wrong encryption key=Device locked: wrong encryption key
