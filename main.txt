@@ -191,7 +191,6 @@ Pool name already exists=
 Pool of %s devices=
 Pool Status=
 Power=
-Power=
 Preclear in progress=
 previous device=
 Printable Characters Only=
