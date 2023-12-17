@@ -68,7 +68,7 @@ Date=
 dedup - Deduplication Tables=
 Delete Pool=
 detected=
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device contents invalid=
 Device encrypted and unlocked=
 Device encrypted=
