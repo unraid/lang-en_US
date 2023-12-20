@@ -1,8 +1,8 @@
 Process=
 Kill Process=
 Process ID=
-Open Files=
-Files that may prevent shutdown=
+Open=
+May prevent shutdown=
 File Name and Path=
 An entry for bash means you have a terminal session open with the working directory on the array=
 If smbd is listed, it means that another computer has a samba share mounted=
