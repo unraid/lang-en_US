@@ -301,6 +301,7 @@ Generate Key=
 Generate Keypair=
 Global Share Settings=
 Global SMART Settings=
+GRUB Configuration=
 Header custom background color=
 Header custom meta text color=
 Header custom secondary text color=
