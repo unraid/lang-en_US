@@ -1527,6 +1527,13 @@ Change this setting to YES when troubleshooting is required and it is not possib
 A mirror of the syslog file is stored in the **logs** folder of the flash device.
 :end
 
+:syslog_shutdown_flash_help:
+This setting is YES by default and enables the system to copy the syslog file to the USB device on shutdown or reboot.
+
+This is helpful for situations where the system hangs and a forced reboot is required.
+It will allow to troubleshoot the situation before a reboot when diagnostices are created.
+:end
+
 :confirm_reboot_help:
 Choose if rebooting or powering down the server needs a confirmation checkbox.
 :end
@@ -2473,4 +2480,33 @@ If set to 'Yes' the bash history will persist reboots, set to 'No' to disable.
 **ATTENTION:** The bash history will be written to the USB Boot device so this will introduce higher wear and tear!
 
 **Note:** Disabling and Enabling will remove the entire bash history.
+:end
+
+
+:WOL_enable_help:
+If set to yes Unraidwold daemon is set to run.
+:end
+
+:WOL_docker_help:
+If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
+:end
+
+:WOL_run_VM_help:
+If set to yes when wake on lan packets are received checks are carrried out for virtual machines otherwise virtual machines will be ignored.
+:end
+
+:WOL_run_LXC_help:
+If set to yes when wake on lan packets are received checks are carrried out for LXC otherwise LXC will be ignored. The LXC plugin needs to be installed for LXC to be processed.
+:end
+
+:WOL_interface_help:
+Specify the interface to the daemon to bind to. Some interfaces may not be able to recieve etherframe packets. Recommend to bind to a physical interface.
+:end
+
+:WOL_promiscuous_mode_help:
+Enable to set the NIC not to filer packets.
+:end
+
+:WOL_log_file_help:
+Default is to log to syslog but if you want a different log location set the file name.
 :end
