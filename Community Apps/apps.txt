@@ -13,6 +13,7 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 Debugging enabled This significantly increases the memory used by your browser=
 Browser translation detected Display issues may result=
 Action Centre Enabled=
+Deprecated OS version No further updates to Community Applications will be issued for this OS version=
 
 ; Sorting Options
 Sort By=
@@ -41,6 +42,7 @@ Install Plugin Applications=
 Select all on page=
 Install Application=
 Install Applications=
+Update Application=
 Update Applications=
 Are you sure you want to update %s applications=
 Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)
@@ -150,10 +152,15 @@ This template is set up to run as Privileged This is a possible security risk an
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
 Not Enough Memory=
 Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
+Run Anyways=
+Memory Requirements not met Problems may result=
 Installation already in progress=
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
 %s is incompatible with your OS version Please update the OS to proceed=
 %s is incompatible with your OS version Either uninstall %s or update the OS=
+Browser failed to communicate with Unraid Server=
+For unknown reasons, your browser was unable to communicate with Community Applications running on your server=
+Attempt to Fix Via Reload Page=
 
 ; CA Sections Keep the length reasonable
 Home=
