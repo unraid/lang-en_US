@@ -38,6 +38,7 @@ Make one change at a time and verify if it improves your situation=
 Making changes here can briefly interrupt your network operation=
 Many plugins are no longer compatible with older Unraid versons=
 Max SMB Open Files=
+Max User Instances=
 Max User Watches=
 NIC Offload=
 NIC Rx Buffer=
@@ -46,6 +47,7 @@ Normal CPU Scaling Governor=
 Note=
 Number of syslogs to Archive=
 post=
+Power Saving Settings=
 Power Saving CPU Scaling Governor=
 Processes to kill before Array is Stopped=
 Put the IP address of your server in the Remote syslog server field=
@@ -142,6 +144,12 @@ You may actually cause more problems than you solve if there are problems with y
 > If inotify fails to start because there are not enough user watches, increase the max_user_watches.
 >
 > The default is 524288.
+:end
+
+:tips_tweaks_max_instances_plug:
+> This is maximum number of inotify instances that a user can create.
+>
+> The default is 128.
 :end
 
 :tips_tweaks_max_files_plug:

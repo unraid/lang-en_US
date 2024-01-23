@@ -3,6 +3,8 @@ Attach=
 Attach This Disk=
 Attaching=
 Automount=
+Clear=
+Clear the Device Script=
 Click to select file or click 'Default' button for the Device Script File=
 Default=
 Delete Device Script File=
@@ -16,6 +18,7 @@ Disable Mount Button=
 Disk Name=
 Disk Serial=
 Edit Device Script=
+Encrypt CIFS Mount=
 Enter Device Script File Name=
 Enter and Edit the Device Script that runs when a udev or operator event occurs=
 Enter the User Script File Name=
@@ -34,7 +37,7 @@ Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share t
 Passed Through=
 Read Only=
 Run Device Script File in the background=
-Save your Device Script File=
+Save your Device Script=
 Save your Device Script File changes=
 Share Device with SMB and NFS=
 Share Remote Mount with SMB and NFS=
@@ -44,7 +47,7 @@ Source=
 Unassigned Devices Settings=
 Undo your changes since last Save=
 User Script=
-Volume=
+APFS Volume=
 ZFS Volume=
 
 ;
@@ -72,6 +75,14 @@ ZFS Volume=
 > **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
 >
 > **Note:** Cannot contain "dev" as the first characters.  This is reserved for the 'devX' devices.
+:end
+
+:ud_apfs_volume_plug:
+> Enter the volume to mount on this APFS partition.
+:end
+
+:ud_encrypt_connection_plug:
+> Set to **Yes** to encrypt the CIFS mount.  This is best for off-site mounts because of the overhead of encryption.
 :end
 
 :ud_edit_script_choose_name_plug:
