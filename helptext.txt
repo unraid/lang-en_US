@@ -489,7 +489,7 @@ If no suffix, a count of 1024-byte blocks is assumed.
 
 :share_edit_global1_help:
 A *Share*, also called a *User Share*, is simply the name of a top-level directory that exists on one or more of your
-storage devices (array and cache).  Each share can be exported for network access.  When browsing a share, we return the
+storage volumes (array disks and pools).  Each share can be exported for network access.  When browsing a share, we return the
 composite view of all files and subdirectories for which that top-level directory exists on each storage device.
 
 *Read settings from* is used to preset the settings of the new share with the settings of an existing share.
@@ -607,9 +607,7 @@ disable these services while mover is running.
 :share_edit_copy_on_write_help:
 Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
 when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute.  We recommend this setting for shares
-used to store vdisk images, including the Docker loopback image file.  This setting has no effect
-on non-btrfs file systems.
+subdirectories on the device will inherit the NOCOW attribute. This setting has no effect on non-btrfs file systems.
 
 Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
 :end
@@ -620,6 +618,32 @@ Share does *not* contain any data and may be deleted if not needed any longer.
 
 :share_edit_delete_help:
 Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
+:end
+
+:share_edit_exclusive_access_help:
+When set to "Yes" indicates a symlink directly to a pool has been set up for the share in the /mnt/user tree.
+
+Refer to [Global Share Settings](Settings/ShareSettings) -> Permit exclusive shares.
+:end
+
+:share_edit_primary_storage_help:
+**Primary storage** is where *new files and folders* are created.  If
+Primary storage is below the minimum free space setting then new files
+and folders will be created in **Secondary storage**, if configured.
+
+**Important:** For *Exclusive access* shares, the Min free space
+settings are ignored.
+:end
+
+:share_edit_secondary_storage_help:
+**Secondary storage** is where new files and directories are created if no
+room on Primary storage.  When both Primary and Secondary storage are
+configured the 'mover' will transfer files between them.
+:end
+
+:share_edit_mover_action_help:
+This defines the direction of file transfer between Primary and
+Secondary storage when both are configured.
 :end
 
 :smb_security_help:
@@ -640,6 +664,8 @@ will *hide* the share from *browsing* but is still accessible if you know the sh
 :smb_time_machine_volume_help:
 This limits the reported volume size, preventing Time Machine from using the entire real disk space
 for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
+Note that Ventura 13.6 and later require a value to be present.  No entry will prevent Time Machine
+from working correctly.
 :end
 
 :smb_case_sensitive_names_help:
@@ -917,6 +943,18 @@ A value of zero will disable the warning threshold (including notifications).
 A value of zero will disable the critical threshold (including notifications).
 :end
 
+:ssd_default_warning_temperature_help:
+*Warning SSD temperature* sets the default warning threshold for all SSD devices temperature. Exceeding this threshold will result in a warning notification.
+
+A value of zero will disable the warning threshold (including notifications).
+:end
+
+:ssd_default_critical_temperature_help:
+*Critical disk temperature* sets the default critical threshold for all SSD devices temperature. Exceeding this threshold will result in an alert notification.
+
+A value of zero will disable the critical threshold (including notifications).
+:end
+
 :disk_default_smart_notification_help:
 SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
 
@@ -957,6 +995,13 @@ Using repositories is deprecated.  For instructions on how to have Community App
 Before you can start the Docker service for the first time, please specify an image file for Docker to install to.
 
 Once started, Docker will always automatically start after the array has been started.
+:end
+
+:docker_readmore_help:
+Some systems with a lot of docker containers may experience lag using the main Docker page.
+
+Setting this to "No" may help speed up general page usage by disabling the use of readmore-js.
+Instead of chevrons indicating more data for Port and Volume mapping, all data is displayed.
 :end
 
 :docker_timeout_help:
@@ -1017,14 +1062,23 @@ Specifies the number of LOG files when LOG rotation is done.
 If set to **Yes**, when creating/editing containers the interface will be present with some extra fields related to template authoring.
 :end
 
+:docker_custom_network_type_help:
+The **ipvlan** type is best when connection to the physical network is not needed.
+Please read <u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>this</a></u> on implementing an ipvlan network.<br>
+
+The **macvlan** type of network allows direct connection to the physical network.
+Please read <u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>this</a></u> on implementing a macvlan network.<br>
+
+**Note:** Docker uses its own dhcp service, which is the **DHCP Pool** setting.
+When you use multiple Unraid servers, then each server must have a different Docker **DHCP Pool** range configured.
+:end
+
 :docker_custom_network_access_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+Allows direct communication between the host and containers using a custom **macvlan** network.  By default this is disabled.
 :end
 
 :docker_user_defined_network_help:
-User created networks are networks created by the user outside of the GUI.<br>
-By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
+User created networks are networks created by the user outside of the GUI.  By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
 
 Change this setting to preserve user defined networks, but it is the responsibility of the user to ensure these entries work correctly and are conflict free.
 :end
@@ -1153,6 +1207,13 @@ Select **Strict** to enable *exclusive* use of an Unraid.net SSL
 certificate for https access (see **Provision** below).  Note that a DNS
 server must be reachable.
 
+**Redirects:** When accessing `http://<server-ip-address>` or `http://<server-name>.<localTLD>`, the 
+behavior will change depending on the value of the Use SSL/TLS setting:
+
+* If Use SSL/TLS is set to **Strict**, you will be redirected to `https://<lan-ip>.<hash>.myunraid.net`
+* If Use SSL/TLS is set to **Yes**, you will be redirected to `https://<server-ip-address> or https://<server-name>.<localTLD>`
+* If Use SSL/TLS is set to **No**, then the http url will load directly.
+
 Important: **Strict** may not be selectable if your router or upstream DNS server has
 [DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
 protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
@@ -1198,6 +1259,11 @@ Enter the HTTPS port, default port is 443.
 
 :mgmt_local_tld_help:
 Enter your local Top Level Domain. May be blank.
+:end
+
+:mgmt_local_access_urls_help:
+The Local Access URLs shown above are based on your current settings. 
+To adjust URLs or redirects, see the help text for "Use SSL/TLS".
 :end
 
 :mgmt_certificate_expiration_help:
@@ -1250,9 +1316,10 @@ starts; and re-created if the server hostname or local TLD is changed.
 
 **nginx stapling support**
 
-Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
-`config/ssl/certs/certificate_bundle.pem` => Yes<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem` => No
+OCSP Stapling is automatically enabled if the certificate contains an OCSP responder URL.
+
+Hence, for self-signed certificates stapling is not enabled; for CA-signed certificates
+stabling is enabled.
 :end
 
 :ftp_server_help:
@@ -1391,6 +1458,19 @@ Uncheck all disks in order to not exclude any disks
 disks which represent a subset of the Included/Excluded disks defined here.
 :end
 
+:shares_exclusive_shares_help:
+If set to Yes, share directories under /mnt/user are actually symlinks to the share directory on a storage volume
+provided the following conditions are met:
+
+* The Primary storage for a share is set to a pool.
+* The Secondary storage for a share is set to **none**.
+* The share exists on a single volume.
+* The share is **not** exported over NFS.
+
+The advantage of *exclusive* shares is that transfers bypass the FUSE layer which may significantly
+increase I/O performance.
+:end
+
 :shares_tunable_hard_links_help:
 If set to Yes then support the link() operation.
 
@@ -1447,6 +1527,13 @@ Change this setting to YES when troubleshooting is required and it is not possib
 A mirror of the syslog file is stored in the **logs** folder of the flash device.
 :end
 
+:syslog_shutdown_flash_help:
+This setting is YES by default and enables the system to copy the syslog file to the USB device on shutdown or reboot.
+
+After rebooting, the syslog from this run will be visible on Tools > Syslog > syslog-previous;
+it will also be included in diagnostics as logs/syslog-previous.txt
+:end
+
 :confirm_reboot_help:
 Choose if rebooting or powering down the server needs a confirmation checkbox.
 :end
@@ -1459,6 +1546,12 @@ Choose if stopping the array needs a confirmation checkbox.
 The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
 
 You can experiment with these settings as desired, they only affect visual properties.
+:end
+
+:display_width_help:
+**Boxed** is the legacy setting which constrains the content width to maximum 1920 pixels
+
+**Unlimited** allows content to use all available width, which maybe useful on wide screens
 :end
 
 :display_font_size_help:
@@ -1513,6 +1606,10 @@ Make sure any newly entered values represent the selected temperature unit.
 
 :vms_enable_help:
 Stopping the VM Manager will first attempt to shutdown all running VMs. After 60 seconds, any remaining VM instances will be terminated.
+:end
+
+:vms_disable_help:
+Stop VMs from Autostarting\Starting when VM Manager starts or open is run from the gui to start, error message will be seen.
 :end
 
 :vms_libvirt_volume_help:
@@ -1571,6 +1668,11 @@ the VM will be instructed to hibernate (if supported) otherwise it will attempt 
 :vms_shutdown_timeout_help:
 When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
 NOTE: It's recommended to shut down guest VMs from within the VM.
+:end
+
+:vms_console_help:
+For setting the console options to show on context menus. Web will show only inbuild web clients(VNC and SPICE), 
+Virtual Manager Remote Viewer will only show the Remote Viewer option. Both will show both Web and Remote Viewer.
 :end
 
 :vms_acs_override_help:
@@ -1785,6 +1887,18 @@ Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as 
 The metric value is optional, it defaults to 1. Use it to select the preferred gateway when more than one entry of the same route exists.
 :end
 
+:eth_network_extra_include_help:
+Enter one or more interface names or IP addresses which will be included in the list of listening interfaces for local system services.
+
+This is particularly useful when you have created custom interfaces (e.g. tailscale VPN tunnel) which are used to access local system services.
+:end
+
+:eth_network_extra_exclude_help:
+Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
+
+This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
+:end
+
 :apc_ups_daemon_help:
 Set to 'Yes' to enable apcupsd and start the daemon, set to 'No' to disable apcupsd and stop the daemon.
 :end
@@ -1920,10 +2034,20 @@ Write mover messages to the syslog file.
 
 :notifications_display_help:
 In *Detailed* view all notifications will be displayed on screen as soon as they arrive.<br>
-Notifications can be acknowledged individually or all in once.
+Notifications can be acknowledged individually or all at once.
 
 In *Summarized* view notifications will be counted only and the number of unread notifications is shown in the menu header per category.<br>
 Click on the counters to either acknowledge or view the unread notifications.
+:end
+
+:notifications_display_position_help:
+Choose the position of where notifications appear on screen in *Detailed* view. Multiple notifications are stacked, bottom-to-top or
+top-to-bottom depending on the selected placement.
+:end
+
+:notifications_auto_close_help:
+Number of seconds before notifications are automatically closed in *Detailed* view.<br>
+A value of 0 disables automatic closure.
 :end
 
 :notifications_date_format_help:
@@ -1932,10 +2056,6 @@ Select the desired date format which is used in the notifications archive. Recom
 
 :notifications_time_format_help:
 Select the desired time format which is used in the notifications archive. Recommended is 24 hours, which makes the date/time column sortable in a sensible way.
-:end
-
-:notifications_display_position_help:
-Choose the position of where notifications appear on screen. Multiple notifications are stacked, bottom-to-top or top-to-bottom depending on the selected placement.
 :end
 
 :notifications_store_flash_help:
@@ -2200,11 +2320,11 @@ Provide a comma separated list of urls that are allowed to access the unraid-api
 :end
 
 :myservers_remote_t2fa_help:
-When Transparent 2FA for Remote Access is enabled, you will access your server by clicking the "Remote Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Remote Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+When Transparent 2FA for Remote Access is enabled, you will access your server by clicking the "Remote Access" link on the <a href="https://connect.myunraid.net/" target="_blank" rel="noopener noreferrer">Go to Connect</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Remote Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
 :end
 
 :myservers_local_t2fa_help:
-When Transparent 2FA for Local Access is enabled, you will access your server by clicking the "Local Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Local Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+When Transparent 2FA for Local Access is enabled, you will access your server by clicking the "Local Access" link on the <a href="https://connect.myunraid.net/" target="_blank" rel="noopener noreferrer">Go to Connect</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Local Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
 
 This is fairly extreme for Local Access, and in most cases is not needed. It requires a solid Internet connection. If you need to access the webGUI while the Internet is down, SSH to the server and run 'use_ssl no', this will give you access via http://<?=$nginx['NGINX_LANIP']?><?=$nginx['NGINX_PORT'] !== '80' ? ':'.$nginx['NGINX_PORT'] : '' ?>
 :end
@@ -2228,8 +2348,8 @@ The *tunnel network pool* must be a unique network not already existing on the s
 :end
 
 :wg_local_tunnel_network_pool_X_help:
-WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=$netpool['wgX']?>/24 or
-the default IPv6 network <?=$netpool6['wgX']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers.
+WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network, 
+the default IPv6 network, or assign your own network pool from which automatic assignment can be done for both this server and any peers.
 
 The *tunnel network pool* must be a unique network not already existing on the server or any of the peers.
 :end
@@ -2243,7 +2363,7 @@ This field is auto filled-in when a local tunnel network pool is created. It is 
 :end
 
 :wg_local_endpoint_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
+This field is automatically filled in with the public management domain name *&lt;wan-ip&gt;.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
 This allows VPN tunnels to be established from external peers to the server.<br>
 Configure the correct port forwarding on your router (default port is <?=$netport['wg0']?> but this may be changed) to allow any incoming connections to reach the server.
 
@@ -2254,9 +2374,9 @@ Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it 
 :end
 
 :wg_local_endpoint_X_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
+This field is automatically filled in with the public management domain name *&lt;wan-ip&gt;.&lt;hash&gt;.myunraid.net* or the public address of the server.<br>
 This allows VPN tunnels to be established from external peers to the server.<br>
-Configure the correct port forwarding on your router (default port is <?=$netport['wgX']?> but this may be changed) to allow any incoming connections to reach the server.
+Configure the correct port forwarding on your router to allow any incoming connections to reach the server.
 
 Users with a registered domain name can use this field to specify how their server is known on the Internet. E.g. www.myserver.mydomain.<br>
 Again make sure your router is properly set up.
@@ -2332,4 +2452,61 @@ Normally this isn't a problem since a WireGuard tunnel is automatically re-estab
 A keepalive timer will hold the connection open, for most situations a timer value of 20 seconds is suitable.
 
 Note that for mobile devices this will use more data and drain your battery faster.
+:end
+
+:sysdrivers_intro_help:
+This page displays all the drivers available on this system. Filter the list according to whether the driver is Inuse or not, or search for a specific driver if desired.
+
+Any 3rd party driver installed by a plugin will have a support symbol next to it, click this to get support for the plugin.
+
+Click the edit button to add/modify/delete any modprobe.d config file in the config/modprobe.d directory on the flash drive.
+:end
+
+:console_keyboard_help:
+Select your default keymap for the local console (not the web Terminal).
+:end
+
+:console_screen_help:
+**Default:** 'Default' will set the blank timeout to 15 minutes and powersave to 60 minutes.
+
+**Disabled:** 'Disabled' will disable the blank and powersave timeout.
+
+**All other values:** Will set the blank timout to the selected value and disable the powersave timeout.
+:end
+
+:console_bash_help:
+If set to 'Yes' the bash history will persist reboots, set to 'No' to disable.
+
+**ATTENTION:** The bash history will be written to the USB Boot device so this will introduce higher wear and tear!
+
+**Note:** Disabling and Enabling will remove the entire bash history.
+:end
+
+
+:WOL_enable_help:
+If set to yes Unraidwold daemon is set to run.
+:end
+
+:WOL_docker_help:
+If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
+:end
+
+:WOL_run_VM_help:
+If set to yes when wake on lan packets are received checks are carrried out for virtual machines otherwise virtual machines will be ignored.
+:end
+
+:WOL_run_LXC_help:
+If set to yes when wake on lan packets are received checks are carrried out for LXC otherwise LXC will be ignored. The LXC plugin needs to be installed for LXC to be processed.
+:end
+
+:WOL_interface_help:
+Specify the interface to the daemon to bind to. Some interfaces may not be able to recieve etherframe packets. Recommend to bind to a physical interface.
+:end
+
+:WOL_promiscuous_mode_help:
+Enable to set the NIC not to filer packets.
+:end
+
+:WOL_log_file_help:
+Default is to log to syslog but if you want a different log location set the file name.
 :end

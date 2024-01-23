@@ -38,4 +38,3 @@ Time of the day=
 >
 > For the other schedules choose here the time of the day trim should start.
 :end
-
