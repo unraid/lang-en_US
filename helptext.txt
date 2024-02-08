@@ -2482,6 +2482,19 @@ If set to 'Yes' the bash history will persist reboots, set to 'No' to disable.
 **Note:** Disabling and Enabling will remove the entire bash history.
 :end
 
+:WOL_intro_help:
+This page allows the setup to start/resume and stop VMs, Containters(Docker and LXC) using WOL magic packets
+
+It does setup wake up of the Unraid server.
+
+The process will look for the defined mac address defined within the service(VM or container) with the exception of dockers. Dockers do not have a mac address until they are running so you will need to define a user mac address to allow you to start them
+
+If the service is paused a WOL Packet will resume. 
+
+For each service you can set: enable, disable or enable and shutdown
+
+When the enable and shutdown is set if the service is running when the next WOL packet is recieved a shutdown will be performed.
+:end
 
 :WOL_enable_help:
 If set to yes Unraidwold daemon is set to run.
@@ -2497,6 +2510,10 @@ If set to yes when wake on lan packets are received checks are carrried out for 
 
 :WOL_run_LXC_help:
 If set to yes when wake on lan packets are received checks are carrried out for LXC otherwise LXC will be ignored. The LXC plugin needs to be installed for LXC to be processed.
+:end
+
+:WOL_run_shutdown_help:
+If set to yes when wake on lan packets are received checks are carrried out and if enabled for service and that service is running the entity will be shutdown. System has to be set to Enabled and Shutdwon for it to be action.
 :end
 
 :WOL_interface_help:
