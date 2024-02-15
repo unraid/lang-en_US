@@ -117,7 +117,7 @@ Search for Servers, or enter the Server name or IP address manually=
 Search for Shares or enter the Share name manually=
 Searching=
 Select the Root Share=
-Serial Number Mount Point=Serial Number (Mount Point)
+Serial Number (Mount Point)
 Shares=
 Share Type=
 share for=
