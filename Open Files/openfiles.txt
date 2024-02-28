@@ -1,5 +1,7 @@
+Enable Kill Button=
 Process=
 Kill Process=
+Kill this Process holding files open=
 Process ID=
 Open=
 May prevent shutdown=
