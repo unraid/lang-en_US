@@ -1,4 +1,4 @@
-Abort Device Script=
+Abort Device and User Scripts=
 Attach=
 Attach This Disk=
 Attaching=
@@ -66,7 +66,7 @@ ZFS Volume=
 :end
 
 :ud_edit_script_abort_plug:
-> Click **Abort** to abort the device script.
+> Click **Abort** to abort the device script, user script, and kill all processes running on the mount point.
 :end
 
 :ud_disk_name_plug:
