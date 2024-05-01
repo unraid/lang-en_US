@@ -1,6 +1,8 @@
 Add ISO File Share=
 Add Remote SMB=
 Add Root Share=
+All Unassigned Devices configurations will be updated=
+All disks will be refreshed using udev=
 An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
 Any data on this disk will be lost=
 Are you sure=
@@ -105,6 +107,7 @@ Refresh Disks and Configuration=
 Remember your password It cannot be recovered=
 Remote Server is=
 Remote Shares=
+Remote Shares online status will be reset=
 Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
 Remove Device configuration=
 Remove ISO File Share=
