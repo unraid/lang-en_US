@@ -138,6 +138,7 @@ This will remove the ISO file share for=
 This will remove the=
 This will remove the saved configuration of=
 This will remove the=
+Timeout: Failed to get unassigned devices information - check the syslog=
 to confirm=
 to format=
 Unassigned Disk Devices=
