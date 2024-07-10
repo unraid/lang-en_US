@@ -216,6 +216,7 @@ Docker LOG maximum file size=
 Docker LOG number of files=
 Docker LOG rotation=
 Docker only=
+Docker PID Limit=
 Docker service=
 Docker Stop Timeout=
 Docker update notification=
