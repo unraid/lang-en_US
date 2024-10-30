@@ -27,14 +27,15 @@ Private Hidden=
 Refresh and Update=
 Remote Share Mount Wait Time=
 Rule=
-SMB Settings=
-SMB Sharing=
 Select Disk=
+See Help=
 Set Encrypted Disk Password=
 Set Password=
 Set Pool Mount Point=
 Set the Pool Mount Point for this disk=
 Set the disk Password=
+SMB Settings=
+SMB Sharing=
 Specify SMB Version when Mounting Remote Shares=
 Spin down disks=
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
@@ -43,7 +44,10 @@ to SMB share config=
 Udev and Hotplug=
 Unassigned Devices=
 Unraid 6.10 or later is required for NFSv4 support=
+Upgrade ZFS Pool=
 Use only when directed for support because the messages can flood the log=
+Warning=
+Windows may require a valid User to be defined even for Public shares=
 
 ; Help
 ;
@@ -110,12 +114,18 @@ Use only when directed for support because the messages can flood the log=
 :end
 
 :ud_settings_smb_security_plug:
-> Set the user level of SMB Sharing.
+> Set the user level of SMB Sharing:
 >
 > + Set to **Disabled** to disable SMB sharing.
 > + Set to **Public** will share devices, Remote SMB/NFS shares, and iso Mounts Public with read and write access.
 > + Set to **Private** to enable SMB Security on SMB shares. Set access by user to allow access and whether or not the user can write to the share.
 > + Set to **Private Hidden** to enable SMB Security on SMB shares that will not be visible. Set access by user to allow access and whether or not the user can write to the share.
+>
+> Windows Server Signing:
+>
+> If you are unable to browse SMB shares with Windows 11 version 24H2 or newer, you need to make some changes to accomodate a new feature called Server Signing.  Server Signing is enabled in Unraid and you need to make changes to access Public shares.
+> You can <u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300', target='_blank'>_(disable it in Windows)_</a></u>, or to work with Unraid with Server Signing enabled, the easiest way is to create a user (with a password set) in Unraid with the same name as the Windows account you are using, Windows should then ask you for the credentials.
+> If you are using a Microsoft account, it may be better to just create a user in Unraid with a simple username and set a password, then in Windows go to Control Panel -> Credential Manager -> Windows credentials -> Add a Windows Credential and add the correct Unraid server name and credentials.
 :end
 
 :ud_settings_case_sensitive_plug:
@@ -161,5 +171,5 @@ Use only when directed for support because the messages can flood the log=
 :end
 
 :ud_settings_zfs_upgrade_plug:
-> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
+> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade the ZFS Pool.
 :end
