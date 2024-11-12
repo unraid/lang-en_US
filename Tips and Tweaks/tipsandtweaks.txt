@@ -127,17 +127,25 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_dirty_background_plug:
-> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
-> If you have large amounts of RAM, smaller is better.
+> Recommended values are: vm.dirty_background_ratio to 3% and vm.dirty_ratio to 5%.
+> If you have large amount of RAM, set the vm.dirty_background_ratio to 1% and vm.dirty_ratio to 2%.
 > Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
 >
 > Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 10% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 2%.  If you experience OOM errors, it is recommended you set this to 1%.
+> The default setting of 3% is recommended unless you have largve amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
 > Set the 'vm.dirty_ratio' as a percentage of total RAM memory.
-> Setting this too high may cause Linux to terminate some processes to gain more memory.  The default setting of 20% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 3%.  If you experience OOM errors, it is recommended you set this to 2%.
+> Setting this too high may cause Linux to terminate some processes to gain more memory.  The default setting of 5% is recommended unless you have a large amount of RAM.
+:end
+
+:tips_tweaks_writeback_plug:
+> The default is 200 centiseconds (2 seconds) to control how often the kernel checks for dirty data to flush in the background.
+:end
+
+:tips_tweaks_expire_plug:
+> The default is 1000 centiseconds (10 seconds) to specify how long data can stay dirty before it is considered for write-back.
 :end
 
 :tips_tweaks_max_watches_plug:
