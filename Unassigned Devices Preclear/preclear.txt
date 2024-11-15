@@ -1,0 +1,78 @@
+A disk must be cleared of all partitions before it can be precleared=
+Cannot Preclear=
+Clear Disk=
+Clear Signature=
+Clear Stats=
+Click to show reports=
+Concurrent Sessions=
+Cycles=
+Device Model=
+Disk Log Information=
+Disk Size=
+Download Logs=
+Enable Testing for debugging=
+Fast Post-read=
+Firmware=
+Fix Preclear=
+Identification=
+If you set a queue limit, all running preclear sessions above that limit will be paused and remain in the queue until a session finishes=
+Notifications=
+On every cycle and step end=
+On every 25% of progress=
+On every cycle end=
+On preclear end=
+Operation=
+Post-read Verify=
+Preclear Disks=
+Preclear Disk Log=
+Preclear Log=
+Preclear Status=
+Preview Progress=
+Read size=
+Remove Report=
+Resume all Sessions=
+Resume Preclear=
+Preview Progress Report=
+Select Disks=
+Serial Number=
+Set Preclear Queue=
+Show Preclear Report=
+Skip Pre-read=
+Skip Post-Read=
+Start Multiple Sessions=
+Start New=
+Start Preclear=
+Stop all Sessions=
+Stop Preclear=
+Temp=
+Testing=
+There are no disks that can be precleared=
+Verify Signature=
+Write size=
+You can use Unassigned Devices to clear the disk=
+
+:preclear_general_help_plug:
+> The Unassigned Devices Preclear can be used to prepare disks for inclusion in the array, clear disks for disposal, and perform stress tests before disks are used in the array.
+>
+> Only disks that are not being used in the array and have no partitions with file systems will be listed as candidates for preclearing.
+>
+> When a disk is being precleared, you can follow the status on this page, on the Unassigned Devices page, or the preclear status icon in the footer of the Unraid web page.
+> 
+> There are multiple choices for preclearing:
+>
+> The **Enhanced** script authored by user **gfjardim** has the advantage that it supports the enhanced features like pause and resume preclearing.  It also has extensive logging.
+>
+> The **Docker** is the binhex Docker container that performs preclear.  The advantage of this is the preclearing is isolated in the Docker container.
+>
+> Preclear operations:
+>
+> + Clear Disk - The disk is cleared and the Unraid signature is written to the disk.  This will create an empty partition on the disk.
+> + Erase Disk - Erase the entire disk by writing all zeros.  The preclear signature is removed.
+> + Erase and Clear Disk - random patterns are written to the disk and then zeroes are written.  This is a good choice for a disk to be discarded to ensure all traces of files are removed.
+> + Verify Signature - The disk signature is checked.
+> + Verify Disk - The disk signature is checked and the disk is verified to be zeroed.
+> + Post-read Verify - Perform a post read verify to check the disk.
+> + Clear Signature - Remove the preclear signature from the disk.
+>
+> The text <em style='color:#00BE37;'>Precleared</em> next to the disk serial number indicates that the disk has a precleared signature.  This will only show when the disk is precleared and the Preclear Stats have been removed.
+:end
