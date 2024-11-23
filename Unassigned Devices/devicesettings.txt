@@ -85,6 +85,10 @@ ZFS Volume=
 > Set to **Yes** to encrypt the CIFS mount.  This is best for off-site mounts because of the overhead of encryption.
 :end
 
+:compress_option_plug:
+> Select 'Yes' to mount a BTRFS or ZFS disk with the compress option. Compression for BTRFS is 'zlib' and for ZFS is 'lz4'.
+:end
+
 :ud_edit_script_choose_name_plug:
 > This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script.
 :end
