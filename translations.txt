@@ -21,6 +21,7 @@ Add VM=
 Advanced View=
 AFP Security Settings=
 ago=
+Always Allow=
 All=
 Anonymize diagnostics may make troubleshooting more difficult=Anonymize diagnostics (may make troubleshooting more difficult)
 Anonymous Mode=
