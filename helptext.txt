@@ -2448,7 +2448,7 @@ For more details see the <a href="https://tailscale.com/kb/1080/cli#up" target="
 :end
 
 :docker_tailscale_statedir_help:
-If state directory detection fails on startup, you can specify a persistent directory in the container to override automatic detection.
+If state directory detection fails on startup, you can specify a persistent directory in the container to override automatic detection, i.e. `/container-path/.tailscale_state`
 :end
 
 :docker_tailscale_troubleshooting_packages_help:
