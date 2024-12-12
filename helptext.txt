@@ -744,6 +744,15 @@ Select the desired share name and press **Read** to copy the NFS security settin
 Select the desired destinations and press **Write** to copy the NFS security settings to the selected shares.
 :end
 
+:nfs_security_rules_help:
+Put the rule for each IP address on a separate line and terminate the Rule with a new line.
+You cannot enter a Rule in the format IP1,IP2(...).  Unraid does not format the exports file in that format.
+
+The default rules for every NFS Rule are - async and no_subtree_check.
+
+**Note:** The Public Rule used is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+:end
+
 :user_add_username_help:
 Usernames may be up to 40 characters long and must start with a **lower case letter** or an underscore,
 followed by **lower case letters**, digits, underscores, or dashes. They can end with a dollar sign.
