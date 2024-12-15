@@ -161,6 +161,7 @@ Clear Flag=
 %s is incompatible with your OS version Either uninstall %s or update the OS=
 Browser failed to communicate with Unraid Server=
 For unknown reasons, your browser was unable to communicate with Community Applications running on your server=
+Additional information may be within Tools, PHPSettings - View Log=
 Attempt to Fix Via Reload Page=
 External Link=
 Clicking OK will take you to a 3rd party website not associated with Limetech=
