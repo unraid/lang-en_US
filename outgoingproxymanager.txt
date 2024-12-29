@@ -8,7 +8,7 @@ Required=
 Select Proxy=
 User=
 
-::outgoing_proxy_enable_plug:
+:outgoing_proxy_enable_plug:
 > Select the Proxy to use.  Only online Proxies will be selectable.
 >
 > If your network environment requires an outgoing http proxy, define that here.
