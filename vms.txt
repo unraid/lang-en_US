@@ -162,6 +162,7 @@ QEMU Command Line=
 QEMU64=
 random mac, you can supply your own=
 re-generate random mac address=
+Rename disabled, %s snapshots exists=Rename disabled, %s snapshot(s) exists
 Remove all files=
 Remove Images=
 Remove LibreELEC image=
