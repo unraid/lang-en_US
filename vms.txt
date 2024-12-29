@@ -170,7 +170,6 @@ Remove OpenELEC image=
 Remove this LibreELEC file=
 Remove this OpenELEC file=
 Remove User Template=
-Rename disabled, snapshots exists=Rename disabled, <?=$snapcount?> snapshot(s) exists.
 Repeat=
 Requires guest agent installed=
 Requires guest running=
