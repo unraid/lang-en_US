@@ -133,14 +133,12 @@ Downloading docker icons=
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=
 
 ; error messages
-No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=
 An error occurred Could not find any %s Apps=
 Download of appfeed failed=
 ; the %s here refers to a function being called
 Something really went wrong here=
 Post the ENTIRE contents of this message in the Community Applications Support Thread=
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=
-Something really wrong happened Reloading the Apps tab will probably fix the problem=
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=
 You have been logged out=
 Fatal Flash Drive Error=
@@ -161,6 +159,7 @@ Clear Flag=
 %s is incompatible with your OS version Either uninstall %s or update the OS=
 Browser failed to communicate with Unraid Server=
 For unknown reasons, your browser was unable to communicate with Community Applications running on your server=
+Additional information may be within Tools, PHPSettings - View Log=
 Attempt to Fix Via Reload Page=
 External Link=
 Clicking OK will take you to a 3rd party website not associated with Limetech=

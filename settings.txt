@@ -508,6 +508,7 @@ No CPU pinning available. VM service must be started=
 no name=
 No Parity disk present=
 No Reply=
+No suitable interfaces found for PTP=
 Nominal Power=
 Non-tabbed=
 Not activated=
@@ -761,6 +762,7 @@ This will unassign all devices from the pool but will NOT modify any device cont
 Time format=
 Time of the day=
 Time on battery before shutdown=
+Time state=
 Time sync=
 Time zone=
 time-out=
