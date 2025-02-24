@@ -1,7 +1,9 @@
+Disk File Activity=
 Display Events=
 File Activity=
-File Activity Monitoring=
-Start File Activity=
+File Activity Settings=
+Share File Activity=
+Start File Activity Monitoring=
 Stop File Activity Monitoring=
 Clear the File Activity log=
 Refresh Page=

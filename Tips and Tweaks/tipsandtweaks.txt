@@ -132,7 +132,7 @@ You may actually cause more problems than you solve if there are problems with y
 > Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
 >
 > Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 3% is recommended unless you have largve amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
+> The default setting of 3% is recommended unless you have large amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
