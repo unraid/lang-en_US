@@ -21,6 +21,7 @@ Enable for Cache and Pool Disks=
 > File Activity is intended to be running for short periods so you can check disk activity.
 > A server with a lot of file activity can fill the log space.
 > The 'appdata', 'docker', 'syslogs', and 'system' directories (case insensitive) are excluded.
+> **SSD devices are not monitored.**
 >
 > Note: File Activity monitoring is stopped if the array is stopped, and will restart when the array is started if it is enabled.
 :end
