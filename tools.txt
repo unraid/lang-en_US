@@ -73,6 +73,7 @@ Language=
 Log file cleared=
 Log size=
 LOG size=
+Log Viewer new=Log Viewer (new)
 Missing Key File=
 Missing Language=
 Modprobed config file=Modprobe.d config file

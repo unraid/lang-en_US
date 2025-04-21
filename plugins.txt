@@ -2,6 +2,7 @@
 Alert Message=
 anonymous=
 Author=
+cannot check=
 Check For Updates=
 Checking connectivity=
 checking=

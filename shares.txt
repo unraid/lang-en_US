@@ -80,6 +80,7 @@ Storage=
 There are no exportable disk shares=
 There are no exportable user shares=
 There are no mountable array or pool disks - cannot add shares=
+There are no mounted array or pool disks - cannot add shares=
 This share is invalid=
 Time Machine volume size limit=
 Unknown cache usage=
