@@ -710,7 +710,7 @@ Summary of security modes:
 Windows Server Signing:
 
 If you are unable to browse SMB shares with Windows 11 version 24H2 or newer, you need to make some changes to accomodate a new feature called Server Signing.  Server Signing is enabled in Unraid and you need to make changes to access Public shares.
-You can <u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300', target='_blank'>disable it in Windows</a></u>, or to work with Unraid with Server Signing enabled, the easiest way is to create a user (with a password set) in Unraid with the same name as the Windows account you are using, Windows should then ask you for the credentials.
+You can <u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300' target='_blank'>disable it in Windows</a></u>, or to work with Unraid with Server Signing enabled, the easiest way is to create a user (with a password set) in Unraid with the same name as the Windows account you are using, Windows should then ask you for the credentials.
 If you are using a Microsoft account, it may be better to just create a user in Unraid with a simple username and set a password, then in Windows go to Control Panel -> Credential Manager -> Windows credentials -> Add a Windows Credential and add the correct Unraid server name and credentials.
 :end
 
@@ -1481,6 +1481,10 @@ files/directories you access via NFS this may or may not lead to out-of-memory c
 
 :nfs_server_max_protocol_help:
 Select the max NFS Protocol version you want your Unraid server to support.
+:end
+
+:nfs_client_max_protocol_help:
+Select the max NFS Protocol version you want to use to mount your remote shares.
 :end
 
 :nfs_threads_help:
@@ -2409,7 +2413,7 @@ The system attempted to determine the correct port automatically. If it used the
 In most cases this port is all you will need to specify in order to Serve the website in this container, although additional options are available below for more complex containers.
 
 This value is passed to the `<serve_port>` portion of this command which starts serve or funnel:<br>
-`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port><local_path>`<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> <serve_target>:<serve_port><local_path>`<br>
 For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
 :end
 
@@ -2417,27 +2421,34 @@ For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve"
 Here there be dragons!
 :end
 
+:docker_tailscale_serve_target_help:
+When not specified, this value defaults to http://localhost. It is passed to the `<serve_target>` portion of this command which starts serve or funnel:<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> <serve_target>:<serve_port><local_path>`<br>
+For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.<br>
+Please note that only `localhost` or `127.0.0.1` are supported.
+:end
+
 :docker_tailscale_serve_local_path_help:
 When not specified, this value defaults to an empty string. It is passed to the `<local_path>` portion of this command which starts serve or funnel:<br>
-`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port><local_path>`<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> <serve_target>:<serve_port><local_path>`<br>
 For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
 :end
 
 :docker_tailscale_serve_protocol_help:
 When not specified, this value defaults to "https". It is passed to the `<protocol>` portion of this command which starts serve or funnel:<br>
-`tailscale [serve|funnel] --bg --<protocol>=<protocol_port><path> http://localhost:<serve_port><local_path>`<br>
+`tailscale [serve|funnel] --bg --<protocol>=<protocol_port><path> <serve_target>:<serve_port><local_path>`<br>
 For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
 :end
 
 :docker_tailscale_serve_protocol_port_help:
 When not specified, this value defaults to "=443". It is passed to the `<protocol_port>` portion of this command which starts serve or funnel:<br>
-`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port><local_path>`<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> <serve_target>:<serve_port><local_path>`<br>
 For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
 :end
 
 :docker_tailscale_serve_path_help:
 When not specified, this value defaults to an empty string. It is passed to the `<path>` portion of this command which starts serve or funnel:<br>
-`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port><local_path>`<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> <serve_target>:<serve_port><local_path>`<br>
 For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
 :end
 
