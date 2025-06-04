@@ -44,7 +44,6 @@ Enter the Password if the share is password protected=
 Enter the Username if the share is password protected=
 Enter the password to use for this disk=
 Enter the server name and it will be added to the local DNS names and will then resolve by name=
-Exclusive Share files will not be accessible in a Root Share=
 Execute Script as udev simulating a device being installed=
 Fail=
 failed to=
