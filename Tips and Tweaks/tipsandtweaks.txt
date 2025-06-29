@@ -132,7 +132,7 @@ You may actually cause more problems than you solve if there are problems with y
 > Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
 >
 > Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 3% is recommended unless you have largve amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
+> The default setting of 3% is recommended unless you have large amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
@@ -186,12 +186,13 @@ You may actually cause more problems than you solve if there are problems with y
 > + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
 > + "Performance" - Set all CPUs at full frequency regardless of load.  This can have a positive influence on performance and latency.
 > + "Schedutil" - Set all CPUs frequency scaling to schedutil.  This sets CPU frequency based on the Linux scheduler.  Note: This is still in development.
+> + "Balanced Performance" - Set all CPUs frequency scaling to balanced_performance.  Balances performance and power usage, with a slight bias toward efficiency.
+> + "Balanced Power" - Set all CPUs frequency scaling to balanced_power.  Balances power and performance, but with a slight performance bias.
 >
 > You can now set the CPU governor with the rc.tweaks script.  Use the command:
 > /usr/local/sbin/rc.tweaks set_governor 'governor'
-> The 'governor' choices are: 'ondemand', 'performance', 'powersave', 'conservative', and 'schedutil'.
+> The 'governor' choices are: 'ondemand', 'performance', 'powersave', 'conservative', 'balanced_performance', 'balanced_power', and 'schedutil'.
 :end
-
 
 :tips_tweaks_power_save_cpu_governor_plug:
 > Select the Power Saving CPU Scaling Governor you want to use.
@@ -200,6 +201,7 @@ You may actually cause more problems than you solve if there are problems with y
 > + "On Demand" - Default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
 > + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
 > + "Schedutil" - Set all CPUs frequency scaling to schedutil.  This sets CPU frequency based on the Linux scheduler.  Note: This is still in development.
+> + "Balanced Power" - Set all CPUs frequency scaling to balanced_power.  Balances power and performance, but with a slight performance bias.
 :end
 
 :tips_tweak_turbo_plug:

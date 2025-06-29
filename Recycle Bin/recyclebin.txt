@@ -1,7 +1,7 @@
 Age Days=
 Array=
 Array is stopped=
-Browse the Share Recycle Bin=
+Browse the=
 Deleted Files=
 Deleted Files Log=
 Empty=
@@ -17,6 +17,7 @@ Excluded Directories=
 Excluded Files=
 Excluded Shares=
 Log Deleted Files=
+Not Available=
 Recycle Bin=
 Recycle Bin is empty=
 Recycle Bin Log=
@@ -45,8 +46,8 @@ Update Recycle Bin Size in Background=
 > Recycle Bin Shares:
 >
 > The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
-> Click on the <strong>Browse</strong> icon to browse the deleted files in that share.
-> Click on the <strong>Empty</strong> button to remove the deleted files.
+> Click on the <i class='fa fa-external-link'></i> icon to browse the deleted files in that share.
+> Click on the **Empty** button to remove the deleted files.
 >
 > Unassigned Devices shares will only show if the Recycle Bin is enabled for Unassigned Devices and there are Unassigned Devices that are mounted and shared and have Recycle Bin contents.
 >
@@ -128,5 +129,8 @@ Update Recycle Bin Size in Background=
 > Recycle Bin Log:
 >
 > The deleted files will show in the log as unlinked files.
+>
+> If a share shows logging is disabled, it is because the share is 'Exclusive Access' or is a "Root Share".  The Recycle Bin will work on these shares, but logging will not reliably work because of Samba vfs limitations.
+>
 > Click on the 'Clear' button to clear the log.
 :end
