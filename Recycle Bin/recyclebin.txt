@@ -87,7 +87,7 @@ Update Recycle Bin Size in Background=
 :end
 
 :recycle_bin_permissions_plug:
-> Set the directory and sub-directory permissions of the Recycle Bin.  Set permissions to 07xx for the Recycle Bin to operate properly.  Don’t change this from the default if you don’t know how to use permissions.
+> Set the directory and subdirectory permissions of the Recycle Bin.  Set permissions to 07xx for the Recycle Bin to operate properly.  Don’t change this from the default if you don’t know how to use permissions.
 :end
 
 :recycle_bin_excluded_files_plug:

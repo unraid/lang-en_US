@@ -21,14 +21,14 @@ Increment frequency=
 Increment pause time=
 Increment resume time=
 No parity check entries found in syslog=
-ParityRead-Check History=Parity/Read-Check History=
+ParityRead-Check History=Parity/Read-Check History
 Parity Check=
 Parity Check Tuning logging=
 Parity Sync=
 Pause an array operation at=
 Pause and Resume array operations if disks overheat=
 Read Check=
-Requires unRaid 67 or later=Requires unRaid 6.7 or later=
+Requires unRaid 67 or later=Requires unRaid 6.7 or later
 Resume an array operation at=
 Resume parity checks on next array start=
 Resume running Array operations on next array start=
@@ -99,7 +99,6 @@ Resume a paused array operation=
 Sent notification=
 Show the status of a running parity check=
 Shutdown=
-Start a correcting parity check=
 Start a correcting parity check=
 Start a parity check with scheduled settings=
 Starting Shutdown=

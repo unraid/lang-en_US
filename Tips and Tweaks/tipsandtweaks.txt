@@ -25,7 +25,7 @@ Governor=
 Guide=
 If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=
 If you configure VLANs on Unraid, you should make Unraid the Master Browser=
-If you dont Unraid may not detect the Master Browser for all network interfaces correctly=If you don’t, Unraid may not detect the Master Browser for all network interfaces correctly=
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=If you don’t, Unraid may not detect the Master Browser for all network interfaces correctly
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
 If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=

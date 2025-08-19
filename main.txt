@@ -145,7 +145,7 @@ Keyfile=
 Last check completed on %s=Last check completed on **%s**
 Last check incomplete on %s=Last check incomplete on **%s**
 Last checked on %s=Last checked on **%s**
-Last SMART test result=Last S.M.A.R.T. test result=
+Last SMART test result=Last S.M.A.R.T. test result
 logs - Separate Intent Log SLOG=logs - Separate Intent Log (SLOG)
 logs - ZFS Intent Log=
 loopback=

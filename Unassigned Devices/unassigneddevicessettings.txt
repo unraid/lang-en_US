@@ -3,7 +3,6 @@ Auto Mount USB Devices=
 Case-sensitive names=
 Change Disk UUID=
 Change UUID=
-Change Disk UUID=
 Command times=
 Common Script=
 Common Settings=
@@ -110,13 +109,13 @@ Working=
 >
 > **Command times** command execution times. **Warning:** very chatty.
 >
-> **Note:** Don’t leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> **Note:** Don’t leave the Debug Log Level enabled for extended periods; it can generate excessive syslog messages.
 :end
 
 :ud_settings_specify_nfs_vers_plug:
 > Set to **Auto** to mount all NFS Remote Shares auto negotiating the NFS version to use.
 >
-> If the **Auto** setting doesn’t work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto negotiate NFSv4.
+> If the **Auto** setting doesn’t work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto-negotiate NFSv4.
 :end
 
 :ud_settings_smb_security_plug:
@@ -153,9 +152,9 @@ Working=
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren’t handled as expected. Turning this feature on can help with those permissions.
+> There are times when permissions on SMB shares aren’t handled as expected. Enabling this feature can help.
 > This applies to all devices mounted with Unassigned Devices.
-> The down side is that it overrides Linux group permissions. If you are unsure about whether or not this is necessary, leave it disabled.
+> The downside is that it overrides Linux group permissions. If you are unsure whether this is necessary, leave it disabled.
 :end
 
 :ud_settings_nfs_security_plug:
@@ -195,7 +194,7 @@ Working=
 > For SMB to be considered online, the Remote Server has to have the SMB port open.
 
 > For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
-> There can be a case where the port is open and 'showmount -e' doesn’t show NFS shares and NFS will not work.
+> The port may be open, but if 'showmount -e' doesn’t list any NFS shares, NFS will not work.
 
 > If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
 

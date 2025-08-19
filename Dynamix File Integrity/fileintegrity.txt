@@ -57,7 +57,7 @@ When parity operation is running=
 
 :integrity_service_plug:
 > When enabled a checksum value is automatically calculated and added to the extended attributes of the newly created or modified file.
-> When it is detected that a file change has occured, but its modification time hasn’t changed, then an automatic checksum verification is performed to check for any silent file corruption.
+> When it is detected that a file change has occurred, but its modification time hasn’t changed, then an automatic checksum verification is performed to check for any silent file corruption.
 >
 > The area selection can be filtered by excluding folders (shares) and/or excluding disks all together (see table below).
 >

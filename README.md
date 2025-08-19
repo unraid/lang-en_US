@@ -15,9 +15,9 @@ There are sixteen text files included in this repository, each with their own se
 - <strong>plugins.txt</strong>          -- these are translations for the <strong>Plugins</strong> section
 - <strong>docker.txt</strong>           -- these are translations for the <strong>Docker</strong> section
 - <strong>vms.txt</strong>              -- these are translations for the <strong>VMs</strong> section
-- <strong>tools.txt</strong>            -- these are translations for the <strong>tools</strong> section
-- <strong>javascript.txt</strong>       -- these are translations for <strong>javascript</strong> scripts
-- <strong>scripts.txt</strong>          -- these are translations for <strong>local scripts</strong>
+- <strong>tools.txt</strong>            -- these are translations for the <strong>Tools</strong> section
+- <strong>javascript.txt</strong>       -- these are translations for <strong>Javascript</strong> scripts
+- <strong>scripts.txt</strong>          -- these are translations for <strong>Local Scripts</strong>
 - <strong>apps.txt</strong>             -- these are translations for the <strong>App</strong> section <em>(CA = Community Applications)</em>
 - <strong>ca_settings</strong>          -- these are translations for the <strong>App Settings</strong> <em>(CA)</em>
 - <strong>javascript.ca.txt</strong>    -- these are translations for the <strong>JavaScript Scripts</strong> referred
@@ -26,12 +26,12 @@ to <em>CA</em> section
 
 All file names are in lowercase and <strong>must be included in the repository</strong> to make the translations complete.
 
-Removing a particular file, means no translations will be available for that section and the Graphical User Interface *(GUI)* will display text in original English.
+Removing a particular file, means no translations will be available for that section and the Graphical User Interface *(GUI)* will display text in the original English.
 
 ### TRANSLATIONS
 
-Each text file contains regular text strings stored in UTF-8 format with linux line-endings.
-Use a text editor which supports UTF-8 and linux format, like [Notepad++](https://notepad-plus-plus.org/downloads).
+Each text file contains regular text strings stored in UTF-8 format with Linux line endings.
+Use a text editor that supports UTF-8 and Linux line endings, like [Notepad++](https://notepad-plus-plus.org/downloads).
 
 The content of each text file is separated into two parts:
 
@@ -56,7 +56,7 @@ E.g.:
 
 "Array must be Stopped to change=*Array* must be **Stopped** to change".
 
-It is recommended to make translations per section, that is one file at the time, and verify the correctness of the translations in the *GUI*
+It is recommended to translate per section — that is, one file at a time — and verify the correctness of the translations in the *GUI*
 before proceeding with the next section.
 
 Keep in mind the length of the translations and try to make them similar length as the original text and avoid space issues in the *GUI*.
@@ -100,8 +100,8 @@ In the Unraid *GUI* go to: **Tools -> webGUI -> Language** (*switch to Developer
 
 - By default only the English language is installed (built-in).
 - Choose the ZIP file you have created earlier as the source file.
-- If the language name is recognized, it will be automatically selected, otherwise chose the name of the language from the dropdown menu to install.
-- Click on "Upload" will add your translations to the *GUI* under the selected language name.
+- If the language name is recognized, it will be automatically selected; otherwise choose the language from the dropdown menu to install.
+- Click "Upload" to add your translations to the *GUI* under the selected language name.
 
 NOTE: If your language is not available from the dropdown menu, please make a request on the [Multi-Language Thread in Unraid Forum](https://forums.unraid.net/forum/75-multi-language-section/)
 
@@ -134,4 +134,4 @@ Your efforts are much welcomed and to show our appreciation, your name and langu
 
 Please let us know which credentials to use.
 
-Really thanks for both your collaboration and commitment ❤️
+Thank you for your collaboration and commitment ❤️
