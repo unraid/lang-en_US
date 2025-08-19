@@ -222,19 +222,19 @@ ZFS Volume=
 >
 > The 'Add Root Share' button is disabled when 'Enable disk shares' is enabled and any Root Shares previously added will not mount.
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks.	If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.  Go the the 'Settings->Unassigned Devices' to set the destructive mode.
+> UD has a destructive mode that allows deleting disk partitions and formatting disks.	If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.  Go to the 'Settings->Unassigned Devices' to set the destructive mode.
 >
 > **To format a disk:**
 >
 > + Destructive mode must be enabled.
-> + Disk must have all partitions removed.  Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon,, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precelared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> + Disk must have all partitions removed.  Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
+> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
 >
 > **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array.  Supported file formats are XFS, XFS encrypted, BTRFS, BTRFS encrypted, ZFS and ZFS encrypted.**
 >
 > **Encrypted Disks:**
 >
-> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassignd Devices->Settings for that disk.
+> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassigned Devices->Settings for that disk.
 > + Any disk that was not encrypted with the Array password/passphrase can be mounted by setting a per disk passord set in Unassigned Devices->Settings.
 >
 > **Unassigned devices script:**
@@ -252,12 +252,12 @@ ZFS Volume=
 > + '/usr/local/sbin/rc.unassigned spindown /dev/sdX or devX' - spin down disk device.
 > + '/usr/local/sbin/rc.unassigned spindown name=diskname' - spin down a disk by disk name.
 > + '/usr/local/sbin/rc.unassigned detach /dev/sdX or devX' - detach a USB disk device. You can use this command in a UD script to detach the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned detach name=diskname' - detach a USB disk device by it's name. You can use this command in a User script to detach the device when the script has completed.
+> + '/usr/local/sbin/rc.unassigned detach name=diskname' - detach a USB disk device by its name. You can use this command in a User script to detach the device when the script has completed.
 > + '/usr/local/sbin/rc.unassigned attach serial - attach a disk device. You can use this command in a script to attach a device.  The 'diskname' is not available when the disk is detached.
 > + '/usr/local/sbin/rc.unassigned mount source' - where source is the SMB/NFS source.
 > + '/usr/local/sbin/rc.unassigned umount source' - where source is the SMB/NFS source.
 >
 > Note: /dev/sdX where 'X' is the device designator.  The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to spin down.  Using the name=diskname is useful if you have a User Script needing to perform UD operations on a disk.
 >
-> Be careful using the /dev/sdX or devX designation because they can change after a reboot.  It's best to use the values passed into the UD script for sdX (DEVICE) and devX (UD_DEVICE).
+> Be careful using the /dev/sdX or devX designation because they can change after a reboot.  It’s best to use the values passed into the UD script for sdX (DEVICE) and devX (UD_DEVICE).
 :end

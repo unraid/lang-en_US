@@ -10,7 +10,7 @@ Current User Watches=
 Disable NIC Flow Control=
 Disable NIC Offload=
 Disk Cache=
-Dont change the Disk Cache settings until you read and understand this=
+Dont change the Disk Cache settings until you read and understand this=Don’t change the Disk Cache settings until you read and understand this
 Driver=
 Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
 Enable syslog Archiving=
@@ -25,7 +25,7 @@ Governor=
 Guide=
 If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=
 If you configure VLANs on Unraid, you should make Unraid the Master Browser=
-If you dont Unraid may not detect the Master Browser for all network interfaces correctly=
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=If you don’t, Unraid may not detect the Master Browser for all network interfaces correctly=
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
 If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=
@@ -36,7 +36,7 @@ It is recommended you use the 'Performance' Governor for best performance and po
 Make changes slowly=
 Make one change at a time and verify if it improves your situation=
 Making changes here can briefly interrupt your network operation=
-Many plugins are no longer compatible with older Unraid versons=
+Many plugins are no longer compatible with older Unraid versions=
 Max SMB Open Files=
 Max User Instances=
 Max User Watches=
@@ -53,7 +53,7 @@ Processes to kill before Array is Stopped=
 Put the IP address of your server in the Remote syslog server field=
 Read this=
 Schedule CPU Power Saving Mode=
-Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=
+Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Some users have reported better VM performance, especially for media streaming and gaming VMs, when applying the suggestions here.
 Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=
 Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=
 Some people are reporting OOM out of memory errors=
@@ -86,15 +86,15 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > + Use of a static IP address can help in certain cases.  NFS shares are referenced by IP address.  Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
 > + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
-> + Don't set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
+> + Don’t set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
 > + A value of vm.dirty_background_ratio over 1/2 of vm.dirty_ratio is not recommended unless using single digits for both values.
 :end
 
 :tips_tweaks_nic_flow_control_plug:
 > Set to 'Yes' to disable NIC Flow Control.  NIC Flow Control was originally implemented to help in
-> networks with mixed speed devices.  It doesn't seem to be as necessary on today's networks.  If you
+> networks with mixed speed devices.  It doesn’t seem to be as necessary on today’s networks.  If you
 > have a managed switch, flow control can generally be turned on and off on the switch.  If you have
-> a consumer grade switch, you won't have that level of control.  Flow Control has been known to create
+> a consumer grade switch, you won’t have that level of control.  Flow Control has been known to create
 > network issues in certain circumstances.  It is recommended to disable Flow Control if you experience network issues.
 >
 > Changing from any setting to 'Default' requires a reboot.
@@ -129,10 +129,10 @@ You may actually cause more problems than you solve if there are problems with y
 :tips_tweaks_dirty_background_plug:
 > Recommended values are: vm.dirty_background_ratio to 3% and vm.dirty_ratio to 5%.
 > If you have large amount of RAM, set the vm.dirty_background_ratio to 1% and vm.dirty_ratio to 2%.
-> Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
+> Caution: Don’t increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
 >
 > Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 3% is recommended unless you have largve amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
+> The default setting of 3% is recommended unless you have large amounts of RAM.  If you have a media streaming or gaming VM, use a value of 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:

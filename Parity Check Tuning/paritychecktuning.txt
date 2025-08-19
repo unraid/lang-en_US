@@ -377,7 +377,7 @@ Method used to specify start and stop points=
 > If set to **Yes** then automatically start a tidy shutdown of the server if any disk in the array or a cache pool reach the defined temperature threshold.
 > The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
 >
->This option intended to be triggered if for some reason the system's cooling system is insufficient or if it has failed in some way. The idea is that you want to do a tidy shutdown before the disks become damaged due to overheating badly.   The shutdown that is triggered is functionally the same as would be the case of pressing the Shutdown button on the Main page of the unRaid GUI.  If notifications are enabled then you are sent one to indicate that this has happened.
+>This option intended to be triggered if for some reason the system’s cooling system is insufficient or if it has failed in some way. The idea is that you want to do a tidy shutdown before the disks become damaged due to overheating badly.   The shutdown that is triggered is functionally the same as would be the case of pressing the Shutdown button on the Main page of the unRaid GUI.  If notifications are enabled then you are sent one to indicate that this has happened.
 >
 >When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
 >
@@ -405,10 +405,10 @@ Method used to specify start and stop points=
 >
 >Finally there is an additional setting of **Testing** that is only intended for use by the developer but is left here for convenience.  It will write even more verbose messages to the syslog but these are not likely to be interesting (or even meaningful) to the average user.  These messages will have the word **TESTING** added to the start of messages. You should only run this level of logging if you have been asked to as it can quickly fill up your syslog if you are not careful.
 >
->Feedback is welcome as to whether it is worth introducing any intermediate option that outputs information type messages on the plugin's activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running.
+>Feedback is welcome as to whether it is worth introducing any intermediate option that outputs information type messages on the plugin’s activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running.
 >
->If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the inly option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive.
->To facilitate with debugging problems then in Testing mode you can log the messages to the flash drive either instead of the syslog or in addition to the syslog. The resulting parityTuning.log file will be stored in the plugin's folder on the flash drive and providing this file to the developer will help with diagnosing any unexpected behaviour you encounter.
+>If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the only option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive.
+>To facilitate with debugging problems then in Testing mode you can log the messages to the flash drive either instead of the syslog or in addition to the syslog. The resulting parityTuning.log file will be stored in the plugin’s folder on the flash drive and providing this file to the developer will help with diagnosing any unexpected behaviour you encounter.
 :end
 
 :parityProblems_type_plug:
@@ -439,11 +439,6 @@ Method used to specify start and stop points=
 > or just do a read test to see if any parity errors are reported.
 :end
 
-:parityProblems_correct_plug:
-> Specify whether you want to attempt to update parity to correct any error found,
-> or just do a read test to see if any parity errors are reported.
-:end
-
 :parityProblems_check_plug:
 > When you click on the option to **Start Check** then a partial check is initiated that
 > will cover the start and end points that you have specified.  It will be a correcting check
@@ -451,7 +446,7 @@ Method used to specify start and stop points=
 :end
 
 :parityProblems_sectors_plug:
-> When you click on the option to **Show Sector Numbers** then the a dialog will be shown
-> that extracts entries from the syslog that have shown any sectors for which any parity
-> sector is displayed and whether the it was being corrected or is a parity error.
+> When you click on the option to **Show Sector Numbers** then a dialog will be shown
+> that extracts entries from the syslog displaying any sectors for which a parity sector is shown, 
+> and whether it was being corrected or is a parity error.
 :end

@@ -152,7 +152,7 @@ Other Highlight Color=
 
 :enhanced_log_filter_plug:
 > You can filter out log entries to keep your Syslog from being overwhelmed with debug or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
-> Because the Syslog is very important for debugging issues, don't filter out entries unnecessarily.
+> Because the Syslog is very important for debugging issues, don’t filter out entries unnecessarily.
 >
 > Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
 :end

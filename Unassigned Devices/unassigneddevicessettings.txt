@@ -110,13 +110,13 @@ Working=
 >
 > **Command times** command execution times. **Warning:** very chatty.
 >
-> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> **Note:** Don’t leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
 :end
 
 :ud_settings_specify_nfs_vers_plug:
 > Set to **Auto** to mount all NFS Remote Shares auto negotiating the NFS version to use.
 >
-> If the **Auto** setting doesn't work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto negotiate NFSv4.
+> If the **Auto** setting doesn’t work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto negotiate NFSv4.
 :end
 
 :ud_settings_smb_security_plug:
@@ -153,7 +153,7 @@ Working=
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren't handled as expected. Turning this feature on can help with those permissions.
+> There are times when permissions on SMB shares aren’t handled as expected. Turning this feature on can help with those permissions.
 > This applies to all devices mounted with Unassigned Devices.
 > The down side is that it overrides Linux group permissions. If you are unsure about whether or not this is necessary, leave it disabled.
 :end
@@ -182,7 +182,7 @@ Working=
 :ud_settings_change_uuid_plug:
 > Select the disk that you want to change the UUID. This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk. Drive must be unmounted to change the UUID.
 >
-> **Note:** Don't change the UUID of a pooled disk.
+> **Note:** Don’t change the UUID of a pooled disk.
 :end
 
 :ud_settings_zfs_upgrade_plug:
@@ -195,7 +195,7 @@ Working=
 > For SMB to be considered online, the Remote Server has to have the SMB port open.
 
 > For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
-> There can be a case where the port is open and 'showmount -e' doesn't show NFS shares and NFS will not work.
+> There can be a case where the port is open and 'showmount -e' doesn’t show NFS shares and NFS will not work.
 
 > If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
 

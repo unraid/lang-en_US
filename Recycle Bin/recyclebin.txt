@@ -44,7 +44,7 @@ Update Recycle Bin Size in Background=
 :recycle_bin_shares_plug:
 > Recycle Bin Shares:
 >
-> The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
+> The shares with Recycle Bin contents will be displayed along with the size of the share’s Trash Bin.
 > Click on the <strong>Browse</strong> icon to browse the deleted files in that share.
 > Click on the <strong>Empty</strong> button to remove the deleted files.
 >
@@ -87,7 +87,7 @@ Update Recycle Bin Size in Background=
 :end
 
 :recycle_bin_permissions_plug:
-> Set the directory and sub-directory permissions of the Recycle Bin.  Set permissions to 07xx for the Recycle Bin to operate properly.  Don't change this from the default if you don't know how to use permissions.
+> Set the directory and sub-directory permissions of the Recycle Bin.  Set permissions to 07xx for the Recycle Bin to operate properly.  Don’t change this from the default if you don’t know how to use permissions.
 :end
 
 :recycle_bin_excluded_files_plug:

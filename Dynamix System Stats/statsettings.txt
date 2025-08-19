@@ -73,7 +73,7 @@ Viewable system graphs=
 :end
 
 :stats_initial_plug:
-> The system graphs can be viewd over different periods, select here the intial period. On the system stats page itself this can be changed to any of the other choices.
+> The system graphs can be viewed over different periods, select here the initial period. On the system stats page itself this can be changed to any of the other choices.
 >
 > Internally information is kept with a monthly rotating mechanism. Each day is stored in a separate file.
 :end

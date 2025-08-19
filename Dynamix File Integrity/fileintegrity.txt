@@ -11,7 +11,7 @@ Day of the month=
 Day of the week=
 Disk selection=
 Disk verification schedule=
-Dont start=Don't start
+Dont start=Don’t start
 Download Now=
 Dynamix File Integrity=
 Error logging=
@@ -57,7 +57,7 @@ When parity operation is running=
 
 :integrity_service_plug:
 > When enabled a checksum value is automatically calculated and added to the extended attributes of the newly created or modified file.
-> When it is detected that a file change has occured, but its modification time hasn't changed, then an automatic checksum verification is performed to check for any silent file corruption.
+> When it is detected that a file change has occured, but its modification time hasn’t changed, then an automatic checksum verification is performed to check for any silent file corruption.
 >
 > The area selection can be filtered by excluding folders (shares) and/or excluding disks all together (see table below).
 >
@@ -83,7 +83,7 @@ When parity operation is running=
 > Use **Custom folders / Custom files** to manually enter exclusions. Multiple exclusions are separated by a comma.<br>
 > Examples are folder names, e.g. **`.Recycle.Bin`**, file names, e.g. **`my_workfile.tmp`** or file extensions, e.g. **`*.tmp`**.
 >
-> Select **Apple metadata** to exclude metadata files created by Apple's netatalk (.AppleDB and .DS_Store).
+> Select **Apple metadata** to exclude metadata files created by Apple’s netatalk (.AppleDB and .DS_Store).
 :end
 
 :integrity_verification_plug:
@@ -107,7 +107,7 @@ When parity operation is running=
 :end
 
 :integrity_parity_plug:
-> Before a verification task starts it can either continue as usual when a parity operation is running, or the verification task doesn't start at all.
+> Before a verification task starts it can either continue as usual when a parity operation is running, or the verification task doesn’t start at all.
 > In the latter case you need to wait for the next scheduled time to execute the task.
 :end
 

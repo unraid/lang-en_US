@@ -31,4 +31,3 @@ User=
 :outgoing_proxy_user_plug:
 > Outgoing Proxy User Name for this Proxy
 :end
-

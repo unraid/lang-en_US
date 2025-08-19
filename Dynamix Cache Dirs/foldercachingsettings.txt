@@ -27,10 +27,10 @@ User defined options=
 :cachedirs_info_plug:
 > Folder Caching Info
 >
-> The folder caching (cache_dirs) reads directories continously to keep them in memory.
-> The program does not know whether a directory is already in memory or need to be reread from disk.
-> Therefore it cannot avoid spinning up disks when it happens that the linux memory cache evicts a directory and cache_dirs rescans the directoy.
-> If a large number of files are being kept in memory then it seems inevitably that some diretories get evicted from the cache when the system is under load.
+> The folder caching (cache_dirs) reads directories continuously to keep them in memory.
+> The program does not know whether a directory is already in memory or need to be re-read from disk.
+> Therefore it cannot avoid spinning up disks when it happens that the linux memory cache evicts a directory and cache_dirs rescans the directory.
+> If a large number of files are being kept in memory then it seems inevitably that some directories get evicted from the cache when the system is under load.
 >
 > The program by default uses an adaptive mode where it reduces the depth of the directory structure which it tries to keep in memory.
 > When it detects a cache-miss (slow scan time) it will reduce the depth until disks are idle again,
@@ -51,7 +51,7 @@ User defined options=
 > If CPU and disks is heavily affected by cache_dirs on frequent intervals this is also an indication that cache_dirs has to rescan everything.
 >
 > Warning: a value of 0 will cause kernel never to release the memory of directories, and if too little memory is available,
-> it will cause the system to crash. cache_dirs does not reset the cachePressure after quitting,
+> it will cause the system to crash. cache_dirs does not reset the cache_pressure after quitting,
 > to reset the cache-pressure execute 'sudo sysctl vm.vfs_cache_pressure=100', or run cache-dirs with cache_pressure 100.
 >
 > See 'vfs_cache_pressure' in [kernel.org](https://www.kernel.org/doc/Documentation/sysctl/vm.txt).
@@ -93,7 +93,7 @@ User defined options=
 :end
 
 :cachedirs_timeout_scan_plug:
-> Scan timeout is the maximum duration that a single scan through all directories at the current level af depth (which may change adaptively).
+> Scan timeout is the maximum duration that a single scan through all directories at the current level of depth (which may change adaptively).
 > Increase it if cache_dirs fails in caching all your files. This timeout is always used if adaptive is disabled.
 :end
 
@@ -133,7 +133,7 @@ User defined options=
 > Refer to the online documentation to use these as needed,
 > or see the cache_dirs script itself located under /usr/local/emhttp/plugins/dynamix.cache.dirs/scripts/cache_dirs
 >
-> Its possible to tell cache_dirs to avoid traversing all directories with a certain name. The following example avoids '.Recycle.Bin' and 'temp' and 'log' folders:
+> It’s possible to tell cache_dirs to avoid traversing all directories with a certain name. The following example avoids '.Recycle.Bin' and 'temp' and 'log' folders:
 >
 > <span class="strong orange-text">-a '-noleaf -name .Recycle.Bin -prune -o -name log -prune -o -name temp -prune -o -print'</span>
 >

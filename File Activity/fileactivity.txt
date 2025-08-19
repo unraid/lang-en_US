@@ -11,7 +11,7 @@ Enable for Cache and Pool Disks=
 ;
 ; Help
 ;
-:file_activity_loggging_plug:
+:file_activity_logging_plug:
 > File Activity Monitoring:
 >
 > File open, read, write, and modify activity is monitored and logged on the array using inotify and is displayed by disk or share, UD disks, and cache.
