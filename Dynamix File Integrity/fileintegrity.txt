@@ -107,7 +107,7 @@ When parity operation is running=
 :end
 
 :integrity_parity_plug:
-> Before a verification task starts it can either continue as usual when a parity operation is running, or the verification task doesn’t start at all.
+> Before a verification task starts, it can either continue as usual when a parity operation is running, or the verification task doesn’t start at all.
 > In the latter case you need to wait for the next scheduled time to execute the task.
 :end
 

@@ -70,7 +70,7 @@ is offline=
 ISO File is=
 ISO File Shares=
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=
-Leave blank to use the array passwordpassphrase=
+Leave blank to use the array passwordpassphrase=Leave blank to use the array password/passphrase
 Load Shares=
 Loading=
 Log=
@@ -130,7 +130,7 @@ Share Type=
 share for=
 Show/Hide Historical Unassigned Devices=
 Show/Hide SMB/NFS/ISO Shares=
-Show/Hide Unassiged Disk Devices=
+Show/Hide Unassigned Disk Devices=
 Simple=
 SMB Shares=
 Source=
@@ -203,7 +203,7 @@ ZFS Volume=
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices is called UD for short.**
 >
-> Hover your mouse over an any active area on the UD page and a tool tip will show you what clicking that area does.
+> Hover your mouse over any active area on the UD page and a tooltip will show what clicking that area does.
 > You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD.  Any devices with the auto mount switch on will be mounted when the array is started.  All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
 > If you want to share your drive, you can turn on the Share switch.  The default for Remote SMB shares is Public read/write access.  Enable SMB Security by user in the Unassigned Devices Settings.  NFS shares are exported and access is read/write.  The export of NFS devices is enabled in the Unassigned Devices settings. You can also enable a common script that will be executed on every disk mount.  In order to share any UD device, sharing needs to be enabled in the UD Settings and the switch turned on to share the particular device.  SMB/NFS remove shares and ISO mounts are always shared.
 > After entering a mount point, press &lt;Enter&gt; to save the change.
@@ -216,21 +216,20 @@ ZFS Volume=
 >
 > The 'Add Root Share' button is disabled when 'Enable disk shares' is enabled and any Root Shares previously added will not mount.
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks.	If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.  Go to the 'Settings->Unassigned Devices' to set the destructive mode.
+> UD has a destructive mode that allows deleting disk partitions and formatting disks. If Destructive Mode is not enabled in UD Settings, you WILL NOT be able to format a disk or remove partitions. Go to 'Settings -> Unassigned Devices' to enable Destructive Mode.
 >
 > **To format a disk:**
 >
 > + Destructive mode must be enabled.
-> + Disk must have all partitions removed.  Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> + Disk must have all partitions removed. Unmount the disk, click the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
+> + If the disk has been pre-cleared and shows a greyed-out 'Format' button, click the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the pre-clear status file.
 >
 > **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array.  Supported file formats are XFS, XFS encrypted, BTRFS, BTRFS encrypted, ZFS and ZFS encrypted.**
 >
 > **Encrypted Disks:**
 >
-> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassigned Devices->Settings for that disk.
-> + Any disk that was not encrypted with the Array password/passphrase can be mounted by setting a per-disk password 
-in Unassigned Devices->Settings.
+> + By default, encrypted disks formatted in UD use the array password/passphrase and can be added to the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassigned Devices->Settings for that disk.
+> + Alternatively, you can set a per-disk password at format time; to mount such a disk, enter that per-disk password in 'Unassigned Devices -> Settings'.
 >
 > **Unassigned devices script:**
 >

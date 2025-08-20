@@ -113,9 +113,9 @@ Working=
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **Auto** to mount all NFS Remote Shares auto negotiating the NFS version to use.
+> Set to **Auto** to mount all NFS Remote Shares, auto-negotiating the NFS version to use.
 >
-> If the **Auto** setting doesn’t work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto-negotiate NFSv4.
+> If the **Auto** setting doesn’t work or only mounts NFSv3, use the **NFSv4** setting because your Unraid version cannot auto-negotiate NFSv4.
 :end
 
 :ud_settings_smb_security_plug:
@@ -152,7 +152,7 @@ Working=
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren’t handled as expected. Enabling this feature can help.
+> There are times when permissions on SMB shares aren’t handled as expected. Enabling the **Force user** setting can help.
 > This applies to all devices mounted with Unassigned Devices.
 > The downside is that it overrides Linux group permissions. If you are unsure whether this is necessary, leave it disabled.
 :end

@@ -16,7 +16,7 @@ There are sixteen text files included in this repository, each with their own se
 - <strong>docker.txt</strong>           -- these are translations for the <strong>Docker</strong> section
 - <strong>vms.txt</strong>              -- these are translations for the <strong>VMs</strong> section
 - <strong>tools.txt</strong>            -- these are translations for the <strong>Tools</strong> section
-- <strong>javascript.txt</strong>       -- these are translations for <strong>Javascript</strong> scripts
+- <strong>javascript.txt</strong>       -- these are translations for <strong>JavaScript</strong> scripts
 - <strong>scripts.txt</strong>          -- these are translations for <strong>Local Scripts</strong>
 - <strong>apps.txt</strong>             -- these are translations for the <strong>App</strong> section <em>(CA = Community Applications)</em>
 - <strong>ca_settings</strong>          -- these are translations for the <strong>App Settings</strong> <em>(CA)</em>
@@ -26,7 +26,7 @@ to <em>CA</em> section
 
 All file names are in lowercase and <strong>must be included in the repository</strong> to make the translations complete.
 
-Removing a particular file, means no translations will be available for that section and the Graphical User Interface *(GUI)* will display text in the original English.
+Removing a particular file means no translations will be available for that section and the Graphical User Interface *(GUI)* will display text in the original English.
 
 ### TRANSLATIONS
 
@@ -87,7 +87,7 @@ Each section is enclosed by a unique opening tag and corresponding closing tag:
 
 ⚠️ Do not remove or alter these tags; **only translate** the text between the opening and closing tags!
 
-NOTE: *Markdown* styling syntax is used, this must be preserved.
+NOTE: *Markdown* styling syntax is used. This must be preserved.
 
 
 ### LOCAL TESTING

@@ -28,7 +28,7 @@ Parity Sync=
 Pause an array operation at=
 Pause and Resume array operations if disks overheat=
 Read Check=
-Requires unRaid 67 or later=Requires unRaid 6.7 or later
+Requires Unraid 67 or later=Requires Unraid 6.7 or later
 Resume an array operation at=
 Resume parity checks on next array start=
 Resume running Array operations on next array start=
@@ -113,7 +113,7 @@ where action is one of=
 aborted due to Unclean shutdown=
 array stopping so progress will be lost=
 ; The type of array operation (parity check, clear, rebuild) will be appended to the following text
-Automatic unRaid=
+Automatic Unraid=
 Average Speed=
 completed=
 Correcting Parity Check=
@@ -159,7 +159,7 @@ Testing mode is normally only used by the plugin author or when gathering eviden
 Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless this is really necessary=
 The Pause and Resume times would give an increment length of more than 12 hours which is unusual=
 The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=
-The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the unRaid level=
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=
 This might affect array integrity=
 Unusually large value=
 
@@ -255,7 +255,7 @@ Method used to specify start and stop points=
 >
 >If you have set this to **No** then you get the default system behavior of parity checks running without a break to completion unless you manually stop/pause/cancel them.
 >
->**CAUTION:**  The default unRaid behavior is that if the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
+>**CAUTION:**  The default Unraid behavior is that if the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
 :end
 
 :parity_tune_frequency_plug:
@@ -270,7 +270,7 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_automatic_plug:
-> if the unRaid system is not shutdown cleanly then the next time the array is started unRaid will automatically start a non-correcting parity check (or a read check if you have no parity disk). This can happen for a wide variety of reasons ranging from power loss; hardware issues; and software issues.  The automatic check is run because if there are any parity errors this can compromise the ability to recover from an array drive failure at a later date so you want to get back to having valid parity as soon as is practical.
+> if the Unraid system is not shutdown cleanly then the next time the array is started Unraid will automatically start a non-correcting parity check (or a read check if you have no parity disk). This can happen for a wide variety of reasons ranging from power loss; hardware issues; and software issues.  The automatic check is run because if there are any parity errors this can compromise the ability to recover from an array drive failure at a later date so you want to get back to having valid parity as soon as is practical.
 >
 > If this option is set then the check will be allowed to run for a few minutes (as any errors after an unclean shutdown are most likely to be at the start of the disks as they were not unmounted cleanly) and then automatically put the check into a paused state (if outside the time specified for running increments) and then the  remainder of the check subsequently run in increments according to the time slots specified for running increments.
 :end
@@ -317,7 +317,7 @@ Method used to specify start and stop points=
 
 
 :parity_tune_clear_plug:
-> Should disk Clear operations be run using increments.<br><br>A disk Clear operation occurs when you add a new drive (that has not been pre-cleared (using the Pre-Clear plugin) to an array that is parity protected.  The Clear process writes zeroes to every sector on the new disk so that it can be added to the array without affecting the existing parity. Until the Clear operation has completed you are not able to format the disk in unRaid and start using it for storing data.
+> Should disk Clear operations be run using increments.<br><br>A disk Clear operation occurs when you add a new drive (that has not been pre-cleared (using the Pre-Clear plugin) to an array that is parity protected.  The Clear process writes zeroes to every sector on the new disk so that it can be added to the array without affecting the existing parity. Until the Clear operation has completed you are not able to format the disk in Unraid and start using it for storing data.
 >
 >Since until the Clear operation completes the disk will not be available for use it is likely that most people will want this option left at **No**.   In addition, a Clear operation tends not to put much of a load on the system so is less likely to impact performance in normal daily use.
 :end
@@ -339,7 +339,7 @@ Method used to specify start and stop points=
 :parity_tune_hot_plug:
 > Pause an array operation(Parity Check, Parity-Sync/Disk Rebuild, disk Clear)if the disk temperatures exceeds the limits you have set.
 >
->The temperatures are checked against the thresholds set for the Warning disk temperature levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (set via *Settings->Display Settings*) will be used.  It is assumed that normally you would want the array operation to be paused before the value set at the unRaid level as the Warning Threshold.
+>The temperatures are checked against the thresholds set for the Warning disk temperature levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (set via *Settings->Display Settings*) will be used.  It is assumed that normally you would want the array operation to be paused before the value set at the Unraid level as the Warning Threshold.
 >
 >A much better solution is to improve the cooling in your case so that the disks never overheat.   In practice this may not always prove practical.
 >
@@ -376,7 +376,7 @@ Method used to specify start and stop points=
 > If set to **Yes** then automatically start a tidy shutdown of the server if any disk in the array or a cache pool reach the defined temperature threshold.
 > The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
 >
->This option intended to be triggered if for some reason the system’s cooling system is insufficient or if it has failed in some way. The idea is that you want to do a tidy shutdown before the disks become damaged due to overheating badly.   The shutdown that is triggered is functionally the same as would be the case of pressing the Shutdown button on the Main page of the unRaid GUI.  If notifications are enabled then you are sent one to indicate that this has happened.
+>This option is intended to be triggered if the system’s cooling is insufficient or has failed. The idea is to perform a tidy shutdown before disks are damaged by severe overheating. The shutdown that is triggered is functionally the same as pressing the Shutdown button on the Main page of the Unraid GUI. If notifications are enabled, one will be sent to indicate that this has happened.
 >
 >When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
 >
@@ -385,7 +385,7 @@ Method used to specify start and stop points=
 
 :parity_tune_critical_plug:
 > This value indicates how close to the value set for the Critical Disk Temperature Threshold a disks temperature is allowed to reach before a shutdown of the server is triggered.
-> You may want a small positive value to trigger the pause before unRaid gets around to sending you a notification that the temperature critical threshold has been reached for a disk.
+> You may want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature critical threshold has been reached for a disk.
 >
 >If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
 :end
@@ -402,12 +402,12 @@ Method used to specify start and stop points=
 >
 >Setting this option to **Debug** will result in additional entries being written to the syslog that give more information on what is happening when this plugin is running. They show how some of the internal operation of how the plugin is functioning. These additional entries are identified by the fact that they will have the word **DEBUG** added to the start of messages.  Some users (particularly those who have not used this plugin before) may like to use it to see more detail on how this plugin operates, but it is not expected that this option will be left enabled in normal running.
 >
->Finally there is an additional setting of **Testing** that is only intended for use by the developer but is left here for convenience.  It will write even more verbose messages to the syslog but these are not likely to be interesting (or even meaningful) to the average user.  These messages will have the word **TESTING** added to the start of messages. You should only run this level of logging if you have been asked to as it can quickly fill up your syslog if you are not careful.
+>Finally there is an additional setting of **Testing** that is only intended for use by the developer but is left here for convenience. It will write even more verbose messages to the syslog but these are not likely to be interesting (or even meaningful) to the average user. These messages will have the word **TESTING** added to the start of messages. You should only run this level of logging if you have been asked to as it can quickly fill up your syslog if you are not careful.
 >
->Feedback is welcome as to whether it is worth introducing any intermediate option that outputs information type messages on the plugin’s activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running.
+>Feedback is welcome on whether to introduce an intermediate option that outputs informational messages about the plugin’s activity, while omitting lower-level details aimed at diagnosing problems.
 >
->If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the only option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive.
->To facilitate with debugging problems then in Testing mode you can log the messages to the flash drive either instead of the syslog or in addition to the syslog. The resulting parityTuning.log file will be stored in the plugin’s folder on the flash drive and providing this file to the developer will help with diagnosing any unexpected behaviour you encounter.
+>If you have Testing mode set for logging, you can choose where log messages are recorded. The default is the standard system syslog, and this is the only option allowed in Basic mode. The syslog is held in RAM, so it does not cause excessive writes to the flash drive.
+>To facilitate debugging, in Testing mode you can log messages to the flash drive either instead of, or in addition to, the syslog. The resulting parityTuning.log file will be stored in the plugin’s folder on the flash drive; providing this file to the developer will help diagnose any unexpected behavior you encounter.
 :end
 
 :parityProblems_type_plug:
@@ -445,7 +445,7 @@ Method used to specify start and stop points=
 :end
 
 :parityProblems_sectors_plug:
-> When you click on the option to **Show Sector Numbers** then a dialog will be shown
-> that extracts entries from the syslog displaying any sectors for which a parity sector is shown, 
-> and whether it was being corrected or is a parity error.
+> When you click **Show Sector Numbers**, a dialog lists entries extracted from the syslog
+> for any sectors where a parity issue was logged,
+> and indicates whether each was corrected or remains a parity error.
 :end
