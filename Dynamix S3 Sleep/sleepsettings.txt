@@ -79,7 +79,7 @@ Yes, exclude Cache=
 :end
 
 :s3sleep_idle_plug:
-> Network activity is measured across thresholds, ranging from completely silent to megabit traffic. Experiment with this setting to find the right balance for your situation.
+> Network activity is measured across thresholds, ranging from completely silent to Megabit traffic. Experiment with this setting to find the right balance for your situation.
 :end
 
 :s3sleep_host_plug:

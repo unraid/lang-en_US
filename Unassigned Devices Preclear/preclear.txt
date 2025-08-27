@@ -23,56 +23,56 @@ On every cycle end=
 On preclear end=
 Operation=
 Post-read Verify=
-Preclear Disks=
-Preclear Disk Log=
-Preclear Log=
-Preclear Status=
+Preclear Disks=Pre-clear Disks
+Preclear Disk Log=Pre-clear Disk Log
+Preclear Log=Pre-clear Log
+Preclear Status=Pre-clear Status
 Preview Progress=
 Read size=
 Remove Report=
 Resume all Sessions=
-Resume Preclear=
+Resume Preclear=Resume Pre-clear
 Preview Progress Report=
 Select Disks=
 Serial Number=
-Set Preclear Queue=
-Show Preclear Report=
+Set Preclear Queue=Set Pre-clear Queue
+Show Preclear Report=Show Pre-clear Report
 Skip Pre-read=
 Skip Post-Read=
 Start Multiple Sessions=
 Start New=
-Start Preclear=
+Start Preclear=Start Pre-clear
 Stop all Sessions=
-Stop Preclear=
+Stop Preclear=Stop Pre-clear
 Temp=
 Testing=
-There are no disks that can be precleared=
+There are no disks that can be precleared=There are no disks that can be pre-cleared
 Verify Signature=
 Write size=
 You can use Unassigned Devices to clear the disk=
 
 :preclear_general_help_plug:
-> The Unassigned Devices Preclear can be used to prepare disks for inclusion in the array, clear disks for disposal, and perform stress tests before disks are used in the array.
+> The Unassigned Devices Pre-clear can be used to prepare disks for inclusion in the array, clear disks for disposal, and perform stress tests before disks are used in the array.
 >
-> Only disks that are not being used in the array and have no partitions with file systems will be listed as candidates for preclearing.
+> Only disks that are not being used in the array and have no partitions with file systems will be listed as candidates for pre-clearing.
 >
-> When a disk is being precleared, you can follow the status on this page, on the Unassigned Devices page, or the preclear status icon in the footer of the Unraid web page.
+> When a disk is being pre-cleared, you can follow the status on this page, on the Unassigned Devices page, or the pre-clear status icon in the footer of the Unraid web page.
 > 
-> There are multiple choices for preclearing:
+> There are multiple choices for pre-clearing:
 >
-> The **Enhanced** script authored by user **gfjardim** has the advantage that it supports the enhanced features like pause and resume preclearing.  It also has extensive logging.
+> The **Enhanced** script authored by user **gfjardim** has the advantage that it supports the enhanced features like pause and resume pre-clearing. It also has extensive logging.
 >
-> The **Docker** is the binhex Docker container that performs preclear.  The advantage of this is the preclearing is isolated in the Docker container.
+> The **Docker** is the binhex Docker container that performs pre-clear. The advantage of this is the pre-clearing is isolated in the Docker container.
 >
-> Preclear operations:
+> Pre-clear operations:
 >
-> + Clear Disk - The disk is cleared and the Unraid signature is written to the disk.  This will create an empty partition on the disk.
-> + Erase Disk - Erase the entire disk by writing all zeros.  The preclear signature is removed.
-> + Erase and Clear Disk - random patterns are written to the disk and then zeroes are written.  This is a good choice for a disk to be discarded to ensure all traces of files are removed.
+> + Clear Disk - The disk is cleared and the Unraid signature is written to the disk. This will create an empty partition on the disk.
+> + Erase Disk - Erase the entire disk by writing all zeros. The pre-clear signature is removed.
+> + Erase and Clear Disk - random patterns are written to the disk and then zeroes are written. This is a good choice for a disk to be discarded to ensure all traces of files are removed.
 > + Verify Signature - The disk signature is checked.
 > + Verify Disk - The disk signature is checked and the disk is verified to be zeroed.
 > + Post-read Verify - Perform a post read verify to check the disk.
-> + Clear Signature - Remove the preclear signature from the disk.
+> + Clear Signature - Remove the pre-clear signature from the disk.
 >
-> The text <em style='color:#00BE37;'>Precleared</em> next to the disk serial number indicates that the disk has a precleared signature.  This will only show when the disk is precleared and the Preclear Stats have been removed.
+> The text <em style='color:#00BE37;'>Pre-cleared</em> next to the disk serial number indicates that the disk has a pre-cleared signature. This will only show when the disk is pre-cleared and the Pre-clear Stats have been removed.
 :end

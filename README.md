@@ -20,8 +20,7 @@ There are sixteen text files included in this repository, each with their own se
 - <strong>scripts.txt</strong>          -- these are translations for <strong>Local Scripts</strong>
 - <strong>apps.txt</strong>             -- these are translations for the <strong>App</strong> section <em>(CA = Community Applications)</em>
 - <strong>ca_settings</strong>          -- these are translations for the <strong>App Settings</strong> <em>(CA)</em>
-- <strong>javascript.ca.txt</strong>    -- these are translations for the <strong>JavaScript Scripts</strong> referred
-to <em>CA</em> section
+- <strong>javascript.ca.txt</strong>    -- these are translations for the <strong>JavaScript Scripts</strong> referred to <em>CA</em> section
 </pre>
 
 All file names are in lowercase and <strong>must be included in the repository</strong> to make the translations complete.
