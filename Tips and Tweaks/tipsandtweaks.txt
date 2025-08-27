@@ -27,7 +27,7 @@ If you are experiencing OOM errors, try adjusting the Disk Cache settings on the
 If you configure VLANs on Unraid, you should make Unraid the Master Browser=
 If you dont Unraid may not detect the Master Browser for all network interfaces correctly=If you don’t, Unraid may not detect the Master Browser for all network interfaces correctly
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
-If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
+If you set the Power Save CPU Governor, you may see your processors stuck at 800 MHz=If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz.
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=
 Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=
@@ -127,7 +127,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_dirty_background_plug:
-> Recommended values are: 'vm.dirty_background_ratio' to 3% and 'vm.dirty_ratio 'to 5%.
+> Recommended values are: 'vm.dirty_background_ratio' to 3% and 'vm.dirty_ratio' to 5%.
 > If you have large amount of RAM, set the 'vm.dirty_background_ratio' to 1% and 'vm.dirty_ratio' to 2%.
 > Caution: Don’t increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
 >

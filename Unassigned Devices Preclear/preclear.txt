@@ -62,13 +62,13 @@ You can use Unassigned Devices to clear the disk=
 >
 > The **Enhanced** script authored by user **gfjardim** has the advantage that it supports the enhanced features like pause and resume pre-clearing. It also has extensive logging.
 >
-> The **Docker** is the binhex Docker container that performs pre-clear. The advantage of this is the pre-clearing is isolated in the Docker container.
+> The **Docker** option refers to the binhex Docker container that performs pre-clear. The advantage is that pre-clearing is isolated within the container.
 >
 > Pre-clear operations:
 >
 > + Clear Disk - The disk is cleared and the Unraid signature is written to the disk. This will create an empty partition on the disk.
 > + Erase Disk - Erase the entire disk by writing all zeros. The pre-clear signature is removed.
-> + Erase and Clear Disk - random patterns are written to the disk and then zeroes are written. This is a good choice for a disk to be discarded to ensure all traces of files are removed.
+> + Erase and Clear Disk - Random patterns are written to the disk and then zeros are written. This is a good choice for a disk to be discarded to ensure all traces of files are removed.
 > + Verify Signature - The disk signature is checked.
 > + Verify Disk - The disk signature is checked and the disk is verified to be zeroed.
 > + Post-read Verify - Perform a post read verify to check the disk.

@@ -286,14 +286,14 @@ Click the **Upgrade Pool** button to upgrade the ZFS pool to enable the latest Z
 :info_btrfs_check_help:
 **Check** will run the *btrfs check* program to check file system integrity on the device.
 
-The *Options* field is initialized with *--readonly* which specifies check-only.  If repair is needed, you should run
+The *Options* field is initialized with *--readonly* which specifies check-only. If repair is needed, you should run
 a second Check pass, setting the *Options* to *--repair*; this will permit *btrfs check* to fix the file system.
 
 WARNING: **Do not use** *--repair* unless you are advised to do so by a developer or an experienced user,
 and then only after having accepted that no fsck successfully repair all types of filesystem corruption.
 E.g. some other software or hardware bugs can fatally damage a volume.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
+After starting a Check, you should Refresh to monitor progress and status. Depending on
 how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
 Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
 increasing for the device on the Main page.
@@ -310,7 +310,7 @@ The *Options* field may be filled in with specific options used to fix problems 
 first run a Check pass leaving *Options* blank.  Upon completion, if *reiserfsck* finds any problems, you must
 run a second Check pass, using a specific option as instructed by the first *reiserfsck* pass.
 
-After starting a Check you should Refresh to monitor progress and status.  Depending on
+After starting a Check you should Refresh to monitor progress and status. Depending on
 how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
 Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
 increasing for the device on the Main page.
@@ -323,10 +323,10 @@ increasing for the device on the Main page.
 :info_xfs_check_help:
 **Check** will run the *xfs_repair* program to check file system integrity on the device.
 
-The *Options* field is initialized with *-n* which specifies check-only.  If repair is needed, you should run
+The *Options* field is initialized with *-n* which specifies check-only. If repair is needed, you should run
 a second Check pass, setting the *Options* blank; this will permit *xfs_repair* to fix the file system.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
+After starting a Check, you should Refresh to monitor progress and status. Depending on
 how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
 Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
 increasing for the device on the Main page.
@@ -559,7 +559,7 @@ Determines whether a directory is allowed to expand onto multiple disks.
 
 **Automatically split any directory as required**
 When a new file or subdirectory needs to be created in a share, Unraid OS first chooses which disk
-it should be created on, according to the configured *Allocation method*.  If the parent directory containing
+it should be created on, according to the configured *Allocation method*. If the parent directory containing
 the new file or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
 parent directories, and then create the new file or subdirectory.
 
@@ -571,7 +571,7 @@ file or subdirectory is created on the same disk as the new file or subdirectory
 
 **Automatically split only the top "N" level directories as required**
 Similar to previous: when a new file or subdirectory is being created, if the parent directory is at level "N",
-and does not exist on the chosen disk, Unraid OS will first create all necessary parent directories.  If the
+and does not exist on the chosen disk, Unraid OS will first create all necessary parent directories. If the
 parent directory of the new file or subdirectory is beyond level "N", then the new file or subdirectory is
 created on the same disk where the parent directory exists.
 
@@ -616,11 +616,11 @@ disable these services while mover is running.
 :end
 
 :share_edit_copy_on_write_help:
-Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
-when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute. This setting has no effect on non-btrfs file systems.
+Set to **No** to cause the *BTRFS* NOCOW (No Copy-on-Write) attribute to be set on the share directory
+when created on a device formatted with *BTRFS* file system. Once set, newly created files and
+subdirectories on the device will inherit the NOCOW attribute. This setting has no effect on non-BTRFS file systems.
 
-Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
+Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *BTRFS*.
 :end
 
 :share_edit_status_help:
@@ -628,17 +628,17 @@ Share does *not* contain any data and may be deleted if not needed any longer.
 :end
 
 :share_edit_delete_help:
-Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
+Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) → Hide 'dot' files.
 :end
 
 :share_edit_exclusive_access_help:
 When set to "Yes" indicates a symlink directly to a pool has been set up for the share in the /mnt/user tree.
 
-Refer to [Global Share Settings](Settings/ShareSettings) -> Permit exclusive shares.
+Refer to [Global Share Settings](Settings/ShareSettings) → Permit exclusive shares.
 :end
 
 :share_edit_primary_storage_help:
-**Primary storage** is where *new files and folders* are created.  If
+**Primary storage** is where *new files and folders* are created. If
 Primary storage is below the minimum free space setting then new files
 and folders will be created in **Secondary storage**, if configured.
 
@@ -648,7 +648,7 @@ settings are ignored.
 
 :share_edit_secondary_storage_help:
 **Secondary storage** is where new files and directories are created if no
-room on Primary storage.  When both Primary and Secondary storage are
+room on Primary storage. When both Primary and Secondary storage are
 configured the 'mover' will transfer files between them.
 :end
 
@@ -668,14 +668,14 @@ Select the desired destinations and press **Write** to copy the SMB security set
 :end
 
 :smb_export_help:
-This setting determines whether the share is visible and/or accessible.  The 'Yes (hidden)' setting
+This setting determines whether the share is visible and/or accessible. The 'Yes (hidden)' setting
 will *hide* the share from *browsing* but is still accessible if you know the share name.
 :end
 
 :smb_time_machine_volume_help:
 This limits the reported volume size, preventing Time Machine from using the entire real disk space
-for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
-Note that Ventura 13.6 and later require a value to be present.  No entry will prevent Time Machine
+for backup. For example, setting this value to "1024" would limit the reported disk space to 1GB.
+Note that Ventura 13.6 and later require a value to be present. No entry will prevent Time Machine
 from working correctly.
 :end
 
@@ -685,15 +685,15 @@ Controls whether filenames are case-sensitive.
 The default setting of **auto** allows clients that support case sensitive filenames (Linux CIFSVFS)
 to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX
 case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to **auto** is the same as
-setting it to No for them; however, the case of filenames passed by a Windows client will be preserved.  This setting can result
+setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result
 in reduced performance with very large directories because Samba must do a filename search and match on passed names.
 
 A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case.
-This will speed very large directory access, but some Windows applications may not function properly with this setting.  For
+This will speed very large directory access, but some Windows applications may not function properly with this setting. For
 example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
 
 A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case.
-In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case.  This
+In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This
 ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
 NOTE: this setting should only be configured for new shares.
 :end
@@ -709,9 +709,9 @@ Summary of security modes:
 
 Windows Server Signing:
 
-If you are unable to browse SMB shares with Windows 11 version 24H2 or newer, you need to make some changes to accommodate a new feature called Server Signing.  Server Signing is enabled in Unraid and you need to make changes to access Public shares.
+If you are unable to browse SMB shares with Windows 11 version 24H2 or newer, you need to make some changes to accommodate a new feature called Server Signing. Server Signing is enabled in Unraid and you need to make changes to access Public shares.
 You can <u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300' target='_blank'>disable it in Windows</a></u>, or to work with Unraid with Server Signing enabled, the easiest way is to create a user (with a password set) in Unraid with the same name as the Windows account you are using, Windows should then ask you for the credentials.
-If you are using a Microsoft account, it may be better to just create a user in Unraid with a simple username and set a password, then in Windows go to Control Panel -> Credential Manager -> Windows credentials -> Add a Windows Credential and add the correct Unraid server name and credentials.
+If you are using a Microsoft account, it may be better to just create a user in Unraid with a simple username and set a password, then in Windows go to 'Control Panel → Credential Manager → Windows credentials → Add a Windows Credential' and add the correct Unraid server name and credentials.
 :end
 
 :smb_secure_access_help:
@@ -2253,16 +2253,16 @@ the local file name of an extension.
 :end
 
 :plugin_error_help:
-These plugins were not installed because of some kind of installation error.  You should delete these
+These plugins were not installed because of some kind of installation error. You should delete these
 plugins and then **reboot** your server.*
 :end
 
 :plugin_stale_help:
-These plugins were not installed because newer code already exists.  It is safe to simply delete these.
+These plugins were not installed because newer code already exists. It is safe to simply delete these.
 :end
 
 :docker_client_general_help:
-Templates are a quicker way to setting up Docker Containers on your Unraid server.  There are two types of templates:
+Templates are a quicker way to setting up Docker Containers on your Unraid server. There are two types of templates:
 
 **Default templates**<br>
 When valid repositories are added to your Docker Repositories page, they will appear in a section on this drop down for you to choose (master categorized by author, then by application template).
@@ -2278,19 +2278,19 @@ To delete a User-defined template, select it from the list above and click the r
 :end
 
 :docker_client_name_help:
-Give the container a name or leave it as default.  Two characters minimum.  First character must be a-z A-Z 0-9  Remaining characters a-z A-Z 0-9 . - _
+Give the container a name or leave it as default. Two characters minimum. First character must be a-z A-Z 0-9  Remaining characters a-z A-Z 0-9 . - _
 :end
 
 :docker_client_overview_help:
-A description for the application container.  Supports basic HTML mark-up.
+A description for the application container. Supports basic HTML mark-up.
 :end
 
 :docker_client_additional_requirements_help:
-Any additional requirements the container has.  Supports basic HTML mark-up.
+Any additional requirements the container has. Supports basic HTML mark-up.
 :end
 
 :docker_client_repository_help:
-The repository for the application on the Docker Registry.  Format of authorname/appname.
+The repository for the application on the Docker Registry. Format of authorname/appname.
 Optionally you can add a : after appname and request a specific version for the container image.
 :end
 

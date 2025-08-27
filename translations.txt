@@ -76,7 +76,7 @@ After your Trial has reached expiration your server still functions normally unt
 ago=
 Alert Message=
 Alerts=
-All you need is an active internet connection, an Unraidnet account, and the Connect plugin=All you need is an active internet connection, an Unraid.net account and the Connect plugin.
+All you need is an active internet connection, an Unraidnet account, and the Connect plugin=All you need is an active internet connection, an Unraid.net account, and the Connect plugin.
 All=
 Already have an account=
 Alternately you may purchase a license key for this USB flash device=
@@ -896,7 +896,6 @@ Submission of this bug report will automatically send your system diagnostics to
 Submission of this troubleshooting request will automatically send your system diagnostics to Lime Technology=
 Submit=
 Submitting=
-Success=
 Success=Success!
 Successfully logged out=
 Successfully removed container=

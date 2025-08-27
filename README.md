@@ -20,7 +20,7 @@ There are sixteen text files included in this repository, each with their own se
 - <strong>scripts.txt</strong>          -- these are translations for <strong>Local Scripts</strong>
 - <strong>apps.txt</strong>             -- these are translations for the <strong>App</strong> section <em>(CA = Community Applications)</em>
 - <strong>ca_settings</strong>          -- these are translations for the <strong>App Settings</strong> <em>(CA)</em>
-- <strong>javascript.ca.txt</strong>    -- these are translations for the <strong>JavaScript Scripts</strong> referred to <em>CA</em> section
+- <strong>javascript.ca.txt</strong>    -- these are translations for the <strong>JavaScript Scripts</strong> used by the <em>CA</em> section
 </pre>
 
 All file names are in lowercase and <strong>must be included in the repository</strong> to make the translations complete.
@@ -41,8 +41,8 @@ These are single line entries which are in the format:
 
 <pre>original English text=translated Foreign text</pre>
 
-Only modify the text after the equal sign **(=)** and leave the original English text at the left untouched.
-Removing a line or omitting a translation after the equal sign, results in the *GUI* displaying this line with the original English text.
+Only modify the text after the equal sign '**=**' and leave the original English text at the left untouched.
+Removing a line or omitting a translation after the equal sign results in the *GUI* displaying this line with the original English text.
 
 The translated text may have “special characters”, such as *slashes*, *parenthesis* or *brackets* which are not included in the key text,
 but which are used to display text accordingly. 

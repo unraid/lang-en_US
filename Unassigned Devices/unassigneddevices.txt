@@ -92,8 +92,8 @@ Note=
 offline=
 User Shares=
 User Shares without Pools=
-You must enable NFS in Settings->NFS to mount NFS shares=You must enable NFS in 'Settings -> NFS' to mount NFS shares
-You must enable SMB in Settings->SMB to mount SMB shares=ou must enable SMB in 'Settings -> SMB' to mount SMB shares
+You must enable NFS in Settings->NFS to mount NFS shares=You must enable NFS in 'Settings → NFS' to mount NFS shares
+You must enable SMB in Settings->SMB to mount SMB shares=You must enable SMB in 'Settings → SMB' to mount SMB shares
 Open=
 Partition=
 Partition and Format Disk=
@@ -181,7 +181,7 @@ ZFS Volume=
 >
 > Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i> or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
 >
 > Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration. This is where you configure a device script and certain device characteristics.
 > 
@@ -204,19 +204,19 @@ ZFS Volume=
 > **Unassigned Devices is called UD for short.**
 >
 > Hover your mouse over any active area on the UD page and a tooltip will show what clicking that area does.
-> You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD.  Any devices with the auto mount switch on will be mounted when the array is started.  All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
-> If you want to share your drive, you can turn on the Share switch.  The default for Remote SMB shares is Public read/write access.  Enable SMB Security by user in the Unassigned Devices Settings. NFS shares are exported and access is read/write. The export of NFS devices is enabled in the Unassigned Devices settings. You can also enable a common script that will be executed on every disk mount. In order to share any UD device, sharing needs to be enabled in the UD Settings and the switch turned on to share the particular device. SMB/NFS remote shares and ISO mounts are always shared.
+> You can mount USB devices, SATA drives, remote SMB/NFS shares, and ISO files with UD. Any devices with the 'Auto Mount' switch on will be mounted when the array is started. All drives and SMB/NFS mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
+> If you want to share your drive, you can turn on the Share switch. The default for Remote SMB shares is Public read/write access. Enable SMB Security by user in the Unassigned Devices Settings. NFS shares are exported and access is read/write. The export of NFS devices is enabled in the Unassigned Devices settings. You can also enable a common script that will be executed on every disk mount. To share any UD device, enable sharing in Unassigned Devices Settings and turn on the switch for that device. SMB/NFS remote shares and ISO mounts are always shared.
 > After entering a mount point, press &lt;Enter&gt; to save the change.
 >
-> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification.  When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed.  A disk can be formatted and an fsck run to check the disk.
+> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed.  A disk can be formatted and an fsck run to check the disk.
 >
-> The 'Settings->Unassigned Devices' security settings for SMB and NFS must be set correctly for SMB and NFS sharing to work properly.
+> The 'Settings → Unassigned Devices' security settings for SMB and NFS must be set correctly for SMB and NFS sharing to work properly.
 >
-> If the mount button is grayed out for a SMB/NFS remote share, the remote server is not responding to a ping. The remote share server must respond to a ping or UD will consider it off-line.
+> If the mount button is grayed out for a SMB/NFS remote share, the remote server is not responding to a ping. The remote share server must respond to a ping or UD will consider it offline.
 >
 > The 'Add Root Share' button is disabled when 'Enable disk shares' is enabled and any Root Shares previously added will not mount.
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks. If Destructive Mode is not enabled in UD Settings, you WILL NOT be able to format a disk or remove partitions. Go to 'Settings -> Unassigned Devices' to enable Destructive Mode.
+> UD has a 'Destructive Mode' that allows deleting disk partitions and formatting disks. If Destructive Mode is not enabled in UD Settings, you WILL NOT be able to format a disk or remove partitions. Go to 'Settings → Unassigned Devices' to enable Destructive Mode.
 >
 > **To format a disk:**
 >
@@ -228,8 +228,7 @@ ZFS Volume=
 >
 > **Encrypted Disks:**
 >
-> + By default, encrypted disks formatted in UD use the array password/passphrase and can be added to the array. Or you can set a unique password when it is formatted. If you set a password on the disk when it is formatted, you will need to enter a disk password in 'Unassigned Devices -> Settings' for that disk.
-> + Alternatively, you can set a per-disk password at format time; to mount such a disk, enter that per-disk password in 'Unassigned Devices -> Settings'.
+> + By default, encrypted disks formatted in UD use the array password/passphrase and can be added to the array. Alternatively, you may set a unique per‑disk password at format time; to mount such a disk, enter that per‑disk password in 'Unassigned Devices → Settings'.
 >
 > **Unassigned devices script:**
 >

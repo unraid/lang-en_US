@@ -190,10 +190,10 @@ PCI Devices and IOMMU Groups=
 PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
 Reboot to take effect=
 SCSI Devices=
-The below list doesnt not reflect the way IOMMU would naturally group devices=The below list does not reflect the way IOMMU would naturally group devices
+The below list doesnt not reflect the way IOMMU would naturally group devices=The following list does not reflect the way IOMMU would naturally group devices
 This controller is bound to vfio, connected USB devices are not visible=
 This controller is bound to vfio, connected drives are not visible=
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**.
 USB Devices=
 Your system has booted with the PCIe ACS Override setting enabled=
 
@@ -345,8 +345,8 @@ another replacement key sooner, [Contact Support](https://lime-technology.com/co
 :end
 
 :registration_9_plug:
-This USB Flash boot device has been *blacklisted*. This can occur as a result of transferring your Registration key to
-a replacement USB Flash device, and you are currently booted from your old USB Flash device.
+This USB Flash boot device has been *blacklisted*. This can occur if you transferred your Registration key to 
+a replacement USB Flash device and are currently booted from your old USB Flash device.
 
 A USB Flash device may also be *blacklisted* if there is no serial number, or if we discover the serial number
 is not unique (this is common with USB card readers).
