@@ -48,8 +48,11 @@ Use increments for Parity-SyncData Rebuild operations=Use increments for Parity-
 You require a parity disk present for this option to be relevant=
 
 ; Parity Problems Assistant page
+
 Parity Problems Assistant=
+
 ; page intro text
+
 :parityProblems_intro_plug:
 The **Parity Problems Assistant** is part of the **Parity Check Tuning** plugin.<p/>
 The current status is **EXPERIMENTAL** and it is always possible that this assistant may be removed in the future).
@@ -63,7 +66,9 @@ If you think you have rectified whatever caused the problems to occur then you c
 This can be much faster than having to run a full parity check or read check to see if you have resolved the issue or to run a disk extended SMART test to test the actual disk.<p/>
 **IMPORTANT**:  This assistant should never be used as an alternative to running a full parity check once you think the problem has been resolved.
 :end
+
 ; fields
+
 Click to show Error Sectors from syslog=
 End point for check=
 Method used to specify start and stop points=
@@ -112,8 +117,10 @@ where action is one of=
 
 aborted due to Unclean shutdown=
 array stopping so progress will be lost=
+
 ; The type of array operation (parity check, clear, rebuild) will be appended to the following text
-Automatic Unraid=
+
+Automatic Unraid=Automatic Unraid
 Average Speed=
 completed=
 Correcting Parity Check=
@@ -374,27 +381,27 @@ Method used to specify start and stop points=
 
 :parity_tune_shutdown_plug:
 > If set to **Yes** then automatically start a tidy shutdown of the server if any disk in the array or a cache pool reach the defined temperature threshold.
-> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
+> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used. If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
 >
->This option is intended to be triggered if the system’s cooling is insufficient or has failed. The idea is to perform a tidy shutdown before disks are damaged by severe overheating. The shutdown that is triggered is functionally the same as pressing the Shutdown button on the Main page of the Unraid GUI. If notifications are enabled, one will be sent to indicate that this has happened.
+> This option is intended to be triggered if the system’s cooling is insufficient or has failed. The idea is to perform a tidy shutdown before disks are damaged by severe overheating. The shutdown that is triggered is functionally the same as pressing the Shutdown button on the Main page of the Unraid GUI. If notifications are enabled, one will be sent to indicate that this has happened.
 >
->When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
+> When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
 >
->**CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
+> **CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
 :end
 
 :parity_tune_critical_plug:
 > This value indicates how close to the value set for the Critical Disk Temperature Threshold a disks temperature is allowed to reach before a shutdown of the server is triggered.
-> You may want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature critical threshold has been reached for a disk.
+> You may want a small positive value to trigger the shutdown before Unraid gets around to sending you a notification that the temperature critical threshold has been reached for a disk.
 >
->If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+> If an explicit threshold has been defined for an individual drive then this is the value used. If not the global setting will be used.
 :end
 
 :parity_tune_logging_plug:
-> Control the level of detail in entries.  The level of detail can be increased to help with debugging any problems using this plugin might encounter.
+> Control the level of detail in entries. The level of detail can be increased to help with debugging any problems using this plugin might encounter.
 >
->Messages by this plugin are identified by the fact that they are shown as coming from
->* **Parity Check Tuning**
+> Messages by this plugin are identified by the fact that they are shown as coming from
+>* **Parity-Check Tuning**
 >* **Parity Problems Assistant**
 >depending on which part of the plugin generated the messages
 >

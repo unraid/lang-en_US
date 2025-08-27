@@ -118,7 +118,7 @@ Replaceable=
 Request Extension=
 Request Trial Extension=
 Restore=
-Save Modprobe config=Save 'Modprobe.d' config=
+Save Modprobe config=Save 'Modprobe.d' config
 See=
 Select language file=
 Select language=
