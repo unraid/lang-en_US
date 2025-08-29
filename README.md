@@ -95,7 +95,7 @@ Once the translations are complete and you want to test locally the (intermediat
 
 Give the ZIP file the name of your language, e.g.: "**Italian.zip**".
 
-In the Unraid *GUI* go to: **Tools -> webGUI -> Language** (*switch to Developer view*)
+In the Unraid *GUI* go to: **Tools → webGUI → Language** (*switch to Developer view*)
 
 - By default only the English language is installed (built-in).
 - Choose the ZIP file you have created earlier as the source file.
@@ -106,7 +106,7 @@ NOTE: If your language is not available from the dropdown menu, please make a re
 
 Now your language is available for local testing!
 
-In the Unraid *GUI* go to: **Settings -> Display Settings -> Language**
+In the Unraid *GUI* go to: **Settings → Display Settings → Language**
 
 - Select the preferred language from the dropdown menu. Note that only the available language choices are displayed here.
 

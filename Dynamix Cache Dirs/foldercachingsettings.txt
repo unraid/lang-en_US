@@ -125,8 +125,8 @@ and 'cache_dirs' rescans it.
 :end
 
 :cachedirs_logging_plug:
-> Select whether logging is enabled or disabled. Logging will be made to '/var/log/cache_dirs.log and /var/log/cache_dirs_lost_cache.csv'.
-> Be wary that the 'cache_dirs' logs are placed in memory on unRAID and are not automatically rolled.
+> Select whether logging is enabled or disabled. Logging will be written to '/var/log/cache_dirs.log' and '/var/log/cache_dirs_lost_cache.csv'.
+> Be aware that the 'cache_dirs' logs are stored in memory on Unraid and are not automatically rotated.
 :end
 
 :cachedirs_user_defined_plug:

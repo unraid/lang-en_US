@@ -303,7 +303,7 @@ Method used to specify start and stop points=
 >
 >If the increment period has been set to **Custom** then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.
 >
->You also want to make sure that the time allocated to running increments is sufficient to expect the parity check to run to completion before the next check is scheduled to start.   Since most people only schedule parity checks to run infrequently (e.g. Monthly or Quarterly) then this is unlikely to be an issue but it is something to take into consideration.
+>You also want to make sure that the time allocated to running increments is sufficient to expect the parity check to run to completion before the next check is scheduled to start. Since most people only schedule parity checks to run infrequently (e.g. Monthly or Quarterly) then this is unlikely to be an issue but it is something to take into consideration.
 :end
 
 :parity_tune_notify_plug:
@@ -331,21 +331,21 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_restart_plug:
-> Unraid will normally abandon a parity check if the system is shutdown, rebooted  or the array is stopped (with the only option being to restart the parity check from the beginning).
-> Setting this option allows parity checks to be restarted by this plugin from the point they had reached as long as the following criteria are met:
->* The array was shutdown tidily
+> Unraid will normally abandon a parity-check if the system is shutdown, rebooted or the array is stopped (with the only option being to restart the parity-check from the beginning).
+> Setting this option allows parity-checks to be restarted by this plugin from the point they had reached as long as the following criteria are met:
+>* The array was shutdown tidily.
 >* The user must not have made any changes to the array configuration.
 >
 >As long as these criteria are met then when the array is next started the operation is resumed from the point previously reached.
 >
 >**NOTES:**
 >* If the array operation was within the time set for a scheduled increment to be running then on restarting the array operation it will be set to be paused if now outside the time set for running increments.
->* If the array operation was manually paused then the restarted array operation will also be paused
->* If you want to use this feature by simply stopping the array without immediately using the **Reboot** or **Shutdown** buttons then you first need to manually **Pause** the array operation before using the **Stop** button.  If you to this and successfully stop the array then the array operation will now be resumed if you simply **Start** the array again, and also on the next array start after **Reboot** or **Shutdown**.
+>* If the array operation was manually paused then the restarted array operation will also be paused.
+>* If you want to use this feature by simply stopping the array without immediately using the **Reboot** or **Shutdown** buttons then you first need to manually **Pause** the array operation before using the **Stop** button. If you do this and successfully stop the array, then the array operation will now be resumed if you simply **Start** the array again, and also on the next array start after **Reboot** or **Shutdown**.
 :end
 
 :parity_tune_hot_plug:
-> Pause an array operation(Parity Check, Parity-Sync/Disk Rebuild, disk Clear)if the disk temperatures exceeds the limits you have set.
+> Pause an array operation (Parity-Check, Parity-Sync/Disk Rebuild, Disk Clear) if the disk temperatures exceeds the limits you have set.
 >
 >The temperatures are checked against the thresholds set for the Warning disk temperature levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used. If not the global setting (set via *Settings → Display Settings*) will be used. It is assumed that normally you would want the array operation to be paused before the value set at the Unraid level as the Warning Threshold.
 >
@@ -355,7 +355,7 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_warn_plug:
-> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered. If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered. If an explicit threshold has been defined for an individual drive then this is the value used. If not the global setting will be used.
 >
 > You normally want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature warning threshold has been reached for a disk.
 >
@@ -377,18 +377,18 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_temp_notify_plug:
-> Setting this option to **Yes** means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to **No**.    The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+> Setting this option to **Yes** means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to **No**. The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
 :end
 
 :parity_tune_shutdown_plug:
 > If set to **Yes** then automatically start a tidy shutdown of the server if any disk in the array or a cache pool reach the defined temperature threshold.
-> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used. If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
+> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used. If not, the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>*) will be used.
 >
 > This option is intended to be triggered if the system’s cooling is insufficient or has failed. The idea is to perform a tidy shutdown before disks are damaged by severe overheating. The shutdown that is triggered is functionally the same as pressing the Shutdown button on the Main page of the Unraid GUI. If notifications are enabled, one will be sent to indicate that this has happened.
 >
 > When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
 >
-> **CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
+> **CAUTION:** If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
 :end
 
 :parity_tune_critical_plug:
@@ -424,7 +424,7 @@ Method used to specify start and stop points=
 > You are likely to want to use absolute sector numbers if there are ones that have previously been listed in the syslog as being an error.
 > Using absolute sector numbers tends to be more precise and lead to shorter tests but can be more effort to set up.
 >
-> The alternative is to use percentages.  When using percentages then the sector numbers these represent are calculated as percentages of the largest parity disk.
+> The alternative is to use percentages. When using percentages then the sector numbers these represent are calculated as percentages of the largest parity disk.
 :end
 
 :parityProblems_start_plug:
