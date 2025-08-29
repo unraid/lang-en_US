@@ -71,7 +71,7 @@ You can use Unassigned Devices to clear the disk=
 > + Erase and Clear Disk - Random patterns are written to the disk and then zeros are written. This is a good choice for a disk to be discarded to ensure all traces of files are removed.
 > + Verify Signature - The disk signature is checked.
 > + Verify Disk - The disk signature is checked and the disk is verified to be zeroed.
-> + Post-read Verify - Perform a post read verify to check the disk.
+> + Post-read Verify - Perform a post-read verify to check the disk.
 > + Clear Signature - Remove the pre-clear signature from the disk.
 >
 > The text <em style='color:#00BE37;'>Pre-cleared</em> next to the disk serial number indicates that the disk has a pre-cleared signature. This will only show when the disk is pre-cleared and the Pre-clear Stats have been removed.

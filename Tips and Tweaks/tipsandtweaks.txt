@@ -128,11 +128,11 @@ You may actually cause more problems than you solve if there are problems with y
 
 :tips_tweaks_dirty_background_plug:
 > Recommended values are: 'vm.dirty_background_ratio' to 3% and 'vm.dirty_ratio' to 5%.
-> If you have large amount of RAM, set the 'vm.dirty_background_ratio' to 1% and 'vm.dirty_ratio' to 2%.
+> If you have a large amount of RAM, set the 'vm.dirty_background_ratio' to 1% and 'vm.dirty_ratio' to 2%.
 > Caution: Don’t increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
 >
 > Set the 'vm.dirty_background_ratio' as a percentage of total RAM.
-> The default setting of 3% is recommended unless you have large amounts of RAM. If you run media‑streaming or gaming VMs, use a value of 1%.
+> The default setting of 3% is recommended unless you have a large amounts of RAM. If you run media‑streaming or gaming VMs, use a value of 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
@@ -161,7 +161,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_max_files_plug:
-> This value is used by samba to set the maximum number of open files allowed in SMB shares.
+> This value is used by SAMBA to set the maximum number of open files allowed in SMB shares.
 >
 > The default is '40960' and the allowed range is '40960 to 65535'.
 :end
@@ -192,7 +192,6 @@ You may actually cause more problems than you solve if there are problems with y
 > The 'governor' choices are: 'ondemand', 'performance', 'powersave', 'conservative', and 'schedutil'.
 :end
 
-
 :tips_tweaks_power_save_cpu_governor_plug:
 > Select the Power Saving CPU Scaling Governor you want to use.
 >
@@ -202,14 +201,9 @@ You may actually cause more problems than you solve if there are problems with y
 > + **Schedutil** - Set all CPUs frequency scaling to schedutil. This sets CPU frequency based on the Linux scheduler. Note: This is still in development.
 :end
 
-:tips_tweak_turbo_plug:
-> Set to 'Yes' to enable the Intel Turbo or AMD Performance Boost Mode.
-:end
-
 :tips_tweaks_scheduled_plug:
 > Set to 'Yes' to enable scheduled CPU Power Saving mode based on the times set below for Normal and Power Saving modes.
 :end
-
 
 :tips_tweaks_cpu_state_plug:
 > Enter the time you want to set the governor to selected Power Saving mode in 24 hour format hh:mm.
@@ -219,14 +213,13 @@ You may actually cause more problems than you solve if there are problems with y
 > Enter the time you want to set the governor to Normal CPU Scaling Governor in 24 hour format hh:mm.
 :end
 
-
 :tips_tweaks_syslog_archive_plug:
 > Set to 'Yes' to enable the capture and archive of syslogs and run a diagnostics on shutdown. Logs and diagnostics are saved to '/boot/logs/'.
 :end
 
 :tips_tweaks_number_syslogs_plug:
 > Set the number of syslogs to save in the archive.
-> Set zero to save only last syslog. Set to '-1' to save all logs. Default setting is '10'.
+> Set '0' to save only last syslog. Set to '-1' to save all logs. Default setting is '10'.
 :end
 
 :tips_tweaks_kill_processes_plug:
@@ -234,4 +227,3 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Note: Be careful with the processes you kill here. You could lose data!
 :end
-

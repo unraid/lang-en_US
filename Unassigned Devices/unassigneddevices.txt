@@ -181,7 +181,7 @@ ZFS Volume=
 >
 > Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i> or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i> or <i class='fa fa-circle orb grey-orb'></i> indicator. Applies to Unraid 6.9 RC2 and later.
 >
 > Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration. This is where you configure a device script and certain device characteristics.
 > 

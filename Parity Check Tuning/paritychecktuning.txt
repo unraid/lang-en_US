@@ -55,7 +55,7 @@ Parity Problems Assistant=
 
 :parityProblems_intro_plug:
 The **Parity Problems Assistant** is part of the **Parity Check Tuning** plugin.<p/>
-The current status is **EXPERIMENTAL** and it is always possible that this assistant may be removed in the future).
+The current status is **EXPERIMENTAL** and it is always possible that this assistant may be removed in the future.
 **(feedback is welcomed on the basic concept and ideas for improvement)**.<p/>
 The idea is that this assistant can be used after a parity check or read check has reported problems and logged the details of any problem sectors to the syslog.
 In many cases such errors can be due to external factors such as cabling or the power supply rather than the actual disks.<p/>
@@ -283,7 +283,7 @@ Method used to specify start and stop points=
 :parity_tune_automatic_plug:
 > If the Unraid system is not shut down cleanly, then the next time the array is started Unraid will automatically start a non-correcting parity-check (or a read-check if you have no parity disk). This can happen for a wide variety of reasons ranging from power loss; hardware issues; and software issues. The automatic check is run because if there are any parity errors this can compromise the ability to recover from an array drive failure at a later date so you want to get back to having valid parity as soon as is practical.
 >
-> If this option is set then the check will be allowed to run for a few minutes (as any errors after an unclean shutdown are most likely to be at the start of the disks as they were not unmounted cleanly) and then automatically put the check into a paused state (if outside the time specified for running increments) and then the remainder of the check subsequently run in increments according to the time slots specified for running increments.
+> If this option is set, the check will be allowed to run for a few minutes ... and then be automatically paused (if outside the time specified for increments). The remainder of the check will subsequently be run in increments according to the defined time slots.
 :end
 
 :parity_tune_resume_plug:
@@ -297,9 +297,9 @@ Method used to specify start and stop points=
 
 :parity_tune_pause_plug:
 > The time at which a running parity check should be paused. Typically, this would be set to be a time when you want other activity to not be affected by a running parity check.
->If no parity check is actively running when this time comes around then no action will be.
+>If no parity check is actively running when this time comes around, then no action will be taken.
 >
->Normally you want to make sure that this time is set to be after the time that you schedule regular parity checks to run.  The first increment will then be from when the regular parity check is scheduled to start up to the time you have specified for the increment to end.
+>Normally you want to make sure that this time is set to be after the time that you schedule regular parity checks to run. The first increment will then be from when the regular parity check is scheduled to start up to the time you have specified for the increment to end.
 >
 >If the increment period has been set to **Custom** then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.
 >
@@ -401,7 +401,7 @@ Method used to specify start and stop points=
 :parity_tune_logging_plug:
 > Control the level of detail in entries. The level of detail can be increased to help with debugging any problems using this plugin might encounter.
 >
-> Messages by this plugin are identified by the fact that they are shown as coming from
+> Messages by this plugin are identified by the fact that they are shown as coming from:
 >* **Parity-Check Tuning**
 >* **Parity Problems Assistant**
 >depending on which part of the plugin generated the messages
@@ -428,7 +428,7 @@ Method used to specify start and stop points=
 :end
 
 :parityProblems_start_plug:
-> Select where you want the check to be started from.  You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
+> Select where you want the check to be started from. You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
 >
 > Specifying absolute sectors is likely to be of particular use when you have extracted the sector numbers from the *syslog* when the original parity check reported errors on those sectors. In a future version of this plugin the plugin may be enhanced to automatically extract such sectors from the *syslog* and give you a drop down list but this feature is not yet implemented.
 >
@@ -436,7 +436,7 @@ Method used to specify start and stop points=
 :end
 
 :parityProblems_end_plug:
-> Select where you want the check to be ended.  You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
+> Select where you want the check to be ended. You can specify the end point as either a sector number or as a percentage of the size of the largest parity disk.
 >
 > In practice for technical reasons the check may end later than the point you specify as a check is only made once a minute to see if the end point has been reached.
 :end
