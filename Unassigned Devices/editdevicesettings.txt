@@ -55,11 +55,11 @@ ZFS Volume=
 :end
 
 :ud_edit_script_detach_plug:
-> Click **Detach** to detach the device.  The device will then show in Historical Devices and can be Attached from the device settings there.
+> Click **Detach** to detach the device. The device will then show in Historical Devices and can be Attached from the device settings there.
 :end
 
 :ud_edit_script_attach_plug:
-> Click **Attach** to attach a device that has been detached.  This will act like the device was just installed and will auto mount if 'Auto Mount' is on.  It will take a while for the device to show up in UD.
+> Click **Attach** to attach a device that has been detached. This will act like the device was just installed and will auto mount if 'Auto Mount' is on. It will take a while for the device to show up in UD.
 :end
 
 :ud_edit_script_abort_plug:
@@ -67,11 +67,11 @@ ZFS Volume=
 :end
 
 :ud_disk_name_plug:
-> Enter the alias name for this device.  This is the name you want to use to refer to this drive.  Leave the name blank and the 'devX' will be assigned.
+> Enter the alias name for this device. This is the name you want to use to refer to this drive. Leave the name blank and the 'devX' will be assigned.
 >
 > **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
 >
-> **Note:** Cannot contain "dev" as the first characters.  This is reserved for the 'devX' devices.
+> **Note:** Cannot contain "dev" as the first characters. This is reserved for the 'devX' devices.
 :end
 
 :ud_edit_script_choose_name_plug:
@@ -84,7 +84,7 @@ Unassigned Devices show the running status of the User Script that will be using
 :end
 
 :ud_edit_script_run_background_plug:
-> Set to **Yes** to have the Device Script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+> Set to **Yes** to have the Device Script run as a background task. This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
 :end
 
 :ud_edit_script_buttons_plug:

@@ -344,7 +344,7 @@ Uninstall=
 Project=
 Read Me First=
 Install another instance=
-Install Using The Templates Default Tag=Install Using The Template's Default Tag
+Install Using The Templates Default Tag=Install Using The Template’s Default Tag
 Moderator Comments=Moderator Comments:
 Note not all authors keep up to date on change logs=
 Note not all maintainers keep up to date on change logs=
@@ -418,8 +418,8 @@ Template Exists=
 Template already exists in Apps=
 ; eg: LinuxServer Repository
 %s Repository=
-; eg: Squid's Repository
-%s's Repository=
+; eg: Squid’s Repository
+%s's Repository=%s’s Repository
 
 Info=
 Attention=

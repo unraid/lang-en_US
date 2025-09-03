@@ -3,7 +3,6 @@ Auto Mount USB Devices=
 Case-sensitive names=
 Change Disk UUID=
 Change UUID=
-Change Disk UUID=
 Command times=
 Common Script=
 Common Settings=
@@ -20,7 +19,7 @@ Legacy Mount Point Compatibility=
 Mount SSDs with discard option=
 NFS Security=
 NFS Settings=
-NFS must be enabled in Settings->NFS to enable NFS Export=
+NFS must be enabled in Settings->NFS to enable NFS Export=NFS must be enabled in 'Settings → NFS' to enable NFS Export
 NFS Version to use when Mounting Remote Shares=
 Public=
 Private=
@@ -110,13 +109,13 @@ Working=
 >
 > **Command times** command execution times. **Warning:** very chatty.
 >
-> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> **Note:** Don’t leave the Debug Log Level enabled for extended periods; it can generate excessive syslog messages.
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **Auto** to mount all NFS Remote Shares auto negotiating the NFS version to use.
+> Set to **Auto** to mount all NFS Remote Shares, auto-negotiating the NFS version to use.
 >
-> If the **Auto** setting doesn't work or only mounts NFSv3, you need to use the **NFSv4** setting because your version of Unraid will not auto negotiate NFSv4.
+> If the **Auto** setting doesn’t work or only mounts NFSv3, use the **NFSv4** setting because your Unraid version cannot auto-negotiate NFSv4.
 :end
 
 :ud_settings_smb_security_plug:
@@ -129,9 +128,9 @@ Working=
 >
 > Windows Server Signing:
 >
-> If you are unable to browse SMB shares with Windows 11 version 24H2 or newer, you need to make some changes to accomodate a new feature called Server Signing.  Server Signing is enabled in Unraid and you need to make changes to access Public shares.
-> You can <u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300', target='_blank'>_(disable it in Windows)_</a></u>, or to work with Unraid with Server Signing enabled, the easiest way is to create a user (with a password set) in Unraid with the same name as the Windows account you are using, Windows should then ask you for the credentials.
-> If you are using a Microsoft account, it may be better to just create a user in Unraid with a simple username and set a password, then in Windows go to Control Panel -> Credential Manager -> Windows credentials -> Add a Windows Credential and add the correct Unraid server name and credentials.
+> If you are unable to browse SMB shares with Windows 11 version 24H2 or newer, you may need to adjust settings to accommodate a new feature called Server Signing. Server Signing is enabled in Unraid, so additional steps may be required to access Public shares.
+> You can <a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300' target='_blank' rel='noopener noreferrer'>disable it in Windows</a>, or to work with Unraid with Server Signing enabled, the easiest way is to create a user (with a password set) in Unraid with the same name as the Windows account you are using; Windows should then ask you for the credentials.
+> If you are using a Microsoft account, it may be better to just create a user in Unraid with a simple username and set a password, then in Windows go to 'Control Panel → Credential Manager → Windows credentials → Add a Windows Credential' and add the correct Unraid server name and credentials.
 :end
 
 :ud_settings_case_sensitive_plug:
@@ -153,9 +152,9 @@ Working=
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren't handled as expected. Turning this feature on can help with those permissions.
+> There are times when permissions on SMB shares aren’t handled as expected. Enabling the **Force user** setting can help.
 > This applies to all devices mounted with Unassigned Devices.
-> The down side is that it overrides Linux group permissions. If you are unsure about whether or not this is necessary, leave it disabled.
+> The downside is that it overrides Linux group permissions. If you are unsure whether this is necessary, leave it disabled.
 :end
 
 :ud_settings_nfs_security_plug:
@@ -182,7 +181,7 @@ Working=
 :ud_settings_change_uuid_plug:
 > Select the disk that you want to change the UUID. This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk. Drive must be unmounted to change the UUID.
 >
-> **Note:** Don't change the UUID of a pooled disk.
+> **Note:** Don’t change the UUID of a pooled disk.
 :end
 
 :ud_settings_zfs_upgrade_plug:
@@ -195,7 +194,7 @@ Working=
 > For SMB to be considered online, the Remote Server has to have the SMB port open.
 
 > For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
-> There can be a case where the port is open and 'showmount -e' doesn't show NFS shares and NFS will not work.
+> The port may be open, but if 'showmount -e' doesn’t list any NFS shares, NFS will not work.
 
 > If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
 

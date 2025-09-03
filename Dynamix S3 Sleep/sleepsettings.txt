@@ -79,13 +79,13 @@ Yes, exclude Cache=
 :end
 
 :s3sleep_idle_plug:
-> Network activity is measured under different thresholds. Ranging from completely silent to megabit traffic. Experiment with this setting to find to right balance for your situation.
+> Network activity is evaluated against thresholds, from Silent to Mega traffic. Experiment to find the right balance for your environment.
 :end
 
 :s3sleep_host_plug:
 > Select whether external hosts need to be monitored and non-responding as a sleep or shutdown condition.
 >
-> External hosts are given by their IP address, use a comma to separate multiple IP addresses. As long as one of the external hosts responds to a ping then sleep/shutdown won't be invoked.
+> Specify external hosts by IP address; separate multiple IPs with commas. If any host responds to ping, sleep or shutdown will not occur.
 :end
 
 :s3sleep_login_plug:
@@ -97,19 +97,19 @@ Yes, exclude Cache=
 :end
 
 :s3sleep_before_plug:
-> Any extra commands before sleep or shutdown is invoked can be placed here. This maybe cleanup or other desirable actions.
+> Enter additional commands to run before sleep or shutdown here (e.g., cleanup or other tasks).
 :end
 
 :s3sleep_after_plug:
-> Any extra commands after wake-up of sleep can be placed here. This might be helpful for restoring a previous situation.
+> Enter additional commands to run after wake-up here. This can help restore the previous state.
 :end
 
 :s3sleep_gigabit_plug:
-> Leave this default OFF, in case the interface doesn't start properly after wake-up, see if forcing this setting helps.
+> Leave this OFF by default. If the interface doesn’t start properly after wake-up, try enabling this setting.
 :end
 
 :s3sleep_dhcp_plug:
-> Leave this default OFF, in case the system doesn't start properly after wake-up, see if forcing this setting helps.
+> Leave this OFF by default. If the system doesn’t start properly after wake-up, try enabling this setting.
 :end
 
 :s3sleep_debug_plug:

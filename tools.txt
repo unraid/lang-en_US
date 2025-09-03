@@ -32,7 +32,7 @@ Creation error=
 Credits=
 Data slots=
 Delete all notifications=
-Delete Modprobe config=
+Delete Modprobe config=Delete 'Modprobe.d' config
 Delete notification=
 Deprecated Only=
 Developer=
@@ -42,7 +42,7 @@ Display Settings=
 Downgrade OS=
 Downloading=
 Driver=
-Edit Modprobe config=
+Edit Modprobe config=Edit 'Modprobe.d' config
 End-User License Agreement=
 Enter URL of language pack XML file=
 Error accessing your physical USB Flash boot device=
@@ -76,7 +76,7 @@ LOG size=
 Log Viewer new=Log Viewer (new)
 Missing Key File=
 Missing Language=
-Modprobed config file=Modprobe.d config file
+Modprobed config file='Modprobe.d' config file
 Network Settings=
 New Config=
 New Permissions=
@@ -112,13 +112,13 @@ Registered on=
 Registered to=
 registering USB Flash GUID=
 Release has been withdrawn=
-Remove custom modprobed configuration=Remove custom modprobe.d configuration?
+Remove custom modprobed configuration=Remove custom 'Modprobe.d' configuration?
 Remove the installed language=
 Replaceable=
 Request Extension=
 Request Trial Extension=
 Restore=
-Save Modprobe config=
+Save Modprobe config=Save 'Modprobe.d' config
 See=
 Select language file=
 Select language=
@@ -190,10 +190,10 @@ PCI Devices and IOMMU Groups=
 PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
 Reboot to take effect=
 SCSI Devices=
-The below list doesnt not reflect the way IOMMU would naturally group devices=The below list doesn't not reflect the way IOMMU would naturally group devices
+The below list doesnt not reflect the way IOMMU would naturally group devices=The following list does not reflect the way IOMMU would naturally group devices
 This controller is bound to vfio, connected USB devices are not visible=
 This controller is bound to vfio, connected drives are not visible=
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**.
 USB Devices=
 Your system has booted with the PCIe ACS Override setting enabled=
 
@@ -345,8 +345,8 @@ another replacement key sooner, [Contact Support](https://lime-technology.com/co
 :end
 
 :registration_9_plug:
-This USB Flash boot device has been *blacklisted*. This can occur as a result of transfering your Registration key to
-a replacement USB Flash device, and you are currently booted from your old USB Flash device.
+This USB Flash boot device has been *blacklisted*. This can occur if you transferred your Registration key to 
+a replacement USB Flash device and are currently booted from your old USB Flash device.
 
 A USB Flash device may also be *blacklisted* if there is no serial number, or if we discover the serial number
 is not unique (this is common with USB card readers).

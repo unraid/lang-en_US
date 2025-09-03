@@ -8,5 +8,4 @@ Backup File=
 Editing=
 Generally, it is not recommended to change the format=
 Credits=
-No Backup File Found=
 File Format=
